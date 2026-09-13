@@ -34,16 +34,16 @@
 }
 .work-menu{
   min-height:600px;
-  padding:82px 6.4vw 80px;
+  padding:82px 60px 80px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:36px;
+  gap:16px;
   background:#f0f3f7;
   border-bottom:1px solid #141414
 }
 .work-category{
-  width:250px;
+  width:300px;
   position:relative;
   top:-30px;
   color:#141414;
@@ -104,6 +104,9 @@
   text-shadow:-33px -28px #000,33px -28px #000,-33px 28px #000,33px 28px #000
 }
 .work-category b{
+  display:block;
+  width:100%;
+  padding:0 12px;
   font-family:Arial,sans-serif;
   font-size:20px;
   font-weight:700;
@@ -185,6 +188,22 @@
 }
 .card-h:before{
   background:repeating-linear-gradient(45deg,#202630 0 16px,#d4e1f3 17px 28px,#809ec4 29px 42px)
+}
+@media(max-width:1200px) and (min-width:701px){
+  .work-menu{
+    padding-inline:40px;
+    gap:8px
+  }
+  .work-category{
+    width:25%
+  }
+  .disc{
+    width:min(20vw,250px);
+    height:min(20vw,250px)
+  }
+  .work-category b{
+    font-size:clamp(14px,1.65vw,20px)
+  }
 }
 
 @media(max-width:700px){

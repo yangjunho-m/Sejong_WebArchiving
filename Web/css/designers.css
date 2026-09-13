@@ -1,0 +1,157 @@
+.designers-page{
+  background:#fff
+}
+.designers-header{
+  height:119px;
+  padding:30px 60px;
+  position:relative;
+  background:#fff
+}
+.designers-header .logo{
+  position:static;
+  display:block;
+  width:172px;
+  height:41px
+}
+.designers-header nav{
+  position:absolute;
+  top:38px;
+  right:60px;
+  display:flex;
+  gap:60px
+}
+.designers-header nav a{
+  color:#141414;
+  text-decoration:none;
+  font-family:Arial,sans-serif;
+  font-size:21px;
+  font-weight:700;
+  letter-spacing:-.07em
+}
+.designers-header nav a[aria-current="page"]{
+  text-decoration:underline;
+  text-underline-offset:5px
+}
+.designers-main{
+  min-height:0;
+  padding:98px max(60px,12vw) 120px;
+  background:#fff
+}
+.designers-list{
+  max-width:1096px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:315px minmax(0,1fr);
+  gap:131px
+}
+.designer-group h1,
+.designer-group h2{
+  margin:0 0 59px;
+  color:#141414;
+  font-size:29px;
+  line-height:1;
+  letter-spacing:-.08em
+}
+.visual-design h2{
+  text-align:center
+}
+.designer-cards{
+  display:grid;
+  gap:20px
+}
+.visual-design .designer-cards{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px 20px
+}
+.designer-card{
+  height:80px;
+  margin:0;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-radius:20px;
+  background:#f0f3f7;
+  color:#141414;
+  letter-spacing:-.06em
+}
+.designer-card div{
+  display:grid;
+  gap:5px
+}
+.designer-card div:last-child{
+  text-align:right
+}
+.designer-card strong{
+  font-size:16px;
+  line-height:1
+}
+.designer-card small{
+  color:#8d939c;
+  font-size:12px;
+  line-height:1
+}
+.designer-card b{
+  font-size:10px;
+  line-height:1
+}
+
+@media(max-width:900px){
+  .designers-list{
+    grid-template-columns:280px minmax(0,1fr);
+    gap:40px
+  }
+}
+@media(max-width:700px){
+  .designers-header{
+    height:86px;
+    padding:20px
+  }
+  .designers-header .logo{
+    width:100px;
+    height:25px
+  }
+  .designers-header nav{
+    top:22px;
+    right:20px;
+    gap:12px
+  }
+  .designers-header nav a{
+    font-size:10px
+  }
+  .designers-main{
+    min-height:0;
+    padding:50px 20px 80px
+  }
+  .designers-list{
+    grid-template-columns:1fr;
+    gap:60px
+  }
+  .designer-group h1,
+  .designer-group h2{
+    margin-bottom:30px;
+    font-size:25px;
+    text-align:left
+  }
+  .designer-cards{
+    gap:10px
+  }
+  .visual-design .designer-cards{
+    grid-template-columns:1fr;
+    gap:10px
+  }
+  .designer-card{
+    height:60px;
+    border-radius:15px;
+    padding-inline:16px
+  }
+  .designer-card strong{
+    font-size:14px
+  }
+  .designer-card small{
+    font-size:10px
+  }
+  .designer-card b{
+    font-size:8px
+  }
+}

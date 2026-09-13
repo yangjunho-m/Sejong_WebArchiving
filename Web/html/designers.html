@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESIGNERS — BUTTON UP!</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/logo.css">
+  <link rel="stylesheet" href="../css/assets.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/designers.css">
+</head>
+<body class="designers-page">
+  <header class="designers-header">
+    <a class="logo" href="../index.html" aria-label="Button Up home">
+      <img src="../img/logo.png" alt="BUTTON UP!">
+    </a>
+    <nav aria-label="Designers navigation">
+      <a href="work.html">WORKS</a>
+      <a href="designers.html" aria-current="page">DESIGNERS</a>
+      <a href="program.html">PROGRAM</a>
+      <a href="message.html">MESSAGE</a>
+      <a href="partners.html">PARTNERS</a>
+    </nav>
+  </header>
+
+  <main class="designers-main">
+    <div class="designers-list" aria-label="Exhibiting designers">
+      <section class="designer-group industrial-design">
+        <h1>INDUSTRIAL DESIGN</h1>
+        <div class="designer-cards" data-card-count="20"></div>
+      </section>
+      <section class="designer-group visual-design">
+        <h2>VISUAL COMMUNICATION DESIGN</h2>
+        <div class="designer-cards" data-card-count="40"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <a class="footer-symbol" href="../index.html" aria-label="Button Up home">
+      <img src="../img/footer-logo.png" alt="Design Innovation">
+    </a>
+    <div class="footer-link"><a href="#">INSTAGRAM</a></div>
+    <div class="footer-link"><a href="#">BEHANCE</a></div>
+    <div class="footer-link"><a href="#">VIMEO</a></div>
+    <address>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea<br><a href="mailto:idpt@sejong.ac.kr">idpt@sejong.ac.kr</a><br>+82 2 3408 3323</address>
+    <p class="copyright">©2026. SEJONG UNIVERSITY DESIGN INNOVATION. ALL RIGHTS RESERVED.</p>
+  </footer>
+  <template id="designer-card-template">
+    <article class="designer-card">
+      <div><strong>김나윤</strong><small>Kim Nayun</small></div>
+      <div><b>@kimnayun</b><b>nayun@naver.com</b></div>
+    </article>
+  </template>
+  <script src="../js/designers.js"></script>
+</body>
+</html>

@@ -48,12 +48,15 @@ body{
   position:absolute;
   z-index:1;
   right:60px;
-  top:43px;
+  top:38px;
   display:flex;
-  gap:62px
+  gap:60px
 }
 .masthead nav a{
-  font-size:20px
+  font-family:Arial,sans-serif;
+  font-size:21px;
+  font-weight:700;
+  letter-spacing:-.07em
 }
 .masthead p{
   position:absolute;

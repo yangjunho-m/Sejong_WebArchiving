@@ -1,0 +1,156 @@
+.partners-page{
+  background:#fff
+}
+.partners-header{
+  height:487px;
+  padding:30px 60px;
+  position:relative;
+  background:#fff
+}
+.partners-header .logo{
+  position:static;
+  display:block;
+  width:172px;
+  height:41px
+}
+.partners-header nav{
+  position:absolute;
+  top:38px;
+  right:60px;
+  display:flex;
+  gap:60px
+}
+.partners-header nav a{
+  color:#141414;
+  text-decoration:none;
+  font-family:Arial,sans-serif;
+  font-size:21px;
+  font-weight:700;
+  letter-spacing:-.07em
+}
+.partners-header nav a[aria-current="page"]{
+  text-decoration:underline;
+  text-underline-offset:5px
+}
+.partners-title{
+  position:absolute;
+  top:222px;
+  left:50%;
+  text-align:center;
+  transform:translateX(-50%);
+  white-space:nowrap
+}
+.partners-title h1{
+  margin:0 0 30px;
+  font-size:50px;
+  letter-spacing:-.08em
+}
+.partners-title p{
+  margin:0;
+  font-size:12px;
+  font-weight:700
+}
+.partners-main{
+  min-height:2038px;
+  padding:120px 12vw 150px;
+  background:#f0f3f7
+}
+.partners-label{
+  margin:0 0 75px;
+  font-size:15px;
+  font-weight:700
+}
+.partners-grid{
+  display:grid;
+  grid-template-columns:repeat(3,315px);
+  justify-content:center;
+  gap:80px 20px
+}
+.partner-card{
+  height:233px;
+  display:grid;
+  place-items:center;
+  background:#fff;
+  color:#141414;
+  text-align:center;
+  font-size:29px;
+  font-weight:700;
+  line-height:.85;
+  letter-spacing:-.08em;
+  transition:transform .2s
+}
+.partner-card:hover{
+  transform:translateY(-8px)
+}
+.partner-sejong{
+  font-size:32px;
+  line-height:.77;
+  background:radial-gradient(circle at 50% 50%,#fff 0 35%,#edf2f8 36%)
+}
+.partner-din{
+  background:linear-gradient(135deg,#fff,#e2e9f5)
+}
+.partner-art{
+  background:linear-gradient(45deg,#fff 48%,#d7e5f8 49%)
+}
+.partner-gallery{
+  background:radial-gradient(circle at 50% 50%,#f8f9fb,#c4d8f3)
+}
+.partner-media{
+  background:linear-gradient(160deg,#fff 50%,#b9d0ef 51%)
+}
+.partner-student{
+  background:repeating-linear-gradient(45deg,#fff 0 18px,#e6effa 19px 38px)
+}
+
+@media(max-width:700px){
+  .partners-header{
+    height:280px;
+    padding:20px
+  }
+  .partners-header .logo{
+    width:100px;
+    height:25px
+  }
+  .partners-header nav{
+    right:20px;
+    top:22px;
+    gap:12px
+  }
+  .partners-header nav a{
+    font-size:10px
+  }
+  .partners-title{
+    top:137px
+  }
+  .partners-title h1{
+    font-size:34px;
+    margin-bottom:18px
+  }
+  .partners-title p{
+    font-size:8px
+  }
+  .partners-main{
+    min-height:0;
+    padding:70px 20px 100px
+  }
+  .partners-label{
+    margin-bottom:40px;
+    font-size:11px
+  }
+  .partners-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px
+  }
+  .partner-card{
+    height:auto;
+    aspect-ratio:315/233;
+    font-size:18px
+  }
+  .partner-sejong{
+    font-size:21px
+  }
+
+}
+
+
