@@ -1,0 +1,1 @@
+// Static archive landing page

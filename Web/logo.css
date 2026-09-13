@@ -1,0 +1,45 @@
+.logo{
+  display:block;
+  width:172px;
+  height:41px
+}
+
+.logo img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:fill
+}
+
+.footer-symbol{
+  display:block!important;
+  width:128px!important;
+  height:70px!important;
+  position:relative!important;
+  overflow:hidden
+}
+
+.footer-symbol:before,.footer-symbol:after{
+  display:none!important
+}
+
+.footer-symbol img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:fill;
+  filter:none
+}
+
+@media(max-width:700px){
+  .logo{
+    width:96px;
+    height:25px
+  }
+  .footer-symbol{
+    width:96px!important;
+    height:50px!important
+  }
+
+}
+
