@@ -1,0 +1,50 @@
+{
+  "industrial": [
+    {
+      "id": 1,
+      "nameKo": "김나윤",
+      "nameEn": "Kim Nayun",
+      "instagram": "@kimnayun",
+      "email": "nayun@naver.com",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 2,
+      "nameKo": "이서준",
+      "nameEn": "Lee Seojun",
+      "instagram": "@leeseojun",
+      "email": "seojun@example.com",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 3,
+      "nameKo": "박하늘",
+      "nameEn": "Park Haneul",
+      "instagram": "@parkhaneul",
+      "email": "haneul@example.com",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 4,
+      "nameKo": "최유진",
+      "nameEn": "Choi Yujin",
+      "instagram": "@choiyujin",
+      "email": "yujin@example.com",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 5,
+      "nameKo": "정민재",
+      "nameEn": "Jung Minjae",
+      "instagram": "@jungminjae",
+      "email": "minjae@example.com",
+      "profileImage": "",
+      "works": []
+    }
+  ],
+  "visual": []
+}

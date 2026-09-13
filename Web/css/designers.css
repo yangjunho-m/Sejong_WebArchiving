@@ -73,7 +73,11 @@
   border-radius:20px;
   background:#f0f3f7;
   color:#141414;
+  text-decoration:none;
   letter-spacing:-.06em
+}
+.designer-card:hover{
+  background:#dce7f6
 }
 .designer-card div{
   display:grid;

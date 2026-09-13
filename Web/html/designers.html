@@ -28,11 +28,11 @@
     <div class="designers-list" aria-label="Exhibiting designers">
       <section class="designer-group industrial-design">
         <h1>INDUSTRIAL DESIGN</h1>
-        <div class="designer-cards" data-card-count="20"></div>
+        <div class="designer-cards" data-designer-group="industrial"></div>
       </section>
       <section class="designer-group visual-design">
         <h2>VISUAL COMMUNICATION DESIGN</h2>
-        <div class="designer-cards" data-card-count="40"></div>
+        <div class="designer-cards" data-designer-group="visual"></div>
       </section>
     </div>
   </main>
@@ -48,10 +48,10 @@
     <p class="copyright">©2026. SEJONG UNIVERSITY DESIGN INNOVATION. ALL RIGHTS RESERVED.</p>
   </footer>
   <template id="designer-card-template">
-    <article class="designer-card">
+    <a class="designer-card" href="designer-detail.html">
       <div><strong>김나윤</strong><small>Kim Nayun</small></div>
       <div><b>@kimnayun</b><b>nayun@naver.com</b></div>
-    </article>
+    </a>
   </template>
   <script src="../js/designers.js"></script>
 </body>
