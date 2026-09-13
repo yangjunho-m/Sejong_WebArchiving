@@ -42,13 +42,23 @@
 }
 .partners-title h1{
   margin:0 0 30px;
-  font-size:50px;
-  letter-spacing:-.08em
+  color:#000;
+  text-align:center;
+  font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+  font-size:48px;
+  font-style:normal;
+  font-weight:600;
+  line-height:130%;
+  text-transform:uppercase
 }
 .partners-title p{
   margin:0;
-  font-size:12px;
-  font-weight:700
+  font-family:Pretendard,Arial,sans-serif;
+  font-size:18px;
+  font-style:normal;
+  font-weight:500;
+  line-height:150%;
+  letter-spacing:-.36px
 }
 .partners-main{
   min-height:2038px;
@@ -151,6 +161,128 @@
     font-size:21px
   }
 
+}
+
+/* Partner list layout */
+.partners-main{
+  min-height:2038px;
+  padding:120px 0
+}
+.partners-grid{
+  max-width:1096px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr;
+  gap:80px
+}
+.partner-row{
+  display:grid;
+  grid-template-columns:315px minmax(0,1fr);
+  align-items:center;
+  gap:146px
+}
+.partner-logo{
+  height:233px;
+  display:grid;
+  place-content:center;
+  background:#fff;
+  color:#141414;
+  text-align:center;
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-.08em
+}
+.partner-logo img{
+  display:block;
+  width:205px;
+  max-height:170px;
+  object-fit:contain
+}
+.partner-copy h2{
+  margin:0 0 20px;
+  font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+  font-size:32px;
+  font-style:normal;
+  font-weight:600;
+  line-height:130%
+}
+.partner-copy p{
+  max-width:635px;
+  margin:0;
+  font-family:Pretendard,Arial,sans-serif;
+  font-size:18px;
+  font-style:normal;
+  font-weight:500;
+  line-height:150%;
+  letter-spacing:-.36px;
+  word-break:keep-all
+}
+.sandoll{
+  font-size:24px;
+  line-height:1.15
+}
+.yoondesign{
+  font-size:20px
+}
+.rixfont{
+  font-size:28px
+}
+.rin{
+  font-size:42px
+}
+.rin small{
+  font-size:9px
+}
+.soosung{
+  font-size:20px;
+  line-height:1.2
+}
+.printaku{
+  font-size:26px;
+  line-height:.9
+}
+.printaku span{
+  color:#999
+}
+
+@media(max-width:700px){
+  .partners-main{
+    min-height:0;
+    padding:70px 20px 100px
+  }
+  .partners-grid{
+    gap:26px
+  }
+  .partner-row{
+    grid-template-columns:100px minmax(0,1fr);
+    align-items:start;
+    gap:18px
+  }
+  .partner-logo{
+    height:100px;
+    font-size:15px
+  }
+  .partner-logo img{
+    width:78px;
+    max-height:75px
+  }
+  .sandoll{
+    font-size:15px
+  }
+  .rin{
+    font-size:28px
+  }
+  .rixfont,
+  .printaku{
+    font-size:18px
+  }
+  .partner-copy h2{
+    margin-bottom:8px;
+    font-size:15px
+  }
+  .partner-copy p{
+    font-size:11px
+  }
 }
 
 

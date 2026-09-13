@@ -2,7 +2,7 @@
   background:#fff
 }
 .program-header{
-  height:520px;
+  height:487px;
   padding:30px 60px;
   position:relative;
   background:#fff
@@ -34,7 +34,7 @@
 }
 .program-title{
   position:absolute;
-  top:280px;
+  top:222px;
   left:50%;
   width:min(700px,calc(100% - 40px));
   text-align:center;
