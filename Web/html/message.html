@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MESSAGE — BUTTON UP!</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/logo.css">
+  <link rel="stylesheet" href="../css/assets.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/message.css">
+</head>
+<body class="message-page">
+  <header class="message-header">
+    <a class="logo" href="../index.html" aria-label="Button Up home">
+      <img src="../img/logo.png" alt="BUTTON UP!">
+    </a>
+    <nav aria-label="Message navigation">
+      <a href="work.html">WORKS</a>
+      <a href="designers.html">DESIGNERS</a>
+      <a href="program.html">PROGRAM</a>
+      <a href="message.html" aria-current="page">MESSAGE</a>
+      <a href="partners.html">PARTNERS</a>
+    </nav>
+  </header>
+
+  <main class="message-main">
+    <h1>MESSAGE</h1>
+    <form class="message-form" id="message-form">
+      <label class="sr-only" for="nickname">닉네임</label>
+      <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임" required>
+      <label class="sr-only" for="encouragement">응원의 메시지</label>
+      <textarea id="encouragement" name="encouragement" rows="1" maxlength="300" placeholder="응원의 메시지를 보내보세요!" required></textarea>
+      <button type="submit">전송하기</button>
+    </form>
+    <p id="message-status" class="message-status" aria-live="polite"></p>
+    <section id="message-board" class="message-board" aria-label="응원 메시지"></section>
+  </main>
+
+  <footer id="footer">
+    <a class="footer-symbol" href="../index.html" aria-label="Button Up home">
+      <img src="../img/footer-logo.png" alt="Design Innovation">
+    </a>
+    <div class="footer-link"><a href="#">INSTAGRAM</a></div>
+    <div class="footer-link"><a href="#">BEHANCE</a></div>
+    <div class="footer-link"><a href="#">VIMEO</a></div>
+    <address>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea<br><a href="mailto:idpt@sejong.ac.kr">idpt@sejong.ac.kr</a><br>+82 2 3408 3323</address>
+    <p class="copyright">©2026. SEJONG UNIVERSITY DESIGN INNOVATION. ALL RIGHTS RESERVED.</p>
+  </footer>
+  <script src="../js/supabase-config.js"></script>
+  <script src="../js/message.js"></script>
+</body>
+</html>
