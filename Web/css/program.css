@@ -36,12 +36,13 @@
   position:absolute;
   top:222px;
   left:50%;
-  width:min(700px,calc(100% - 40px));
+  width:auto;
   text-align:center;
   transform:translateX(-50%);
+  white-space:nowrap
 }
 .program-title h1{
-  margin:0 0 22px;
+  margin:0 0 30px;
   color:#000;
   text-align:center;
   font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;

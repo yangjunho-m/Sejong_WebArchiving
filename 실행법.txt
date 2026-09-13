@@ -1,0 +1,2 @@
+Web 폴더에
+start-server.bat 을 더블클릭하면 사이트가 실행됩니다.
