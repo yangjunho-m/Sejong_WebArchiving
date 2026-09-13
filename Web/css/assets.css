@@ -1,5 +1,5 @@
 .masthead{
-  background-image:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.1)),url('img/hero-track.png');
+  background-image:linear-gradient(90deg,rgba(255,255,255,.1),rgba(255,255,255,.1)),url('../img/hero-track.png');
   background-position:center top;
   background-size:cover;
   background-repeat:no-repeat;
