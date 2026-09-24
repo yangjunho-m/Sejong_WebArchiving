@@ -16,16 +16,6 @@
 .masthead:after{
   display:none
 }
-.masthead:before{
-  content:'';
-  position:absolute;
-  z-index:0;
-  top:0;
-  right:0;
-  left:0;
-  height:100px;
-  background:#d9d9d9
-}
 .poster{
   background:#111;
   border:0

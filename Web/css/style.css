@@ -53,6 +53,7 @@ body{
   gap:60px
 }
 .masthead nav a{
+  color:#141414;
   font-family:Arial,sans-serif;
   font-size:21px;
   font-weight:700;
@@ -179,8 +180,8 @@ body{
   margin:0
 }
 .committee{
-  height:1632px;
-  padding:124px 12vw;
+  height:auto;
+  padding:124px 12vw 170px;
   background:linear-gradient(180deg,#edf1f5 0%,#edf1f5 38%,#82ade9 100%)
 }
 .committee h2{
