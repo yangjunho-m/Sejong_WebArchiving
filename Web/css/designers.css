@@ -34,6 +34,9 @@
   text-decoration:underline;
   text-underline-offset:5px
 }
+.designers-title{
+  display:none
+}
 .designers-main{
   min-height:0;
   padding:98px max(60px,12vw) 120px;
@@ -114,54 +117,121 @@
 }
 @media(max-width:700px){
   .designers-header{
-    height:86px;
-    padding:20px
+    height:244px;
+    padding:0;
+    background:#fff
   }
   .designers-header .logo{
-    width:100px;
-    height:25px
+    top:30px!important;
+    left:20px!important;
+    width:138px!important;
+    height:33px!important
+  }
+  .designers-header .menu-toggle{
+    top:35px!important;
+    right:24px!important;
+    width:18px!important;
+    height:15px!important
   }
   .designers-header nav{
-    top:22px;
-    right:20px;
-    gap:12px
+    padding-top:120px!important
   }
   .designers-header nav a{
-    font-size:10px
+    font-size:25px!important
+  }
+  .designers-title{
+    position:absolute;
+    top:122px;
+    left:20px;
+    width:calc(100% - 40px);
+    display:block
+  }
+  .designers-title h1{
+    margin:0 0 10px;
+    font-family:Arial,sans-serif;
+    font-size:24px;
+    font-weight:700;
+    line-height:1;
+    letter-spacing:-.07em
+  }
+  .designers-title p{
+    margin:0;
+    font-family:Pretendard,Arial,sans-serif;
+    font-size:14px;
+    font-weight:500;
+    line-height:1.45;
+    letter-spacing:-.02em
   }
   .designers-main{
     min-height:0;
-    padding:50px 20px 80px
+    padding:20px 20px 44px;
+    background:#fff
   }
   .designers-list{
-    grid-template-columns:1fr;
-    gap:60px
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+    max-width:none
   }
   .designer-group h1,
   .designer-group h2{
-    margin-bottom:30px;
-    font-size:25px;
-    text-align:left
+    min-height:48px;
+    margin:0 0 20px;
+    display:grid;
+    place-items:center;
+    font-family:Arial,sans-serif;
+    font-size:19px;
+    font-weight:700;
+    line-height:1.1;
+    letter-spacing:-.07em;
+    text-align:center
   }
   .designer-cards{
-    gap:10px
+    gap:12px
   }
   .visual-design .designer-cards{
     grid-template-columns:1fr;
-    gap:10px
+    gap:12px
   }
   .designer-card{
     height:60px;
-    border-radius:15px;
-    padding-inline:16px
+    padding:0 42px 0 13px;
+    position:relative;
+    border-radius:8px;
+    background:#f0f3f7
+  }
+  .designer-card:after{
+    content:'→';
+    position:absolute;
+    top:50%;
+    right:13px;
+    width:20px;
+    height:20px;
+    display:grid;
+    place-items:center;
+    transform:translateY(-50%);
+    border-radius:50%;
+    background:#c8d8f1;
+    color:#fff;
+    font-size:14px;
+    line-height:1
+  }
+  .designer-card div:last-child{
+    display:none
+  }
+  .designer-card div{
+    gap:8px
   }
   .designer-card strong{
-    font-size:14px
+    font-family:Pretendard,Arial,sans-serif;
+    font-size:16px;
+    font-weight:700;
+    line-height:1
   }
   .designer-card small{
-    font-size:10px
-  }
-  .designer-card b{
-    font-size:12px
+    font-family:Pretendard,Arial,sans-serif;
+    font-size:12px;
+    font-weight:500;
+    line-height:1;
+    color:#999
   }
 }

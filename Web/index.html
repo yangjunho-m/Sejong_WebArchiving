@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,15 @@
         <a class="logo" href="#top" aria-label="Button Up home">
             <img src="img/logo.png" alt="BUTTON UP!">
         </a>
-        <nav>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="site-menu">
             <a href="html/work.html">WORKS</a>
             <a href="html/designers.html">DESIGNERS</a>
-        <a href="html/program.html">PROGRAM</a>
+            <a href="html/program.html">PROGRAM</a>
             <a href="html/message.html">MESSAGE</a>
             <a href="html/partners.html">PARTNERS</a>
         </nav>
@@ -45,11 +50,11 @@
             
             <div class="opening" id="openings">
                 <h3>OPENING HOUR</h3>
-                <p>2025. 07. 11. FRI 18:00<br>SEJONG UNIVERSITY<br>ART HALL 1F</p>
+                <p>10. 30 (FRI) - 11. 10 (THU)<br>11AM - 7PM<br>세종대학교 광개토관 B1 세종뮤지엄갤러리 3</p>
             </div>
             <div class="opening">
-                <h3>OPENINGS, 5/7 (WED) 19:00</h3>
-                <p>2025. 07. 09. WED 17:00</p>
+                <h3>OPENNING, 첫 단추 끼우기</h3>
+                <p>2026. 10. 30(FRI) 6PM</p>
             </div>
         </section>
         <section class="committee" id="committee">
@@ -57,11 +62,11 @@
             <div class="members">
                 <div class="member-row"><p>위원장<br><small>COMMITTEE CHAIR</small></p><p>김나윤<br><small>KIM NAYUN</small></p></div>
                 <div class="member-row"><p>부위원장<br><small>VICE CHAIR</small></p><p>엄지혁<br><small>EOM JIHYEOK</small></p></div>
-                <div class="member-row"><p>그래픽<br><small>GRAPHIC DESIGN</small></p><p>이류나<br><small>LEE YUNA</small><br><br>이정무<br><small>LEE JEONGMU</small></p></div>
+                <div class="member-row graphic-row"><p>그래픽<br><small>GRAPHIC DESIGN</small></p><p><span class="desktop-only">이유나<br><small>LEE YUNA</small><br><br>이정무<br><small>LEE JEONGMU</small></span><span class="mobile-only">김나윤<br><small>Kim NaYun</small><br><br>이유나<br><small>LEE YUNA</small><br><br>이정무<br><small>LEE JEONGMU</small><br><br>임준우<br><small>LIM JUNWOO</small></span></p></div>
                 <div class="member-row"><p>전시<br><small>EXHIBITION</small></p><p>박한울<br><small>PARK HANUL</small><br><br>이상학<br><small>YI SANGHAK</small></p></div>
                 <div class="member-row"><p>편집<br><small>EDITORIAL DESIGN</small></p><p>김윤아<br><small>KIM YUNAH</small><br><br>최예진<br><small>CHOI YEJIN</small></p></div>
                 <div class="member-row"><p>재무<br><small>FINANCE</small></p><p>이준석<br><small>LEE JUNSEOK</small></p></div>
-                <div class="member-row"><p>웹<br><small>WEB DESIGN</small></p><p>임준우<br><small>LIM JUNWOO</small></p></div>
+                <div class="member-row"><p>웹 디자인<br><small>WEB DESIGN</small></p><p>임준우<br><small>LIM JUNWOO</small><br><br>이상학<br><small>YI SANGHAK</small><br><br>엄지혁<br><small>EOM JIHYEOK</small></p></div>
             </div>
         </section>
     </main> 
@@ -72,10 +77,11 @@
         <div class="footer-link"><a href="#">BEHANCE</a></div>
         <div class="footer-link"><a href="#">VIMEO</a></div>
         <address>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea<br>
-            <a href="mailto:idpt@sejong.ac.kr">idpt@sejong.ac.kr</a>
+            <a href="mailto:iddpt@sejong.ac.kr">iddpt@sejong.ac.kr</a>
             <br>+82 2 3408 3323
         </address>
         <p class="copyright">©2026. SEJONG UNIVERSITY DESIGN INNOVATION. ALL RIGHTS RESERVED.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

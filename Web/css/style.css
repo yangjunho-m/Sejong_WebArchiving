@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700&display=swap');
+@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../../font/ITC Avant Garde Gothic LT Demi.ttf") format("truetype");font-weight:600;font-style:normal}
+@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../../font/ITC Avant Garde Gothic LT Medium.ttf") format("truetype");font-weight:500;font-style:normal}
 
 :root{
   --ink:#141414;
@@ -58,6 +60,9 @@ body{
   font-size:21px;
   font-weight:700;
   letter-spacing:-.07em
+}
+.menu-toggle{
+  display:none
 }
 .masthead p{
   position:absolute;
@@ -176,8 +181,21 @@ body{
   margin-bottom:94px
 }
 .opening p{
-  font:13px/1.5 Arial;
-  margin:0
+  margin:0;
+  font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+  font-size:22px;
+  font-style:normal;
+  font-weight:500;
+  line-height:150%;
+  letter-spacing:-.02em
+}
+.opening h3{
+  font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+  font-size:32px;
+  font-style:normal;
+  font-weight:600;
+  line-height:130%;
+  letter-spacing:0
 }
 .committee{
   height:auto;
@@ -208,6 +226,9 @@ body{
 .member-row small{
   font-size:14px;
   font-weight:700
+}
+.mobile-only{
+  display:none
 }
 footer{
   height:360px;
@@ -260,9 +281,99 @@ footer address{
 }
 
 @media(max-width:700px){
+  html,
+  body{
+    scrollbar-width:none;
+    -ms-overflow-style:none
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar{
+    display:none
+  }
+  .work-header .menu-toggle,
+  .designers-header .menu-toggle,
+  .program-header .menu-toggle,
+  .message-header .menu-toggle,
+  .partners-header .menu-toggle,
+  .detail-header .menu-toggle{
+    position:absolute!important;
+    z-index:4!important;
+    top:24px!important;
+    right:33px!important;
+    width:26px!important;
+    height:21px!important;
+    padding:0!important;
+    display:block!important;
+    border:0!important;
+    background:url('../img/hamburger-menu.png') center/contain no-repeat!important;
+    cursor:pointer!important
+  }
+  .work-header .menu-toggle span,
+  .designers-header .menu-toggle span,
+  .program-header .menu-toggle span,
+  .message-header .menu-toggle span,
+  .partners-header .menu-toggle span,
+  .detail-header .menu-toggle span{
+    display:none!important
+  }
+  .work-header .logo,
+  .designers-header .logo,
+  .program-header .logo,
+  .message-header .logo,
+  .partners-header .logo{
+    position:absolute!important;
+    z-index:4!important;
+    top:18px!important;
+    left:18px!important
+  }
+  .work-header nav,
+  .designers-header nav,
+  .program-header nav,
+  .message-header nav,
+  .partners-header nav,
+  .detail-header nav{
+    position:absolute!important;
+    z-index:2!important;
+    inset:0!important;
+    width:100%!important;
+    min-height:100svh!important;
+    padding:150px 40px 40px!important;
+    display:grid!important;
+    align-content:start!important;
+    gap:28px!important;
+    background:rgba(238,242,248,.62)!important;
+    backdrop-filter:blur(12px)!important;
+    -webkit-backdrop-filter:blur(12px)!important;
+    opacity:0!important;
+    pointer-events:none!important;
+    transform:none!important;
+    transition:opacity .2s!important
+  }
+  .work-header.menu-open nav,
+  .designers-header.menu-open nav,
+  .program-header.menu-open nav,
+  .message-header.menu-open nav,
+  .partners-header.menu-open nav,
+  .detail-header.menu-open nav{
+    opacity:1!important;
+    pointer-events:auto!important
+  }
+  .work-header nav a,
+  .designers-header nav a,
+  .program-header nav a,
+  .message-header nav a,
+  .partners-header nav a,
+  .detail-header nav a{
+    width:max-content!important;
+    color:#141414!important;
+    font-size:25px!important;
+    line-height:1!important;
+    text-decoration:none!important;
+    pointer-events:auto!important
+  }
   .masthead{
-    height:57vw;
-    min-height:250px;
+    height:100svh;
+    min-height:760px;
     padding:18px;
     background:linear-gradient(118deg,#fbfbfb,#d8e5f5,#f9f9f9)
   }
@@ -271,13 +382,48 @@ footer address{
     font-size:7px
   }
 
-  .masthead nav{
-    right:18px;
+  .menu-toggle{
+    position:absolute;
+    z-index:4;
     top:24px;
-    gap:12px
+    right:33px;
+    width:26px;
+    height:21px;
+    padding:0;
+    display:block;
+    border:0;
+    background:url('../img/hamburger-menu.png') center/contain no-repeat;
+    cursor:pointer
+  }
+  .menu-toggle span{
+    display:none
+  }
+  .masthead nav{
+    position:absolute;
+    z-index:2;
+    inset:0;
+    width:100%;
+    min-height:100%;
+    padding:150px 40px 40px;
+    display:grid;
+    align-content:start;
+    gap:28px;
+    background:rgba(238,242,248,.62);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    opacity:0;
+    pointer-events:none;
+    transform:none;
+    transition:opacity .2s,transform .2s
+  }
+  .masthead.menu-open nav{
+    opacity:1;
+    pointer-events:auto
   }
   .masthead nav a{
-    font-size:10px
+    width:max-content;
+    font-size:25px;
+    line-height:1
   }
 
   .masthead p{
@@ -286,6 +432,7 @@ footer address{
     font-size:7px
   }
   .logo{
+    z-index:4;
     top:18px;
     left:18px
   }
@@ -295,7 +442,7 @@ footer address{
   }
   .intro{
     height:auto;
-    padding:80px 11vw 150px
+    padding:80px 5.5vw 150px
   }
   .intro h1{
     font-size:13vw;
@@ -306,12 +453,12 @@ footer address{
     width:100%;
     margin-bottom:49px
   }
-  .intro-copy h2,.opening h3{
+  .intro-copy h2{
     font-size:18px;
     margin-bottom:13px
   }
   .intro-copy p{
-    font-size:14px;
+    font-size:12px;
     margin-bottom:16px
   }
   .posters{
@@ -348,30 +495,52 @@ footer address{
   .opening{
     margin-bottom:45px
   }
+  .opening h3{
+    font-size:22px;
+    margin-bottom:13px
+  }
   .opening p{
-    font-size:8px
+    font-size:12px
   }
   .committee{
-    height:auto;
     min-height:660px;
-    padding:64px 11vw
+    padding:64px 5.5vw
   }
   .committee h2{
     font-size:19px
   }
   .members{
-    width:78%;
-    margin:70px 0 0 auto;
-    gap:28px
+    width:100%;
+    margin:70px 0 0;
+    gap:56px
   }
   .member-row{
-    gap:18px
+    grid-template-columns:1fr 1.25fr;
+    gap:28px
   }
   .member-row p{
-    font-size:13px
+    font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+    font-size:12px;
+    font-style:normal;
+    font-weight:600;
+    line-height:140%;
+    letter-spacing:0;
+    white-space:nowrap
   }
   .member-row small{
-    font-size:8px
+    font-family:"ITC Avant Garde Gothic Pro",Arial,sans-serif;
+    font-size:10px;
+    font-style:normal;
+    font-weight:600;
+    line-height:140%;
+    letter-spacing:0;
+    white-space:nowrap
+  }
+  .desktop-only{
+    display:none
+  }
+  .mobile-only{
+    display:inline
   }
   footer{
     height:auto;

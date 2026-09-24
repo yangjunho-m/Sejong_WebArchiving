@@ -47,13 +47,15 @@
 
 @media(max-width:700px){
   .masthead{
+    background-image:url('../img/poster-01.png');
     background-position:center top;
-    background-size:auto 100%
+    background-size:cover
   }
   .hero-logo{
-    width:100%;
-    height:auto;
-    margin:0 0 47px
+    width:168px;
+    height:67px;
+    margin:0 auto 47px;
+    transform:translateY(-12px)
   }
   .footer-symbol{
     width:62px!important;
