@@ -123,21 +123,15 @@
 
 @media(max-width:700px){
   .program-header{
-    height:154px;
+    height:198px;
     padding:0;
     background:#fff
   }
-  .program-header .logo{
-    top:18px!important;
-    left:13px!important;
-    width:84px!important;
-    height:20px!important
-  }
   .program-header .menu-toggle{
-    top:22px!important;
-    right:14px!important;
-    width:13px!important;
-    height:11px!important
+    top:24px!important;
+    right:33px!important;
+    width:26px!important;
+    height:21px!important
   }
   .program-header nav{
     padding-top:92px!important
@@ -146,9 +140,10 @@
     font-size:25px!important
   }
   .program-title{
-    top:80px;
+    top:100px;
     left:13px;
-    width:220px;
+    width:calc(100vw - 26px);
+    max-width:340px;
     text-align:left;
     transform:none;
     white-space:normal
@@ -157,7 +152,7 @@
     margin:0 0 12px;
     text-align:left;
     font-family:Arial,sans-serif;
-    font-size:16px;
+    font-size:17px;
     font-weight:700;
     line-height:1;
     letter-spacing:-.07em
@@ -165,7 +160,7 @@
   .program-title p{
     text-align:left;
     font-family:Pretendard,Arial,sans-serif;
-    font-size:7px;
+    font-size:10px;
     font-weight:500;
     line-height:1.45;
     letter-spacing:-.02em

@@ -13,7 +13,7 @@
 <body class="message-page">
   <header class="message-header">
     <a class="logo" href="../index.html" aria-label="Button Up home">
-      <img src="../img/logo.png" alt="BUTTON UP!">
+      <img src="../img/buttonup.svg" alt="BUTTON UP!">
     </a>
     <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
       <span></span>
@@ -32,10 +32,12 @@
   <main class="message-main">
     <h1>MESSAGE</h1>
     <form class="message-form" id="message-form">
-      <label class="sr-only" for="nickname">닉네임</label>
-      <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임" required>
-      <label class="sr-only" for="encouragement">응원의 메시지</label>
-      <textarea id="encouragement" name="encouragement" rows="1" maxlength="300" placeholder="응원의 메시지를 보내보세요!" required></textarea>
+      <div class="message-fields">
+        <label class="sr-only" for="nickname">닉네임</label>
+        <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임을 입력하세요." required>
+        <label class="sr-only" for="encouragement">응원의 메시지</label>
+        <textarea id="encouragement" name="encouragement" rows="1" maxlength="300" placeholder="메시지를 입력하세요." required></textarea>
+      </div>
       <button type="submit">전송하기</button>
     </form>
     <p id="message-status" class="message-status" aria-live="polite"></p>

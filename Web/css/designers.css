@@ -121,17 +121,11 @@
     padding:0;
     background:#fff
   }
-  .designers-header .logo{
-    top:30px!important;
-    left:20px!important;
-    width:138px!important;
-    height:33px!important
-  }
   .designers-header .menu-toggle{
-    top:35px!important;
-    right:24px!important;
-    width:18px!important;
-    height:15px!important
+    top:24px!important;
+    right:33px!important;
+    width:26px!important;
+    height:21px!important
   }
   .designers-header nav{
     padding-top:120px!important
@@ -184,6 +178,15 @@
     line-height:1.1;
     letter-spacing:-.07em;
     text-align:center
+  }
+  .visual-design h2{
+    font-size:0
+  }
+  .visual-design h2:before{
+    content:"VISUAL COMM.\A DESIGN";
+    white-space:pre;
+    font-size:19px;
+    line-height:1.1
   }
   .designer-cards{
     gap:12px

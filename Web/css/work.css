@@ -148,7 +148,12 @@
   aspect-ratio:1;
   position:relative;
   overflow:hidden;
-  background:#d7e4f5
+  background:#d7e4f5;
+  cursor:pointer
+}
+.project-card:focus-visible{
+  outline:3px solid #141414;
+  outline-offset:4px
 }
 .project-card:before{
   content:'';
@@ -210,10 +215,6 @@
   .work-header{
     height:94px;
     padding:20px
-  }
-  .work-header .logo{
-    width:100px;
-    height:25px
   }
   .work-header nav{
     right:20px;

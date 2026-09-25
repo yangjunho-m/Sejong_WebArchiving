@@ -23,7 +23,7 @@ body{
 
 .masthead{
   height:920px;
-  padding:60px;
+  padding:30px 60px;
   position:relative;
   overflow:hidden;
   background:linear-gradient(118deg,#fbfbfb 0 31%,#d8e5f5 52%,#b9cbe4 72%,#f9f9f9 100%)
@@ -44,21 +44,25 @@ body{
   position:absolute;
   z-index:1;
   top:30px;
-  left:60px
+  left:60px;
+  width:172px;
+  height:41px
 }
 .masthead nav{
   position:absolute;
   z-index:1;
-  right:60px;
   top:38px;
+  right:60px;
   display:flex;
   gap:60px
 }
 .masthead nav a{
   color:#141414;
+  text-decoration:none;
   font-family:Arial,sans-serif;
   font-size:21px;
   font-weight:700;
+  line-height:1;
   letter-spacing:-.07em
 }
 .menu-toggle{
@@ -227,9 +231,6 @@ body{
   font-size:14px;
   font-weight:700
 }
-.mobile-only{
-  display:none
-}
 footer{
   height:360px;
   background:#141414;
@@ -324,7 +325,9 @@ footer address{
     position:absolute!important;
     z-index:4!important;
     top:18px!important;
-    left:18px!important
+    left:18px!important;
+    width:96px!important;
+    height:25px!important
   }
   .work-header nav,
   .designers-header nav,
@@ -369,6 +372,14 @@ footer address{
     font-size:25px!important;
     line-height:1!important;
     text-decoration:none!important;
+    pointer-events:none!important
+  }
+  .work-header.menu-open nav a,
+  .designers-header.menu-open nav a,
+  .program-header.menu-open nav a,
+  .message-header.menu-open nav a,
+  .partners-header.menu-open nav a,
+  .detail-header.menu-open nav a{
     pointer-events:auto!important
   }
   .masthead{
@@ -535,12 +546,6 @@ footer address{
     line-height:140%;
     letter-spacing:0;
     white-space:nowrap
-  }
-  .desktop-only{
-    display:none
-  }
-  .mobile-only{
-    display:inline
   }
   footer{
     height:auto;
