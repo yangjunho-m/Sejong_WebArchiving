@@ -77,8 +77,12 @@ export async function renderReceipt({people, assets, nodes, edges, explanation})
     for (const line of lines(ctx, locationText, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 28; }
     return y + 65;
   }
-  canvas.height = Math.ceil(details(false)); ctx = canvas.getContext('2d');
-  ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, canvas.height);
+  const logicalHeight=Math.ceil(details(false));
+  const resolution=2;
+  canvas.width=W*resolution;canvas.height=logicalHeight*resolution;
+  ctx = canvas.getContext('2d');ctx.scale(resolution,resolution);
+  ctx.imageSmoothingQuality='high';
+  ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, logicalHeight);
   ctx.fillStyle = INK; ctx.fillRect(0, 0, W, 430);
   outlinedTitle(ctx, 'forward,', 178, 125, 520);
   outlinedTitle(ctx, 'BUTTON UP!', 349, 166, 750);
@@ -113,10 +117,21 @@ export async function renderReceipt({people, assets, nodes, edges, explanation})
   ctx.fillText('DESIGN', W - 50, 965); ctx.fillText('INNOVATION', W - 50, 983); ctx.textAlign = 'left';
   ctx.strokeStyle = '#777'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(48, 1018); ctx.lineTo(W - 48, 1018); ctx.stroke();
   details(true);
-  ctx.fillStyle = INK; ctx.fillRect(0, canvas.height - 3, W, 3);
+  ctx.fillStyle = INK; ctx.fillRect(0, logicalHeight - 3, W, 3);
   return canvas;
 }
 export function printReceipt(canvas) {
+  // Convert the pixels themselves so color printer settings cannot retain color.
+  const monochrome=document.createElement('canvas');
+  monochrome.width=canvas.width;monochrome.height=canvas.height;
+  const printContext=monochrome.getContext('2d');
+  printContext.drawImage(canvas,0,0);
+  const pixels=printContext.getImageData(0,0,monochrome.width,monochrome.height);
+  for(let i=0;i<pixels.data.length;i+=4){
+    const grey=Math.round(pixels.data[i]*.2126+pixels.data[i+1]*.7152+pixels.data[i+2]*.0722);
+    pixels.data[i]=pixels.data[i+1]=pixels.data[i+2]=grey;
+  }
+  printContext.putImageData(pixels,0,0);
   // Print only the artwork; the kiosk's dark theme must never reach the paper.
   document.querySelector('#receipt-print-frame')?.remove();
   const frame = document.createElement('iframe');
@@ -136,6 +151,6 @@ export function printReceipt(canvas) {
     html, body { margin: 0; padding: 0; background: #fff; }
     body { width: 80mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
     img { display: block; width: 72mm; height: auto; margin: 0 4mm; }
-  </style></head><body><img src="${canvas.toDataURL('image/png')}" alt="나의 첫 단추 영수증"></body></html>`;
+  </style></head><body><img src="${monochrome.toDataURL('image/png')}" alt="나의 첫 단추 흑백 영수증"></body></html>`;
   document.body.append(frame);
 }

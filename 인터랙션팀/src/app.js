@@ -1,4 +1,5 @@
 import {renderReceipt,printReceipt} from './receipt.js';
+import {renderReceiptPreview} from './receipt-preview.js';
 import {MIN_SELECTION,MAX_SELECTION,clamp,keywordStudents,initialNodes,addConnection,isConnected,explanation,encodeMonoBmp,connectionPath} from './model.js';
 const app=document.querySelector('#app'),dialog=document.querySelector('#detail');
 let catalog,screen='landing',selected=[],nodes=[],edges=[],focus=null,mode='move',pending=null,history=[],filtered=[],current=0,timer,noticeTimer,lastActivity=Date.now(),session=0;
@@ -41,8 +42,45 @@ function renderCarousel(){
   carousel.innerHTML=filtered.length?filtered.map((s,i)=>{const a=asset(s);return `<button class="object ${i===current?'active':''}" data-id="${s.id}" aria-label="${esc(s.name)} · ${esc(a.wordKo)} 상세 보기"><img class="photo" src="/${a.image}" alt="${esc(a.wordKo)}를 상징하는 이미지" loading="lazy"><img class="word" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></button>`;}).join(''):'<p class="empty">검색 결과가 없어요. 다른 이름이나 단어를 입력해 주세요.</p>';
   document.querySelector('#position').max=Math.max(0,filtered.length-1);document.querySelector('#position').disabled=!filtered.length;updateCounter();
   carousel.querySelectorAll('button').forEach((b,i)=>b.onclick=()=>{centerObject(i);showDetail(b.dataset.id);});
-  let scrollTimer;
-  carousel.onscroll=()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{const bounds=carousel.getBoundingClientRect(),center=bounds.left+bounds.width/2;let nearest=0,dist=Infinity;carousel.querySelectorAll('.object').forEach((b,i)=>{const r=b.getBoundingClientRect(),d=Math.abs(r.left+r.width/2-center);if(d<dist){dist=d;nearest=i;}});current=nearest;updateCounter();},100);};
+  let scrollTimer,gesture=null,suppressClick=false;
+  const nearestObject=()=>{
+    const bounds=carousel.getBoundingClientRect(),center=bounds.left+bounds.width/2;
+    let nearest=0,dist=Infinity;
+    carousel.querySelectorAll('.object').forEach((b,i)=>{const r=b.getBoundingClientRect(),d=Math.abs(r.left+r.width/2-center);if(d<dist){dist=d;nearest=i;}});
+    return nearest;
+  };
+  carousel.onpointerdown=e=>{
+    if(!e.isPrimary||e.button!==0)return;
+    suppressClick=false;clearTimeout(scrollTimer);
+    gesture={id:e.pointerId,x:e.clientX,y:e.clientY,left:carousel.scrollLeft,dragged:false};
+  };
+  carousel.onpointermove=e=>{
+    if(!gesture||e.pointerId!==gesture.id)return;
+    const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;
+    if(!gesture.dragged){
+      if(Math.abs(dx)<6||Math.abs(dx)<Math.abs(dy))return;
+      gesture.dragged=true;suppressClick=true;
+      carousel.classList.add('dragging');carousel.setPointerCapture(e.pointerId);
+    }
+    e.preventDefault();carousel.scrollLeft=gesture.left-dx;
+    document.querySelector('#position').value=nearestObject();
+  };
+  const finishDrag=e=>{
+    if(!gesture||e.pointerId!==gesture.id)return;
+    const dragged=gesture.dragged;gesture=null;
+    if(carousel.hasPointerCapture(e.pointerId))carousel.releasePointerCapture(e.pointerId);
+    carousel.classList.remove('dragging');
+    if(dragged)centerObject(nearestObject());
+  };
+  carousel.onpointerup=finishDrag;carousel.onpointercancel=finishDrag;carousel.onlostpointercapture=finishDrag;
+  carousel.onpointerleave=e=>{if(gesture&&!gesture.dragged)gesture=null;};
+  carousel.onkeydown=()=>{suppressClick=false;};
+  // Capture before a card's click handler can open its detail dialog.
+  carousel._cancelDragClick&&carousel.removeEventListener('click',carousel._cancelDragClick,true);
+  carousel._cancelDragClick=e=>{if(suppressClick){e.preventDefault();e.stopImmediatePropagation();}};
+  carousel.addEventListener('click',carousel._cancelDragClick,true);
+  carousel.ondragstart=e=>e.preventDefault();
+  carousel.onscroll=()=>{clearTimeout(scrollTimer);if(gesture)return;scrollTimer=setTimeout(()=>{if(!carousel.isConnected)return;const nearest=nearestObject();if(nearest!==current)centerObject(nearest);else updateCounter();},120);};
   carousel.scrollLeft=0;
 }
 function renderTray(){
@@ -65,28 +103,67 @@ function showDetail(id){
 function save(){history.push(structuredClone({nodes,edges}));if(history.length>50)history.shift();}
 function editor(){
   setScreen('editor');
-  app.innerHTML=`<div class="editor-title"><h1>Connect your beginning.</h1><p>단추를 움직이고, 원하는 순서로 연결해 보세요.<br>연결 모드에서 두 단추를 차례로 누르면 선이 생겨요.</p></div><div class="tools"><button data-mode="move">이동</button><button data-mode="connect">연결</button><button id="larger" aria-label="선택 단추 확대">＋</button><button id="smaller" aria-label="선택 단추 축소">−</button><button id="rotate">회전 ↻</button><button id="undo">되돌리기</button></div><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><button id="back">← 다시 선택</button><span class="helper" id="editor-help" role="status"></span><button id="finish" class="primary">내 첫 단추 완성하기 ↗</button></div>`;
+  app.innerHTML=`<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back">← 다시 선택</button><button id="undo">되돌리기</button></div><p class="helper" id="editor-help" role="status">드래그로 물건을 배치하고, 클릭한 순서대로 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p><button id="finish">이 패턴으로 생성하기 ⊙</button></div></section>`;
   document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;pending=null;drawBoard();});
-  for(const [id,change] of [['larger',n=>n.scale=clamp(n.scale+.15,.6,1.6)],['smaller',n=>n.scale=clamp(n.scale-.15,.6,1.6)],['rotate',n=>n.rotation=(n.rotation+30)%360]])document.querySelector('#'+id).onclick=()=>{const n=nodes.find(n=>n.id===focus);if(!n)return toast('먼저 조절할 단추를 선택해 주세요.');save();change(n);drawBoard();};
   document.querySelector('#undo').onclick=()=>{const previous=history.pop();if(previous){({nodes,edges}=previous);pending=null;drawBoard();}};
   document.querySelector('#back').onclick=selectScreen;
-  document.querySelector('#finish').onclick=async()=>{if(!isConnected(nodes,edges))return toast('모든 단추를 하나로 연결해 주세요.');const token=session;setScreen('loading');app.innerHTML=`<section class="loading" aria-label="나의 첫 단추 생성 중">${symbol.repeat(3)}</section>`;timer=setTimeout(()=>result(token),1000);};
+  document.querySelector('#finish').onclick=async()=>{
+    if(!isConnected(nodes,edges))return toast('모든 단추를 하나로 연결해 주세요.');
+    const token=session;setScreen('loading');
+    app.innerHTML=`<section class="pattern-loading" role="status" aria-live="polite"><div class="pattern-loading-panel"><div class="pattern-loading-buttons" aria-hidden="true"><img src="/img/btn.png" alt=""><img src="/src/btn2.png" alt=""><img src="/img/btn.png" alt=""></div><p>나만의 패턴을 만들고 있어요.<br>조금만 기다려주세요.</p></div></section>`;
+    const finishLoading=()=>{if(token===session&&screen==='loading')timer=setTimeout(()=>result(token),1000);};
+    if(matchMedia('(prefers-reduced-motion: reduce)').matches)finishLoading();
+    else document.querySelector('.pattern-loading-buttons img:last-child').addEventListener('animationend',finishLoading,{once:true});
+  };
   drawBoard();
 }
 function drawBoard(){
   const board=document.querySelector('.board');
-  board.innerHTML=`<svg viewBox="0 0 1000 560" aria-label="연결선"><defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#bbc4ce"/></marker></defs>${edges.map((e,i)=>{const a=nodes.find(n=>n.id===e.from),b=nodes.find(n=>n.id===e.to);return `<path class="edge" data-edge="${i}" d="${connectionPath(a,b)}" marker-mid="url(#arrow)"/>`;}).join('')}</svg>${nodes.map(n=>{const s=student(n.id),a=asset(s);return `<button class="node ${focus===n.id?'active':''}" data-id="${n.id}" style="left:${n.x/10}%;top:${n.y/5.6}%;width:${13*n.scale}%;" aria-label="${esc(s.name)} ${esc(a.wordKo)} 단추" aria-pressed="${focus===n.id}"><img src="/${a.image}" alt="" style="transform:rotate(${n.rotation}deg)"><span class="node-label">${esc(a.wordEn)}<small>${esc(a.wordKo)} · ${esc(s.name)}</small></span></button>`;}).join('')}`;
-  document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));
+  const active=nodes.find(n=>n.id===focus);
+  board.innerHTML=`<svg viewBox="0 0 1000 560" preserveAspectRatio="none" aria-label="연결선">${edges.map((e,i)=>{const a=nodes.find(n=>n.id===e.from),b=nodes.find(n=>n.id===e.to);return `<path class="edge" data-edge="${i}" d="${connectionPath(a,b)}"/>`;}).join('')}</svg>${nodes.map(n=>{const s=student(n.id),a=asset(s);return `<button class="node ${focus===n.id?'active':''}" data-id="${n.id}" style="left:${n.x/10}%;top:${n.y/5.6}%;width:${13*n.scale}%;" aria-label="${esc(s.name)} ${esc(a.wordKo)} 단추" aria-pressed="${focus===n.id}"><img class="node-photo" draggable="false" src="/${a.image}" alt="" style="transform:rotate(${n.rotation}deg)"><span class="node-label"><img class="node-word" draggable="false" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></span></button>`;}).join('')}${active?`<div class="node-tools" role="group" aria-label="선택 단추 크기와 회전" style="left:${active.x/10}%;top:${active.y/5.6}%;--node-radius:${6.5*active.scale}cqw"><button data-adjust="larger" aria-label="선택 단추 확대">+</button><button data-adjust="smaller" aria-label="선택 단추 축소">−</button><button data-adjust="rotate" aria-label="선택 단추 회전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 3v5h5"/></svg></button></div>`:''}`;
   document.querySelector('#undo').disabled=!history.length;
   document.querySelector('#finish').disabled=!isConnected(nodes,edges);
-  document.querySelector('#editor-help').textContent=mode==='connect'?(pending?'이어질 단추를 선택해 주세요.':'시작 단추를 선택하세요. 연결선을 누르면 지워져요.'):'단추를 드래그하거나 선택 후 방향키로 이동할 수 있어요.';
-  board.querySelectorAll('[data-edge]').forEach(p=>p.onclick=()=>{if(mode==='connect'){save();edges.splice(Number(p.dataset.edge),1);drawBoard();}});
+  board.onclick=e=>{if(e.target===board||e.target===board.querySelector('svg')){focus=null;pending=null;drawBoard();}};
+  board.querySelectorAll('[data-adjust]').forEach(b=>b.onclick=()=>{
+    save();
+    if(b.dataset.adjust==='larger')active.scale=clamp(active.scale+.15,.6,1.6);
+    if(b.dataset.adjust==='smaller')active.scale=clamp(active.scale-.15,.6,1.6);
+    if(b.dataset.adjust==='rotate')active.rotation=(active.rotation+30)%360;
+    drawBoard();board.querySelector(`[data-adjust="${b.dataset.adjust}"]`).focus({preventScroll:true});
+  });
+  board.querySelectorAll('[data-edge]').forEach(p=>p.onclick=()=>{save();edges.splice(Number(p.dataset.edge),1);drawBoard();});
+  function selectNode(id){
+    if(pending&&pending!==id){const next=addConnection(edges,pending,id);if(next!==edges){save();edges=next;}}
+    focus=id;pending=id;drawBoard();board.querySelector(`[data-id="${id}"]`)?.focus({preventScroll:true});
+  }
   board.querySelectorAll('.node').forEach(b=>{
-    b.onclick=()=>{focus=b.dataset.id;if(mode==='connect'){if(pending){const next=addConnection(edges,pending,focus);if(next!==edges){save();edges=next;}pending=null;}else pending=focus;}drawBoard();board.querySelector(`[data-id="${focus}"]`)?.focus({preventScroll:true});};
-    b.onkeydown=e=>{if(mode!=='move'||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();save();const n=nodes.find(n=>n.id===b.dataset.id);n.x=clamp(n.x+(e.key==='ArrowRight'?10:e.key==='ArrowLeft'?-10:0),120,880);n.y=clamp(n.y+(e.key==='ArrowDown'?10:e.key==='ArrowUp'?-10:0),110,420);focus=n.id;drawBoard();board.querySelector(`[data-id="${focus}"]`).focus();};
-    b.onpointerdown=e=>{if(mode!=='move')return;const n=nodes.find(n=>n.id===b.dataset.id),rect=board.getBoundingClientRect(),start={x:e.clientX,y:e.clientY,nx:n.x,ny:n.y};let moved=false;focus=n.id;b.setPointerCapture(e.pointerId);
-      b.onpointermove=ev=>{if(Math.hypot(ev.clientX-start.x,ev.clientY-start.y)<4&&!moved)return;if(!moved){save();moved=true;}n.x=clamp(start.nx+(ev.clientX-start.x)/rect.width*1000,120,880);n.y=clamp(start.ny+(ev.clientY-start.y)/rect.height*560,110,420);b.style.left=n.x/10+'%';b.style.top=n.y/5.6+'%';board.querySelectorAll('[data-edge]').forEach((p,i)=>{const a=nodes.find(n=>n.id===edges[i].from),z=nodes.find(n=>n.id===edges[i].to);p.setAttribute('d',connectionPath(a,z));});};
-      b.onpointerup=b.onpointercancel=()=>{b.onpointermove=null;if(moved){drawBoard();}};
+    let suppressClick=false;
+    b.onclick=()=>{if(suppressClick){suppressClick=false;return;}selectNode(b.dataset.id);};
+    b.onkeydown=e=>{
+      if(e.key==='Escape'){focus=null;pending=null;drawBoard();return;}
+      if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;
+      e.preventDefault();save();const n=nodes.find(n=>n.id===b.dataset.id);
+      n.x=clamp(n.x+(e.key==='ArrowRight'?10:e.key==='ArrowLeft'?-10:0),120,880);
+      n.y=clamp(n.y+(e.key==='ArrowDown'?10:e.key==='ArrowUp'?-10:0),110,420);
+      focus=n.id;pending=n.id;drawBoard();board.querySelector(`[data-id="${focus}"]`).focus({preventScroll:true});
+    };
+    b.onpointerdown=e=>{
+      if(!e.isPrimary||e.button!==0)return;
+      const n=nodes.find(n=>n.id===b.dataset.id),rect=board.getBoundingClientRect(),start={x:e.clientX,y:e.clientY,nx:n.x,ny:n.y};
+      let moved=false;b.setPointerCapture(e.pointerId);
+      b.onpointermove=ev=>{
+        if(Math.hypot(ev.clientX-start.x,ev.clientY-start.y)<4&&!moved)return;
+        if(!moved){save();moved=true;board.querySelector('.node-tools')?.remove();}
+        n.x=clamp(start.nx+(ev.clientX-start.x)/rect.width*1000,120,880);
+        n.y=clamp(start.ny+(ev.clientY-start.y)/rect.height*560,110,420);
+        b.style.left=n.x/10+'%';b.style.top=n.y/5.6+'%';
+        board.querySelectorAll('[data-edge]').forEach((p,i)=>p.setAttribute('d',connectionPath(nodes.find(n=>n.id===edges[i].from),nodes.find(n=>n.id===edges[i].to))));
+      };
+      b.onpointerup=b.onpointercancel=ev=>{
+        b.onpointermove=null;b.onpointerup=null;b.onpointercancel=null;
+        if(b.hasPointerCapture(ev.pointerId))b.releasePointerCapture(ev.pointerId);
+        if(moved){suppressClick=true;focus=n.id;pending=n.id;requestAnimationFrame(()=>{if(screen==='editor')drawBoard();});}
+      };
     };
   });
 }
@@ -99,27 +176,24 @@ async function result(token){
   const people=chosen(), text=explanation(people,catalog.assets);
   const relatedPeople=people.flatMap(person=>catalog.students.filter(s=>s.assetId===person.assetId));
   const composition={people:structuredClone(relatedPeople), assets:catalog.assets, nodes:structuredClone(nodes), edges:structuredClone(edges), explanation:text};
-  app.innerHTML=`<section class="result"><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-info"><h1>Your beginning,<br>one of a kind.</h1><p>당신의 선택이 하나의 모양이 되었어요.<br>같은 단추에서 시작한 디자이너의 작품을 만나 보세요.</p><button id="png" class="primary" disabled>영수증 이미지 저장 ↓</button><button id="bmp" disabled>흑백 영수증 저장 ↓</button><button id="print" disabled>영수증 인쇄</button><button id="edit">연결 다시 다듬기</button><button id="restart">다시 시작하기 ↗</button><p class="helper">영수증 용지 80mm에 맞춰 인쇄해 주세요.<br>화면의 디자인 그대로 이미지로 저장할 수 있어요.</p></aside></section>`;
-  document.querySelector('#restart').onclick=reset;document.querySelector('#edit').onclick=editor;
+  app.innerHTML=`<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0,1,2,3,4].map(()=>'<img src="/img/btn_mini.png" alt="">').join('')}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="/src/receipt-qr-placeholder.svg" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄물로 만나보세요.</p><button id="print" disabled>영수증 인쇄</button></footer></section>`;
   try {
     const artwork=await renderReceipt(composition);
     if(token!==session||screen!=='result')return;
-    artwork.id='receipt-artwork';artwork.setAttribute('role','img');
-    artwork.setAttribute('aria-label',`나의 첫 단추. 선택한 단어: ${people.map(s=>asset(s).wordKo).join(', ')}. 학생: ${people.map(s=>s.name).join(', ')}. ${text} 관련 작품: ${people.flatMap(s=>s.works).join(', ')}`);
-    document.querySelector('.receipt').replaceChildren(artwork);
-    for(const id of ['png','bmp','print'])document.querySelector('#'+id).disabled=false;
+    document.querySelector('.receipt').replaceChildren(renderReceiptPreview(composition));
+    document.querySelector('#print').disabled=false;
     document.querySelector('#print').onclick=()=>printReceipt(artwork);
-    document.querySelector('#png').onclick=()=>artwork.toBlob(blob=>{if(blob)downloadReceipt(blob,'my-first-button.png');else toast('이미지를 저장하지 못했어요.');},'image/png');
-    document.querySelector('#bmp').onclick=()=>{
-      const mono=document.createElement('canvas');mono.width=512;mono.height=Math.round(artwork.height*512/artwork.width);
-      const ctx=mono.getContext('2d');ctx.drawImage(artwork,0,0,mono.width,mono.height);
-      const bytes=encodeMonoBmp(ctx.getImageData(0,0,mono.width,mono.height).data,mono.width,mono.height);
-      downloadReceipt(new Blob([bytes],{type:'image/bmp'}),'my-first-button.bmp');
-    };
+    // Paint the completed result before opening the print dialog once.
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      if(token!==session||screen!=='result')return;
+      lastActivity=Date.now();
+      printReceipt(artwork);
+    }));
   } catch(error) {
     if(token!==session||screen!=='result')return;
-    document.querySelector('.receipt').innerHTML='<p class="receipt-loading">영수증을 불러오지 못했어요. 연결 다시 다듬기를 눌러 다시 시도해 주세요.</p>';
+    document.querySelector('.receipt').innerHTML='<p class="receipt-loading">영수증을 불러오지 못했어요. 새로고침 후 다시 시도해 주세요.</p>';
     console.error(error);
   }
 }
 try{const response=await fetch('/data/catalog.json');if(!response.ok)throw new Error('catalog');catalog=await response.json();landing();}catch{app.innerHTML='<p class="loading-text">데이터를 불러오지 못했습니다. 서버 실행 상태를 확인하고 새로고침해 주세요.</p>';}
+
