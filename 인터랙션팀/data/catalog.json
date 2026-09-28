@@ -1,0 +1,1265 @@
+{
+  "students": [
+    {
+      "id": "student-002",
+      "name": "이수아",
+      "major": "visual design",
+      "assetId": "33-everyday",
+      "reason": "디자인과 예술이 제 일상에 빠질 수 없는 존재라는 것을 알게 되어 시작했습니다.",
+      "works": [
+        "SHABE TREE"
+      ],
+      "location": null,
+      "displayName": "18 이수아",
+      "course": "아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-003",
+      "name": "최수빈",
+      "major": "visual design",
+      "assetId": "07-affection",
+      "reason": "필기도구를 모으는 걸 좋아하다 보니 관심이 생겨 디자인을 시작하게 되었습니다.",
+      "works": [
+        "NAUM RACE",
+        "SEGNO MUSIC FESTIVAL"
+      ],
+      "location": null,
+      "displayName": "19 최수빈",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-004",
+      "name": "이준석",
+      "major": "industrial design",
+      "assetId": "20-adventure",
+      "reason": "익숙한 길보다 새로운 것을 시도하는 과정 자체에서 즐거움을 발견하면서 디자인을 시작하게 되었습니다.",
+      "works": [
+        "zibi",
+        "HOWDY"
+      ],
+      "location": null,
+      "displayName": "20 이준석",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-005",
+      "name": "김경덕",
+      "major": "industrial design",
+      "assetId": "17-excitement",
+      "reason": "예쁜 디자인을 뵜을 때 두근거림이 디자인을 놓지 못하게 합니다",
+      "works": [
+        "ReRoot",
+        "LOBBY CONCIERGE"
+      ],
+      "location": null,
+      "displayName": "20 김경덕",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-006",
+      "name": "박범수",
+      "major": "industrial design",
+      "assetId": "26-encounter",
+      "reason": "우연히 스쳐 지나갈 수도 있는 학문이었지만 오래 머물게 되었다",
+      "works": [
+        "ONMI",
+        "sul saem"
+      ],
+      "location": null,
+      "displayName": "20 박범수",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-007",
+      "name": "권동혁",
+      "major": "industrial design",
+      "assetId": "38-creation",
+      "reason": "뭐던 만드는게 즐거웠다, 디자이너는 못 만드는게 없다고 생각했었고, 배워보니까 이는 사실이다.",
+      "works": [
+        "for-D",
+        "sul saem"
+      ],
+      "location": null,
+      "displayName": "20 권동혁",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-008",
+      "name": "진민석",
+      "major": "industrial design",
+      "assetId": "27-icebreaking",
+      "reason": "어떻게하면 세상과 친밀할 수 있을까의 고민끝에, 저에게 어색하지 않고 가장 자연스러운 접근법이 디자인이었습니다.",
+      "works": [
+        "Libera",
+        "HOWDY"
+      ],
+      "location": null,
+      "displayName": "20 진민석",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-009",
+      "name": "박한울",
+      "major": "industrial design",
+      "assetId": "02-curiosity",
+      "reason": "공부 머리가 아니기에, 어릴 때부터 관심있던 그림 관련 업종을 자연스럽게 선택 및 시작",
+      "works": [
+        "ONMI",
+        "Journey"
+      ],
+      "location": null,
+      "displayName": "20 박한울",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-010",
+      "name": "최한얼",
+      "major": "visual design",
+      "assetId": "01-joy",
+      "reason": "자전거 그림을 그리던게 실제로 제작되면 좋겠다는 마음에 시작하게 되었습니다.",
+      "works": [
+        "밀도",
+        "사물팔자"
+      ],
+      "location": null,
+      "displayName": "20 최한얼",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-011",
+      "name": "엄지혁",
+      "major": "industrial design",
+      "assetId": "31-well-being",
+      "reason": "우리가 더 나은 삶, 쾌적한 삶을 위해 생각하고 창조하고 실험하고 노력하는 모든 행위가 디자인이기에 선택하였습니다.",
+      "works": [
+        "ReRoot",
+        "Journey"
+      ],
+      "location": null,
+      "displayName": "20 엄지혁",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-012",
+      "name": "김승민",
+      "major": "industrial design",
+      "assetId": "17-excitement",
+      "reason": "자동차 디자인 관련 다큐멘터리를 보며 자동차 디자인에 대한 떨림을 느꼈고, 그것이 내 첫 시동이었다.",
+      "works": [
+        "N : LOOP",
+        "PBR"
+      ],
+      "location": null,
+      "displayName": "20 김승민",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-013",
+      "name": "이상학",
+      "major": "visual design",
+      "assetId": "18-making",
+      "reason": "어릴 때부터 무언가를 만드는 것을 좋아했습니다. 머릿속으로 상상한 것을 실제로 만들어내는 과정에 매력을 느꼈고, 그 마음은 지금도 디자인을 통해 계속 이어지고 있습니다.",
+      "works": [
+        "FRMFRM",
+        "ZZZ"
+      ],
+      "location": null,
+      "displayName": "20 이상학",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-014",
+      "name": "이정무",
+      "major": "visual design",
+      "assetId": "22-discovery",
+      "reason": "유심히 보지 않으면 모를 문제나 현상들을 발견하고 그것을 시각적인 결과물로 풀어내는것이 즐겁다고 생각했던 것 같아요.",
+      "works": [
+        "PATINA",
+        "WHAT A PEACEFUL NEVERLAND"
+      ],
+      "location": null,
+      "displayName": "20 이정무",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-015",
+      "name": "김상민",
+      "major": "visual design",
+      "assetId": "16-challenge",
+      "reason": "여러 사람들과 영역들 사이를 이어주는 다리가 될 수 있을 것 같았다.",
+      "works": [
+        "밀도",
+        "NEUE PHILOSOPHER UNION"
+      ],
+      "location": null,
+      "displayName": "20 김상민",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-016",
+      "name": "이은주",
+      "major": "industrial design",
+      "assetId": "04-expression",
+      "reason": "머릿속으로만 생각하던 것들을 실제로 만들고, 그것을 직접 표현해보고 싶다는 마음에서 디자인을 시작하게 되었습니다.",
+      "works": [
+        "FLAP",
+        "HOVIO"
+      ],
+      "location": null,
+      "displayName": "21 이은주",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-017",
+      "name": "최성경",
+      "major": "visual design",
+      "assetId": "32-story",
+      "reason": "그림을 그리면서 이야기를 담고 의미가 생기는 과정을 좋아했습니다. 그러다 점점 그림을 넘어 더 다양한 방식으로 이야기를 표현할 수 있는 것이 디자인이라는 생각하게 됐고, 자연스럽게 디자인을 시작하게 됐습니다.",
+      "works": [
+        "FLARIA",
+        "구설귀"
+      ],
+      "location": null,
+      "displayName": "21 최성경",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-018",
+      "name": "임준우",
+      "major": "industrial design",
+      "assetId": "03-dream",
+      "reason": "여러 경험들을 하면서, 좋은 디자이너가 되고 싶다는 생각을 했습니다.",
+      "works": [
+        "Free to Face",
+        "LOBBY CONCIERGE"
+      ],
+      "location": null,
+      "displayName": "21 임준우",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-019",
+      "name": "송현수",
+      "major": "industrial design",
+      "assetId": "43-gift",
+      "reason": "저를 몰라도 괜찮습니다. 제 디자인으로 누군가가 즐거워지는 순간, 그것이 제가 디자인을 시작한 이유입니다.",
+      "works": [
+        "FIT STOP",
+        "ASCLEPIUS"
+      ],
+      "location": null,
+      "displayName": "21 송현수",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-020",
+      "name": "김민선",
+      "major": "industrial design",
+      "assetId": "10-exploration",
+      "reason": "하나의 문제에도 다양한 해답이 존재한다는 점이 디자인의 가장 큰 매력이라고 생각합니다. 입시 미술을 하며 하나의 주제를 다양한 관점과 방식으로 탐구하고 표현하고 풀어내는 과정에 흥미를 느꼈고, 이러한 경험이 디자인를 시작하고 계속하게 된 계기가 되었습니다.",
+      "works": [
+        "FIT STOP",
+        "HOVIO"
+      ],
+      "location": null,
+      "displayName": "21 김민선",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-021",
+      "name": "신아영",
+      "major": "visual design",
+      "assetId": "06-perspective",
+      "reason": "말로 설명하기 어려운, 좋아 보이는 것과 그렇지 않은 것의 차이가 궁금해 디자인에 관심을 갖게 되었습니다.",
+      "works": [
+        "SAI",
+        "신명원 : 디지털 신당"
+      ],
+      "location": null,
+      "displayName": "21 신아영",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-022",
+      "name": "안서연",
+      "major": "industrial design",
+      "assetId": "28-involvement",
+      "reason": "이건 이렇게 만들면 더 좋을 텐데...' 하는 참견의 마음으로 디자인을 시작했습니다.\n세상의 불편을 굳이 나서서 해결하는 디자이너가 되고 싶습니다.",
+      "works": [
+        "Hey, Nua",
+        "WayFello"
+      ],
+      "location": null,
+      "displayName": "21 안서연",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-023",
+      "name": "장윤진",
+      "major": "visual design",
+      "assetId": "04-expression",
+      "reason": "무언가를 표현하는 게 좋아서 미술을 시작하게 되었고 자연스럽게 디자인이라는 분야를 접하게 되었습니다. 다양한 사람들에게 상업적으로 내가 만들어 낸 것이 전해지는 게 좋았습니다.",
+      "works": [
+        "MOLTYPE",
+        "구설귀"
+      ],
+      "location": null,
+      "displayName": "21 장윤진",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-024",
+      "name": "허유진",
+      "major": "visual design",
+      "assetId": "14-boldness",
+      "reason": "아무것도 모른 채 뛰어든 당돌함이 디자인을 시작하게 된 계기가 되었습니다",
+      "works": [
+        "SAI",
+        "신명원 : 디지털 신당"
+      ],
+      "location": null,
+      "displayName": "21 허유진",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-025",
+      "name": "김병관",
+      "major": "industrial design",
+      "assetId": "29-chance",
+      "reason": "미술선생님께서 '넌 산디가 어울릴거같다'고 하셨는데, 시간이 흘러 자연스럽게 제품디자인을 하게됐네요.",
+      "works": [
+        "for-D",
+        "Beta"
+      ],
+      "location": null,
+      "displayName": "21 김병관",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-026",
+      "name": "이현지",
+      "major": "visual design",
+      "assetId": "08-freedom",
+      "reason": "머릿속에 있는 것을 자유롭게 만들고 표현하고 싶어서 시작하게 되었습니다.",
+      "works": [
+        "FLARIA",
+        "OHJOTAK"
+      ],
+      "location": null,
+      "displayName": "21 이현지",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-027",
+      "name": "최지훈",
+      "major": "visual design",
+      "assetId": "09-taste",
+      "reason": "내가 좋아하는 시각적 아름다움을 직접 현실로 구현해내는 일에 흥미를 느껴 디자인을 선택했습니다.",
+      "works": [
+        "Xelra",
+        "난리블루스"
+      ],
+      "location": null,
+      "displayName": "21 최지훈",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-028",
+      "name": "호영하",
+      "major": "visual design",
+      "assetId": "40-hobby",
+      "reason": "독특한 디자인이란 무에서 유를 창조해 나가는 과정이라고 생각하며, 그 과정에서 나오는 모든 아이디어가 각기 다른 결과를 만들어낼 수 있다고 믿기 때문입니다. 그래서 저는 ‘상상력’을 키워드로 선택했습니다.",
+      "works": [
+        "망쳐도 괜찮아"
+      ],
+      "location": null,
+      "displayName": "21 호영하",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-029",
+      "name": "김지윤",
+      "major": "industrial design",
+      "assetId": "15-inevitability",
+      "reason": "미술은 제 삶에서 너무나도 당연했어요",
+      "works": [
+        "MELO",
+        "MARS:KIN"
+      ],
+      "location": null,
+      "displayName": "22 김지윤",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-030",
+      "name": "홍서연",
+      "major": "visual design",
+      "assetId": "02-curiosity",
+      "reason": "그림 그리는 활동이 즐거워서 자연스럽게 디자인을 시작하게 되었습니다.",
+      "works": [
+        "Xelra",
+        "난리블루스"
+      ],
+      "location": null,
+      "displayName": "22 홍서연",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-031",
+      "name": "조유진",
+      "major": "industrial design",
+      "assetId": "36-fun",
+      "reason": "무언가를 만드는 것이 재미있어서 디자인을 시작하게 되었습니다. ",
+      "works": [
+        "Libera",
+        "ASCLEPIUS"
+      ],
+      "location": null,
+      "displayName": "22 조유진",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-032",
+      "name": "이지민",
+      "major": "industrial design",
+      "assetId": "34-arrogance",
+      "reason": "내가 진짜 다른 사람들보다 나은 줄 알았다.",
+      "works": [
+        "MELO",
+        "MARS:KIN"
+      ],
+      "location": null,
+      "displayName": "22 이지민",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-033",
+      "name": "이소현",
+      "major": "visual design",
+      "assetId": "09-taste",
+      "reason": "내가 좋아하는 것들을 구경하고 관찰하고 수집하다가 디자인을 시작하게 되었습니다",
+      "works": [
+        "EWA",
+        "WHAT A PEACEFUL NEVERLAND"
+      ],
+      "location": null,
+      "displayName": "22 이소현",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-034",
+      "name": "이채연",
+      "major": "visual design",
+      "assetId": "13-warmth",
+      "reason": "일상의 작은 것들을 세심하게 바라보고 다듬는 시선이 좋아 시작하게 되었습니다.",
+      "works": [
+        "Studio. Query",
+        "Slott"
+      ],
+      "location": null,
+      "displayName": "22 이채연",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-035",
+      "name": "이가연",
+      "major": "visual design",
+      "assetId": "11-inspiration",
+      "reason": "‘디자인은 세상을 바라보는 시각의 해상도를 높이는 방법 중 하나’라는 말에 감명받아 디자인에 관심을 가지기 시작했습니다.",
+      "works": [
+        "INAWT",
+        "해피한 척하기, 해-피한 척하기"
+      ],
+      "location": null,
+      "displayName": "22 이가연",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-036",
+      "name": "이윤주",
+      "major": "visual design",
+      "assetId": "03-dream",
+      "reason": "영화를 보고 영상미와 연출을 공부하다가 자연스럽게 디자인에 관심을 가지게 됐습니다.",
+      "works": [
+        "EWA",
+        "사이비담"
+      ],
+      "location": null,
+      "displayName": "22 이윤주",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-037",
+      "name": "원서영",
+      "major": "visual design",
+      "assetId": "01-joy",
+      "reason": "그림을 그릴 때 재밌어서 시작하게 되었습니다.",
+      "works": [
+        "CELLUMI",
+        "사이비담"
+      ],
+      "location": null,
+      "displayName": "22 원서영",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-038",
+      "name": "강하영",
+      "major": "industrial design",
+      "assetId": "06-perspective",
+      "reason": "문제를 각자의 시선에서 물리적으로 풀어내는 과정이 즐거워서 시작하게 되었습니다.",
+      "works": [
+        "Free to Face",
+        "WayFello"
+      ],
+      "location": null,
+      "displayName": "22 강하영",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-039",
+      "name": "안소현",
+      "major": "visual design",
+      "assetId": "10-exploration",
+      "reason": "디자인보다는 예체능이라는 큰 분야에 관심이 있었는데 사람의 사고가 시각적으로 구성되고 드러난다는 점에서 디자인에 매력을 느껴 전공하게 되었습니다.",
+      "works": [
+        "INAWT",
+        "WHAT A PEACEFUL NEVERLAND"
+      ],
+      "location": null,
+      "displayName": "22 안소현",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-040",
+      "name": "황예은",
+      "major": "industrial design",
+      "assetId": "04-expression",
+      "reason": "그림 그리는걸 어릴 때부터 좋아했어서 자연스럽게 미대와 디자인쪽 진학을 결심하게 되었습니다.",
+      "works": [
+        "SERO",
+        "SANCTUM"
+      ],
+      "location": null,
+      "displayName": "22 황예은",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-041",
+      "name": "이유나",
+      "major": "visual design",
+      "assetId": "05-imagination",
+      "reason": "상상이 현실의 시각적 결과물로 구현되는 과정이 매력적이어서 디자인을 시작하게 되었습니다.",
+      "works": [
+        "CatchA!",
+        "FRYDAY 180°C"
+      ],
+      "location": null,
+      "displayName": "22 이유나",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-042",
+      "name": "김윤아",
+      "major": "visual design",
+      "assetId": "12-realization",
+      "reason": "상상에 그치던 아이디어를 시각적 형태로 직접 실현하는 것에 매력을 느껴 디자인을 시작하게 되었습니다.",
+      "works": [
+        "OVE",
+        "파독각"
+      ],
+      "location": null,
+      "displayName": "22 김윤아",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-043",
+      "name": "장유진",
+      "major": "visual design",
+      "assetId": "23-wonder",
+      "reason": "동경하는 것들을 나도 직접 만들어보고 싶다는 마음이 자연스럽게 디자인을 하게 만들었습니다.",
+      "works": [
+        "FORTO",
+        "SPOT LIGHT"
+      ],
+      "location": null,
+      "displayName": "22 장유진",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-044",
+      "name": "김선우",
+      "major": "visual design",
+      "assetId": "35-confidence",
+      "reason": "어릴 때부터 그림 그리기를 즐겼고, 주변의 칭찬으로 자신감을 얻으며 자연스럽게 디자인을 시작했습니다.",
+      "works": [
+        "TOONG",
+        "Journey"
+      ],
+      "location": null,
+      "displayName": "22 김선우",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-045",
+      "name": "이승민",
+      "major": "visual design",
+      "assetId": "19-coolness",
+      "reason": "게임, 영화, 책, 애니메이션, 프라모델등 이 세상 모든 ”멋짐“의 이면에는 디자인이 작동하기 때문에",
+      "works": [
+        "밀도",
+        "NEUE PHILOSOPHER UNION"
+      ],
+      "location": null,
+      "displayName": "22 이승민",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-046",
+      "name": "박은진",
+      "major": "visual design",
+      "assetId": "07-affection",
+      "reason": "동물을 좋아해서 동물을 위한 디자인을 해보고싶어서 시작했다",
+      "works": [
+        "STRAV",
+        "장기파업"
+      ],
+      "location": null,
+      "displayName": "22 박은진",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-047",
+      "name": "김채연",
+      "major": "industrial design",
+      "assetId": "25-novelty",
+      "reason": "원래 손으로 만드는 걸 좋아하는데 거기서 더 나아가 새로운 예술 분야를 도전해보고 싶었습니다.",
+      "works": [
+        "SERO",
+        "SANCTUM"
+      ],
+      "location": null,
+      "displayName": "22 김채연",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-048",
+      "name": "최예진",
+      "major": "visual design",
+      "assetId": "08-freedom",
+      "reason": "내가 생각한 아이디어를 자유롭게 표현할 수 있다는 점에서 디자인을 전공하게 되었습니다.",
+      "works": [
+        "MOLTYPE",
+        "SPOT LIGHT"
+      ],
+      "location": null,
+      "displayName": "22 최예진",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-049",
+      "name": "박우희",
+      "major": "visual design",
+      "assetId": "05-imagination",
+      "reason": "내 머릿속에만 있는 상상을 다른사람에게 보여주고, 현실로 가져올 수 있는 방법이라고 생각해서 시작하게 되었습니다. ",
+      "works": [
+        "FORTO",
+        "SPOT LIGHT"
+      ],
+      "location": null,
+      "displayName": "22 박우희",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-050",
+      "name": "이혜경",
+      "major": "visual design",
+      "assetId": "23-wonder",
+      "reason": "좋은 사람들과 깊이 있는 배움이 함께했기에, 제 인생에서 어느 때보다 빛나는 보물 같은 순간으로 남았기 때문입니다.",
+      "works": [
+        "STRAV",
+        "OHJOTAK"
+      ],
+      "location": null,
+      "displayName": "22 이혜경",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-051",
+      "name": "이한나",
+      "major": "visual design",
+      "assetId": "12-realization",
+      "reason": "머릿속에 맴도는 추상적인 아이디어나 저만의 시각적 취향을 구체적인 작업물로 만들어낼 수 있다는 것에 매력을 느꼈습니다.",
+      "works": [
+        "CELLUMI",
+        "장기파업"
+      ],
+      "location": null,
+      "displayName": "22 이한나",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-052",
+      "name": "송민주",
+      "major": "visual design",
+      "assetId": "30-destiny",
+      "reason": "다른 것들을 해보아도 마음이 가는 것은 오직 디자인뿐이었습니다. ",
+      "works": [
+        "STRAV",
+        "장기파업"
+      ],
+      "location": null,
+      "displayName": "22 송민주",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-053",
+      "name": "김나윤",
+      "major": "visual design",
+      "assetId": "24-people",
+      "reason": "결국 사람이 경험하는 마지막 순간에는 디자인이 있는 것 같아 시작하게 되었습니다.",
+      "works": [
+        "CatchA!",
+        "FRYDAY 180°C"
+      ],
+      "location": null,
+      "displayName": "22 김나윤",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-054",
+      "name": "백율리",
+      "major": "visual design",
+      "assetId": "37-intersection",
+      "reason": "서로 다른 예술과 분야가 만나는 접점에서 새로운 가능성을 발견하는 것이 흥미로워 디자인을 시작하게 되었습니다.",
+      "works": [
+        "OVE",
+        "파독각"
+      ],
+      "location": null,
+      "displayName": "22 백율리",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-055",
+      "name": "탁빛나",
+      "major": "visual design",
+      "assetId": "15-inevitability",
+      "reason": "아주 어릴 때부터 미술 유치원에 다녔었고, 그림 그리는 걸 좋아했습니다. 특별한 계기가 있었다기 보다는, 미슬을 하고 또 그것을 디자인이라는 현실적인 카테고리로 구체화하는게 자명한 일처럼 느껴졌던 것 같습니다.",
+      "works": [
+        "TOONG",
+        "Journey"
+      ],
+      "location": null,
+      "displayName": "22 탁빛나",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-056",
+      "name": "송민서",
+      "major": "visual design",
+      "assetId": "04-expression",
+      "reason": "머리속에서 가지고 있는 요소들을 가공하고 조립하여 시각적인요소로 표현하는게 디자인이라고 생각하여 고르게 되었습니다.",
+      "works": [
+        "AETHER",
+        "ZZZ"
+      ],
+      "location": null,
+      "displayName": "22 송민서",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-057",
+      "name": "황어진",
+      "major": "industrial design",
+      "assetId": "21-immersion",
+      "reason": "가장 시간이 잘 가는 일",
+      "works": [
+        "lit",
+        "WayFello"
+      ],
+      "location": null,
+      "displayName": "22 황어진",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-058",
+      "name": "이지수",
+      "major": "industrial design",
+      "assetId": "01-joy",
+      "reason": "일상의 문제를 디자인적 상상력과 즐거움으로 풀어내는 과정이 매력적으로 다가와 시작하게 되었습니다.",
+      "works": [
+        "lit",
+        "oodt"
+      ],
+      "location": null,
+      "displayName": "22 이지수",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-059",
+      "name": "김자현",
+      "major": "industrial design",
+      "assetId": "39-first-love",
+      "reason": "“16살에 좋아한 상대가 평생에 영향을 미친다.”\n첫사랑은 찰나에 머무르지 않고 마음 깊은 곳에 남아 무심결에 영향을 주는 존재가 됩니다.\n디자인은 그런 의미에서 또 다른 형태로 다가온 첫사랑입니다.\n\n6살, 시작은 그림이었습니다.\n그러나 어느 순간부터 그림을 그리는 게 즐겁지 않았고, 의식적으로 미술에 거리를 두었습니다.\n16살, 여러 갈림길을 지나던 중 잊고 있었던 마음을 마주합니다.\n그리고 시간이 흘러 좋아하는 것과 잘하는 것의 교차점에서 디자인을 발견하게 됩니다.\n늦게 깨달은 만큼 꽤 오래 방황했지만, 후회하면서도 후회하지 않습니다.\n그 길을 돌아왔기에 ‘미술’이 아닌 ‘디자인’을 만날 수 있었기 때문입니다.\n\n26살, 디자인과 졸업. 어릴 적 막연했던 꿈이 어느새 제 눈 앞에 있습니다.\n6살에 시작된 마음은 16살에 디자인으로 제자리를 찾아 10년 뒤에는 마침내 디자이너로 첫 단추를 끼웁니다. 첫사랑이 이후의 사랑을 알아보게 하듯, 어린 시절의 마음은 제가 진정으로 무엇을 좋아하는지 일러주었습니다. 디자인은 오래 전부터 마음 속에서 그려온 모습이자, 지금의 저를 마주하게 한 첫사랑입니다.",
+      "works": [
+        "FLAP",
+        "oodt"
+      ],
+      "location": null,
+      "displayName": "22 김자현",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-060",
+      "name": "고희원",
+      "major": "industrial design",
+      "assetId": "42-rebellion",
+      "reason": "고등학교때 수능 공부가 너무 하기싫어서 예체능쪽으로 가고싶은 생각을 갖고있었는데 같이 다니는 친구가 디자인 한다고 하길래 나도 해볼까? 해서 학원 다니다가 그림그리는게 적성에 맞는거같아 시작하게 되었습니다",
+      "works": [
+        "zibi",
+        "Beta"
+      ],
+      "location": null,
+      "displayName": "22 고희원",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-061",
+      "name": "동첸유",
+      "major": "visual design",
+      "assetId": "05-imagination",
+      "reason": "상상하는 것을 좋아하고, 머릿속의 생각을 눈에 보이는 형태로 표현하는 과정이 재미있어서 디자인을 시작하게 되었습니다.",
+      "works": [
+        "MOODIT",
+        "망원인 연구소"
+      ],
+      "location": null,
+      "displayName": "22 동첸유",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-062",
+      "name": "공유첸",
+      "major": "visual design",
+      "assetId": "03-dream",
+      "reason": "제 생각과 꿈을 시각적으로 표현하는 것에 관심이 많아서 디자인을 시작하게 되었습니다.",
+      "works": [
+        "MOODIT",
+        "망원인 연구소"
+      ],
+      "location": null,
+      "displayName": "22 공유첸",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-063",
+      "name": "이수민",
+      "major": "visual design",
+      "assetId": "41-expansion",
+      "reason": "그림 그리는 걸 좋아했지만 진로를 고민하면서 디자인으로 관심을 넓히게 됨",
+      "works": [
+        "ORVIX",
+        "극락왕생 보험사"
+      ],
+      "location": null,
+      "displayName": "23 이수민",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-064",
+      "name": "김미리",
+      "major": "visual design",
+      "assetId": "02-curiosity",
+      "reason": "사람이 어떤 디자인을 보고 ‘예쁘다’고 느끼는 데에는 일정한 공식이 있지 않을까 하는 호기심에서 디자인에 관심을 가지기 시작했습니다.",
+      "works": [
+        "ORVIX",
+        "극락왕생 보험사"
+      ],
+      "location": null,
+      "displayName": "23 김미리",
+      "course": "디지털미디어 캡스톤디자인프로젝트, 아이덴티티캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    },
+    {
+      "id": "student-065",
+      "name": "이윤호",
+      "major": "industrial design",
+      "assetId": "02-curiosity",
+      "reason": "내가 상상하는 새로운 답을 세상에 꺼내놓고 싶었던 순수한 열정이 곧 디자인을 시작하게 되었습니다.",
+      "works": [
+        "N : LOOP",
+        "PBR"
+      ],
+      "location": null,
+      "displayName": "23 이윤호",
+      "course": "제품및운송기기 캡스톤디자인, 제품시스템캡스톤디자인",
+      "workExplanation": "추후 입력 예정"
+    }
+  ],
+  "assets": [
+    {
+      "id": "01-joy",
+      "wordKo": "즐거움",
+      "wordEn": "joy",
+      "image": "img/photo/01-joy.png",
+      "letter": "img/letter/01-joy.svg"
+    },
+    {
+      "id": "02-curiosity",
+      "wordKo": "호기심",
+      "wordEn": "curiosity",
+      "image": "img/photo/02-curiosity.png",
+      "letter": "img/letter/02-curiosity.svg"
+    },
+    {
+      "id": "03-dream",
+      "wordKo": "꿈",
+      "wordEn": "dream",
+      "image": "img/photo/03-dream.png",
+      "letter": "img/letter/03-dream.svg"
+    },
+    {
+      "id": "04-expression",
+      "wordKo": "표현",
+      "wordEn": "expression",
+      "image": "img/photo/04-expression.png",
+      "letter": "img/letter/04-expression.svg"
+    },
+    {
+      "id": "05-imagination",
+      "wordKo": "상상",
+      "wordEn": "imagination",
+      "image": "img/photo/05-imagination.png",
+      "letter": "img/letter/05-imagination.svg"
+    },
+    {
+      "id": "06-perspective",
+      "wordKo": "시선",
+      "wordEn": "perspective",
+      "image": "img/photo/06-perspective.png",
+      "letter": "img/letter/06-perspective.svg"
+    },
+    {
+      "id": "07-affection",
+      "wordKo": "애정",
+      "wordEn": "affection",
+      "image": "img/photo/07-affection.png",
+      "letter": "img/letter/07-affection.svg"
+    },
+    {
+      "id": "08-freedom",
+      "wordKo": "자유",
+      "wordEn": "freedom",
+      "image": "img/photo/08-freedom.png",
+      "letter": "img/letter/08-freedom.svg"
+    },
+    {
+      "id": "09-taste",
+      "wordKo": "취향",
+      "wordEn": "taste",
+      "image": "img/photo/09-taste.png",
+      "letter": "img/letter/09-taste.svg"
+    },
+    {
+      "id": "10-exploration",
+      "wordKo": "탐구",
+      "wordEn": "exploration",
+      "image": "img/photo/10-exploration.png",
+      "letter": "img/letter/10-exploration.svg"
+    },
+    {
+      "id": "11-inspiration",
+      "wordKo": "감명",
+      "wordEn": "inspiration",
+      "image": "img/photo/11-inspiration.png",
+      "letter": "img/letter/11-inspiration.svg"
+    },
+    {
+      "id": "12-realization",
+      "wordKo": "실현",
+      "wordEn": "realization",
+      "image": "img/photo/12-realization.png",
+      "letter": "img/letter/12-realization.svg"
+    },
+    {
+      "id": "13-warmth",
+      "wordKo": "다정함",
+      "wordEn": "warmth",
+      "image": "img/photo/13-warmth.png",
+      "letter": "img/letter/13-warmth.svg"
+    },
+    {
+      "id": "14-boldness",
+      "wordKo": "당돌함",
+      "wordEn": "boldness",
+      "image": "img/photo/14-boldness.png",
+      "letter": "img/letter/14-boldness.svg"
+    },
+    {
+      "id": "15-inevitability",
+      "wordKo": "자명",
+      "wordEn": "inevitability",
+      "image": "img/photo/15-inevitability.png",
+      "letter": "img/letter/15-inevitability.svg"
+    },
+    {
+      "id": "16-challenge",
+      "wordKo": "도전",
+      "wordEn": "challenge",
+      "image": "img/photo/16-challenge.png",
+      "letter": "img/letter/16-challenge.svg"
+    },
+    {
+      "id": "17-excitement",
+      "wordKo": "설렘",
+      "wordEn": "excitement",
+      "image": "img/photo/17-excitement.png",
+      "letter": "img/letter/17-excitement.svg"
+    },
+    {
+      "id": "18-making",
+      "wordKo": "만들기",
+      "wordEn": "making",
+      "image": "img/photo/18-making.png",
+      "letter": "img/letter/18-making.svg"
+    },
+    {
+      "id": "19-coolness",
+      "wordKo": "멋짐",
+      "wordEn": "coolness",
+      "image": "img/photo/19-coolness.png",
+      "letter": "img/letter/19-coolness.svg"
+    },
+    {
+      "id": "20-adventure",
+      "wordKo": "모험",
+      "wordEn": "adventure",
+      "image": "img/photo/20-adventure.png",
+      "letter": "img/letter/20-adventure.svg"
+    },
+    {
+      "id": "21-immersion",
+      "wordKo": "몰입",
+      "wordEn": "immersion",
+      "image": "img/photo/21-immersion.png",
+      "letter": "img/letter/21-immersion.svg"
+    },
+    {
+      "id": "22-discovery",
+      "wordKo": "발견",
+      "wordEn": "discovery",
+      "image": "img/photo/22-discovery.png",
+      "letter": "img/letter/22-discovery.svg"
+    },
+    {
+      "id": "23-wonder",
+      "wordKo": "동경",
+      "wordEn": "wonder",
+      "image": "img/photo/23-wonder.png",
+      "letter": "img/letter/23-wonder.svg"
+    },
+    {
+      "id": "24-people",
+      "wordKo": "사람",
+      "wordEn": "people",
+      "image": "img/photo/24-people.png",
+      "letter": "img/letter/24-people.svg"
+    },
+    {
+      "id": "25-novelty",
+      "wordKo": "새로움",
+      "wordEn": "novelty",
+      "image": "img/photo/25-novelty.png",
+      "letter": "img/letter/25-novelty.svg"
+    },
+    {
+      "id": "26-encounter",
+      "wordKo": "스침",
+      "wordEn": "encounter",
+      "image": "img/photo/26-encounter.png",
+      "letter": "img/letter/26-encounter.svg"
+    },
+    {
+      "id": "27-icebreaking",
+      "wordKo": "아이스브레이킹",
+      "wordEn": "icebreaking",
+      "image": "img/photo/27-icebreaking.png",
+      "letter": "img/letter/27-icebreaking.svg"
+    },
+    {
+      "id": "28-involvement",
+      "wordKo": "오지랖",
+      "wordEn": "involvement",
+      "image": "img/photo/28-involvement.png",
+      "letter": "img/letter/28-involvement.svg"
+    },
+    {
+      "id": "29-chance",
+      "wordKo": "우연",
+      "wordEn": "chance",
+      "image": "img/photo/29-chance.png",
+      "letter": "img/letter/29-chance.svg"
+    },
+    {
+      "id": "30-destiny",
+      "wordKo": "운명",
+      "wordEn": "destiny",
+      "image": "img/photo/30-destiny.png",
+      "letter": "img/letter/30-destiny.svg"
+    },
+    {
+      "id": "31-well-being",
+      "wordKo": "웰니스",
+      "wordEn": "well-being",
+      "image": "img/photo/31-well-being.png",
+      "letter": "img/letter/31-well-being.svg"
+    },
+    {
+      "id": "32-story",
+      "wordKo": "이야기",
+      "wordEn": "story",
+      "image": "img/photo/32-story.png",
+      "letter": "img/letter/32-story.svg"
+    },
+    {
+      "id": "33-everyday",
+      "wordKo": "일상",
+      "wordEn": "everyday",
+      "image": "img/photo/33-everyday.png",
+      "letter": "img/letter/33-everyday.svg"
+    },
+    {
+      "id": "34-arrogance",
+      "wordKo": "자만",
+      "wordEn": "arrogance",
+      "image": "img/photo/34-arrogance.png",
+      "letter": "img/letter/34-arrogance.svg"
+    },
+    {
+      "id": "35-confidence",
+      "wordKo": "자신감",
+      "wordEn": "confidence",
+      "image": "img/photo/35-confidence.png",
+      "letter": "img/letter/35-confidence.svg"
+    },
+    {
+      "id": "36-fun",
+      "wordKo": "재미",
+      "wordEn": "fun",
+      "image": "img/photo/36-fun.png",
+      "letter": "img/letter/36-fun.svg"
+    },
+    {
+      "id": "37-intersection",
+      "wordKo": "접점",
+      "wordEn": "intersection",
+      "image": "img/photo/37-intersection.png",
+      "letter": "img/letter/37-intersection.svg"
+    },
+    {
+      "id": "38-creation",
+      "wordKo": "창조",
+      "wordEn": "creation",
+      "image": "img/photo/38-creation.png",
+      "letter": "img/letter/38-creation.svg"
+    },
+    {
+      "id": "39-first-love",
+      "wordKo": "첫사랑",
+      "wordEn": "first love",
+      "image": "img/photo/39-first-love.png",
+      "letter": "img/letter/39-first-love.svg"
+    },
+    {
+      "id": "40-hobby",
+      "wordKo": "취미",
+      "wordEn": "hobby",
+      "image": "img/photo/40-hobby.png",
+      "letter": "img/letter/40-hobby.svg"
+    },
+    {
+      "id": "41-expansion",
+      "wordKo": "확장",
+      "wordEn": "expansion",
+      "image": "img/photo/41-expansion.png",
+      "letter": "img/letter/41-expansion.svg"
+    },
+    {
+      "id": "42-rebellion",
+      "wordKo": "반항",
+      "wordEn": "rebellion",
+      "image": "img/photo/42-rebellion.png",
+      "letter": "img/letter/42-rebellion.svg"
+    },
+    {
+      "id": "43-gift",
+      "wordKo": "선물",
+      "wordEn": "gift",
+      "image": "img/photo/43-gift.png",
+      "letter": "img/letter/43-gift.svg"
+    }
+  ]
+}

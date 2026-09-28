@@ -1,0 +1,22 @@
+{
+  "studentCount": 64,
+  "assetCount": 43,
+  "participationReview": [
+    {
+      "row": 2,
+      "name": "이수아",
+      "value": "non_participants"
+    },
+    {
+      "row": 6,
+      "name": "박범수",
+      "value": "20011997박민경"
+    },
+    {
+      "row": 7,
+      "name": "권동혁",
+      "value": "22012055지서은"
+    }
+  ],
+  "missingLocations": 64
+}
