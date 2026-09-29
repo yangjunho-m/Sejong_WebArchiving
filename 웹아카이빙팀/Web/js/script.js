@@ -86,3 +86,16 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     window.requestAnimationFrame(() => bar.classList.remove('is-initializing'));
   });
 })();
+
+// 일반 콘텐츠의 우클릭·드래그만 제한하고 입력 영역의 편집 기능은 유지합니다.
+(() => {
+  const isEditable = (target) => target instanceof Element && Boolean(
+    target.closest('input, textarea, [contenteditable]:not([contenteditable="false"])')
+  );
+  document.addEventListener('contextmenu', (event) => {
+    if (!isEditable(event.target)) event.preventDefault();
+  });
+  document.addEventListener('dragstart', (event) => {
+    if (!isEditable(event.target)) event.preventDefault();
+  });
+})();

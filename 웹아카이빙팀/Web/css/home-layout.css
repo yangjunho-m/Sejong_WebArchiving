@@ -151,3 +151,18 @@
     line-height: 1.5;
   }
 }
+
+/* 소개글 내부 간격: 제목→본문 40px, 문단 사이 16px. */
+.home-page .intro-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.home-page .intro-copy > h2 {
+  margin: 0 0 24px; /* 공통 gap 16px + 여백 24px = 40px */
+}
+
+.home-page .intro-copy > p {
+  margin: 0;
+}

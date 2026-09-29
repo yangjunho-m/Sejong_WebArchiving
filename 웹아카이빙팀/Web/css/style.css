@@ -568,3 +568,20 @@ footer address{
 
 }
 
+
+/* 콘텐츠 선택·드래그 방지. 입력 필드는 정상적으로 편집할 수 있습니다. */
+body {
+  -webkit-user-select: none;
+  user-select: none;
+}
+img,
+video {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+input,
+textarea,
+[contenteditable]:not([contenteditable="false"]) {
+  -webkit-user-select: text;
+  user-select: text;
+}
