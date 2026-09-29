@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="css/logo.css">
     <link rel="stylesheet" href="css/assets.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/home-layout.css">
 </head>
 
-<body>
+<body class="home-page">
     
-    <header class="masthead">
+    <header class="masthead masthead--video">
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="img/웹 페이지 모션_배경 트렌지션 O.mp4" type="video/mp4">
+        </video>
         <a class="logo" href="#top" aria-label="Button Up home">
             <img src="img/buttonup.svg" alt="BUTTON UP!">
         </a>
@@ -21,12 +27,12 @@
             <span></span>
             <span></span>
         </button>
-        <nav id="site-menu">
-            <a href="html/work.html">WORKS</a>
-            <a href="html/designers.html">DESIGNERS</a>
-            <a href="html/program.html">PROGRAM</a>
-            <a href="html/message.html">MESSAGE</a>
-            <a href="html/partners.html">PARTNERS</a>
+        <nav id="site-menu" lang="en">
+            <a class="type-nav" href="html/work.html">WORKS</a>
+            <a class="type-nav" href="html/designers.html">DESIGNERS</a>
+            <a class="type-nav" href="html/program.html">PROGRAM</a>
+            <a class="type-nav" href="html/message.html">MESSAGE</a>
+            <a class="type-nav" href="html/partners.html">PARTNERS</a>
         </nav>
     </header>
 
@@ -34,10 +40,10 @@
         <section class="intro" id="works">
             <img class="hero-logo" src="img/logo_forward.png" alt="forward, BUTTON UP!">
             <div class="intro-copy">
-                <h2>버튼을 실로 꿰다....</h2>
-                <p>졸업은 단순한 끝이 아닌 새로운 트랙의 시작입니다. 우리는 지금 막 그 출발선 앞에 서 있습니다.</p>
-                <p>작은 픽셀이 모여 하나의 형상을 이루듯, 지난 시간 속에서 쌓아 온 우리의 경험과 흔적은 차곡차곡 쌓여 새로운 리듬을 만들어냈습니다. 그 리듬은 더 이상 미숙함에 머물지 않고 우리를 앞으로 나아가게 하는 힘이 됩니다.</p>
-                <p>우리는 도약하며 속도를 높이고, 눈앞의 트랙을 넘어 더 큰 무대를 향해 달려갑니다. First Chase, 우리의 첫 출발은 새로운 시작이 됩니다.</p>
+                <h2 class="type-title-ko">버튼을 실로 꿰다....</h2>
+                <p class="type-body">졸업은 단순한 끝이 아닌 새로운 트랙의 시작입니다. 우리는 지금 막 그 출발선 앞에 서 있습니다.</p>
+                <p class="type-body">작은 픽셀이 모여 하나의 형상을 이루듯, 지난 시간 속에서 쌓아 온 우리의 경험과 흔적은 차곡차곡 쌓여 새로운 리듬을 만들어냈습니다. 그 리듬은 더 이상 미숙함에 머물지 않고 우리를 앞으로 나아가게 하는 힘이 됩니다.</p>
+                <p class="type-body">우리는 도약하며 속도를 높이고, 눈앞의 트랙을 넘어 더 큰 무대를 향해 달려갑니다. First Chase, 우리의 첫 출발은 새로운 시작이 됩니다.</p>
             </div>
             <div class="posters" aria-label="Button Up exhibition posters">
                 <article class="poster">
@@ -50,35 +56,77 @@
             
             <div class="opening" id="openings">
                 <h3>OPENING HOUR</h3>
-                <p>10. 30 (FRI) - 11. 10 (THU)<br>11AM - 7PM<br>세종대학교 광개토관 B1 세종뮤지엄갤러리 3</p>
+                <p class="type-body">10. 30 (FRI) - 11. 10 (THU)<br>11AM - 7PM<br>세종대학교 광개토관 B1 세종뮤지엄갤러리 3</p>
             </div>
             <div class="opening">
-                <h3>OPENNING, 첫 단추 끼우기</h3>
-                <p>2026. 10. 30(FRI) 6PM</p>
+                <h3 class="type-title-ko"><span class="font-en" lang="en">OPENNING,</span> 첫 단추 끼우기</h3>
+                <p class="type-body">2026. 10. 30(FRI) 6PM</p>
             </div>
         </section>
         <section class="committee" id="committee">
-            <h2>COMMITTEE</h2>
+            <h2 class="type-committee-title" lang="en">COMMITTEE</h2>
             <div class="members">
-                <div class="member-row"><p>위원장<br><small>COMMITTEE CHAIR</small></p><p>김나윤<br><small>KIM NAYUN</small></p></div>
-                <div class="member-row"><p>부위원장<br><small>VICE CHAIR</small></p><p>엄지혁<br><small>EOM JIHYEOK</small></p></div>
-                <div class="member-row"><p>그래픽<br><small>GRAPHIC DESIGN</small></p><p>김나윤<br><small>Kim NaYun</small><br><br>이유나<br><small>LEE YUNA</small><br><br>이정무<br><small>LEE JEONGMU</small></p></div>
-                <div class="member-row"><p>전시<br><small>EXHIBITION</small></p><p>박한울<br><small>PARK HANUL</small><br><br>이상학<br><small>YI SANGHAK</small></p></div>
-                <div class="member-row"><p>편집<br><small>EDITORIAL DESIGN</small></p><p>김윤아<br><small>KIM YUNAH</small><br><br>최예진<br><small>CHOI YEJIN</small></p></div>
-                <div class="member-row"><p>재무<br><small>FINANCE</small></p><p>이준석<br><small>LEE JUNSEOK</small></p></div>
-                <div class="member-row"><p>웹 디자인<br><small>WEB DESIGN</small></p><p>임준우<br><small>LIM JUNWOO</small><br><br>이상학<br><small>YI SANGHAK</small><br><br>엄지혁<br><small>EOM JIHYEOK</small></p></div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">위원장</span><small class="type-committee-en" lang="en">COMMITTEE CHAIR</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">김나윤</span><small class="type-committee-en" lang="en">KIM NAYUN</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">부위원장</span><small class="type-committee-en" lang="en">VICE CHAIR</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">엄지혁</span><small class="type-committee-en" lang="en">EOM JIHYEOK</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">그래픽</span><small class="type-committee-en" lang="en">GRAPHIC DESIGN</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">김나윤</span><small class="type-committee-en" lang="en">Kim NaYun</small></p>
+                        <p class="committee-label"><span class="type-committee-name">이유나</span><small class="type-committee-en" lang="en">LEE YUNA</small></p>
+                        <p class="committee-label"><span class="type-committee-name">이정무</span><small class="type-committee-en" lang="en">LEE JEONGMU</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">전시</span><small class="type-committee-en" lang="en">EXHIBITION</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">박한울</span><small class="type-committee-en" lang="en">PARK HANUL</small></p>
+                        <p class="committee-label"><span class="type-committee-name">이상학</span><small class="type-committee-en" lang="en">YI SANGHAK</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">편집</span><small class="type-committee-en" lang="en">EDITORIAL DESIGN</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">김윤아</span><small class="type-committee-en" lang="en">KIM YUNAH</small></p>
+                        <p class="committee-label"><span class="type-committee-name">최예진</span><small class="type-committee-en" lang="en">CHOI YEJIN</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">재무</span><small class="type-committee-en" lang="en">FINANCE</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">이준석</span><small class="type-committee-en" lang="en">LEE JUNSEOK</small></p>
+                    </div>
+                </div>
+                <div class="member-row">
+                    <p class="committee-label"><span class="type-committee-name">웹 디자인</span><small class="type-committee-en" lang="en">WEB DESIGN</small></p>
+                    <div class="committee-people">
+                        <p class="committee-label"><span class="type-committee-name">임준우</span><small class="type-committee-en" lang="en">LIM JUNWOO</small></p>
+                        <p class="committee-label"><span class="type-committee-name">이상학</span><small class="type-committee-en" lang="en">YI SANGHAK</small></p>
+                        <p class="committee-label"><span class="type-committee-name">엄지혁</span><small class="type-committee-en" lang="en">EOM JIHYEOK</small></p>
+                    </div>
+                </div>
             </div>
         </section>
     </main> 
     <footer id="news">
         <a class="footer-symbol" href="#top" aria-label="Button Up home">
             <img src="img/footer-logo.png" alt="Design Innovation"></a>
-        <div class="footer-link"><a href="https://www.instagram.com/junho_630" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></div>
-        <div class="footer-link"><a href="#">BEHANCE</a></div>
-        <div class="footer-link"><a href="#">VIMEO</a></div>
-        <address>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea<br>
+        <div class="footer-link type-footer"><a href="https://www.instagram.com/junho_630" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></div>
+        <div class="footer-link type-footer"><a href="#">BEHANCE</a></div>
+        <div class="footer-link type-footer"><a href="#">VIMEO</a></div>
+        <address class="footer-address type-footer" lang="en">
+            <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea</span>
             <a href="mailto:iddpt@sejong.ac.kr">iddpt@sejong.ac.kr</a>
-            <br>+82 2 3408 3323
+            <span>+82 2 3408 3323</span>
         </address>
         <p class="copyright">©2026. SEJONG UNIVERSITY DESIGN INNOVATION. ALL RIGHTS RESERVED.</p>
     </footer>

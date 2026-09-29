@@ -1,0 +1,158 @@
+/* Load after page styles. Opt in with a role class; language alone is not a role. */
+:root {
+  --font-ko: Pretendard, system-ui, sans-serif;
+  --font-en: "ITC Avant Garde Gothic Pro", Pretendard, Arial, sans-serif;
+  --type-nav-size: 22px;
+  --type-body-size: 18px;
+  --type-title-ko-size: 32px;
+}
+
+/* Repeated class specificity overrides legacy element selectors, including mobile. */
+.type-nav.type-nav {
+  font-family: var(--font-en);
+  font-size: var(--type-nav-size);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+.type-body.type-body {
+  font-family: var(--font-ko);
+  font-size: var(--type-body-size);
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.type-title-ko.type-title-ko {
+  font-family: var(--font-ko);
+  font-size: var(--type-title-ko-size);
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+/* Optional font override for English runs within a role. */
+.font-en.font-en {
+  font-family: var(--font-en);
+}
+
+/* Accommodate the larger copy without fixing the section to its old height. */
+.home-page .intro {
+  height: auto;
+  min-height: 2849px;
+  padding-bottom: 80px;
+}
+
+.home-page .intro-copy,
+.home-page .posters {
+  max-width: 100%;
+}
+
+.home-page .member-row .type-body {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .home-page .intro {
+    min-height: 0;
+    padding-bottom: 150px;
+  }
+}
+
+/* Committee heading and English roles/names. */
+.type-committee-title.type-committee-title {
+  font-family: var(--font-en);
+  font-size: 48px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.type-committee-en.type-committee-en {
+  font-family: var(--font-en);
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0;
+  white-space: normal;
+}
+
+.type-committee-name.type-committee-name {
+  font-family: var(--font-ko);
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Footer text; important overrides legacy mobile footer declarations. */
+.home-page footer .type-footer,
+.home-page footer .type-footer * {
+  font-family: var(--font-en);
+  font-size: 18px !important;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4 !important;
+  letter-spacing: 0;
+}
+
+.home-page footer .footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Home footer mark: Figma dimensions and #E4E4E4, preserving PNG alpha. */
+.home-page footer .footer-symbol {
+  width: 56px !important;
+  height: 55.6px !important;
+}
+
+.home-page footer .footer-symbol img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: fill;
+  filter: brightness(0) invert(89.411765%);
+}
+
+/* Figma vertical auto-layout: bilingual pairs and department rows. */
+.home-page .members {
+  max-width: 100%;
+  row-gap: 80px;
+}
+
+.home-page .member-row {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  align-items: start;
+}
+
+.home-page .committee-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+  margin: 0;
+}
+
+.home-page .committee-people {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+
+.home-page .committee-label .type-committee-en {
+  overflow-wrap: anywhere;
+}
