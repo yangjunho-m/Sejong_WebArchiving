@@ -63,7 +63,7 @@
 .profile-photo {
   width: min(309px, 100%);
   aspect-ratio: 3 / 4;
-  background: #d9d9d9 url("../img/designer-profile-placeholder.png") center / cover no-repeat;
+  background: #d9d9d9 url("../img/Profile/designer-profile-placeholder.png") center / cover no-repeat;
 }
 
 .profile-name {
