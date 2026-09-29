@@ -34,6 +34,6 @@
 
 위원회 한글 이름·부서명·직책은 type-committee-name(Pretendard Bold 700, 20px / 140% / -2%)을 사용합니다. 역할 및 이름 아래 영문 표기는 type-committee-en 설정이 우선합니다.
 
-홈 푸터 SNS 링크와 주소는 type-footer(Avant Garde Demi 600, 18px / 140% / 0)을 사용합니다. footer-address는 주소·이메일·전화번호를 각각 자식 요소로 두고 세로 flex 및 gap: 4px으로 배치합니다. 모바일에서도 같은 타이포그래피를 유지하며 좁은 화면에서 긴 주소는 자연스럽게 줄바꿈됩니다. 저작권 표기는 기존 설정을 유지합니다.
+홈 푸터 SNS 링크와 주소는 type-footer(Avant Garde Demi 600, 18px / 140% / 0)을 사용합니다. footer-address는 주소·이메일·전화번호를 각각 자식 요소로 두고 세로 flex 및 gap: 4px으로 배치합니다. 모바일에서도 같은 타이포그래피를 유지하며 좁은 화면에서 긴 주소는 자연스럽게 줄바꿈됩니다. 홈 저작권 표기는 Avant Garde Medium 500, 14px / 150% / 0을 사용합니다. 모바일에서는 기존처럼 숨깁니다.
 
 위원회 간격: members의 row-gap은 80px, committee-label은 한글·영문을 세로 flex로 배치하고 gap 8px을 사용합니다. committee-people은 부서 내 여러 사람을 묶으며 사람 사이 간격은 임시 28px입니다(별도 피그마 값 미지정). 모바일에서도 80px/8px을 유지하며 각 행은 콘텐츠 높이에 따라 늘어납니다.

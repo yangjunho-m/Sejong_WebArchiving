@@ -156,3 +156,12 @@
 .home-page .committee-label .type-committee-en {
   overflow-wrap: anywhere;
 }
+
+.home-page footer .copyright {
+  font-family: var(--font-en);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
