@@ -59,12 +59,11 @@ body{
 .masthead nav a{
   color:#141414;
   text-decoration:none;
-  font-family:Arial,sans-serif;
-  font-size:21px;
-  font-weight:700;
-  line-height:1;
-  letter-spacing:-.07em
-}
+
+
+
+
+  }
 .menu-toggle{
   display:none
 }
@@ -369,8 +368,8 @@ footer address{
   .detail-header nav a{
     width:max-content!important;
     color:#141414!important;
-    font-size:25px!important;
-    line-height:1!important;
+
+
     text-decoration:none!important;
     pointer-events:none!important
   }
@@ -433,9 +432,8 @@ footer address{
   }
   .masthead nav a{
     width:max-content;
-    font-size:25px;
-    line-height:1
-  }
+
+    }
 
   .masthead p{
     right:18px;

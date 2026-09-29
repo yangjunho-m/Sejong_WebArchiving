@@ -131,8 +131,8 @@
 .detail-header nav a {
   color: #999999;
   text-decoration: none;
-  font: 700 18px Arial, sans-serif;
-  letter-spacing: -0.07em;
+
+
   pointer-events: none;
   cursor: default;
 }
@@ -229,10 +229,6 @@
 
   .detail-header nav {
     gap: 18px;
-  }
-
-  .detail-header nav a {
-    font-size: 12px;
   }
 
   .designer-works {
@@ -344,10 +340,6 @@
   .detail-header nav {
     inset: 0;
     gap: 12px;
-  }
-
-  .detail-header nav a {
-    font-size: 10px;
   }
 
   .designer-works {

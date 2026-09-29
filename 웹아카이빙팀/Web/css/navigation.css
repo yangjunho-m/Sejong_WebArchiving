@@ -1,0 +1,39 @@
+/* 상단 메뉴 공통 설정. 위치·메뉴 열림 동작은 각 페이지 CSS에서 관리합니다. */
+:root {
+  --type-nav-size: 22px;
+  --nav-desktop-gap: 60px;
+}
+
+/* Demi는 style.css에 등록된 Avant Garde 600 로컬 폰트를 사용합니다. */
+.site-nav .type-nav {
+  font-family: "ITC Avant Garde Gothic Pro", Arial, sans-serif;
+  font-size: var(--type-nav-size);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+}
+
+/* PC: Figma 가로 Auto layout / Hug contents / 항목 간격 60px. */
+@media (min-width: 1101px) {
+  header nav.site-nav.site-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--nav-desktop-gap);
+    width: max-content;
+    height: auto;
+    padding: 0;
+    top: 38px;
+    right: 60px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .site-nav .type-nav {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+}

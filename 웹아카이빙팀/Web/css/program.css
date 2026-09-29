@@ -23,11 +23,10 @@
 .program-header nav a{
   color:#141414;
   text-decoration:none;
-  font-family:Arial,sans-serif;
-  font-size:21px;
-  font-weight:700;
-  letter-spacing:-.07em
-}
+
+
+
+  }
 .program-header nav a[aria-current="page"]{
   text-decoration:underline;
   text-underline-offset:5px
@@ -135,9 +134,6 @@
   }
   .program-header nav{
     padding-top:92px!important
-  }
-  .program-header nav a{
-    font-size:25px!important
   }
   .program-title{
     top:100px;

@@ -25,11 +25,10 @@
 .designers-header nav a{
   color:#141414;
   text-decoration:none;
-  font-family:Arial,sans-serif;
-  font-size:21px;
-  font-weight:700;
-  letter-spacing:-.07em
-}
+
+
+
+  }
 .designers-header nav a[aria-current="page"]{
   text-decoration:underline;
   text-underline-offset:5px
@@ -129,9 +128,6 @@
   }
   .designers-header nav{
     padding-top:120px!important
-  }
-  .designers-header nav a{
-    font-size:25px!important
   }
   .designers-title{
     position:absolute;

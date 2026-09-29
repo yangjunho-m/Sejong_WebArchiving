@@ -1,6 +1,6 @@
 # 타이포그래피 클래스 가이드
 
-현재 적용 범위는 Web/index.html입니다. typography.css는 페이지 스타일 뒤에 로드합니다.
+본문 역할 클래스의 현재 적용 범위는 Web/index.html입니다. 상단 메뉴는 모든 페이지에 공통 적용됩니다. typography.css는 페이지 스타일 뒤에 로드합니다.
 
 ## 역할과 서체 분리
 
@@ -37,3 +37,9 @@
 홈 푸터 SNS 링크와 주소는 type-footer(Avant Garde Demi 600, 18px / 140% / 0)을 사용합니다. footer-address는 주소·이메일·전화번호를 각각 자식 요소로 두고 세로 flex 및 gap: 4px으로 배치합니다. 모바일에서도 같은 타이포그래피를 유지하며 좁은 화면에서 긴 주소는 자연스럽게 줄바꿈됩니다. 홈 저작권 표기는 Avant Garde Medium 500, 14px / 150% / 0을 사용합니다. 모바일에서는 기존처럼 숨깁니다.
 
 위원회 간격: members의 row-gap은 80px, committee-label은 한글·영문을 세로 flex로 배치하고 gap 8px을 사용합니다. committee-people은 부서 내 여러 사람을 묶으며 사람 사이 간격은 임시 28px입니다(별도 피그마 값 미지정). 모바일에서도 80px/8px을 유지하며 각 행은 콘텐츠 높이에 따라 늘어납니다.
+
+## 공통 상단 메뉴
+
+navigation.css를 모든 HTML 페이지에서 로드합니다. nav에는 site-nav, 메뉴 링크에는 type-nav를 지정합니다. 메뉴의 서체·크기·굵기·행간·자간은 navigation.css 한 곳에서 관리합니다. 페이지별 nav a 규칙에는 배치·색상·활성 표시만 유지합니다. 모바일 메뉴에도 22px / 140% / -2%를 동일 적용합니다.
+
+PC(1101px 이상) 메뉴는 navigation.css에서 가로 flex, nowrap, width: max-content, gap: 60px로 관리합니다. 우측 60px·상단 38px에 배치합니다. 고정 너비 732px를 지정하지 않아 실제 폰트 너비에 맞춰 Hug 동작하며, 태블릿과 모바일의 기존 배치는 유지합니다.

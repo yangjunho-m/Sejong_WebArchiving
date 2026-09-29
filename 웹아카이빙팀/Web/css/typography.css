@@ -2,21 +2,11 @@
 :root {
   --font-ko: Pretendard, system-ui, sans-serif;
   --font-en: "ITC Avant Garde Gothic Pro", Pretendard, Arial, sans-serif;
-  --type-nav-size: 22px;
   --type-body-size: 18px;
   --type-title-ko-size: 32px;
 }
 
 /* Repeated class specificity overrides legacy element selectors, including mobile. */
-.type-nav.type-nav {
-  font-family: var(--font-en);
-  font-size: var(--type-nav-size);
-  font-weight: 600;
-  font-style: normal;
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-}
-
 .type-body.type-body {
   font-family: var(--font-ko);
   font-size: var(--type-body-size);
