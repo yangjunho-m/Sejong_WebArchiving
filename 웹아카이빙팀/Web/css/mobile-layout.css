@@ -1,0 +1,117 @@
+/* Shared Figma mobile grid: 390px frame, stretch / auto, 4 columns,
+   20px outer margins and 12px gutters. Two-column cards span two tracks. */
+@media (max-width: 700px) {
+  :root {
+    --mobile-margin: 20px;
+    --mobile-gutter: 12px;
+    --mobile-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .masthead,
+  .home-page .intro,
+  .home-page .committee,
+  .work-header,
+  .work-menu,
+  .work-section,
+  .designers-main,
+  .program-main,
+  .message-main,
+  .partners-main,
+  .profile-header,
+  .profile-body,
+  .work-detail-side-header,
+  .work-detail-info,
+  .project-hero {
+    padding-inline: var(--mobile-margin);
+  }
+
+  /* Legacy headers use important positioning, so match it here. */
+  body header .logo {
+    left: var(--mobile-margin) !important;
+  }
+  body header .menu-toggle {
+    right: var(--mobile-margin) !important;
+  }
+  body header .site-nav {
+    padding-inline: var(--mobile-margin) !important;
+  }
+  .masthead p,
+  .back-button,
+  .work-detail-back {
+    right: var(--mobile-margin);
+  }
+  .designers-title,
+  .program-title,
+  .partners-title {
+    left: var(--mobile-margin);
+    width: calc(100% - 2 * var(--mobile-margin));
+    max-width: none;
+  }
+
+  .home-page .intro,
+  .home-page .committee,
+  .home-page .posters,
+  .home-page .member-row,
+  .work-menu,
+  .project-grid,
+  .designers-list,
+  .program-list,
+  .message-board,
+  .partners-grid,
+  .designer-works {
+    display: grid;
+    grid-template-columns: var(--mobile-columns);
+    column-gap: var(--mobile-gutter);
+  }
+  .home-page .intro > *,
+  .home-page .committee > *,
+  .program-list > *,
+  .message-board > *,
+  .designer-works > * {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+  .home-page .posters > *,
+  .home-page .member-row > *,
+  .work-menu > *,
+  .project-grid > *,
+  .designers-list > *,
+  .partners-grid > * {
+    grid-column: span 2;
+    min-width: 0;
+  }
+  .home-page .poster {
+    width: 100%;
+  }
+  .profile-body {
+    grid-template-columns: var(--mobile-columns);
+    grid-template-areas: "name name photo photo" "links links photo photo";
+    column-gap: var(--mobile-gutter);
+  }
+  .profile-body > * {
+    min-width: 0;
+  }
+  .profile-photo {
+    width: 100%;
+  }
+  .work-detail-authors,
+  .material-grid {
+    column-gap: var(--mobile-gutter);
+  }
+  .designer-works,
+  .project-text-top,
+  .project-layout,
+  .material-layout {
+    margin-inline: var(--mobile-margin);
+  }
+
+  footer {
+    padding-inline: var(--mobile-margin) !important;
+    grid-template-columns: var(--mobile-columns) !important;
+    grid-template-areas:
+      "symbol symbol symbol symbol"
+      "instagram instagram behance vimeo"
+      "address address address address";
+    column-gap: var(--mobile-gutter) !important;
+  }
+}
