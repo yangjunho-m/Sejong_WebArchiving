@@ -45,7 +45,7 @@ export function renderReceiptPreview({
     .map((e) => {
       const a = points.get(e.from),
         b = points.get(e.to);
-      return `<path d="M${a.x} ${a.y} Q${(a.x + b.x) / 2} ${(a.y + b.y) / 2 - 65 * scale} ${b.x} ${b.y}"/>`;
+      return `<path d="M${a.x} ${a.y} Q${(a.x + b.x) / 2 + (e.bendX ?? 0) * scale * 2} ${(a.y + b.y) / 2 + (e.bendY ?? e.bend ?? 0) * scale * 2} ${b.x} ${b.y}"/>`;
     })
     .join("");
   const buttons = nodes

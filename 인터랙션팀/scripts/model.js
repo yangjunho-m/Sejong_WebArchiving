@@ -39,12 +39,12 @@ export function initialNodes(ids) {
 export function addConnection(edges, from, to) {
   if (from === to || edges.some((e) => e.from === from && e.to === to))
     return edges;
-  return [...edges, { from, to }];
+  return [...edges, { from, to, bendX: 0, bendY: 0 }];
 }
-export function connectionPath(a, b) {
-  const mx = (a.x + b.x) / 2,
-    my = (a.y + b.y) / 2 - 32.5;
-  return `M${a.x} ${a.y} Q${(a.x + mx) / 2} ${(a.y + (a.y + b.y) / 2 - 65) / 2} ${mx} ${my} Q${(mx + b.x) / 2} ${((a.y + b.y) / 2 - 65 + b.y) / 2} ${b.x} ${b.y}`;
+export function connectionPath(a, b, bendX = 0, bendY = 0) {
+  const cx = (a.x + b.x) / 2 + bendX * 2,
+    cy = (a.y + b.y) / 2 + bendY * 2;
+  return `M${a.x} ${a.y} Q${cx} ${cy} ${b.x} ${b.y}`;
 }
 export function isConnected(nodes, edges) {
   if (nodes.length < 2) return false;

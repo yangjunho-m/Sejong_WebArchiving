@@ -1,4 +1,4 @@
-import { renderReceipt, printReceipt } from "./receipt.js";
+﻿import { renderReceipt, printReceipt } from "./receipt.js";
 import { renderReceiptPreview } from "./receipt-preview.js";
 import {
   MIN_SELECTION,
@@ -37,6 +37,8 @@ const esc = (s) =>
         c
       ],
   );
+const CAROUSEL_START_CYCLE = 2;
+const CAROUSEL_INITIAL_CYCLES = 5;
 const asset = (s) => catalog.assets.find((a) => a.id === s.assetId);
 const student = (id) => catalog.students.find((s) => s.id === id);
 const chosen = () => selected.map(student);
@@ -74,16 +76,16 @@ for (const event of ["pointerdown", "pointermove", "keydown", "input", "wheel"])
 setInterval(() => {
   if (screen !== "landing" && Date.now() - lastActivity > 120000) {
     reset();
-    toast("새로운 관람객을 위해 처음 화면으로 돌아왔어요.");
+    toast("새로운 관람객을 위해 처음 화면으로 돌아갑니다.");
   }
 }, 1000);
 function landing() {
   setScreen("landing");
   app.innerHTML = `<section class="landing" aria-label="나의 첫 단추 시작">${[0, 1, 2].map((_, i) => `<div class="marquee" aria-hidden="true">${[...catalog.assets.slice(i * 12, i * 12 + 12), ...catalog.assets.slice(i * 12, i * 12 + 12)].map((a) => `<img src="/${a.letter}" alt="">`).join("")}</div>`).join("")}<div class="landing-start"><div class="start-artwork"><button id="start" aria-label="단추를 클릭하여 시작하기"><img src="/img/start-button.svg" alt="" width="50" height="50"></button><img class="start-label" src="/img/start-label.svg" alt="단추를 클릭하여 시작하기. Click the button to begin" width="240" height="81"></div></div></section>`;
-  document.querySelector("#start").onclick = () => {
+  document.querySelector(".start-artwork").onclick = () => {
     setScreen("intro");
     app.innerHTML = `<section class="intro intro-reference" aria-label="모든 시작에는, 저마다의 첫 단추가 있습니다. 당신의 마음을 사로잡는 첫 단추는 무엇인가요?"><div class="intro-layout"><img class="intro-scene" src="/img/intro-scene.svg" alt="단추와 시작 안내"><img class="intro-wordmark" src="/img/letter/44-buttonup.svg" alt="BUTTON UP!"><div class="intro-center-button" aria-hidden="true"><img class="intro-center-btn" src="/img/btn.png" alt=""><img class="intro-center-dream" src="/img/photo/03-dream.png" alt=""></div></div></section>`;
-    timer = setTimeout(introToSelect, 1900);
+    timer = setTimeout(introToSelect, 2600);
   };
 }
 function introToSelect() {
@@ -131,11 +133,23 @@ function updateCounter() {
 function centerObject(index, behavior) {
   const carousel = document.querySelector(".carousel");
   const objects = carousel.querySelectorAll(".object");
-  const target = objects[index];
+  const target =
+    carousel.querySelector(
+      `.object[data-real="${index}"][data-cycle="${CAROUSEL_START_CYCLE}"]`,
+    ) || objects[index];
   if (!target) return;
+  centerCarouselButton(target, behavior);
+}
+function centerCarouselButton(target, behavior) {
+  const carousel = document.querySelector(".carousel");
+  const objects = carousel.querySelectorAll(".object");
+  const index = Number(target.dataset.real);
   current = index;
   objects.forEach((button, i) =>
-    button.classList.toggle("active", i === index),
+    button.classList.toggle(
+      "active",
+      Number(button.dataset.real ?? i) === index && button === target,
+    ),
   );
   const bounds = carousel.getBoundingClientRect(),
     rect = target.getBoundingClientRect();
@@ -156,41 +170,72 @@ function centerObject(index, behavior) {
 }
 function renderCarousel() {
   const carousel = document.querySelector(".carousel");
+  let renderedCycles = 0;
+  const itemMarkup = (student, real, cycle) => {
+    const a = asset(student);
+    return `<button class="object ${real === current && cycle === CAROUSEL_START_CYCLE ? "active" : ""}" data-id="${student.id}" data-real="${real}" data-cycle="${cycle}" aria-label="${esc(student.name)} · ${esc(a.wordKo)} 상세 보기"><img class="photo" src="/${a.image}" alt="${esc(a.wordKo)}를 상징하는 이미지" loading="lazy"><img class="word" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></button>`;
+  };
+  const appendCycles = (count) => {
+    if (!filtered.length) return;
+    const start = renderedCycles;
+    const html = Array.from({ length: count }, (_, offset) => {
+      const cycle = start + offset;
+      return filtered
+        .map((student, real) => itemMarkup(student, real, cycle))
+        .join("");
+    }).join("");
+    carousel.insertAdjacentHTML("beforeend", html);
+    renderedCycles += count;
+    bindCarouselButtons();
+  };
+  const ensureMoreToRight = () => {
+    if (filtered.length <= 1) return;
+    const remaining =
+      carousel.scrollWidth - carousel.clientWidth - carousel.scrollLeft;
+    if (remaining < carousel.clientWidth * 2.25) appendCycles(2);
+  };
   carousel.innerHTML = filtered.length
-    ? filtered
-        .map((s, i) => {
-          const a = asset(s);
-          return `<button class="object ${i === current ? "active" : ""}" data-id="${s.id}" aria-label="${esc(s.name)} · ${esc(a.wordKo)} 상세 보기"><img class="photo" src="/${a.image}" alt="${esc(a.wordKo)}를 상징하는 이미지" loading="lazy"><img class="word" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></button>`;
-        })
-        .join("")
+    ? ""
     : '<p class="empty">검색 결과가 없어요. 다른 이름이나 단어를 입력해 주세요.</p>';
+  if (filtered.length > 1) appendCycles(CAROUSEL_INITIAL_CYCLES);
+  else if (filtered.length) appendCycles(1);
   document.querySelector("#position").max = Math.max(0, filtered.length - 1);
   document.querySelector("#position").disabled = !filtered.length;
   updateCounter();
-  carousel.querySelectorAll("button").forEach(
-    (b, i) =>
-      (b.onclick = () => {
-        centerObject(i);
-        showDetail(b.dataset.id);
-      }),
-  );
+  function bindCarouselButtons() {
+    carousel.querySelectorAll("button").forEach(
+      (b) =>
+        (b.onclick = () => {
+          if (!b.classList.contains("active")) {
+            centerCarouselButton(b);
+            return;
+          }
+          showDetail(b.dataset.id);
+        }),
+    );
+  }
   let scrollTimer,
     gesture = null,
     suppressClick = false;
   const nearestObject = () => {
     const bounds = carousel.getBoundingClientRect(),
       center = bounds.left + bounds.width / 2;
-    let nearest = 0,
+    let nearest = null,
       dist = Infinity;
-    carousel.querySelectorAll(".object").forEach((b, i) => {
+    carousel.querySelectorAll(".object").forEach((b) => {
       const r = b.getBoundingClientRect(),
         d = Math.abs(r.left + r.width / 2 - center);
       if (d < dist) {
         dist = d;
-        nearest = i;
+        nearest = b;
       }
     });
     return nearest;
+  };
+  const settleNearest = (behavior) => {
+    const nearest = nearestObject();
+    if (!nearest) return;
+    centerCarouselButton(nearest, behavior);
   };
   carousel.onpointerdown = (e) => {
     if (!e.isPrimary || e.button !== 0) return;
@@ -217,7 +262,9 @@ function renderCarousel() {
     }
     e.preventDefault();
     carousel.scrollLeft = gesture.left - dx;
-    document.querySelector("#position").value = nearestObject();
+    const nearest = nearestObject();
+    if (nearest)
+      document.querySelector("#position").value = nearest.dataset.real;
   };
   const finishDrag = (e) => {
     if (!gesture || e.pointerId !== gesture.id) return;
@@ -226,7 +273,7 @@ function renderCarousel() {
     if (carousel.hasPointerCapture(e.pointerId))
       carousel.releasePointerCapture(e.pointerId);
     carousel.classList.remove("dragging");
-    if (dragged) centerObject(nearestObject());
+    if (dragged) settleNearest();
   };
   carousel.onpointerup = finishDrag;
   carousel.onpointercancel = finishDrag;
@@ -250,15 +297,15 @@ function renderCarousel() {
   carousel.ondragstart = (e) => e.preventDefault();
   carousel.onscroll = () => {
     clearTimeout(scrollTimer);
+    ensureMoreToRight();
     if (gesture) return;
     scrollTimer = setTimeout(() => {
       if (!carousel.isConnected) return;
-      const nearest = nearestObject();
-      if (nearest !== current) centerObject(nearest);
-      else updateCounter();
+      ensureMoreToRight();
+      settleNearest();
     }, 120);
   };
-  carousel.scrollLeft = 0;
+  requestAnimationFrame(() => centerObject(current, "instant"));
 }
 function renderTray() {
   const tray = document.querySelector(".tray");
@@ -352,7 +399,7 @@ function showDetail(id) {
     if (has) selected = selected.filter((x) => x !== id);
     else if (selected.length < MAX_SELECTION) selected.push(id);
     else {
-      toast(`최대 ${MAX_SELECTION}개까지 선택할 수 있어요`);
+      toast(`최대 ${MAX_SELECTION}개까지 선택할 수 있어요.`);
       return;
     }
     dialog.close();
@@ -366,11 +413,11 @@ function save() {
 }
 function editor() {
   setScreen("editor");
-  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전단계로"><img src="/img/previous-step.svg" alt="" aria-hidden="true"></button></div><p class="helper" id="editor-help" role="status">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p><button id="finish" aria-label="이 패턴으로 생성하기"><img src="/img/generate-pattern.svg" alt="" aria-hidden="true"></button></div></section>`;
+  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전 단계로"><img src="/img/previous-step.svg" alt="" aria-hidden="true"></button></div><div class="helper-wrap"><p class="edge-hint" role="status">선을 클릭하면 삭제되고, 선의 점을 드래그하면 곡률을 조절할 수 있어요.</p><p class="helper" id="editor-help">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p></div><button id="finish" aria-label="이 패턴으로 생성하기"><img src="/img/generate-pattern.svg" alt="" aria-hidden="true"></button></div></section>`;
   document.querySelector("#back").onclick = selectScreen;
   document.querySelector("#finish").onclick = async () => {
     if (!isConnected(nodes, edges))
-      return toast("모든 단추를 하나로 연결해 주세요");
+      return toast("모든 단추를 하나로 연결해 주세요.");
     const token = session;
     setScreen("loading");
     app.innerHTML = `<section class="pattern-loading" role="status" aria-live="polite"><div class="pattern-loading-panel"><div class="pattern-loading-buttons" aria-hidden="true"><img src="/img/btn.png" alt=""><img src="/img/btn2.png" alt=""><img src="/img/btn.png" alt=""></div><p>나만의 패턴을 만들고 있어요.<br>조금만 기다려주세요.</p></div></section>`;
@@ -386,16 +433,28 @@ function editor() {
   };
   drawBoard();
 }
+function showEdgeHint() {
+  const hint = document.querySelector(".edge-hint");
+  if (!hint) return;
+  hint.classList.remove("is-visible");
+  void hint.offsetWidth;
+  hint.classList.add("is-visible");
+}
 function drawBoard() {
   const board = document.querySelector(".board");
   const active = nodes.find((n) => n.id === focus);
-  board.innerHTML = `<svg viewBox="0 0 1000 560" preserveAspectRatio="none" aria-label="연결선">${edges
+  const edgeMarkup = edges
     .map((e, i) => {
       const a = nodes.find((n) => n.id === e.from),
         b = nodes.find((n) => n.id === e.to);
-      return `<path class="edge" data-edge="${i}" d="${connectionPath(a, b)}"/>`;
+      const bendX = e.bendX ?? 0,
+        bendY = e.bendY ?? e.bend ?? 0,
+        handleX = (a.x + b.x) / 2 + bendX,
+        handleY = (a.y + b.y) / 2 + bendY;
+      return `<path class="edge" data-edge="${i}" d="${connectionPath(a, b, bendX, bendY)}"/><circle class="edge-handle" data-bend="${i}" cx="${handleX}" cy="${handleY}" r="12"><title>드래그해서 선 곡률 조절</title></circle>`;
     })
-    .join("")}</svg>${nodes
+    .join("");
+  board.innerHTML = `<svg viewBox="0 0 1000 560" preserveAspectRatio="none" aria-label="연결선">${edgeMarkup}</svg>${nodes
     .map((n) => {
       const s = student(n.id),
         a = asset(s);
@@ -436,12 +495,68 @@ function drawBoard() {
         drawBoard();
       }),
   );
+  board.querySelectorAll("[data-bend]").forEach((handle) => {
+    handle.onpointerdown = (e) => {
+      if (!e.isPrimary || e.button !== 0) return;
+      e.preventDefault();
+      e.stopPropagation();
+      const edge = edges[Number(handle.dataset.bend)];
+      const start = {
+        x: e.clientX,
+        y: e.clientY,
+        bendX: edge.bendX ?? 0,
+        bendY: edge.bendY ?? edge.bend ?? 0,
+      };
+      let moved = false;
+      handle.setPointerCapture(e.pointerId);
+      handle.onpointermove = (ev) => {
+        const rect = board.getBoundingClientRect();
+        if (
+          Math.hypot(ev.clientX - start.x, ev.clientY - start.y) < 3 &&
+          !moved
+        )
+          return;
+        if (!moved) {
+          save();
+          moved = true;
+        }
+        edge.bendX = clamp(
+          start.bendX + ((ev.clientX - start.x) / rect.width) * 1000,
+          -360,
+          360,
+        );
+        edge.bendY = clamp(
+          start.bendY + ((ev.clientY - start.y) / rect.height) * 560,
+          -220,
+          220,
+        );
+        const a = nodes.find((n) => n.id === edge.from),
+          b = nodes.find((n) => n.id === edge.to),
+          bendX = edge.bendX ?? 0,
+          bendY = edge.bendY ?? edge.bend ?? 0;
+        board
+          .querySelector(`[data-edge="${handle.dataset.bend}"]`)
+          ?.setAttribute("d", connectionPath(a, b, bendX, bendY));
+        handle.setAttribute("cx", (a.x + b.x) / 2 + bendX);
+        handle.setAttribute("cy", (a.y + b.y) / 2 + bendY);
+      };
+      handle.onpointerup = handle.onpointercancel = (ev) => {
+        handle.onpointermove = null;
+        handle.onpointerup = null;
+        handle.onpointercancel = null;
+        if (handle.hasPointerCapture(ev.pointerId))
+          handle.releasePointerCapture(ev.pointerId);
+        if (moved) drawBoard();
+      };
+    };
+  });
   function selectNode(id) {
     if (pending && pending !== id) {
       const next = addConnection(edges, pending, id);
       if (next !== edges) {
         save();
         edges = next;
+        showEdgeHint();
       }
     }
     focus = id;
@@ -472,13 +587,13 @@ function drawBoard() {
       const n = nodes.find((n) => n.id === b.dataset.id);
       n.x = clamp(
         n.x + (e.key === "ArrowRight" ? 10 : e.key === "ArrowLeft" ? -10 : 0),
-        120,
-        880,
+        75,
+        925,
       );
       n.y = clamp(
         n.y + (e.key === "ArrowDown" ? 10 : e.key === "ArrowUp" ? -10 : 0),
-        110,
-        420,
+        70,
+        490,
       );
       focus = n.id;
       pending = n.id;
@@ -507,13 +622,13 @@ function drawBoard() {
         }
         n.x = clamp(
           start.nx + ((ev.clientX - start.x) / rect.width) * 1000,
-          120,
-          880,
+          75,
+          925,
         );
         n.y = clamp(
           start.ny + ((ev.clientY - start.y) / rect.height) * 560,
-          110,
-          420,
+          70,
+          490,
         );
         b.style.left = n.x / 10 + "%";
         b.style.top = n.y / 5.6 + "%";
@@ -523,9 +638,20 @@ function drawBoard() {
             connectionPath(
               nodes.find((n) => n.id === edges[i].from),
               nodes.find((n) => n.id === edges[i].to),
+              edges[i].bendX ?? 0,
+              edges[i].bendY ?? edges[i].bend ?? 0,
             ),
           ),
         );
+        board.querySelectorAll("[data-bend]").forEach((handle, i) => {
+          const edge = edges[i],
+            a = nodes.find((n) => n.id === edge.from),
+            b = nodes.find((n) => n.id === edge.to),
+            bendX = edge.bendX ?? 0,
+            bendY = edge.bendY ?? edge.bend ?? 0;
+          handle.setAttribute("cx", (a.x + b.x) / 2 + bendX);
+          handle.setAttribute("cy", (a.y + b.y) / 2 + bendY);
+        });
       };
       b.onpointerup = b.onpointercancel = (ev) => {
         b.onpointermove = null;

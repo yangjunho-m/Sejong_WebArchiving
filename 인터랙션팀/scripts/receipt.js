@@ -217,8 +217,8 @@ export async function renderReceipt({
     ctx.beginPath();
     ctx.moveTo(a.x, a.y);
     ctx.quadraticCurveTo(
-      (a.x + b.x) / 2,
-      (a.y + b.y) / 2 - 65 * scale,
+      (a.x + b.x) / 2 + (edge.bendX ?? 0) * scale * 2,
+      (a.y + b.y) / 2 + (edge.bendY ?? edge.bend ?? 0) * scale * 2,
       b.x,
       b.y,
     );

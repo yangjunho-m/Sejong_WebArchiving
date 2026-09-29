@@ -119,7 +119,7 @@ h1 {
   height: 76px;
   max-width: 310px;
   object-fit: contain;
-  filter: invert(1);
+  filter: none;
 }
 .landing-start {
   text-align: center;
@@ -228,7 +228,6 @@ h1 {
   height: 39px;
   width: 160px;
   object-fit: contain;
-  filter: invert(1);
   margin: 17px auto 8px;
 }
 .object .word {
@@ -878,6 +877,7 @@ header .header-home {
   height: clamp(40px, 7.04svh, 76px);
   max-width: none;
   flex-shrink: 0;
+  filter: none;
 }
 .landing .landing-start {
   position: absolute;
@@ -902,6 +902,7 @@ header .header-home {
 .start-artwork {
   width: clamp(180px, 22.222svh, 240px);
   margin: 0 auto;
+  cursor: pointer;
 }
 .landing-start #start {
   display: block;
@@ -922,10 +923,12 @@ header .header-home {
   height: auto;
   transition: transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
+.start-artwork:hover #start img,
 .landing-start #start:hover img,
 .landing-start #start:focus-visible img {
   transform: rotate(180deg);
 }
+.start-artwork:hover #start,
 .landing-start #start:hover,
 .landing-start #start:focus-visible {
   filter: brightness(1.25);
@@ -1135,7 +1138,7 @@ header .header-home {
   margin: 0;
   font-family: AvantHeading, Avant, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 40px;
   line-height: 40px;
   letter-spacing: normal;
@@ -1167,13 +1170,23 @@ header .header-home {
   display: block;
 }
 .selection .object .word {
+  width: 78%;
+  height: clamp(18px, 2.65svh, 30px);
+  margin: 14px auto 6px;
+}
+.selection .object > small {
+  display: block;
+  font-family: Pretendard, "Malgun Gothic", sans-serif;
+  font-weight: 700;
+  font-size: clamp(16px, 2.6svh, 24px);
+  line-height: 1.25;
+  color: #fff;
+  text-align: center;
+}
+.selection .object.active .word {
   width: 85%;
   height: clamp(25px, 4.1svh, 44px);
   margin: 22px auto 10px;
-}
-.selection .object:not(.active) .word,
-.selection .object:not(.active) > small {
-  display: none;
 }
 .selection .browse-bar {
   position: absolute;
@@ -1565,7 +1578,6 @@ body:has(#detail[open]) #app {
   height: 130px;
   object-fit: contain;
   object-position: left center;
-  filter: invert(1);
 }
 .detail-names {
   display: flex;
@@ -1993,7 +2005,7 @@ body:has(#detail[open]) #app {
 }
 .pattern-editor .board {
   container-type: inline-size;
-  width: min(1100px, 94vw, calc((100svh - 185px) * 1.7857));
+  width: min(1440px, 99vw, calc((100svh - 150px) * 2.1));
   margin: auto;
   flex-shrink: 0;
 }
@@ -2011,27 +2023,70 @@ body:has(#detail[open]) #app {
   outline: 2px solid var(--blue);
 }
 .pattern-editor .node .node-label {
-  top: 100%;
+  top: 82%;
   left: -10%;
   width: 120%;
 }
 .pattern-editor .node .node-word {
   display: block;
   width: 100%;
-  height: 3.4cqw;
+  height: 3.65cqw;
   object-fit: contain;
   border-radius: 0;
-  filter: invert(1);
 }
 .pattern-editor .node .node-label small {
   display: block;
-  margin-top: 3px;
+  margin-top: -1px;
   font-size: clamp(9px, 1.1cqw, 13px);
   font-weight: 400;
 }
 .pattern-editor .edge {
   stroke: #ddd;
   stroke-width: 3.5;
+}
+.pattern-editor .edge-handle {
+  fill: #b4cbea;
+  stroke: #fff;
+  stroke-width: 2;
+  cursor: move;
+  pointer-events: auto;
+}
+.pattern-editor .edge-handle:hover {
+  fill: #d6e4f8;
+}
+.edge-hint {
+  width: fit-content;
+  max-width: min(100%, 680px);
+  margin: 0 auto 9px;
+  padding: 9px 14px;
+  border: 1px solid #ffffff45;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.36);
+  color: #ddd;
+  font-size: clamp(11px, 1.1vw, 14px);
+  line-height: 1.4;
+  text-align: center;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+}
+.edge-hint.is-visible {
+  animation: edge-hint-show 5s ease forwards;
+}
+@keyframes edge-hint-show {
+  0%,
+  82% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+  }
 }
 .node-tools {
   position: absolute;
@@ -2090,7 +2145,7 @@ body:has(#detail[open]) #app {
   stroke-linejoin: round;
 }
 .pattern-editor .editor-footer {
-  padding: 20px 3.5% 32px;
+  padding: 12px 3.5% 20px;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 16px;
@@ -2103,6 +2158,9 @@ body:has(#detail[open]) #app {
   font-size: 10px;
   padding: 7px 10px;
   border-color: #555;
+}
+.pattern-editor .helper-wrap {
+  align-self: center;
 }
 .pattern-editor .editor-actions #back {
   width: 204px;
@@ -2184,15 +2242,18 @@ body:has(#detail[open]) #app {
     min-height: calc(100svh - 80px);
   }
   .pattern-editor .board {
-    width: 94vw;
-    margin: 70px auto;
+    width: 98vw;
+    margin: 42px auto;
   }
   .pattern-editor .editor-footer {
     grid-template-columns: 1fr 1fr;
   }
-  .pattern-editor .helper {
+  .pattern-editor .helper-wrap {
     grid-column: 1/-1;
     grid-row: 1;
+  }
+  .pattern-editor .edge-hint {
+    white-space: normal;
   }
   .node-tools {
     transform: translate(-50%, calc(-100% - var(--node-radius) - 8px));
