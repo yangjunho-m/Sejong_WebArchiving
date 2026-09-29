@@ -36,8 +36,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: './dev_team/Web'
+          # Upload the web archiving team's static site
+          path: './웹아카이빙팀/Web'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
