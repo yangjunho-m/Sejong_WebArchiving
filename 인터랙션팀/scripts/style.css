@@ -1782,7 +1782,17 @@ body:has(#detail[open]) #app {
   background: #ebf0f6;
 }
 .receipt-vector-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 896 / 430;
   background: #141414;
+}
+.receipt-vector-title img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .receipt-vector svg {
   display: block;
@@ -1793,45 +1803,50 @@ body:has(#detail[open]) #app {
   background: linear-gradient(#7dabef, #ebf0f6);
 }
 .receipt-vector-details {
-  padding: 0 7.35% 24px;
+  padding: 0 7.35% 18px;
   font:
-    13px/1.7 "Malgun Gothic",
+    12px/1.55 "Malgun Gothic",
     sans-serif;
   overflow-wrap: anywhere;
 }
 .receipt-vector-details section {
-  margin: 0 0 22px;
+  margin: 0 0 14px;
 }
 .receipt-vector-details section:first-child {
   border-top: 1px solid #aaa;
-  padding-top: 20px;
+  padding-top: 14px;
 }
 .receipt-vector-details h2 {
-  margin: 0 0 9px;
+  margin: 0 0 6px;
   font:
-    700 15px/1.5 "Malgun Gothic",
+    700 13px/1.35 "Malgun Gothic",
     sans-serif;
 }
 .receipt-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 4px;
+  margin-bottom: 7px;
 }
 .receipt-pills span {
   border: 1px solid #555;
   border-radius: 999px;
-  padding: 3px 9px;
-  font-size: 11px;
-  line-height: 1.5;
+  padding: 2px 7px;
+  font-size: 9px;
+  line-height: 1.35;
+}
+.receipt-vector-details .receipt-description {
+  margin: 7px 0 0;
+  font-size: 9px;
+  line-height: 1.55;
 }
 .receipt-vector-details .receipt-location {
-  font-size: 11px;
+  font-size: 9px;
   color: #444;
 }
 .result-qr {
   position: absolute;
-  left: 69%;
+  left: 66%;
   top: 22%;
   width: 150px;
   text-align: center;
@@ -1860,7 +1875,7 @@ body:has(#detail[open]) #app {
   color: #888;
 }
 .result-bottom {
-  margin: 28px auto 0;
+  margin: 18px auto 0;
   text-align: center;
   position: relative;
 }
@@ -1900,8 +1915,8 @@ body:has(#detail[open]) #app {
 }
 .result-decoration img {
   position: absolute;
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
 }
 .result-decoration img:nth-child(1) {
@@ -1929,7 +1944,7 @@ body:has(#detail[open]) #app {
     width: clamp(280px, 32vw, 420px);
   }
   .result-qr {
-    left: 76%;
+    left: 73%;
     width: clamp(100px, 12.5vw, 170px);
   }
 }
@@ -1953,8 +1968,8 @@ body:has(#detail[open]) #app {
     font-size: clamp(8px, 2.65vw, 11px);
   }
   .result-decoration img {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
   .result-restart {
     right: 16px;

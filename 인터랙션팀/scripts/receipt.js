@@ -44,28 +44,28 @@ function outlinedTitle(ctx, text, y, size, maxWidth) {
   ctx.restore();
 }
 function pillRows(ctx, values, y, paint) {
-  ctx.font = `22px ${KO}`;
+  ctx.font = `18px ${KO}`;
   let x = 66;
   for (const value of values) {
     for (const part of lines(ctx, value, 724)) {
-      const width = ctx.measureText(part).width + 34;
+      const width = ctx.measureText(part).width + 28;
       if (x + width > W - 66 && x > 66) {
         x = 66;
-        y += 56;
+        y += 42;
       }
       if (paint) {
         ctx.beginPath();
-        ctx.roundRect(x, y, width, 44, 22);
+        ctx.roundRect(x, y, width, 34, 17);
         ctx.lineWidth = 1.5;
         ctx.strokeStyle = INK;
         ctx.stroke();
         ctx.fillStyle = INK;
-        ctx.fillText(part, x + 17, y + 29);
+        ctx.fillText(part, x + 14, y + 23);
       }
-      x += width + 12;
+      x += width + 9;
     }
   }
-  return y + 44;
+  return y + 34;
 }
 export async function renderReceipt({
   people,
@@ -81,6 +81,8 @@ export async function renderReceipt({
   const lookup = new Map(assets.map((a) => [a.id, a]));
   const words = people.map((s) => lookup.get(s.assetId));
   const wordImages = await Promise.all(words.map((a) => image("/" + a.letter)));
+  const titleLogo = await image("/img/forward_buttonUp.png");
+  const designLogo = await image("/img/receipt-design-logo.png");
   const recommended = people.find((s) => s.works.length) || people[0];
   const title = recommended.works[0] || "작품 정보 준비 중";
   const owners = people.filter((s) => s.works.includes(title));
@@ -107,7 +109,7 @@ export async function renderReceipt({
         [...new Set(words.map((a) => a.wordEn.toUpperCase()))],
         y - 10,
         paint,
-      ) + 75;
+      ) + 48;
     heading("선택한 단어의 학생");
     y =
       pillRows(
@@ -115,7 +117,7 @@ export async function renderReceipt({
         people.map((s) => s.displayName || s.name),
         y - 10,
         paint,
-      ) + 75;
+      ) + 48;
     heading("추천 졸업전시작 - " + title);
     y =
       pillRows(
@@ -131,21 +133,22 @@ export async function renderReceipt({
         y - 10,
         paint,
       ) + 40;
-    ctx.font = `22px ${KO}`;
+    ctx.font = `18px ${KO}`;
     const description =
       recommended.workExplanation &&
       recommended.workExplanation !== "추후 입력 예정"
         ? recommended.workExplanation
         : "";
-    if (description) {
-      for (const line of lines(ctx, description, W - 132)) {
+    const bottomText = description || explanation || "";
+    if (bottomText) {
+      for (const line of lines(ctx, bottomText, W - 132)) {
         if (paint) ctx.fillText(line, 66, y);
-        y += 32;
+        y += 26;
       }
-      y += 55;
+      y += 36;
     }
-    y += 24;
-    ctx.font = `18px ${KO}`;
+    y += 14;
+    ctx.font = `16px ${KO}`;
     const locations = people.filter((s) => s.location);
     if (locations.length) {
       const locationText = locations
@@ -169,8 +172,16 @@ export async function renderReceipt({
   ctx.fillRect(0, 0, W, logicalHeight);
   ctx.fillStyle = INK;
   ctx.fillRect(0, 0, W, 430);
-  outlinedTitle(ctx, "forward,", 178, 125, 520);
-  outlinedTitle(ctx, "BUTTON UP!", 349, 166, 750);
+  const titleFit = Math.min(W / titleLogo.width, 430 / titleLogo.height);
+  const titleW = titleLogo.width * titleFit;
+  const titleH = titleLogo.height * titleFit;
+  ctx.drawImage(
+    titleLogo,
+    (W - titleW) / 2,
+    (430 - titleH) / 2,
+    titleW,
+    titleH,
+  );
   const gradient = ctx.createLinearGradient(0, 430, 0, 982);
   gradient.addColorStop(0, "#7dabef");
   gradient.addColorStop(1, PAPER);
@@ -248,11 +259,7 @@ export async function renderReceipt({
       h = img.height * fit;
     ctx.drawImage(img, p.x - w / 2, p.y + r - 14, w, h);
   });
-  ctx.fillStyle = INK;
-  ctx.font = "700 16px Avant, sans-serif";
-  ctx.textAlign = "right";
-  ctx.fillText("DESIGN", W - 50, 965);
-  ctx.fillText("INNOVATION", W - 50, 983);
+  ctx.drawImage(designLogo, W - 48 - 109, 952, 109, 27);
   ctx.textAlign = "left";
   ctx.strokeStyle = "#777";
   ctx.lineWidth = 1.5;
