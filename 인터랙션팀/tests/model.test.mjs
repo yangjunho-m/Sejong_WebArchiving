@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
-import {searchStudents,initialNodes,addConnection,isConnected,encodeMonoBmp} from '../src/model.js';
+import {searchStudents,initialNodes,addConnection,isConnected,encodeMonoBmp} from '../scripts/model.js';
 import {server} from '../server.mjs';
 const data=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url)));
 test('catalog preserves all student rows and shared asset relationships',async()=>{
@@ -37,7 +37,7 @@ test('server serves app but does not expose source workbook or review data',asyn
 });
 
 test('keywords merge shared images and name searches retain the same selection identity',async()=>{
-  const {keywordStudents}=await import('../src/model.js');
+  const {keywordStudents}=await import('../scripts/model.js');
   const all=keywordStudents(data.students,data.assets);
   assert.equal(all.length,new Set(data.students.map(s=>s.assetId)).size);
   const curiosity=keywordStudents(data.students,data.assets,'호기심');

@@ -67,14 +67,17 @@ export async function renderReceipt({people, assets, nodes, edges, explanation})
     y = pillRows(ctx, [...(owners.length ? owners : [recommended]).map(s => s.displayName || s.name), recommended.major === 'visual design' ? 'VISUAL DESIGN' : 'INDUSTRIAL DESIGN'], y - 10, paint) + 40;
     ctx.font = `22px ${KO}`;
     const description = recommended.workExplanation && recommended.workExplanation !== '추후 입력 예정'
-      ? recommended.workExplanation : '작품 소개는 준비 중입니다. 전시장에서 디자이너의 작품을 만나 보세요.';
-    for (const line of lines(ctx, description, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 32; }
-    y += 55; heading('나의 첫 단추'); ctx.font = `22px ${KO}`;
-    for (const line of lines(ctx, explanation, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 32; }
+      ? recommended.workExplanation : '';
+    if (description) {
+      for (const line of lines(ctx, description, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 32; }
+      y += 55;
+    }
     y += 24; ctx.font = `18px ${KO}`;
     const locations = people.filter(s => s.location);
-    const locationText = locations.length ? locations.map(s => `${s.name}: ${s.location}`).join(' / ') : '작품 위치 안내 준비 중';
-    for (const line of lines(ctx, locationText, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 28; }
+    if (locations.length) {
+      const locationText = locations.map(s => `${s.name}: ${s.location}`).join(' / ');
+      for (const line of lines(ctx, locationText, W - 132)) { if (paint) ctx.fillText(line, 66, y); y += 28; }
+    }
     return y + 65;
   }
   const logicalHeight=Math.ceil(details(false));

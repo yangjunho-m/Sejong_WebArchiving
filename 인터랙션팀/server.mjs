@@ -12,7 +12,7 @@ export const server = http.createServer(async (req,res) => {
     const file = path.resolve(root, '.' + (requested === '/' ? '/index.html' : requested));
     const relative = path.relative(root,file);
     // Only runtime assets are served; the source spreadsheet stays local.
-    if (relative.startsWith('..') || path.isAbsolute(relative) || !(/^(index\.html$|src[\\/]|data[\\/]catalog\.json$|img[\\/](?:(photo|letter)[\\/]|btn(?:_mini)?\.png$)|font[\\/])/.test(relative))) {
+    if (relative.startsWith('..') || path.isAbsolute(relative) || !(/^(index\.html$|scripts[\\/]|data[\\/]catalog\.json$|img[\\/]|font[\\/])/.test(relative))) {
       res.writeHead(404); return res.end('Not found');
     }
     const body = await readFile(file);
