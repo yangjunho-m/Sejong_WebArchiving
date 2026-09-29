@@ -37,3 +37,109 @@
     white-space: nowrap;
   }
 }
+
+/* 위로 스크롤할 때 나타나는 PC 메뉴. 문서 높이에 영향을 주지 않습니다. */
+.scroll-navigation {
+  display: none;
+}
+
+@media (min-width: 1101px) {
+  .scroll-navigation {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 60px;
+    /* 조절값: 상단 블러 강도 / 흰 배경 불투명도 / 흐림을 유지할 지점 */
+    --nav-blur: 20px;
+    --nav-background-opacity: 0.1;
+    --nav-blur-fade-start: 20%;
+    background: transparent;
+    transform: translateY(-100%);
+    visibility: hidden;
+    transition: transform 240ms ease, visibility 240ms;
+  }
+
+  /* 블러 레이어만 아래로 페이드: 로고·메뉴에는 마스크가 적용되지 않습니다. */
+  .scroll-navigation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: rgba(255, 255, 255, var(--nav-background-opacity));
+    -webkit-backdrop-filter: blur(var(--nav-blur));
+    backdrop-filter: blur(var(--nav-blur));
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 var(--nav-blur-fade-start), transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 var(--nav-blur-fade-start), transparent 100%);
+  }
+
+  .scroll-navigation > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .scroll-navigation.is-visible {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .scroll-navigation nav.site-nav.site-nav {
+    position: static;
+    margin: 0;
+  }
+
+  .scroll-navigation .type-nav {
+    color: #141414;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+
+  .scroll-navigation .type-nav[aria-current="page"] {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-navigation {
+    transition: none;
+  }
+}
+
+/* PC 상단에서도 같은 메뉴를 유지하고, 원래 메뉴와의 교체를 없앱니다. */
+@media (min-width: 1101px) {
+  .desktop-nav-source {
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  .scroll-navigation {
+    height: max(95px, calc(var(--nav-logo-top, 30px) + 65px));
+  }
+
+  .scroll-navigation > .site-logo {
+    position: absolute;
+    left: var(--nav-logo-left, 60px);
+    top: var(--nav-logo-top, 30px);
+  }
+
+  .scroll-navigation nav.site-nav.site-nav {
+    position: absolute;
+  }
+
+  .scroll-navigation::before {
+    transition: opacity 180ms ease;
+  }
+
+  .scroll-navigation.is-at-top::before {
+    opacity: 0;
+  }
+}
+
+/* 페이지 진입 시에는 즉시 표시하고, 이후 스크롤에만 전환 효과를 적용합니다. */
+.scroll-navigation.is-initializing,
+.scroll-navigation.is-initializing::before {
+  transition: none;
+}
