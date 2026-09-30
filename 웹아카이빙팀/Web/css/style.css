@@ -585,3 +585,50 @@ textarea,
   -webkit-user-select: text;
   user-select: text;
 }
+
+/* Decorative thread above the page; all pointer input passes through. */
+.cursor-thread {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .cursor-thread { display: none; }
+}
+
+
+/* Render SVG in the page so high-density displays retain vector sharpness. */
+.graphic-cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 28px; /* 커서 크기: 이 값과 height를 함께 변경하세요. */
+  height: 28px;
+  z-index: 10001;
+  pointer-events: none;
+  visibility: hidden;
+}
+.graphic-cursor.is-visible { visibility: visible; }
+
+@media (hover: hover) and (pointer: fine) {
+  body.has-graphic-cursor,
+  body.has-graphic-cursor * {
+    cursor: none !important;
+  }
+  body input,
+  body textarea,
+  body [contenteditable]:not([contenteditable="false"]),
+  body [contenteditable]:not([contenteditable="false"]) * {
+    cursor: text !important;
+  }
+  body :disabled {
+    cursor: not-allowed !important;
+  }
+}
+@media (hover: none), (pointer: coarse) {
+  .graphic-cursor { display: none; }
+}

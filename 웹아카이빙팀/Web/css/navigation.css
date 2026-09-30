@@ -54,8 +54,8 @@
     padding: 24px 60px;
     /* 조절값: 상단 블러 강도 / 흰 배경 불투명도 / 흐림을 유지할 지점 */
     --nav-blur: 50px;
-    --nav-background-opacity: 0.3;
-    --nav-blur-fade-start: 20%;
+    --nav-background-opacity: 0.5;
+    --nav-blur-fade-start: 25%;
     background: transparent;
     transform: translateY(-100%);
     visibility: hidden;
