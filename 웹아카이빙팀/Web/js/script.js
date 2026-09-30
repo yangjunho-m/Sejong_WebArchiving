@@ -21,7 +21,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   bar.className = 'scroll-navigation is-initializing';
   const logo = document.createElement('a');
   logo.className = 'site-logo';
-  logo.href = sourceLogo.matches('a') ? sourceLogo.getAttribute('href') : '../index.html';
+  logo.href = sourceLogo.matches('a') ? sourceLogo.getAttribute('href') : '../';
   logo.setAttribute('aria-label', 'Button Up home');
   logo.append(sourceLogo.querySelector('img').cloneNode(true));
   const nav = sourceNav.cloneNode(true);

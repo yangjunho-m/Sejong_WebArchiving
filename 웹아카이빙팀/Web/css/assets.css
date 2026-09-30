@@ -71,6 +71,7 @@
 .masthead--video{
   isolation:isolate;
   z-index:0;
+  height: 940px;
   background-image:none
 }
 .masthead--video .hero-video{

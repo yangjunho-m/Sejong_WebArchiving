@@ -4,7 +4,7 @@
 
   const isHome = footer.id === 'news';
   const assetPrefix = isHome ? '' : '../';
-  const homeHref = isHome ? '#top' : '../index.html';
+  const homeHref = isHome ? '#top' : '../';
   const linkClass = isHome ? 'footer-link type-footer' : 'footer-link';
   const addressClass = isHome ? 'footer-address type-footer' : '';
   const addressContent = isHome
