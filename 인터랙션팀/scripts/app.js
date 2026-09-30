@@ -389,12 +389,30 @@ function showDetail(id) {
     a = asset(s),
     has = selected.includes(id);
   const members = catalog.students.filter((person) => person.assetId === a.id);
+  const selectedMember = members.some((person) => person.id === id)
+    ? s
+    : members[0];
   dialog.setAttribute(
     "aria-label",
     `${a.wordKo} · 연결한 학생 ${members.length}명`,
   );
-  dialog.innerHTML = `<button class="close" aria-label="상세 닫기"><img src="/img/close-icon.png" alt="" aria-hidden="true"></button><div class="detail-layout"><img class="detail-photo" src="/${a.image}" alt="${esc(a.wordKo)}"><div class="detail-content"><h2><img class="detail-word" src="/${a.letter}" alt="${esc(a.wordEn)} · ${esc(a.wordKo)}"></h2><div class="detail-names">${members.map((person) => `<span>${esc(person.displayName || person.name)}</span>`).join("")}</div><div class="detail-reasons">${members.map((person) => `<p><strong>${esc(person.name)}</strong> ${esc(person.reason)}</p>`).join("")}</div><button id="choose">${has ? "단어 취소하기" : "단어 추가하기"} <img class="detail-add-icon" src="/img/circle-arrow.svg" alt="" aria-hidden="true"></button></div></div>`;
+  const reasonMarkup = (person) => `<p>${esc(person.reason)}</p>`;
+  dialog.innerHTML = `<button class="close" aria-label="상세 닫기"><img src="/img/close-icon.png" alt="" aria-hidden="true"></button><div class="detail-layout"><img class="detail-photo" src="/${a.image}" alt="${esc(a.wordKo)}"><div class="detail-content"><h2><img class="detail-word" src="/${a.letter}" alt="${esc(a.wordEn)} · ${esc(a.wordKo)}"></h2><div class="detail-names">${members.map((person) => `<button type="button" class="${person.id === selectedMember.id ? "active" : ""}" data-member="${person.id}" aria-pressed="${person.id === selectedMember.id}">${esc(person.displayName || person.name)}</button>`).join("")}</div><div class="detail-reasons">${reasonMarkup(selectedMember)}</div><button id="choose">${has ? "단어 취소하기" : "단어 추가하기"} <img class="detail-add-icon" src="/img/circle-arrow.svg" alt="" aria-hidden="true"></button></div></div>`;
   dialog.querySelector(".close").onclick = () => dialog.close();
+  dialog.querySelectorAll("[data-member]").forEach((button) => {
+    button.onclick = () => {
+      const person = members.find(
+        (member) => member.id === button.dataset.member,
+      );
+      if (!person) return;
+      dialog.querySelectorAll("[data-member]").forEach((item) => {
+        const active = item === button;
+        item.classList.toggle("active", active);
+        item.setAttribute("aria-pressed", String(active));
+      });
+      dialog.querySelector(".detail-reasons").innerHTML = reasonMarkup(person);
+    };
+  });
   dialog.querySelector("#choose").onclick = () => {
     if (has) selected = selected.filter((x) => x !== id);
     else if (selected.length < MAX_SELECTION) selected.push(id);

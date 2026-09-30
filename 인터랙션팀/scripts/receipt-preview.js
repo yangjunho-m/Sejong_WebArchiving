@@ -54,7 +54,7 @@ export function renderReceiptPreview({
         r = 46 * n.scale,
         person = people.find((s) => s.id === n.id),
         word = lookup.get(person.assetId);
-      return `<g transform="translate(${p.x} ${p.y})"><g transform="rotate(${n.rotation})"><circle r="${r + 5}" fill="#c3d3e9"/><circle r="${r}" fill="#e8e7e4" stroke="#141414" stroke-width="5"/>${[-12, 12].flatMap((x) => [-12, 12].map((y) => `<circle cx="${x * n.scale}" cy="${y * n.scale}" r="${5 * n.scale}" fill="#141414"/>`)).join("")}</g><image href="/${escape(word.letter)}" x="-59" y="${r - 3}" width="118" height="30" preserveAspectRatio="xMidYMid meet"><title>${escape(word.wordEn)}</title></image></g>`;
+      return `<g transform="translate(${p.x} ${p.y})"><g transform="rotate(${n.rotation})"><circle r="${r + 5}" fill="#c3d3e9"/><circle r="${r}" fill="#e8e7e4" stroke="#141414" stroke-width="5"/>${[-12, 12].flatMap((x) => [-12, 12].map((y) => `<circle cx="${x * n.scale}" cy="${y * n.scale}" r="${5 * n.scale}" fill="#141414"/>`)).join("")}</g><image href="/${escape(word.letter)}" x="-74" y="${r - 5}" width="148" height="38" preserveAspectRatio="xMidYMid meet"><title>${escape(word.wordEn)}</title></image></g>`;
     })
     .join("");
   const pills = (values) =>

@@ -59,6 +59,7 @@
     background: transparent;
     transform: translateY(-100%);
     visibility: hidden;
+    pointer-events: none;
     transition: transform 240ms ease, visibility 240ms;
   }
 
@@ -78,6 +79,7 @@
   .scroll-navigation > * {
     position: relative;
     z-index: 1;
+    pointer-events: auto;
   }
 
   .scroll-navigation.is-visible {

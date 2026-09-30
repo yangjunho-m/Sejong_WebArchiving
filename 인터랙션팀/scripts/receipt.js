@@ -251,10 +251,10 @@ export async function renderReceipt({
       }
     ctx.restore();
     const img = wordImages[i];
-    const fit = Math.min(118 / img.width, 30 / img.height);
+    const fit = Math.min(148 / img.width, 38 / img.height);
     const w = img.width * fit,
       h = img.height * fit;
-    ctx.drawImage(img, p.x - w / 2, p.y + r - 3, w, h);
+    ctx.drawImage(img, p.x - w / 2, p.y + r - 5, w, h);
   });
   ctx.drawImage(designLogo, W - 48 - 109, 952, 109, 27);
   ctx.textAlign = "left";
