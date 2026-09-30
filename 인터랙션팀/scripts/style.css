@@ -1773,12 +1773,12 @@ body:has(#detail[open]) #app {
   position: relative;
   display: block;
   min-height: calc(100svh - 94px);
-  padding: 0 0 110px;
+  padding: 48px 0 96px;
   isolation: isolate;
 }
 .result-final .receipt {
   position: relative;
-  width: clamp(280px, 32vw, 420px);
+  width: clamp(280px, 24vw, 350px);
   padding: 0;
   margin: 0 auto;
   border: 1px solid #333;
@@ -1815,18 +1815,21 @@ body:has(#detail[open]) #app {
   background: linear-gradient(#7dabef, #ebf0f6);
 }
 .receipt-vector-details {
-  padding: 0 7.35% 18px;
+  box-sizing: border-box;
+  padding: 0 7.35% 16px;
   font:
     12px/1.55 "Malgun Gothic",
     sans-serif;
-  overflow-wrap: anywhere;
+  text-align: left;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 .receipt-vector-details section {
-  margin: 0 0 14px;
+  margin: 0 0 12px;
 }
 .receipt-vector-details section:first-child {
   border-top: 1px solid #aaa;
-  padding-top: 14px;
+  padding-top: 12px;
 }
 .receipt-vector-details h2 {
   margin: 0 0 6px;
@@ -1858,9 +1861,9 @@ body:has(#detail[open]) #app {
 }
 .result-qr {
   position: absolute;
-  left: 66%;
-  top: 22%;
-  width: 150px;
+  left: 70%;
+  top: 34%;
+  width: clamp(110px, 10vw, 150px);
   text-align: center;
   color: #fff;
 }
@@ -1953,11 +1956,12 @@ body:has(#detail[open]) #app {
 }
 @media (min-width: 701px) {
   .result-final .receipt {
-    width: clamp(280px, 32vw, 420px);
+    width: clamp(280px, 24vw, 350px);
   }
   .result-qr {
-    left: 73%;
-    width: clamp(100px, 12.5vw, 170px);
+    left: 70%;
+    top: 34%;
+    width: clamp(110px, 10vw, 150px);
   }
 }
 @media (max-width: 700px) {
