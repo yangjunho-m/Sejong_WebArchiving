@@ -1,5 +1,6 @@
-﻿import { renderReceipt, printReceipt } from "./receipt.js";
+import { renderReceipt, printReceipt } from "./receipt.js";
 import { renderReceiptPreview } from "./receipt-preview.js";
+import { assetUrl } from "./paths.js";
 import {
   MIN_SELECTION,
   MAX_SELECTION,
@@ -81,10 +82,10 @@ setInterval(() => {
 }, 1000);
 function landing() {
   setScreen("landing");
-  app.innerHTML = `<section class="landing" aria-label="나의 첫 단추 시작">${[0, 1, 2].map((_, i) => `<div class="marquee" aria-hidden="true">${[...catalog.assets.slice(i * 12, i * 12 + 12), ...catalog.assets.slice(i * 12, i * 12 + 12)].map((a) => `<img src="/${a.letter}" alt="">`).join("")}</div>`).join("")}<div class="landing-start"><div class="start-artwork"><button id="start" aria-label="단추를 클릭하여 시작하기"><img src="/img/start-button.svg" alt="" width="50" height="50"></button><img class="start-label" src="/img/start-label.svg" alt="단추를 클릭하여 시작하기. Click the button to begin" width="240" height="81"></div></div></section>`;
+  app.innerHTML = `<section class="landing" aria-label="나의 첫 단추 시작">${[0, 1, 2].map((_, i) => `<div class="marquee" aria-hidden="true">${[...catalog.assets.slice(i * 12, i * 12 + 12), ...catalog.assets.slice(i * 12, i * 12 + 12)].map((a) => `<img src="${assetUrl(a.letter)}" alt="">`).join("")}</div>`).join("")}<div class="landing-start"><div class="start-artwork"><button id="start" aria-label="단추를 클릭하여 시작하기"><img src="${assetUrl("img/start-button.svg")}" alt="" width="50" height="50"></button><img class="start-label" src="${assetUrl("img/start-label.svg")}" alt="단추를 클릭하여 시작하기. Click the button to begin" width="240" height="81"></div></div></section>`;
   document.querySelector(".start-artwork").onclick = () => {
     setScreen("intro");
-    app.innerHTML = `<section class="intro intro-reference" aria-label="모든 시작에는, 저마다의 첫 단추가 있습니다. 당신의 마음을 사로잡는 첫 단추는 무엇인가요?"><div class="intro-layout"><img class="intro-scene" src="/img/intro-scene.svg" alt="단추와 시작 안내"><img class="intro-wordmark" src="/img/letter/44-buttonup.svg" alt="BUTTON UP!"><div class="intro-center-button" aria-hidden="true"><img class="intro-center-btn" src="/img/btn.png" alt=""><img class="intro-center-dream" src="/img/photo/03-dream.png" alt=""></div></div></section>`;
+    app.innerHTML = `<section class="intro intro-reference" aria-label="모든 시작에는, 저마다의 첫 단추가 있습니다. 당신의 마음을 사로잡는 첫 단추는 무엇인가요?"><div class="intro-layout"><img class="intro-scene" src="${assetUrl("img/intro-scene.svg")}" alt="단추와 시작 안내"><img class="intro-wordmark" src="${assetUrl("img/letter/44-buttonup.svg")}" alt="BUTTON UP!"><div class="intro-center-button" aria-hidden="true"><img class="intro-center-btn" src="${assetUrl("img/btn.png")}" alt=""><img class="intro-center-dream" src="${assetUrl("img/photo/03-dream.png")}" alt=""></div></div></section>`;
     timer = setTimeout(introToSelect, 2600);
   };
 }
@@ -173,7 +174,7 @@ function renderCarousel() {
   let renderedCycles = 0;
   const itemMarkup = (student, real, cycle) => {
     const a = asset(student);
-    return `<button class="object ${real === current && cycle === CAROUSEL_START_CYCLE ? "active" : ""}" data-id="${student.id}" data-real="${real}" data-cycle="${cycle}" aria-label="${esc(student.name)} · ${esc(a.wordKo)} 상세 보기"><img class="photo" src="/${a.image}" alt="${esc(a.wordKo)}를 상징하는 이미지" loading="lazy"><img class="word" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></button>`;
+    return `<button class="object ${real === current && cycle === CAROUSEL_START_CYCLE ? "active" : ""}" data-id="${student.id}" data-real="${real}" data-cycle="${cycle}" aria-label="${esc(student.name)} · ${esc(a.wordKo)} 상세 보기"><img class="photo" src="${assetUrl(a.image)}" alt="${esc(a.wordKo)}를 상징하는 이미지" loading="lazy"><img class="word" src="${assetUrl(a.letter)}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></button>`;
   };
   const appendCycles = (count) => {
     if (!filtered.length) return;
@@ -317,7 +318,7 @@ function renderTray() {
         )
         .join(
           "",
-        )}</div></div>${selected.length >= MIN_SELECTION ? '<button class="make-pattern" aria-label="선택한 단추로 패턴 만들기"><img src="/img/pattern-submit.svg" alt="" aria-hidden="true"></button>' : ""}`
+        )}</div></div>${selected.length >= MIN_SELECTION ? `<button class="make-pattern" aria-label="선택한 단추로 패턴 만들기"><img src="${assetUrl("img/pattern-submit.svg")}" alt="" aria-hidden="true"></button>` : ""}`
     : "";
   const chips = tray.querySelector(".chips");
   if (chips) {
@@ -397,7 +398,7 @@ function showDetail(id) {
     `${a.wordKo} · 연결한 학생 ${members.length}명`,
   );
   const reasonMarkup = (person) => `<p>${esc(person.reason)}</p>`;
-  dialog.innerHTML = `<button class="close" aria-label="상세 닫기"><img src="/img/close-icon.png" alt="" aria-hidden="true"></button><div class="detail-layout"><img class="detail-photo" src="/${a.image}" alt="${esc(a.wordKo)}"><div class="detail-content"><h2><img class="detail-word" src="/${a.letter}" alt="${esc(a.wordEn)} · ${esc(a.wordKo)}"></h2><div class="detail-names">${members.map((person) => `<button type="button" class="${person.id === selectedMember.id ? "active" : ""}" data-member="${person.id}" aria-pressed="${person.id === selectedMember.id}">${esc(person.displayName || person.name)}</button>`).join("")}</div><div class="detail-reasons">${reasonMarkup(selectedMember)}</div><button id="choose">${has ? "단어 취소하기" : "단어 추가하기"} <img class="detail-add-icon" src="/img/circle-arrow.svg" alt="" aria-hidden="true"></button></div></div>`;
+  dialog.innerHTML = `<button class="close" aria-label="상세 닫기"><img src="${assetUrl("img/close-icon.png")}" alt="" aria-hidden="true"></button><div class="detail-layout"><img class="detail-photo" src="${assetUrl(a.image)}" alt="${esc(a.wordKo)}"><div class="detail-content"><h2><img class="detail-word" src="${assetUrl(a.letter)}" alt="${esc(a.wordEn)} · ${esc(a.wordKo)}"></h2><div class="detail-names">${members.map((person) => `<button type="button" class="${person.id === selectedMember.id ? "active" : ""}" data-member="${person.id}" aria-pressed="${person.id === selectedMember.id}">${esc(person.displayName || person.name)}</button>`).join("")}</div><div class="detail-reasons">${reasonMarkup(selectedMember)}</div><button id="choose">${has ? "단어 취소하기" : "단어 추가하기"} <img class="detail-add-icon" src="${assetUrl("img/circle-arrow.svg")}" alt="" aria-hidden="true"></button></div></div>`;
   dialog.querySelector(".close").onclick = () => dialog.close();
   dialog.querySelectorAll("[data-member]").forEach((button) => {
     button.onclick = () => {
@@ -431,14 +432,14 @@ function save() {
 }
 function editor() {
   setScreen("editor");
-  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전 단계로"><img src="/img/previous-step.svg" alt="" aria-hidden="true"></button></div><div class="helper-wrap"><p class="edge-hint" role="status">선을 클릭하면 삭제되고, 선의 점을 드래그하면 곡률을 조절할 수 있어요.</p><p class="helper" id="editor-help">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p></div><button id="finish" aria-label="이 패턴으로 생성하기"><img src="/img/generate-pattern.svg" alt="" aria-hidden="true"></button></div></section>`;
+  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전 단계로"><img src="${assetUrl("img/previous-step.svg")}" alt="" aria-hidden="true"></button></div><div class="helper-wrap"><p class="edge-hint" role="status">선을 클릭하면 삭제되고, 선의 점을 드래그하면 곡률을 조절할 수 있어요.</p><p class="helper" id="editor-help">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p></div><button id="finish" aria-label="이 패턴으로 생성하기"><img src="${assetUrl("img/generate-pattern.svg")}" alt="" aria-hidden="true"></button></div></section>`;
   document.querySelector("#back").onclick = selectScreen;
   document.querySelector("#finish").onclick = async () => {
     if (!isConnected(nodes, edges))
       return toast("모든 단추를 하나로 연결해 주세요.");
     const token = session;
     setScreen("loading");
-    app.innerHTML = `<section class="pattern-loading" role="status" aria-live="polite"><div class="pattern-loading-panel"><div class="pattern-loading-buttons" aria-hidden="true"><img src="/img/btn.png" alt=""><img src="/img/btn2.png" alt=""><img src="/img/btn.png" alt=""></div><p>나만의 패턴을 만들고 있어요.<br>조금만 기다려주세요.</p></div></section>`;
+    app.innerHTML = `<section class="pattern-loading" role="status" aria-live="polite"><div class="pattern-loading-panel"><div class="pattern-loading-buttons" aria-hidden="true"><img src="${assetUrl("img/btn.png")}" alt=""><img src="${assetUrl("img/btn2.png")}" alt=""><img src="${assetUrl("img/btn.png")}" alt=""></div><p>나만의 패턴을 만들고 있어요.<br>조금만 기다려주세요.</p></div></section>`;
     const finishLoading = () => {
       if (token === session && screen === "loading")
         timer = setTimeout(() => result(token), 1000);
@@ -476,7 +477,7 @@ function drawBoard() {
     .map((n) => {
       const s = student(n.id),
         a = asset(s);
-      return `<button class="node ${focus === n.id ? "active" : ""}" data-id="${n.id}" style="left:${n.x / 10}%;top:${n.y / 5.6}%;width:${13 * n.scale}%;" aria-label="${esc(s.name)} ${esc(a.wordKo)} 단추" aria-pressed="${focus === n.id}"><img class="node-photo" draggable="false" src="/${a.image}" alt="" style="transform:rotate(${n.rotation}deg)"><span class="node-label"><img class="node-word" draggable="false" src="/${a.letter}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></span></button>`;
+      return `<button class="node ${focus === n.id ? "active" : ""}" data-id="${n.id}" style="left:${n.x / 10}%;top:${n.y / 5.6}%;width:${13 * n.scale}%;" aria-label="${esc(s.name)} ${esc(a.wordKo)} 단추" aria-pressed="${focus === n.id}"><img class="node-photo" draggable="false" src="${assetUrl(a.image)}" alt="" style="transform:rotate(${n.rotation}deg)"><span class="node-label"><img class="node-word" draggable="false" src="${assetUrl(a.letter)}" alt="${esc(a.wordEn)}"><small>${esc(a.wordKo)}</small></span></button>`;
     })
     .join(
       "",
@@ -712,7 +713,7 @@ async function result(token) {
     edges: structuredClone(edges),
     explanation: text,
   };
-  app.innerHTML = `<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => '<img src="/img/btn_mini.png" alt="">').join("")}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="/img/receipt-qr-placeholder.svg" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><button id="restart" class="result-restart" type="button" aria-label="처음으로"><img src="/img/restart-button.svg" alt=""></button><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄 중입니다. 60초 뒤에 첫 화면으로 돌아갑니다.</p></footer></section>`;
+  app.innerHTML = `<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="${assetUrl("img/receipt-qr-placeholder.svg")}" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><button id="restart" class="result-restart" type="button" aria-label="처음으로"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄 중입니다. 60초 뒤에 첫 화면으로 돌아갑니다.</p></footer></section>`;
   document.querySelector("#restart").onclick = reset;
   timer = setTimeout(reset, 60000);
   try {
@@ -737,7 +738,7 @@ async function result(token) {
   }
 }
 try {
-  const response = await fetch("/data/catalog.json");
+  const response = await fetch(assetUrl("data/catalog.json"));
   if (!response.ok) throw new Error("catalog");
   catalog = await response.json();
   landing();

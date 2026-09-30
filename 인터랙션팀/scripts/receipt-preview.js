@@ -1,4 +1,5 @@
 // Keep screen text and keyword artwork as vectors instead of shrinking a bitmap.
+import { assetUrl } from "./paths.js";
 const escape = (value) =>
   String(value ?? "").replace(
     /[&<>"']/g,
@@ -54,7 +55,7 @@ export function renderReceiptPreview({
         r = 46 * n.scale,
         person = people.find((s) => s.id === n.id),
         word = lookup.get(person.assetId);
-      return `<g transform="translate(${p.x} ${p.y})"><g transform="rotate(${n.rotation})"><circle r="${r + 5}" fill="#c3d3e9"/><circle r="${r}" fill="#e8e7e4" stroke="#141414" stroke-width="5"/>${[-12, 12].flatMap((x) => [-12, 12].map((y) => `<circle cx="${x * n.scale}" cy="${y * n.scale}" r="${5 * n.scale}" fill="#141414"/>`)).join("")}</g><image href="/${escape(word.letter)}" x="-74" y="${r - 5}" width="148" height="38" preserveAspectRatio="xMidYMid meet"><title>${escape(word.wordEn)}</title></image></g>`;
+      return `<g transform="translate(${p.x} ${p.y})"><g transform="rotate(${n.rotation})"><circle r="${r + 5}" fill="#c3d3e9"/><circle r="${r}" fill="#e8e7e4" stroke="#141414" stroke-width="5"/>${[-12, 12].flatMap((x) => [-12, 12].map((y) => `<circle cx="${x * n.scale}" cy="${y * n.scale}" r="${5 * n.scale}" fill="#141414"/>`)).join("")}</g><image href="${assetUrl(word.letter)}" x="-74" y="${r - 5}" width="148" height="38" preserveAspectRatio="xMidYMid meet"><title>${escape(word.wordEn)}</title></image></g>`;
     })
     .join("");
   const pills = (values) =>
@@ -69,6 +70,6 @@ export function renderReceiptPreview({
   const element = document.createElement("div");
   element.id = "receipt-artwork";
   element.className = "receipt-vector";
-  element.innerHTML = `<div class="receipt-vector-title" aria-label="forward, BUTTON UP!"><img src="/img/forward_buttonUp.png" alt=""></div><svg class="receipt-vector-pattern" viewBox="0 0 896 570" role="img" aria-label="${escape(words.map((w) => w.wordKo).join(", "))} 단추 패턴"><g fill="none" stroke="#141414" stroke-width="4">${paths}</g>${buttons}<image href="/img/receipt-design-logo.png" x="739" y="531" width="109" height="27" preserveAspectRatio="xMidYMid meet"/></svg><div class="receipt-vector-details"><section><h2>선택한 단어</h2>${pills(words.map((w) => w.wordEn.toUpperCase()))}</section><section><h2>선택한 단어의 학생</h2>${pills(people.map((p) => p.displayName || p.name))}</section><section><h2>추천 졸업전시작 - ${escape(title)}</h2>${pills([...(owners.length ? owners : [recommended]).map((p) => p.displayName || p.name), recommended.major === "visual design" ? "VISUAL DESIGN" : "INDUSTRIAL DESIGN"])}${bottomText ? `<p class="receipt-description">${escape(bottomText)}</p>` : ""}</section>${locations.length ? `<p class="receipt-location">${escape(locations.map((p) => `${p.name}: ${p.location}`).join(" / "))}</p>` : ""}</div>`;
+  element.innerHTML = `<div class="receipt-vector-title" aria-label="forward, BUTTON UP!"><img src="${assetUrl("img/forward_buttonUp.png")}" alt=""></div><svg class="receipt-vector-pattern" viewBox="0 0 896 570" role="img" aria-label="${escape(words.map((w) => w.wordKo).join(", "))} 단추 패턴"><g fill="none" stroke="#141414" stroke-width="4">${paths}</g>${buttons}<image href="${assetUrl("img/receipt-design-logo.png")}" x="739" y="531" width="109" height="27" preserveAspectRatio="xMidYMid meet"/></svg><div class="receipt-vector-details"><section><h2>선택한 단어</h2>${pills(words.map((w) => w.wordEn.toUpperCase()))}</section><section><h2>선택한 단어의 학생</h2>${pills(people.map((p) => p.displayName || p.name))}</section><section><h2>추천 졸업전시작 - ${escape(title)}</h2>${pills([...(owners.length ? owners : [recommended]).map((p) => p.displayName || p.name), recommended.major === "visual design" ? "VISUAL DESIGN" : "INDUSTRIAL DESIGN"])}${bottomText ? `<p class="receipt-description">${escape(bottomText)}</p>` : ""}</section>${locations.length ? `<p class="receipt-location">${escape(locations.map((p) => `${p.name}: ${p.location}`).join(" / "))}</p>` : ""}</div>`;
   return element;
 }

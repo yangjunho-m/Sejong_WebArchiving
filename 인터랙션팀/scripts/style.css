@@ -1,10 +1,10 @@
 @font-face {
   font-family: Avant;
-  src: url("/font/ITC Avant Garde Gothic LT Book.ttf");
+  src: url("../font/ITC Avant Garde Gothic LT Book.ttf");
 }
 @font-face {
   font-family: Avant;
-  src: url("/font/ITC Avant Garde Gothic LT Demi.ttf");
+  src: url("../font/ITC Avant Garde Gothic LT Demi.ttf");
   font-weight: 700;
 }
 :root {
@@ -1118,7 +1118,7 @@ header .header-home {
 }
 @font-face {
   font-family: AvantHeading;
-  src: url("/font/ITC Avant Garde CE Gothic Book.ttf");
+  src: url("../font/ITC Avant Garde CE Gothic Book.ttf");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -1237,7 +1237,7 @@ header .header-home {
   margin-top: -13px;
   border: 0;
   border-radius: 0;
-  background: transparent url("/img/btn_mini.png") center/contain no-repeat;
+  background: transparent url("../img/btn_mini.png") center/contain no-repeat;
   box-shadow: none;
 }
 .selection #position::-moz-range-track {
@@ -1257,7 +1257,7 @@ header .header-home {
   height: 32px;
   border: 0;
   border-radius: 0;
-  background: transparent url("/img/btn_mini.png") center/contain no-repeat;
+  background: transparent url("../img/btn_mini.png") center/contain no-repeat;
   box-shadow: none;
 }
 .selection .tray {

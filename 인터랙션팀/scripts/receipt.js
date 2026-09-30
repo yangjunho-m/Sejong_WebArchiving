@@ -1,4 +1,5 @@
 // One artwork shared by the screen, PNG download, browser print and 1-bit export.
+import { assetUrl } from "./paths.js";
 const W = 896;
 const INK = "#141414";
 const PAPER = "#ebf0f6";
@@ -80,9 +81,11 @@ export async function renderReceipt({
   ]);
   const lookup = new Map(assets.map((a) => [a.id, a]));
   const words = people.map((s) => lookup.get(s.assetId));
-  const wordImages = await Promise.all(words.map((a) => image("/" + a.letter)));
-  const titleLogo = await image("/img/forward_buttonUp.png");
-  const designLogo = await image("/img/receipt-design-logo.png");
+  const wordImages = await Promise.all(
+    words.map((a) => image(assetUrl(a.letter))),
+  );
+  const titleLogo = await image(assetUrl("img/forward_buttonUp.png"));
+  const designLogo = await image(assetUrl("img/receipt-design-logo.png"));
   const recommended = people.find((s) => s.works.length) || people[0];
   const title = recommended.works[0] || "작품 정보 준비 중";
   const owners = people.filter((s) => s.works.includes(title));

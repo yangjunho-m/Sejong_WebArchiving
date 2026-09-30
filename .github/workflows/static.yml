@@ -2,27 +2,20 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -31,13 +24,35 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Build static artifact
+        shell: bash
+        run: |
+          rm -rf _site
+          mkdir -p _site/interaction
+
+          WEB_DIR="$(find . -maxdepth 3 -type f -path '*/Web/index.html' -printf '%h\n' | head -n 1)"
+          INTERACTION_DIR="$(find . -maxdepth 3 -type f -name package.json -exec grep -l '"button-up-interaction"' {} \; | xargs -r dirname | head -n 1)"
+
+          test -n "$WEB_DIR"
+          test -n "$INTERACTION_DIR"
+
+          cp -a "$WEB_DIR/." _site/
+          cp -a "$INTERACTION_DIR/index.html" _site/interaction/
+          cp -a "$INTERACTION_DIR/data" _site/interaction/
+          cp -a "$INTERACTION_DIR/font" _site/interaction/
+          cp -a "$INTERACTION_DIR/img" _site/interaction/
+          cp -a "$INTERACTION_DIR/scripts" _site/interaction/
+          touch _site/.nojekyll
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the web archiving team's static site
-          path: './웹아카이빙팀/Web'
+          path: ./_site
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
