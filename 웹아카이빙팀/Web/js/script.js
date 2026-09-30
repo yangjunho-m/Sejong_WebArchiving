@@ -109,8 +109,10 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     thickness: 3, // 두께(px): 1 = 가늘게, 2 = 보통, 3 = 두껍게
     length: 200,    // 최대 길이(px)
     color: '#E4E4E4',
+    outlineColor: '#B3B7C9', // 실 외곽선 색
+    outlineWidth: 3, // 한쪽 외곽선 두께(px): 0이면 외곽선 없음
     smoothing: 28, // 곡선 보정 범위(px): 12 = 약하게, 28 = 기본, 45 = 더 둥글게
-    hold: 120,     // 마우스를 멈춘 뒤 모양을 유지하는 시간(ms)
+    hold: 200,     // 마우스를 멈춘 뒤 모양을 유지하는 시간(ms)
     fade: 500,     // 서서히 사라지는 시간(ms)
   };
   let canvas, ctx, points = [], frame = 0, lastMove = 0;
@@ -177,8 +179,6 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     }
     // 모양은 실제 마우스 이동으로만 바뀝니다. 정지 후에는 수축하거나 꿈틀대지 않습니다.
     ctx.clearRect(0, 0, width, height);
-    ctx.strokeStyle = threadSettings.color;
-    ctx.lineWidth = threadSettings.thickness;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
     ctx.globalAlpha = Math.max(0, 1 - Math.max(0, idle - threadSettings.hold) / threadSettings.fade);
@@ -191,6 +191,14 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     }
     const tail = curve[curve.length - 1];
     ctx.lineTo(tail.x, tail.y);
+    // 같은 둥근 경로를 넓은 외곽선 → 기존 안쪽 색 순서로 그립니다.
+    if (threadSettings.outlineWidth > 0) {
+      ctx.strokeStyle = threadSettings.outlineColor;
+      ctx.lineWidth = threadSettings.thickness + threadSettings.outlineWidth * 2;
+      ctx.stroke();
+    }
+    ctx.strokeStyle = threadSettings.color;
+    ctx.lineWidth = threadSettings.thickness;
     ctx.stroke();
     frame = requestAnimationFrame(draw);
   };
