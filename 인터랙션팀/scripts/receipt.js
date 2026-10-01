@@ -1,5 +1,6 @@
 // One artwork shared by the screen, PNG download, browser print and 1-bit export.
 import { assetUrl } from "./paths.js";
+import { connectionPath } from "./model.js";
 const W = 896;
 const INK = "#141414";
 const PAPER = "#ebf0f6";
@@ -45,7 +46,10 @@ function outlinedTitle(ctx, text, y, size, maxWidth) {
   ctx.restore();
 }
 function pillRows(ctx, values, y, paint) {
-  ctx.font = `18px ${KO}`;
+  ctx.save();
+  ctx.font = '400 18px Pretendard, "Malgun Gothic", sans-serif';
+  ctx.textAlign = "center";
+  ctx.textBaseline = "alphabetic";
   let x = 66;
   for (const value of values) {
     for (const part of lines(ctx, value, 724)) {
@@ -61,11 +65,15 @@ function pillRows(ctx, values, y, paint) {
         ctx.strokeStyle = INK;
         ctx.stroke();
         ctx.fillStyle = INK;
-        ctx.fillText(part, x + 14, y + 23);
+        const metrics = ctx.measureText(part);
+        const baseline = y + 17 +
+          (metrics.actualBoundingBoxAscent - metrics.actualBoundingBoxDescent) / 2;
+        ctx.fillText(part, x + width / 2, baseline);
       }
       x += width + 9;
     }
   }
+  ctx.restore();
   return y + 34;
 }
 export async function renderReceipt({
@@ -77,6 +85,7 @@ export async function renderReceipt({
 }) {
   await Promise.all([
     document.fonts.load("700 160px Avant"),
+    document.fonts.load("400 18px Pretendard"),
     document.fonts.ready,
   ]);
   const lookup = new Map(assets.map((a) => [a.id, a]));
@@ -217,15 +226,10 @@ export async function renderReceipt({
   for (const edge of edges) {
     const a = points.get(edge.from),
       b = points.get(edge.to);
-    ctx.beginPath();
-    ctx.moveTo(a.x, a.y);
-    ctx.quadraticCurveTo(
-      (a.x + b.x) / 2 + (edge.bendX ?? 0) * scale * 2,
-      (a.y + b.y) / 2 + (edge.bendY ?? edge.bend ?? 0) * scale * 2,
-      b.x,
-      b.y,
-    );
-    ctx.stroke();
+    ctx.stroke(new Path2D(connectionPath(
+      a, b, (edge.bendX ?? 0) * scale,
+      (edge.bendY ?? edge.bend ?? 0) * scale,
+    )));
   }
   nodes.forEach((n) => {
     const p = points.get(n.id),

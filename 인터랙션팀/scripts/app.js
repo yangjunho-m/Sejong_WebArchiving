@@ -15,6 +15,18 @@ import {
 } from "./model.js";
 const app = document.querySelector("#app"),
   dialog = document.querySelector("#detail");
+dialog.addEventListener("click", (event) => {
+  if (event.target !== dialog) return;
+  const bounds = dialog.getBoundingClientRect();
+  if (
+    event.clientX < bounds.left ||
+    event.clientX > bounds.right ||
+    event.clientY < bounds.top ||
+    event.clientY > bounds.bottom
+  ) {
+    dialog.close();
+  }
+});
 let catalog,
   screen = "landing",
   selected = [],
@@ -70,6 +82,11 @@ function reset() {
   dialog.close();
   landing();
 }
+document.querySelector(".header-home").addEventListener("click", (event) => {
+  if (!catalog) return;
+  event.preventDefault();
+  reset();
+});
 for (const event of ["pointerdown", "pointermove", "keydown", "input", "wheel"])
   document.addEventListener(event, () => (lastActivity = Date.now()), {
     passive: true,
@@ -85,18 +102,22 @@ function landing() {
   app.innerHTML = `<section class="landing" aria-label="나의 첫 단추 시작">${[0, 1, 2].map((_, i) => `<div class="marquee" aria-hidden="true">${[...catalog.assets.slice(i * 12, i * 12 + 12), ...catalog.assets.slice(i * 12, i * 12 + 12)].map((a) => `<img src="${assetUrl(a.letter)}" alt="">`).join("")}</div>`).join("")}<div class="landing-start"><div class="start-artwork"><button id="start" aria-label="단추를 클릭하여 시작하기"><img src="${assetUrl("img/start-button.svg")}" alt="" width="50" height="50"></button><img class="start-label" src="${assetUrl("img/start-label.svg")}" alt="단추를 클릭하여 시작하기. Click the button to begin" width="240" height="81"></div></div></section>`;
   document.querySelector(".start-artwork").onclick = () => {
     setScreen("intro");
-    app.innerHTML = `<section class="intro intro-reference" aria-label="모든 시작에는, 저마다의 첫 단추가 있습니다. 당신의 마음을 사로잡는 첫 단추는 무엇인가요?"><div class="intro-layout"><img class="intro-scene" src="${assetUrl("img/intro-scene.svg")}" alt="단추와 시작 안내"><img class="intro-wordmark" src="${assetUrl("img/letter/44-buttonup.svg")}" alt="BUTTON UP!"><div class="intro-center-button" aria-hidden="true"><img class="intro-center-btn" src="${assetUrl("img/btn.png")}" alt=""><img class="intro-center-dream" src="${assetUrl("img/photo/03-dream.png")}" alt=""></div></div></section>`;
+    app.innerHTML = `<section class="intro intro-reference" aria-label="모든 시작에는, 저마다의 첫 단추가 있습니다. 당신의 마음을 사로잡는 첫 단추는 무엇인가요?"><div class="intro-layout"><img class="intro-scene" src="${assetUrl("img/intro-scene.svg")}" alt="단추와 시작 안내"><img class="intro-wordmark" src="${assetUrl("img/letter/44-buttonup.svg")}" alt="BUTTON UP!"><button type="button" class="intro-center-button" aria-label="단어 선택 화면으로 이동"><img class="intro-center-btn" src="${assetUrl("img/btn.png")}" alt=""><img class="intro-center-dream" src="${assetUrl("img/photo/03-dream.png")}" alt=""></button></div></section>`;
+    document.querySelector(".intro-center-button").onclick = introToSelect;
     timer = setTimeout(introToSelect, 2600);
   };
 }
 function introToSelect() {
   if (screen !== "intro") return;
   const button = document.querySelector(".intro-center-button");
+  if (button?.classList.contains("is-transforming")) return;
+  clearTimeout(timer);
   if (!button) {
     selectScreen();
     return;
   }
   button.classList.add("is-transforming");
+  button.disabled = true;
   timer = setTimeout(() => selectScreen({ fromIntro: true }), 500);
 }
 function selectScreen(options = {}) {
@@ -335,26 +356,30 @@ function renderTray() {
     let drag = null,
       moved = false;
     chips.onpointerdown = (e) => {
+      if (e.button !== 0) return;
       drag = { x: e.clientX, left: chips.scrollLeft };
       moved = false;
-      chips.setPointerCapture(e.pointerId);
     };
     chips.onpointermove = (e) => {
       if (!drag) return;
       const dx = e.clientX - drag.x;
-      if (Math.abs(dx) > 4) moved = true;
+      if (!moved && Math.abs(dx) > 4) {
+        moved = true;
+        chips.setPointerCapture(e.pointerId);
+      }
+      if (!moved) return;
       chips.scrollLeft = drag.left - dx;
     };
     chips.onpointerup = chips.onpointercancel = () => {
       drag = null;
     };
-    chips.onclick = (e) => {
+    chips.addEventListener("click", (e) => {
       if (moved) {
         e.preventDefault();
-        e.stopPropagation();
+        e.stopImmediatePropagation();
         moved = false;
       }
-    };
+    }, true);
   }
   tray.querySelectorAll("[data-remove]").forEach(
     (b) =>
@@ -470,7 +495,7 @@ function drawBoard() {
         bendY = e.bendY ?? e.bend ?? 0,
         handleX = (a.x + b.x) / 2 + bendX,
         handleY = (a.y + b.y) / 2 + bendY;
-      return `<path class="edge" data-edge="${i}" d="${connectionPath(a, b, bendX, bendY)}"/><circle class="edge-handle" data-bend="${i}" cx="${handleX}" cy="${handleY}" r="12"><title>드래그해서 선 곡률 조절</title></circle>`;
+      return `<path class="edge" data-edge="${i}" d="${connectionPath(a, b, bendX, bendY)}"/><ellipse class="edge-handle" data-bend="${i}" cx="${handleX}" cy="${handleY}" rx="6" ry="6.72"><title>드래그해서 선 곡률 조절</title></ellipse>`;
     })
     .join("");
   board.innerHTML = `<svg viewBox="0 0 1000 560" preserveAspectRatio="none" aria-label="연결선">${edgeMarkup}</svg>${nodes
@@ -481,7 +506,7 @@ function drawBoard() {
     })
     .join(
       "",
-    )}${active ? `<div class="node-tools" role="group" aria-label="선택 단추 크기와 회전" style="left:${active.x / 10}%;top:${active.y / 5.6}%;--node-radius:${6.5 * active.scale}cqw"><button data-adjust="larger" aria-label="선택 단추 확대">+</button><button data-adjust="smaller" aria-label="선택 단추 축소">−</button><button data-adjust="rotate" aria-label="선택 단추 회전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 3v5h5"/></svg></button></div>` : ""}`;
+    )}${active ? `<div class="node-tools" role="group" aria-label="선택 단추 크기와 회전" style="left:${active.x / 10}%;top:${active.y / 5.6}%;--node-radius:${6.5 * active.scale}cqw"><button data-adjust="larger" aria-label="선택 단추 확대"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button><button data-adjust="smaller" aria-label="선택 단추 축소"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button><button data-adjust="rotate" aria-label="선택 단추 회전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 3v5h5"/></svg></button></div>` : ""}`;
   document.querySelector("#finish").disabled = !isConnected(nodes, edges);
   board.onclick = (e) => {
     if (e.target === board || e.target === board.querySelector("svg")) {

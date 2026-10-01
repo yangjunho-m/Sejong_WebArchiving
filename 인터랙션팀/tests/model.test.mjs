@@ -7,11 +7,21 @@ import {
   addConnection,
   isConnected,
   encodeMonoBmp,
+  connectionPath,
 } from "../scripts/model.js";
 import { server } from "../server.mjs";
 const data = JSON.parse(
   await readFile(new URL("../data/catalog.json", import.meta.url)),
 );
+test("connection bends at the dragged midpoint with fixed ends and a smooth join", () => {
+  const a = { x: 100, y: 100 }, b = { x: 700, y: 400 };
+  const values = connectionPath(a, b, -150, 80).match(/-?\d+(?:\.\d+)?/g).map(Number);
+  assert.deepEqual(values.slice(0, 2), [100, 100]);
+  assert.deepEqual(values.slice(6, 8), [250, 330]);
+  assert.deepEqual(values.slice(-2), [700, 400]);
+  assert.equal(values[6] - values[4], values[8] - values[6]);
+  assert.equal(values[7] - values[5], values[9] - values[7]);
+});
 test("catalog preserves all student rows and shared asset relationships", async () => {
   assert.equal(data.students.length, 64);
   assert.equal(data.assets.length, 43);

@@ -42,9 +42,12 @@ export function addConnection(edges, from, to) {
   return [...edges, { from, to, bendX: 0, bendY: 0 }];
 }
 export function connectionPath(a, b, bendX = 0, bendY = 0) {
-  const cx = (a.x + b.x) / 2 + bendX * 2,
-    cy = (a.y + b.y) / 2 + bendY * 2;
-  return `M${a.x} ${a.y} Q${cx} ${cy} ${b.x} ${b.y}`;
+  const mx = (a.x + b.x) / 2 + bendX,
+    my = (a.y + b.y) / 2 + bendY,
+    dx = (b.x - a.x) / 6,
+    dy = (b.y - a.y) / 6;
+  // Join two smooth halves at the dragged midpoint, keeping both ends fixed.
+  return `M${a.x} ${a.y} C${a.x + dx} ${a.y + dy} ${mx - dx} ${my - dy} ${mx} ${my} C${mx + dx} ${my + dy} ${b.x - dx} ${b.y - dy} ${b.x} ${b.y}`;
 }
 export function isConnected(nodes, edges) {
   if (nodes.length < 2) return false;

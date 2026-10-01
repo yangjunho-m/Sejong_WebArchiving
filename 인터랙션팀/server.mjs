@@ -1,8 +1,21 @@
 import http from "node:http";
 import { readFile } from "node:fs/promises";
+import { watch } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 const root = path.dirname(fileURLToPath(import.meta.url));
+const previewClients = new Set();
+let previewVersion = Date.now();
+const reloadScript = `<script>
+(() => {
+  let version;
+  const changes = new EventSource('/__preview_events');
+  changes.onmessage = (event) => {
+    if (version !== undefined && version !== event.data) location.reload();
+    version = event.data;
+  };
+})();
+</script>`;
 const mime = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css",
@@ -21,6 +34,21 @@ export const server = http.createServer(async (req, res) => {
     }
     const url = new URL(req.url, "http://localhost");
     const requested = decodeURIComponent(url.pathname);
+    if (requested === "/__preview_events" && req.method === "GET") {
+      res.writeHead(200, {
+        "Content-Type": "text/event-stream",
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+      });
+      res.write(`data: ${previewVersion}\n\n`);
+      previewClients.add(res);
+      const heartbeat = setInterval(() => res.write(": keep-alive\n\n"), 15000);
+      res.on("close", () => {
+        clearInterval(heartbeat);
+        previewClients.delete(res);
+      });
+      return;
+    }
     const file = path.resolve(
       root,
       "." + (requested === "/" ? "/index.html" : requested),
@@ -37,7 +65,10 @@ export const server = http.createServer(async (req, res) => {
       res.writeHead(404);
       return res.end("Not found");
     }
-    const body = await readFile(file);
+    let body = await readFile(file);
+    if (relative === "index.html") {
+      body = body.toString().replace("</body>", `${reloadScript}</body>`);
+    }
     res.writeHead(200, {
       "Content-Type": mime[path.extname(file)] || "application/octet-stream",
       "X-Content-Type-Options": "nosniff",
@@ -53,6 +84,19 @@ if (
   process.argv[1] &&
   path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)
 ) {
+  let reloadTimer;
+  const watcher = watch(root, { recursive: true }, (_, filename) => {
+    if (!filename || !/^(index\.html$|scripts[\\/]|data[\\/]catalog\.json$|img[\\/]|font[\\/])/.test(filename)) return;
+    clearTimeout(reloadTimer);
+    reloadTimer = setTimeout(() => {
+      previewVersion++;
+      for (const client of previewClients) client.write(`data: ${previewVersion}\n\n`);
+    }, 200);
+  });
+  server.on("close", () => {
+    watcher.close();
+    clearTimeout(reloadTimer);
+  });
   server.listen(Number(process.env.PORT || 4173), "127.0.0.1", () =>
     console.log("Button Up: http://127.0.0.1:" + (process.env.PORT || 4173)),
   );
