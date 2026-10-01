@@ -5,15 +5,15 @@
   const isHome = footer.id === 'news';
   const assetPrefix = isHome ? '' : '../';
   const homeHref = isHome ? '#top' : '../';
-  const linkClass = isHome ? 'footer-link type-footer' : 'footer-link';
-  const addressClass = isHome ? 'footer-address type-footer' : '';
-  const addressContent = isHome
-    ? `
+  const linkClass = 'footer-link type-footer';
+  const addressClass = 'footer-address type-footer';
+  const addressContent = `
       <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Korea</span>
       <a href="mailto:iddpt@sejong.ac.kr">iddpt@sejong.ac.kr</a>
       <span>+82 2 3408 3323</span>
-    `
-    : `209, Neungdong-ro, Gwangjin-gu, Seoul, Korea<br><a href="mailto:iddpt@sejong.ac.kr">iddpt@sejong.ac.kr</a><br>+82 2 3408 3323`;
+    `;
+
+  footer.classList.add('site-footer');
 
   footer.innerHTML = `
     <a class="footer-symbol" href="${homeHref}" aria-label="Button Up home">
