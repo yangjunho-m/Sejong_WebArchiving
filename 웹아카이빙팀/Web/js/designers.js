@@ -21,13 +21,31 @@ async function loadDesigners() {
     if (!response.ok) throw new Error('Designer JSON was not found.');
     const data = await response.json();
     if (!Array.isArray(data.industrial) || !Array.isArray(data.visual)) throw new Error('Invalid designer data.');
-    return {
-      industrial: prototypeData.industrial.map((designer) => data.industrial.find((item) => item.id === designer.id) || designer),
-      visual: prototypeData.visual.map((designer) => data.visual.find((item) => item.id === designer.id) || designer),
-    };
+    return groupDesignersByMajor([...data.industrial, ...data.visual]);
   } catch {
     return prototypeData;
   }
+}
+
+function groupDesignersByMajor(designers) {
+  return designers.reduce((groups, designer) => {
+    const major = String(designer.major || '').toLowerCase();
+    if (major.includes('industrial')) {
+      groups.industrial.push(designer);
+    } else if (major.includes('visual')) {
+      groups.visual.push(designer);
+    }
+    return groups;
+  }, { industrial: [], visual: [] });
+}
+
+function shuffleDesigners(designers) {
+  const shuffled = [...designers];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const target = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[target]] = [shuffled[target], shuffled[index]];
+  }
+  return shuffled;
 }
 
 function createCard(designer) {
@@ -46,6 +64,7 @@ function createCard(designer) {
 
 loadDesigners().then((data) => {
   document.querySelectorAll('[data-designer-group]').forEach((container) => {
-    container.append(...data[container.dataset.designerGroup].map(createCard));
+    const designers = data[container.dataset.designerGroup] || [];
+    container.replaceChildren(...shuffleDesigners(designers).map(createCard));
   });
 });
