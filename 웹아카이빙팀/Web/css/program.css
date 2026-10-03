@@ -1,10 +1,11 @@
 .program-page{
-  --program-side:clamp(60px,11.95vw,172px);
+  --program-side:172px;
   --program-gutter:24px;
   --program-column:calc((100vw - (2 * var(--program-side)) - (11 * var(--program-gutter))) / 12);
-  --program-row-gap:calc(var(--program-column) * 3);
-  --program-top-gap:calc(var(--program-column) * 2.25);
-  --program-bottom-gap:calc(var(--program-column) * 3.75);
+  --program-row-gap:160px;
+  --program-center-gap:243px;
+  --program-top-gap:120px;
+  --program-bottom-gap:200px;
   background:#fff
 }
 .program-header{
@@ -90,8 +91,8 @@
   max-width:none;
   margin:0;
   display:grid;
-  grid-template-columns:repeat(10,minmax(0,1fr));
-  column-gap:var(--program-gutter);
+  grid-template-columns:repeat(4,minmax(0,1fr)) var(--program-center-gap) repeat(4,minmax(0,1fr));
+  column-gap:0;
   row-gap:var(--program-row-gap)
 }
 .program-card{
@@ -102,7 +103,7 @@
   grid-column:1 / span 4
 }
 .program-card:nth-child(even){
-  grid-column:7 / span 4
+  grid-column:6 / span 4
 }
 .program-card-head{
   display:flex;
@@ -114,15 +115,19 @@
   border-radius:99px;
   margin-right:7px;
   padding:5px 10px 4px;
-  font-size:10px;
-  font-weight:700;
-  line-height:1
+  color:#000;
+  font-family:Pretendard,Arial,sans-serif;
+  font-size:14px;
+  font-style:normal;
+  font-weight:500;
+  line-height:160%;
+  letter-spacing:-.28px
 }
 .program-card-body{
-  padding-top:26px
+  padding-top:24px
 }
 .program-card h3{
-  margin:0 0 19px;
+  margin:0 0 24px;
   color:#000;
   font-family:Pretendard,Arial,sans-serif;
   font-size:32px;
@@ -133,16 +138,25 @@
 }
 .program-card-body p{
   max-width:390px;
-  margin:0 0 25px;
-  font-size:12px;
-  font-weight:700;
-  line-height:1.55;
+  margin:0 0 24px;
+  color:#000;
+  font-family:Pretendard,Arial,sans-serif;
+  font-size:16px;
+  font-style:normal;
+  font-weight:500;
+  line-height:150%;
+  letter-spacing:-.48px;
   word-break:keep-all
 }
 .program-card-body .program-date{
   margin:0;
-  font-size:12px;
-  line-height:1.55
+  color:#000;
+  font-family:Pretendard,Arial,sans-serif;
+  font-size:16px;
+  font-style:normal;
+  font-weight:600;
+  line-height:140%;
+  letter-spacing:-.32px
 }
 
 @media(max-width:700px){
@@ -212,6 +226,7 @@
     display:grid;
     grid-template-columns:repeat(4,minmax(0,1fr));
     column-gap:var(--program-mobile-gutter);
+    padding-top:0;
     row-gap:42px
   }
   .program-page .program-card{
