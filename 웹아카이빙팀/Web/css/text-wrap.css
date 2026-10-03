@@ -1,0 +1,16 @@
+/* Shared word wrapping for desktop and mobile on every page. */
+body,
+body * {
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+body :is(h1, h2, h3, h4, h5, h6, p, a, span, b, strong, em, small, label, button, li, dt, dd, figcaption, address, input) {
+  white-space: normal !important;
+}
+
+/* Preserve line breaks entered by visitors and in preformatted content. */
+body :is(pre, pre *, textarea, .message-card-message) {
+  white-space: pre-wrap !important;
+}

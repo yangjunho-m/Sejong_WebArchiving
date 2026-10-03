@@ -15,13 +15,14 @@
     <!-- 공통 메뉴 서체: 모든 페이지에서 동일한 설정 사용 -->
     <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/mobile-layout.css">
+    <link rel="stylesheet" href="css/text-wrap.css">
 </head>
 
 <body class="home-page">
     
     <header class="masthead masthead--video">
         <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
-            <source src="img/웹 페이지 모션_배경 트렌지션 X.mp4" type="video/mp4">
+            <source src="img/hero-motion.mp4" type="video/mp4">
         </video>
         <a class="logo site-logo" href="#top" aria-label="Button Up home">
             <img src="img/buttonup.svg" alt="BUTTON UP!">
@@ -38,36 +39,32 @@
             <a class="type-nav" href="html/message.html">MESSAGE</a>
             <a class="type-nav" href="html/partners.html">PARTNERS</a>
         </nav>
+        <h1 class="hero-title type-title-ko">2026 세종대학교<br>디자인이노베이션<br>졸업전시 아카이브</h1>
     </header>
 
     <main id="top">
         <section class="intro" id="works">
-            <img class="hero-logo" src="img/logo_forward.png" alt="forward, BUTTON UP!">
-            <div class="intro-copy">
-                <h2 class="type-title-ko">버튼을 실로 꿰다....</h2>
-                <p class="type-body">졸업은 단순한 끝이 아닌 새로운 트랙의 시작입니다. 우리는 지금 막 그 출발선 앞에 서 있습니다.</p>
-                <p class="type-body">작은 픽셀이 모여 하나의 형상을 이루듯, 지난 시간 속에서 쌓아 온 우리의 경험과 흔적은 차곡차곡 쌓여 새로운 리듬을 만들어냈습니다. 그 리듬은 더 이상 미숙함에 머물지 않고 우리를 앞으로 나아가게 하는 힘이 됩니다.</p>
-                <p class="type-body">우리는 도약하며 속도를 높이고, 눈앞의 트랙을 넘어 더 큰 무대를 향해 달려갑니다. First Chase, 우리의 첫 출발은 새로운 시작이 됩니다.</p>
-            </div>
-            <div class="posters" aria-label="Button Up exhibition posters">
-                <article class="poster">
-                    <img src="img/poster.png" alt="2026 Sejong University Design Innovation graduation exhibition poster">
-                </article>
-                <article class="poster">
-                    <!-- 모션 포스터: 무음 자동 재생 및 반복 재생 -->
-                    <video class="poster-video" autoplay muted loop playsinline preload="metadata" poster="img/poster.png" aria-label="2026 세종대학교 디자인이노베이션 졸업전시 모션 포스터">
-                        <source src="img/포스터 모션.mp4" type="video/mp4">
-                    </video>
-                </article>
-            </div>
-            
-            <div class="opening" id="openings">
-                <h3>OPENING HOUR</h3>
-                <p class="type-body">10. 30 (FRI) - 11. 10 (THU)<br>11AM - 7PM<br>세종대학교 광개토관 B1 세종뮤지엄갤러리 3</p>
-            </div>
-            <div class="opening">
-                <h3 class="type-title-ko"><span class="font-en" lang="en">OPENNING,</span> 첫 단추 끼우기</h3>
-                <p class="type-body">2026. 10. 30(FRI) 6PM</p>
+            <article class="poster intro-poster">
+                <img src="img/poster.png" alt="2026 세종대학교 디자인이노베이션 졸업전시 포스터">
+            </article>
+            <div class="intro-details">
+                <img class="hero-logo" src="img/buttonup.svg" alt="BUTTON UP!">
+                <div class="intro-copy">
+                    <h2 class="type-title-ko">버튼을 실로 꿰다</h2>
+                    <p class="type-body">첫 단추를 잘 끼워야 한다는 말처럼, 단추는 시작을 여는 장치입니다. 서로 다른 색과 모양, 크기를 지닌 단추들이 각자의 자리에서 저마다의 시간을 지나 한곳에 모였습니다. 각기 다른 생각과 방식으로 만들어 온 결과들은 실로 꿰어진 단추처럼 연결되며 새로운 가능성의 시작이 됩니다.</p>
+                    <p class="type-body">이번 졸업전시는 하나의 과정을 마무리하는 동시에, 익숙한 자리를 벗어나 새로운 곳으로 나아가는 출발점입니다. 앞으로의 모습은 알 수 없지만, 지금 끼우는 첫 단추는 각자가 만들어 갈 수많은 미래로 이어질 것입니다.</p>
+                    <p class="type-body">가지각색의 우리가 함께 끼우는 첫 단추를 통해, 이곳에서 시작된 가능성들이 각자의 다음 자리로 이어지길 바랍니다.</p>
+                </div>
+                <div class="exhibition-info" id="openings">
+                    <div>
+                        <h3>전시 기간</h3>
+                        <p>2026. 10. 30 - 11. 10<br>11am - 7pm</p>
+                    </div>
+                    <div>
+                        <h3>전시 장소</h3>
+                        <p>세종대학교 광개토관 B1<br>세종뮤지엄갤러리 3</p>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="committee" id="committee">

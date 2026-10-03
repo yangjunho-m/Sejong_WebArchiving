@@ -6,7 +6,31 @@
   --intro-copy-poster-gap: 80px;
 }
 
+.home-page .hero-title {
+  display: none;
+}
+
 @media (min-width: 701px) {
+  .home-page .masthead--video {
+    height: 100vh;
+    height: 100svh;
+  }
+
+  .home-page .hero-title {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: var(--layout-margin);
+    bottom: 60px;
+    /* Three tracks of the twelve-column grid; keep each title line intact. */
+    width: max(280px, calc((100% - 2 * var(--layout-margin) - 3 * var(--layout-gutter)) / 4));
+    max-width: calc(100% - 2 * var(--layout-margin));
+    min-width: 0;
+    margin: 0;
+    color: #000000;
+    white-space: nowrap;
+  }
+
   .home-page .masthead,
   .home-page .intro,
   .home-page .committee,
@@ -165,4 +189,105 @@
 
 .home-page .intro-copy > p {
   margin: 0;
+}
+
+/* Intro: a five-column poster and four-column copy with breathing room. */
+.home-page .intro-poster {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 538 / 760;
+  margin: 0;
+}
+
+.home-page .intro-details {
+  min-width: 0;
+}
+
+.home-page .intro-details h2,
+.home-page .intro-details h3,
+.home-page .intro-details p {
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.home-page .intro-details .hero-logo {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 24px;
+  transform: none;
+}
+
+.home-page .intro-details .intro-copy {
+  width: 100%;
+  gap: 16px;
+  margin: 0 0 80px;
+}
+
+.home-page .intro-details .intro-copy > h2 {
+  margin-bottom: 0;
+  font-family: var(--font-ko);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+}
+
+.home-page .intro-details .intro-copy > p {
+  font-family: var(--font-ko);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.home-page .exhibition-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--layout-gutter);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+}
+
+.home-page .exhibition-info h3 {
+  font-family: var(--font-ko);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin: 0 0 4px;
+}
+
+.home-page .exhibition-info p {
+  font-family: var(--font-ko);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+@media (min-width: 701px) {
+  .home-page .intro {
+    padding-block: 200px;
+    background: #000000;
+    color: #ffffff;
+    align-items: center;
+  }
+
+  .home-page .intro-poster {
+    grid-column: 2 / 7;
+  }
+
+  .home-page .intro-details {
+    grid-column: 8 / 12;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-page .intro-details {
+    margin-top: 48px;
+  }
 }
