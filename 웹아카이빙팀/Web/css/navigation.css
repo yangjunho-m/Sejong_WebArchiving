@@ -52,10 +52,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 60px;
-    /* 조절값: 상단 블러 강도 / 흰 배경 불투명도 / 흐림을 유지할 지점 */
-    --nav-blur: 50px;
-    --nav-background-opacity: 0.5;
-    --nav-blur-fade-start: 25%;
+    --nav-vertical-padding: 38px;
     background: transparent;
     transform: translateY(-100%);
     visibility: hidden;
@@ -63,17 +60,13 @@
     transition: transform 240ms ease, visibility 240ms;
   }
 
-  /* 블러 레이어만 아래로 페이드: 로고·메뉴에는 마스크가 적용되지 않습니다. */
+  /* 네비게이션 전체를 불투명한 흰색 배경으로 채웁니다. */
   .scroll-navigation::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: rgba(255, 255, 255, var(--nav-background-opacity));
-    -webkit-backdrop-filter: blur(var(--nav-blur));
-    backdrop-filter: blur(var(--nav-blur));
-    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 var(--nav-blur-fade-start), transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 var(--nav-blur-fade-start), transparent 100%);
+    background: #ffffff;
   }
 
   .scroll-navigation > * {
@@ -118,7 +111,7 @@
   }
 
   .scroll-navigation {
-    height: max(95px, calc(var(--nav-logo-top, 30px) + 65px));
+    height: calc(2 * var(--nav-vertical-padding) + var(--type-nav-size) * 1.4);
   }
 
   .scroll-navigation > .site-logo {
@@ -129,14 +122,16 @@
 
   .scroll-navigation nav.site-nav.site-nav {
     position: absolute;
-  }
-
-  .scroll-navigation::before {
-    transition: opacity 180ms ease;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .scroll-navigation.is-at-top::before {
     opacity: 0;
+  }
+
+  .scroll-navigation.is-at-top {
+    transition: none;
   }
 }
 

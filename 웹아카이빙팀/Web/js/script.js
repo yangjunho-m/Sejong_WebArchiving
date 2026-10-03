@@ -59,9 +59,19 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   const update = () => {
     queued = false;
     const y = Math.max(0, window.scrollY);
-    bar.classList.toggle('is-at-top', y <= 1);
-    if (!desktop.matches || y <= 120) {
+    const wasInTopRegion = bar.classList.contains('is-at-top');
+    const inTopRegion = desktop.matches && y <= bar.offsetHeight;
+    bar.classList.toggle('is-at-top', inTopRegion);
+    if (!desktop.matches || inTopRegion) {
+      // 첫 화면에서는 문서와 같은 속도로 올라가며 배경 레이어를 숨깁니다.
+      bar.style.transform = inTopRegion ? `translateY(${-y}px)` : '';
       setVisible(desktop.matches);
+      anchorY = y;
+      return;
+    }
+    bar.style.removeProperty('transform');
+    if (wasInTopRegion) {
+      setVisible(false);
       anchorY = y;
       return;
     }
