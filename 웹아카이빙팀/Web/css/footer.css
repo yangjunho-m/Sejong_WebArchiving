@@ -1,4 +1,4 @@
-@font-face{font-family:"ITC Avant Garde Gothic LT";src:url("../../font/ITC Avant Garde Gothic LT Demi.ttf") format("truetype");font-weight:600;font-style:normal}
+@font-face{font-family:"ITC Avant Garde Gothic LT";src:url("../font/ITC Avant Garde Gothic LT Demi.ttf") format("truetype");font-weight:600;font-style:normal}
 footer{position:relative;font-family:"ITC Avant Garde Gothic LT",Arial,sans-serif;font-weight:600;letter-spacing:1px}
 footer *{font-family:"ITC Avant Garde Gothic LT",Arial,sans-serif;font-weight:600;letter-spacing:1px}
 .copyright{position:absolute;bottom:56px;left:50%;transform:translateX(-50%);margin:0;white-space:nowrap;font:600 14px/1 "ITC Avant Garde Gothic LT",Arial,sans-serif;letter-spacing:1px;color:#e6e6e6}

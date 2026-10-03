@@ -1,5 +1,5 @@
-@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../../font/ITC Avant Garde Gothic LT Demi.ttf") format("truetype");font-weight:600;font-style:normal}
-@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../../font/ITC Avant Garde Gothic LT Medium.ttf") format("truetype");font-weight:500;font-style:normal}
+@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../font/ITC Avant Garde Gothic LT Demi.ttf") format("truetype");font-weight:600;font-style:normal}
+@font-face{font-family:"ITC Avant Garde Gothic Pro";src:url("../font/ITC Avant Garde Gothic LT Medium.ttf") format("truetype");font-weight:500;font-style:normal}
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 
 :root{
