@@ -1,0 +1,131 @@
+/* Mobile Home reference: 390px. Keep content in natural document flow. */
+@media (max-width: 700px) {
+  .home-page .masthead--video {
+    height: 693px;
+    min-height: 0;
+    padding: 0;
+    background: #eef2f8;
+  }
+  .home-page .masthead .site-logo { top: 24px; }
+  .home-page .masthead .menu-toggle {
+    top: 27.66px;
+    width: 24px;
+    height: 24px;
+    background-size: 17px 13px;
+  }
+  .home-page .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 60px;
+    height: auto;
+    min-height: 0;
+    padding: 60px 20px;
+    background: #000;
+    color: #fff;
+  }
+  /* Flatten the desktop copy column to place the poster between copy and info. */
+  .home-page .intro-details { display: contents; }
+  .home-page .intro-details .hero-logo {
+    order: 0;
+    align-self: center;
+    width: 168px;
+    height: 39.57px;
+    margin: 0;
+    transform: none;
+  }
+  .home-page .intro-details .intro-copy {
+    order: 1;
+    width: 100%;
+    margin: 0;
+    gap: 4px;
+  }
+  .home-page .intro-details .intro-copy > h2 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .home-page .intro-details .intro-copy > p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+  }
+  .home-page .intro-poster {
+    order: 2;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 350 / 494;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .home-page .exhibition-info {
+    order: 3;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .home-page .exhibition-info h3 { font-size: 16px; line-height: 1.3; }
+  .home-page .exhibition-info p { font-size: 14px; line-height: 1.5; }
+  .home-page .committee {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: auto;
+    min-height: 0;
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #f0f3f7 54%, #b5c9ea 70%, #7eacf2 93%);
+  }
+  .home-page .committee > h2 { font-size: 22px; line-height: 1.3; margin: 0; }
+  .home-page .members {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    gap: 80px;
+  }
+  .home-page .member-row {
+    display: grid;
+    grid-template-columns: minmax(0, 168fr) minmax(0, 170fr);
+    gap: 12px;
+  }
+  .home-page .member-row > * { grid-column: auto; }
+  .home-page .member-row:last-child { min-height: 61px; }
+  .home-page .committee-people { gap: 40px; }
+  .home-page .type-committee-name { font-size: 16px; line-height: 1.4; }
+  .home-page .type-committee-en {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #777;
+    text-transform: uppercase;
+  }
+  .home-page .desktop-credit { display: none; }
+  .home-page footer.site-footer {
+    height: auto;
+    min-height: 261px;
+    padding: 24px 20px 48px !important;
+    grid-template-columns: repeat(3, max-content) !important;
+    grid-template-areas: "symbol symbol symbol" "instagram behance vimeo" "address address address";
+    column-gap: 20px !important;
+    row-gap: 40px !important;
+    background: #141414;
+    color: #e4e4e4;
+  }
+  .home-page footer .footer-symbol { width: 30px !important; height: 29.79px !important; }
+  .home-page footer .type-footer,
+  .home-page footer .type-footer * {
+    font-family: var(--font-en);
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  .home-page footer .footer-address,
+  .home-page footer .footer-address * {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    text-transform: none;
+  }
+}
