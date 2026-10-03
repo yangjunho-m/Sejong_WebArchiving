@@ -249,6 +249,10 @@
   font-size:20px;
   line-height:1.2
 }
+.soosung img{
+  width:265px;
+  max-height:210px
+}
 .printaku{
   font-size:26px;
   line-height:.9
@@ -281,6 +285,10 @@
   .partner-logo img{
     width:74px;
     max-height:56px
+  }
+  .soosung img{
+    width:112px;
+    max-height:82px
   }
   .sandoll{
     font-size:15px
