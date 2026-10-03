@@ -160,20 +160,23 @@
   text-align:left
 }
 .message-board{
-  max-width:1380px;
+  max-width:1088px;
   margin:0 auto;
-  column-count:4;
-  column-gap:20px
+  display:grid;
+  grid-template-columns:203px repeat(3,minmax(0,1fr));
+  gap:20px;
+  column-count:auto;
+  align-items:start
 }
 .message-card{
   box-sizing:border-box;
   display:flex;
-  width:315px;
+  width:100%;
   flex-direction:column;
   align-items:flex-start;
   gap:10px;
   break-inside:avoid;
-  margin:0 0 20px;
+  margin:0;
   padding:20px;
   border-radius:20px;
   background:#f0f3f7;
@@ -205,7 +208,7 @@
 
 @media(max-width:900px){
   .message-board{
-    column-count:3
+    grid-template-columns:repeat(2,minmax(0,1fr))
   }
 }
 @media(max-width:700px){
