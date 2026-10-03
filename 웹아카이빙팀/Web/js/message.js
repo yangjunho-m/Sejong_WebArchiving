@@ -5,6 +5,16 @@
   const apiConfig = window.MESSAGE_API_CONFIG || {};
   const apiEndpoint = apiConfig.endpoint;
   const initialMessages = [];
+  const messageInput = form?.querySelector('#encouragement');
+
+  if (messageInput) {
+    const mobile = window.matchMedia('(max-width: 700px)');
+    const syncMessagePlaceholder = () => {
+      messageInput.placeholder = mobile.matches ? '메시지를 입력하세요' : '응원의 메시지를 보내보세요!';
+    };
+    syncMessagePlaceholder();
+    mobile.addEventListener('change', syncMessagePlaceholder);
+  }
 
   const createCard = ({ name, message }) => {
     const card = document.createElement('article');
