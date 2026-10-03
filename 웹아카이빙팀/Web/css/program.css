@@ -146,9 +146,16 @@
 }
 
 @media(max-width:700px){
+  .program-page{
+    --program-mobile-margin:20px;
+    --program-mobile-gutter:12px
+  }
   .program-header{
     height:198px;
-    padding:0;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    column-gap:var(--program-mobile-gutter);
+    padding:0 var(--program-mobile-margin);
     background:#fff
   }
   .program-header .menu-toggle{
@@ -162,17 +169,19 @@
   }
   .program-title{
     top:100px;
-    left:13px;
-    right:auto;
-    display:block;
-    width:calc(100vw - 26px);
-    max-width:340px;
+    left:var(--program-mobile-margin);
+    right:var(--program-mobile-margin);
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    column-gap:var(--program-mobile-gutter);
+    width:auto;
+    max-width:none;
     text-align:left;
     transform:none;
     white-space:normal
   }
   .program-title h1{
-    grid-column:auto;
+    grid-column:1 / -1;
     margin:0 0 12px;
     text-align:left;
     font-family:Arial,sans-serif;
@@ -182,7 +191,7 @@
     letter-spacing:-.07em
   }
   .program-title p{
-    grid-column:auto;
+    grid-column:1 / -1;
     text-align:left;
     font-family:Pretendard,Arial,sans-serif;
     font-size:10px;
@@ -192,21 +201,26 @@
   }
   .program-main{
     min-height:0;
-    display:block;
-    padding:34px 13px 44px;
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    column-gap:var(--program-mobile-gutter);
+    padding:34px var(--program-mobile-margin) 44px;
     background:#f0f3f7
   }
-  .program-list{
-    grid-column:auto;
+  .program-page .program-list{
+    grid-column:1 / -1;
     display:grid;
-    grid-template-columns:1fr;
-    gap:42px
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    column-gap:var(--program-mobile-gutter);
+    row-gap:42px
   }
-  .program-card{
-    grid-column:auto!important;
+  .program-page .program-card{
+    grid-column:1 / -1!important;
     min-height:0
   }
   .program-card-head{
+    display:flex;
+    flex-wrap:wrap;
     gap:6px
   }
   .program-card-head span{
