@@ -160,18 +160,20 @@
   text-align:left
 }
 .message-board{
-  max-width:1088px;
+  width:1320px;
+  max-width:calc(100vw - 20px);
   margin:0 auto;
   display:grid;
-  grid-template-columns:203px repeat(3,minmax(0,1fr));
+  grid-template-columns:repeat(4,315px);
   gap:20px;
   column-count:auto;
-  align-items:start
+  align-items:start;
+  transform:translateX(4px)
 }
 .message-card{
   box-sizing:border-box;
   display:flex;
-  width:100%;
+  width:315px;
   flex-direction:column;
   align-items:flex-start;
   gap:10px;
@@ -208,7 +210,13 @@
 
 @media(max-width:900px){
   .message-board{
-    grid-template-columns:repeat(2,minmax(0,1fr))
+    width:auto;
+    max-width:none;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    transform:none
+  }
+  .message-card{
+    width:100%
   }
 }
 @media(max-width:700px){
