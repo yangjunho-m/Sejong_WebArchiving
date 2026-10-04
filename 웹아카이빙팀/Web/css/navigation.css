@@ -14,6 +14,20 @@
   letter-spacing: -0.02em;
 }
 
+/* 페이지별·모바일 메뉴 스타일보다 공통 선택 상태를 우선합니다. */
+body header nav.site-nav a.type-nav {
+  color: #999999 !important;
+  text-decoration: none !important;
+}
+
+body header nav.site-nav a.type-nav[aria-current="page"] {
+  color: #000000 !important;
+}
+
+body.home-page header nav.site-nav a.type-nav {
+  color: #000000 !important;
+}
+
 /* PC: Figma 가로 Auto layout / Hug contents / 항목 간격 60px. */
 @media (min-width: 1101px) {
   header nav.site-nav.site-nav {
@@ -51,8 +65,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 60px;
-    --nav-vertical-padding: 38px;
+    padding: 0 60px;
+    --nav-height: 80px;
     background: transparent;
     transform: translateY(-100%);
     visibility: hidden;
@@ -60,13 +74,17 @@
     transition: transform 240ms ease, visibility 240ms;
   }
 
-  /* 네비게이션 전체를 불투명한 흰색 배경으로 채웁니다. */
+  /* 높은 불투명도와 블러로 메뉴 대비를 유지하면서 배경이 은은하게 비치도록 합니다. */
   .scroll-navigation::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: #ffffff;
+    background: rgba(240, 243, 247, 0.92);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    transition: opacity 180ms ease;
   }
 
   .scroll-navigation > * {
@@ -86,15 +104,10 @@
   }
 
   .scroll-navigation .type-nav {
-    color: #141414;
     text-decoration: none;
     pointer-events: auto;
   }
 
-  .scroll-navigation .type-nav[aria-current="page"] {
-    text-decoration: underline;
-    text-underline-offset: 5px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -111,13 +124,14 @@
   }
 
   .scroll-navigation {
-    height: calc(2 * var(--nav-vertical-padding) + var(--type-nav-size) * 1.4);
+    height: var(--nav-height);
   }
 
   .scroll-navigation > .site-logo {
     position: absolute;
     left: var(--nav-logo-left, 60px);
-    top: var(--nav-logo-top, 30px);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .scroll-navigation nav.site-nav.site-nav {

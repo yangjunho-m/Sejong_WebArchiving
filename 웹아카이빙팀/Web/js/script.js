@@ -50,7 +50,6 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     if (enabled) {
       const rect = sourceLogo.getBoundingClientRect();
       bar.style.setProperty('--nav-logo-left', `${rect.left}px`);
-      bar.style.setProperty('--nav-logo-top', `${rect.top + window.scrollY}px`);
     }
   };
   setVisible(false);
