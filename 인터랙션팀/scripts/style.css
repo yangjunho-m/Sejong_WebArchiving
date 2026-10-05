@@ -1217,7 +1217,7 @@ header .header-home {
 .selection .object > small {
   display: block;
   font-family: Pretendard, "Malgun Gothic", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(16px, 2.6svh, 24px);
   line-height: 1.25;
   color: #fff;
@@ -2027,7 +2027,7 @@ body:has(#detail[open]) #app {
     width: clamp(280px, 24vw, 350px);
   }
   .result-qr {
-    left: 63%;
+    left: 67%;
     top: 34%;
     width: clamp(110px, 10vw, 150px);
   }
@@ -2061,6 +2061,139 @@ body:has(#detail[open]) #app {
     width: 148px;
     height: 50px;
     padding: 0;
+  }
+}
+@media (max-width: 900px) {
+  body:has(.result-final.is-shared) header {
+    display: none;
+  }
+
+  body:has(.result-final.is-shared) main {
+    min-height: 100svh;
+  }
+
+  .result-final.is-shared {
+    min-height: 100svh;
+    padding: 65px 0 64px;
+    overflow: hidden auto;
+    background: #000;
+  }
+
+  .shared-result-heading {
+    width: min(92vw, 720px);
+    margin: 0 auto 24px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .shared-result-heading h1 {
+    font-family: Pretendard, "Malgun Gothic", sans-serif;
+    font-size: clamp(17px, 3.45vw, 32px);
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .shared-result-heading p {
+    margin-top: 88px;
+    font-size: clamp(14px, 2.55vw, 19px);
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  .result-final.is-shared .receipt {
+    width: min(82.75vw, 646px);
+    margin: 0 auto;
+    border-color: #595959;
+  }
+
+  .result-final.is-shared .result-qr,
+  .result-final.is-shared .result-bottom,
+  .result-final.is-shared .result-restart {
+    display: none;
+  }
+
+  .result-final.is-shared .result-decoration {
+    z-index: 1;
+  }
+
+  .result-final.is-shared .result-decoration img {
+    width: clamp(32px, 5.4vw, 46px);
+    height: clamp(32px, 5.4vw, 46px);
+  }
+
+  .result-final.is-shared .result-decoration img:nth-child(1) {
+    left: 2.2%;
+    top: 30.0%;
+  }
+
+  .result-final.is-shared .result-decoration img:nth-child(2) {
+    left: 19.3%;
+    top: 87.4%;
+  }
+
+  .result-final.is-shared .result-decoration img:nth-child(3) {
+    left: auto;
+    right: 10.0%;
+    top: 15.0%;
+  }
+
+  .result-final.is-shared .result-decoration img:nth-child(4),
+  .result-final.is-shared .result-decoration img:nth-child(5) {
+    display: none;
+  }
+
+  .shared-save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 58px;
+    margin: 82px auto 0;
+    padding: 0;
+    border: 2px solid #fff;
+    border-radius: 999px;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .shared-save:hover {
+    background: transparent;
+  }
+}
+
+@media (min-width: 901px) {
+  html:has(.result-final:not(.is-shared)),
+  body:has(.result-final:not(.is-shared)) {
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  body:has(.result-final:not(.is-shared)) main {
+    height: calc(100svh - 94px);
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .shared-result-heading,
+  .shared-save {
+    display: none;
+  }
+
+  .result-final:not(.is-shared) {
+    height: calc(100svh - 94px);
+    min-height: 0;
+    padding: 50px 0 24px;
+    overflow: hidden;
+  }
+
+  .result-final:not(.is-shared) .receipt {
+    width: clamp(310px, 26vw, 390px);
+    margin-top: 42px;
   }
 }
 @media print {
@@ -2300,7 +2433,7 @@ body:has(#detail[open]) #app {
 .selection .object.active > small {
   display: block;
   font-family: Pretendard, "Malgun Gothic", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-size: 32px;
   line-height: 150%;

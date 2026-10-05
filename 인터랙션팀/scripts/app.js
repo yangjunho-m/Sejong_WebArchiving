@@ -754,7 +754,14 @@ async function result(token, options = {}) {
     explanation: text,
     createdAt: new Date().toISOString(),
   };
-  app.innerHTML = `<section class="result result-final" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uC601\uC218\uC99D"><p class="receipt-loading" role="status">\uC601\uC218\uC99D\uC744 \uB9CC\uB4E4\uACE0 \uC788\uC5B4\uC694\u2026</p></article><aside class="result-qr" aria-live="polite"><img class="qr-code" alt="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC QR \uCF54\uB4DC" hidden><span class="qr-pointer" aria-hidden="true">\u25B2</span><p>QR \uCF54\uB4DC \uC0DD\uC131 \uC911</p><small>\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824\uC8FC\uC138\uC694</small></aside><button id="restart" class="result-restart" type="button" aria-label="\uCC98\uC74C\uC73C\uB85C"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>\uC0AC\uC6A9\uC790\uB2D8\uC774 \uC5F0\uACB0\uD55C \uCCAB\uB2E8\uCD94\uB97C \uC778\uC1C4 \uC911\uC785\uB2C8\uB2E4. <span class="result-countdown">60</span>\uCD08 \uB4A4\uC5D0 \uCCAB \uD654\uBA74\uC73C\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4.</p></footer></section>`;
+  const isShared = options.shared === true;
+  const sharedHeading = isShared
+    ? `<div class="shared-result-heading"><h1>2026 SEJONG UNIV. DESIGN INNOVATION<br>GRADUATION EXHIBITION</h1><p>\uC0AC\uC6A9\uC790\uB2D8\uC758 \uCCAB \uB2E8\uCD94\uB97C \uC800\uC7A5\uD574\uBCF4\uC138\uC694!</p></div>`
+    : "";
+  const sharedSave = isShared
+    ? `<button id="save-photo" class="shared-save" type="button">\uC0AC\uC9C4 \uC800\uC7A5\uD558\uAE30</button>`
+    : "";
+  app.innerHTML = `<section class="result result-final${isShared ? " is-shared" : ""}" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC">${sharedHeading}<div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uC601\uC218\uC99D"><p class="receipt-loading" role="status">\uC601\uC218\uC99D\uC744 \uB9CC\uB4E4\uACE0 \uC788\uC5B4\uC694\u2026</p></article><aside class="result-qr" aria-live="polite"><img class="qr-code" alt="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC QR \uCF54\uB4DC" hidden><span class="qr-pointer" aria-hidden="true">\u25B2</span><p>QR \uCF54\uB4DC \uC0DD\uC131 \uC911</p><small>\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824\uC8FC\uC138\uC694</small></aside><button id="restart" class="result-restart" type="button" aria-label="\uCC98\uC74C\uC73C\uB85C"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button>${sharedSave}<footer class="result-bottom"><p>\uC0AC\uC6A9\uC790\uB2D8\uC774 \uC5F0\uACB0\uD55C \uCCAB\uB2E8\uCD94\uB97C \uC778\uC1C4 \uC911\uC785\uB2C8\uB2E4. <span class="result-countdown">60</span>\uCD08 \uB4A4\uC5D0 \uCCAB \uD654\uBA74\uC73C\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4.</p></footer></section>`;
   document.querySelector("#restart").onclick = reset;
   if (!options.skipAutoReset) timer = setTimeout(reset, 60000);
   const qrAside = document.querySelector(".result-qr"),
@@ -784,6 +791,12 @@ async function result(token, options = {}) {
     document
       .querySelector(".receipt")
       .replaceChildren(renderReceiptPreview(composition));
+    document.querySelector("#save-photo")?.addEventListener("click", () => {
+      artwork.toBlob((blob) => {
+        if (!blob) return;
+        downloadReceipt(blob, "button-up-result.png");
+      }, "image/png");
+    });
     // Paint the completed result before opening the print dialog once.
     if (!options.skipPrint)
       requestAnimationFrame(() =>
@@ -820,6 +833,7 @@ async function sharedResult(id) {
     result(token, {
       patternId: saved.id,
       patternUrl: saved.url || location.href,
+      shared: true,
       skipAutoReset: true,
       skipPrint: true,
     });
