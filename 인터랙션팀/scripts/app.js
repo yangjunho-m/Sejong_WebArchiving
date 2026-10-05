@@ -11,6 +11,7 @@ import {
   isConnected,
   explanation,
   encodeMonoBmp,
+  constrainBend,
   connectionPath,
 } from "./model.js";
 const app = document.querySelector("#app"),
@@ -457,7 +458,7 @@ function save() {
 }
 function editor() {
   setScreen("editor");
-  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전 단계로"><img src="${assetUrl("img/previous-step.svg")}" alt="" aria-hidden="true"></button></div><div class="helper-wrap"><p class="edge-hint" role="status">선을 클릭하면 삭제되고, 선의 점을 드래그하면 곡률을 조절할 수 있어요.</p><p class="helper" id="editor-help">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p></div><button id="finish" aria-label="이 패턴으로 생성하기"><img src="${assetUrl("img/generate-pattern.svg")}" alt="" aria-hidden="true"></button></div></section>`;
+  app.innerHTML = `<section class="pattern-editor"><div class="board" aria-label="단추 배치와 연결 편집 영역"></div><div class="editor-footer"><div class="editor-actions"><button id="back" aria-label="이전 단계로"><img src="${assetUrl("img/previous-step.svg")}" alt="" aria-hidden="true"></button></div><div class="helper-wrap"><p class="helper" id="editor-help">드래그로 물건을 배치하고, <strong>클릭한 순서대로</strong> 선이 이어집니다.<br>물건 위 도구로 크기·회전을 조절할 수 있어요.</p></div><button id="finish" aria-label="이 패턴으로 생성하기"><img src="${assetUrl("img/generate-pattern.svg")}" alt="" aria-hidden="true"></button></div></section>`;
   document.querySelector("#back").onclick = selectScreen;
   document.querySelector("#finish").onclick = async () => {
     if (!isConnected(nodes, edges))
@@ -477,13 +478,6 @@ function editor() {
   };
   drawBoard();
 }
-function showEdgeHint() {
-  const hint = document.querySelector(".edge-hint");
-  if (!hint) return;
-  hint.classList.remove("is-visible");
-  void hint.offsetWidth;
-  hint.classList.add("is-visible");
-}
 function drawBoard() {
   const board = document.querySelector(".board");
   const active = nodes.find((n) => n.id === focus);
@@ -491,10 +485,13 @@ function drawBoard() {
     .map((e, i) => {
       const a = nodes.find((n) => n.id === e.from),
         b = nodes.find((n) => n.id === e.to);
-      const bendX = e.bendX ?? 0,
-        bendY = e.bendY ?? e.bend ?? 0,
+      const bend = constrainBend(a, b, e.bendX ?? 0, e.bendY ?? e.bend ?? 0),
+        bendX = bend.bendX,
+        bendY = bend.bendY,
         handleX = (a.x + b.x) / 2 + bendX,
         handleY = (a.y + b.y) / 2 + bendY;
+      e.bendX = bendX;
+      e.bendY = bendY;
       return `<path class="edge" data-edge="${i}" d="${connectionPath(a, b, bendX, bendY)}"/><ellipse class="edge-handle" data-bend="${i}" cx="${handleX}" cy="${handleY}" rx="6" ry="6.72"><title>드래그해서 선 곡률 조절</title></ellipse>`;
     })
     .join("");
@@ -506,7 +503,7 @@ function drawBoard() {
     })
     .join(
       "",
-    )}${active ? `<div class="node-tools" role="group" aria-label="선택 단추 크기와 회전" style="left:${active.x / 10}%;top:${active.y / 5.6}%;--node-radius:${6.5 * active.scale}cqw"><button data-adjust="larger" aria-label="선택 단추 확대"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button><button data-adjust="smaller" aria-label="선택 단추 축소"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button><button data-adjust="rotate" aria-label="선택 단추 회전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 3v5h5"/></svg></button></div>` : ""}`;
+    )}${active ? `<div class="node-tools" role="group" aria-label="선택 단추 크기와 회전" style="left:${active.x / 10}%;top:${active.y / 5.6}%;--node-radius:${6.5 * active.scale}cqw"><button data-adjust="larger" aria-label="선택 단추 확대"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg></button><button data-adjust="smaller" aria-label="선택 단추 축소"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg></button><button data-adjust="reset" aria-label="선택 단추 연결 끊기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 3v5h5"/></svg></button></div>` : ""}`;
   document.querySelector("#finish").disabled = !isConnected(nodes, edges);
   board.onclick = (e) => {
     if (e.target === board || e.target === board.querySelector("svg")) {
@@ -523,8 +520,8 @@ function drawBoard() {
           active.scale = clamp(active.scale + 0.15, 0.6, 1.6);
         if (b.dataset.adjust === "smaller")
           active.scale = clamp(active.scale - 0.15, 0.6, 1.6);
-        if (b.dataset.adjust === "rotate")
-          active.rotation = (active.rotation + 30) % 360;
+        if (b.dataset.adjust === "reset")
+          edges = edges.filter((e) => e.from !== active.id && e.to !== active.id);
         drawBoard();
         board
           .querySelector(`[data-adjust="${b.dataset.adjust}"]`)
@@ -564,19 +561,17 @@ function drawBoard() {
           save();
           moved = true;
         }
-        edge.bendX = clamp(
-          start.bendX + ((ev.clientX - start.x) / rect.width) * 1000,
-          -360,
-          360,
-        );
-        edge.bendY = clamp(
-          start.bendY + ((ev.clientY - start.y) / rect.height) * 560,
-          -220,
-          220,
-        );
         const a = nodes.find((n) => n.id === edge.from),
-          b = nodes.find((n) => n.id === edge.to),
-          bendX = edge.bendX ?? 0,
+          b = nodes.find((n) => n.id === edge.to);
+        const bend = constrainBend(
+          a,
+          b,
+          start.bendX + ((ev.clientX - start.x) / rect.width) * 1000,
+          start.bendY + ((ev.clientY - start.y) / rect.height) * 560,
+        );
+        edge.bendX = bend.bendX;
+        edge.bendY = bend.bendY;
+        const bendX = edge.bendX ?? 0,
           bendY = edge.bendY ?? edge.bend ?? 0;
         board
           .querySelector(`[data-edge="${handle.dataset.bend}"]`)
@@ -600,7 +595,6 @@ function drawBoard() {
       if (next !== edges) {
         save();
         edges = next;
-        showEdgeHint();
       }
     }
     focus = id;
@@ -676,17 +670,15 @@ function drawBoard() {
         );
         b.style.left = n.x / 10 + "%";
         b.style.top = n.y / 5.6 + "%";
-        board.querySelectorAll("[data-edge]").forEach((p, i) =>
-          p.setAttribute(
-            "d",
-            connectionPath(
-              nodes.find((n) => n.id === edges[i].from),
-              nodes.find((n) => n.id === edges[i].to),
-              edges[i].bendX ?? 0,
-              edges[i].bendY ?? edges[i].bend ?? 0,
-            ),
-          ),
-        );
+        board.querySelectorAll("[data-edge]").forEach((p, i) => {
+          const edge = edges[i],
+            a = nodes.find((n) => n.id === edge.from),
+            b = nodes.find((n) => n.id === edge.to),
+            bend = constrainBend(a, b, edge.bendX ?? 0, edge.bendY ?? edge.bend ?? 0);
+          edge.bendX = bend.bendX;
+          edge.bendY = bend.bendY;
+          p.setAttribute("d", connectionPath(a, b, bend.bendX, bend.bendY));
+        });
         board.querySelectorAll("[data-bend]").forEach((handle, i) => {
           const edge = edges[i],
             a = nodes.find((n) => n.id === edge.from),
@@ -738,7 +730,7 @@ async function result(token) {
     edges: structuredClone(edges),
     explanation: text,
   };
-  app.innerHTML = `<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="${assetUrl("img/receipt-qr-placeholder.svg")}" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><button id="restart" class="result-restart" type="button" aria-label="처음으로"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄 중입니다. 60초 뒤에 첫 화면으로 돌아갑니다.</p></footer></section>`;
+  app.innerHTML = `<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="${assetUrl("img/receipt-qr-placeholder.svg")}" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><button id="restart" class="result-restart" type="button" aria-label="처음으로"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄 중입니다. <span class="result-countdown">60</span>초 뒤에 첫 화면으로 돌아갑니다.</p></footer></section>`;
   document.querySelector("#restart").onclick = reset;
   timer = setTimeout(reset, 60000);
   try {

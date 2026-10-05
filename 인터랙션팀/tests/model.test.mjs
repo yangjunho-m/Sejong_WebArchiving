@@ -7,20 +7,27 @@ import {
   addConnection,
   isConnected,
   encodeMonoBmp,
+  constrainBend,
   connectionPath,
 } from "../scripts/model.js";
 import { server } from "../server.mjs";
 const data = JSON.parse(
   await readFile(new URL("../data/catalog.json", import.meta.url)),
 );
-test("connection bends at the dragged midpoint with fixed ends and a smooth join", () => {
+test("connection bends as circular arcs through the dragged handle", () => {
   const a = { x: 100, y: 100 }, b = { x: 700, y: 400 };
   const values = connectionPath(a, b, -150, 80).match(/-?\d+(?:\.\d+)?/g).map(Number);
   assert.deepEqual(values.slice(0, 2), [100, 100]);
-  assert.deepEqual(values.slice(6, 8), [250, 330]);
+  assert.deepEqual(values.slice(7, 9), [250, 330]);
   assert.deepEqual(values.slice(-2), [700, 400]);
-  assert.equal(values[6] - values[4], values[8] - values[6]);
-  assert.equal(values[7] - values[5], values[9] - values[7]);
+  assert.equal(values[2], values[9]);
+  assert.equal(values[3], values[10]);
+  assert.match(connectionPath(a, b, 0, 0), /^M100 100 L700 400$/);
+});
+test("connection handle movement is capped at a semicircle distance", () => {
+  const a = { x: 0, y: 0 }, b = { x: 300, y: 0 };
+  assert.deepEqual(constrainBend(a, b, 0, 400), { bendX: 0, bendY: 150 });
+  assert.deepEqual(constrainBend(a, b, 90, 120), { bendX: 90, bendY: 120 });
 });
 test("catalog preserves all student rows and shared asset relationships", async () => {
   assert.equal(data.students.length, 64);

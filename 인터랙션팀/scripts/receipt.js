@@ -310,7 +310,7 @@ export function printReceipt(canvas) {
   frame.onload = async () => {
     await frame.contentDocument.querySelector("img").decode();
     frame.contentWindow.focus();
-    frame.contentWindow.print();
+    requestAnimationFrame(() => frame.contentWindow.print());
   };
   frame.srcdoc = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>영수증</title><style>
     @page { size: 80mm ${height}mm; margin: 0; }

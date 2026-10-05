@@ -76,7 +76,7 @@ header {
   position: relative;
   z-index: 3;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 26px 4%;
   gap: 20px;
@@ -85,9 +85,13 @@ header {
     sans-serif;
   letter-spacing: 0.03em;
 }
-header span {
+header > span {
   margin-left: auto;
   font-size: 9px;
+}
+.header-title {
+  display: block;
+  margin-left: 0;
 }
 header i {
   padding: 0 16px;
@@ -1298,7 +1302,8 @@ header .header-home {
 }
 .selection .tray {
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 24px;
   padding: 20px 3%;
   max-height: 120px;
@@ -1308,6 +1313,7 @@ header .header-home {
   align-items: center;
   gap: 16px;
   min-width: 0;
+  min-height: 56.7px;
   white-space: nowrap;
 }
 .selected-words strong {
@@ -1649,6 +1655,7 @@ body:has(#detail[open]) #app {
   margin-top: 24px;
   border: 1px solid #fff;
   padding: 12px 24px;
+  font-size: 17px;
   font-weight: 700;
 }
 @media (max-width: 700px) {
@@ -1695,8 +1702,8 @@ body:has(#detail[open]) #app {
   gap: 10px;
 }
 .detail-add-icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 @media (min-width: 701px) {
@@ -1955,6 +1962,11 @@ body:has(#detail[open]) #app {
   margin-bottom: 0;
   white-space: nowrap;
 }
+.result-countdown {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
 .result-restart {
   position: fixed;
   right: 28px;
@@ -2114,40 +2126,6 @@ body:has(#detail[open]) #app {
 }
 .pattern-editor .edge-handle:hover {
   fill: #d6e4f8;
-}
-.edge-hint {
-  width: fit-content;
-  max-width: min(100%, 680px);
-  margin: 0 auto 9px;
-  padding: 9px 14px;
-  border: 1px solid #ffffff45;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.36);
-  color: #ddd;
-  font-size: clamp(11px, 1.1vw, 14px);
-  line-height: 1.4;
-  text-align: center;
-  pointer-events: none;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(8px);
-}
-.edge-hint.is-visible {
-  animation: edge-hint-show 5s ease forwards;
-}
-@keyframes edge-hint-show {
-  0%,
-  82% {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(8px);
-  }
 }
 .node-tools {
   position: absolute;
@@ -2314,9 +2292,6 @@ body:has(#detail[open]) #app {
   .pattern-editor .helper-wrap {
     grid-column: 1/-1;
     grid-row: 1;
-  }
-  .pattern-editor .edge-hint {
-    white-space: normal;
   }
   .node-tools {
     transform: translate(-50%, calc(-100% - var(--node-radius) - 8px));

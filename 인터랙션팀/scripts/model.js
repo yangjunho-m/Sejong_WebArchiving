@@ -41,13 +41,40 @@ export function addConnection(edges, from, to) {
     return edges;
   return [...edges, { from, to, bendX: 0, bendY: 0 }];
 }
+export function constrainBend(a, b, bendX = 0, bendY = 0) {
+  const max = Math.hypot(b.x - a.x, b.y - a.y) * 0.5;
+  const distance = Math.hypot(bendX, bendY);
+  if (!distance || distance <= max) return { bendX, bendY };
+  const scale = max / distance;
+  return {
+    bendX: round(bendX * scale),
+    bendY: round(bendY * scale),
+  };
+}
 export function connectionPath(a, b, bendX = 0, bendY = 0) {
-  const mx = (a.x + b.x) / 2 + bendX,
-    my = (a.y + b.y) / 2 + bendY,
-    dx = (b.x - a.x) / 6,
-    dy = (b.y - a.y) / 6;
-  // Join two smooth halves at the dragged midpoint, keeping both ends fixed.
-  return `M${a.x} ${a.y} C${a.x + dx} ${a.y + dy} ${mx - dx} ${my - dy} ${mx} ${my} C${mx + dx} ${my + dy} ${b.x - dx} ${b.y - dy} ${b.x} ${b.y}`;
+  ({ bendX, bendY } = constrainBend(a, b, bendX, bendY));
+  const h = {
+    x: (a.x + b.x) / 2 + bendX,
+    y: (a.y + b.y) / 2 + bendY,
+  };
+  const d =
+    2 *
+    (a.x * (h.y - b.y) + h.x * (b.y - a.y) + b.x * (a.y - h.y));
+  if (Math.abs(d) < 0.001) return `M${a.x} ${a.y} L${b.x} ${b.y}`;
+
+  const aa = a.x * a.x + a.y * a.y,
+    hh = h.x * h.x + h.y * h.y,
+    bb = b.x * b.x + b.y * b.y,
+    cx = (aa * (h.y - b.y) + hh * (b.y - a.y) + bb * (a.y - h.y)) / d,
+    cy = (aa * (b.x - h.x) + hh * (a.x - b.x) + bb * (h.x - a.x)) / d,
+    r = round(Math.hypot(a.x - cx, a.y - cy)),
+    sweep = (h.x - a.x) * (b.y - h.y) - (h.y - a.y) * (b.x - h.x) > 0 ? 1 : 0;
+
+  return `M${round(a.x)} ${round(a.y)} A${r} ${r} 0 0 ${sweep} ${round(h.x)} ${round(h.y)} A${r} ${r} 0 0 ${sweep} ${round(b.x)} ${round(b.y)}`;
+}
+
+function round(n) {
+  return Math.round(n * 100) / 100;
 }
 export function isConnected(nodes, edges) {
   if (nodes.length < 2) return false;
