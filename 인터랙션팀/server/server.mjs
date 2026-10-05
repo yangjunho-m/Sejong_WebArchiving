@@ -3,7 +3,8 @@ import { readFile } from "node:fs/promises";
 import { watch } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
-const root = path.dirname(fileURLToPath(import.meta.url));
+const serverRoot = path.dirname(fileURLToPath(import.meta.url));
+const root = path.resolve(serverRoot, "..");
 const previewClients = new Set();
 let previewVersion = Date.now();
 const reloadScript = `<script>

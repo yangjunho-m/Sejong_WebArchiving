@@ -53,10 +53,27 @@ const esc = (s) =>
   );
 const CAROUSEL_START_CYCLE = 2;
 const CAROUSEL_INITIAL_CYCLES = 5;
+const PATTERN_API = "http://sj-di.com/wp-json/sejong/v1/patterns";
 const asset = (s) => catalog.assets.find((a) => a.id === s.assetId);
 const student = (id) => catalog.students.find((s) => s.id === id);
 const chosen = () => selected.map(student);
 const symbol = '<span class="button-symbol" aria-hidden="true"></span>';
+const qrImageUrl = (url) =>
+  `https://api.qrserver.com/v1/create-qr-code/?size=260x260&margin=0&data=${encodeURIComponent(url)}`;
+async function savePattern(payload) {
+  const response = await fetch(PATTERN_API, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ payload }),
+  });
+  if (!response.ok) throw new Error("pattern-save");
+  return response.json();
+}
+async function loadPattern(id) {
+  const response = await fetch(`${PATTERN_API}?id=${encodeURIComponent(id)}`);
+  if (!response.ok) throw new Error("pattern-load");
+  return response.json();
+}
 function toast(text) {
   document.querySelector("#notice").textContent = text;
   clearTimeout(noticeTimer);
@@ -715,7 +732,7 @@ function downloadReceipt(blob, name) {
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 10000);
 }
-async function result(token) {
+async function result(token, options = {}) {
   if (token !== session) return;
   setScreen("result");
   const people = chosen(),
@@ -730,9 +747,38 @@ async function result(token) {
     edges: structuredClone(edges),
     explanation: text,
   };
-  app.innerHTML = `<section class="result result-final" aria-label="나의 첫 단추 결과"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="나의 첫 단추 영수증"><p class="receipt-loading" role="status">영수증을 만들고 있어요…</p></article><aside class="result-qr"><img src="${assetUrl("img/receipt-qr-placeholder.svg")}" alt="다운로드 준비 중인 임시 QR 코드"><span class="qr-pointer" aria-hidden="true">▲</span><p>QR 코드 다운 받기</p><small>다운로드 준비 중</small></aside><button id="restart" class="result-restart" type="button" aria-label="처음으로"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>사용자님이 연결한 첫단추를 인쇄 중입니다. <span class="result-countdown">60</span>초 뒤에 첫 화면으로 돌아갑니다.</p></footer></section>`;
+  const patternPayload = {
+    version: 1,
+    selected: structuredClone(selected),
+    nodes: structuredClone(nodes),
+    edges: structuredClone(edges),
+    explanation: text,
+    createdAt: new Date().toISOString(),
+  };
+  app.innerHTML = `<section class="result result-final" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC"><div class="result-decoration" aria-hidden="true">${[0, 1, 2, 3, 4].map(() => `<img src="${assetUrl("img/btn_mini.png")}" alt="">`).join("")}</div><article class="receipt" aria-label="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uC601\uC218\uC99D"><p class="receipt-loading" role="status">\uC601\uC218\uC99D\uC744 \uB9CC\uB4E4\uACE0 \uC788\uC5B4\uC694\u2026</p></article><aside class="result-qr" aria-live="polite"><img class="qr-code" alt="\uB098\uC758 \uCCAB \uB2E8\uCD94 \uACB0\uACFC QR \uCF54\uB4DC" hidden><span class="qr-pointer" aria-hidden="true">\u25B2</span><p>QR \uCF54\uB4DC \uC0DD\uC131 \uC911</p><small>\uC7A0\uC2DC\uB9CC \uAE30\uB2E4\uB824\uC8FC\uC138\uC694</small></aside><button id="restart" class="result-restart" type="button" aria-label="\uCC98\uC74C\uC73C\uB85C"><img src="${assetUrl("img/restart-button.svg")}" alt=""></button><footer class="result-bottom"><p>\uC0AC\uC6A9\uC790\uB2D8\uC774 \uC5F0\uACB0\uD55C \uCCAB\uB2E8\uCD94\uB97C \uC778\uC1C4 \uC911\uC785\uB2C8\uB2E4. <span class="result-countdown">60</span>\uCD08 \uB4A4\uC5D0 \uCCAB \uD654\uBA74\uC73C\uB85C \uB3CC\uC544\uAC11\uB2C8\uB2E4.</p></footer></section>`;
   document.querySelector("#restart").onclick = reset;
-  timer = setTimeout(reset, 60000);
+  if (!options.skipAutoReset) timer = setTimeout(reset, 60000);
+  const qrAside = document.querySelector(".result-qr"),
+    qrImage = qrAside.querySelector(".qr-code"),
+    qrTitle = qrAside.querySelector("p"),
+    qrText = qrAside.querySelector("small");
+  const patternRequest = options.patternUrl
+    ? Promise.resolve({ url: options.patternUrl, id: options.patternId })
+    : savePattern(patternPayload);
+  patternRequest
+    .then((pattern) => {
+      if (token !== session || screen !== "result") return;
+      qrImage.src = qrImageUrl(pattern.url);
+      qrImage.hidden = false;
+      qrTitle.textContent = "QR \uCF54\uB4DC \uB2E4\uC6B4 \uBC1B\uAE30";
+      qrText.textContent = "\uC2A4\uCE94\uD574\uC11C \uB2E4\uC2DC \uBCF4\uAE30";
+    })
+    .catch((error) => {
+      console.error(error);
+      if (token !== session || screen !== "result") return;
+      qrTitle.textContent = "QR \uC0DD\uC131 \uC2E4\uD328";
+      qrText.textContent = "\uB124\uD2B8\uC6CC\uD06C\uB97C \uD655\uC778\uD574\uC8FC\uC138\uC694";
+    });
   try {
     const artwork = await renderReceipt(composition);
     if (token !== session || screen !== "result") return;
@@ -740,13 +786,14 @@ async function result(token) {
       .querySelector(".receipt")
       .replaceChildren(renderReceiptPreview(composition));
     // Paint the completed result before opening the print dialog once.
-    requestAnimationFrame(() =>
-      requestAnimationFrame(() => {
-        if (token !== session || screen !== "result") return;
-        lastActivity = Date.now();
-        printReceipt(artwork);
-      }),
-    );
+    if (!options.skipPrint)
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          if (token !== session || screen !== "result") return;
+          lastActivity = Date.now();
+          printReceipt(artwork);
+        }),
+      );
   } catch (error) {
     if (token !== session || screen !== "result") return;
     document.querySelector(".receipt").innerHTML =
@@ -754,11 +801,42 @@ async function result(token) {
     console.error(error);
   }
 }
+async function sharedResult(id) {
+  const token = ++session;
+  setScreen("loading");
+  app.innerHTML =
+    '<p class="loading-text">\uC800\uC7A5\uB41C \uCCAB \uB2E8\uCD94 \uACB0\uACFC\uB97C \uBD88\uB7EC\uC624\uACE0 \uC788\uC5B4\uC694\u2026</p>';
+  try {
+    const saved = await loadPattern(id),
+      payload = saved.payload || {};
+    selected = Array.isArray(payload.selected)
+      ? payload.selected.filter((studentId) => student(studentId))
+      : [];
+    nodes = Array.isArray(payload.nodes) ? structuredClone(payload.nodes) : [];
+    edges = Array.isArray(payload.edges) ? structuredClone(payload.edges) : [];
+    history = [];
+    focus = null;
+    pending = null;
+    if (selected.length < MIN_SELECTION || !nodes.length) throw new Error("pattern");
+    result(token, {
+      patternId: saved.id,
+      patternUrl: saved.url || location.href,
+      skipAutoReset: true,
+      skipPrint: true,
+    });
+  } catch (error) {
+    console.error(error);
+    app.innerHTML =
+      '<p class="loading-text">\uC800\uC7A5\uB41C \uACB0\uACFC\uB97C \uBD88\uB7EC\uC624\uC9C0 \uBABB\uD588\uC5B4\uC694. QR \uC8FC\uC18C\uB97C \uB2E4\uC2DC \uD655\uC778\uD574\uC8FC\uC138\uC694.</p>';
+  }
+}
 try {
   const response = await fetch(assetUrl("data/catalog.json"));
   if (!response.ok) throw new Error("catalog");
   catalog = await response.json();
-  landing();
+  const sharedId = new URLSearchParams(location.search).get("id");
+  if (sharedId) sharedResult(sharedId);
+  else landing();
 } catch {
   app.innerHTML =
     '<p class="loading-text">데이터를 불러오지 못했습니다. 서버 실행 상태를 확인하고 새로고침해 주세요.</p>';

@@ -10,7 +10,7 @@ import {
   constrainBend,
   connectionPath,
 } from "../scripts/model.js";
-import { server } from "../server.mjs";
+import { server } from "./server.mjs";
 const data = JSON.parse(
   await readFile(new URL("../data/catalog.json", import.meta.url)),
 );
