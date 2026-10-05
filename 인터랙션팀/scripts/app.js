@@ -1,6 +1,7 @@
 import { renderReceipt, printReceipt } from "./receipt.js";
 import { renderReceiptPreview } from "./receipt-preview.js";
 import { assetUrl } from "./paths.js";
+import { qrSvgDataUrl } from "./qr.js";
 import {
   MIN_SELECTION,
   MAX_SELECTION,
@@ -58,8 +59,6 @@ const asset = (s) => catalog.assets.find((a) => a.id === s.assetId);
 const student = (id) => catalog.students.find((s) => s.id === id);
 const chosen = () => selected.map(student);
 const symbol = '<span class="button-symbol" aria-hidden="true"></span>';
-const qrImageUrl = (url) =>
-  `https://api.qrserver.com/v1/create-qr-code/?size=260x260&margin=0&data=${encodeURIComponent(url)}`;
 async function savePattern(payload) {
   const response = await fetch(PATTERN_API, {
     method: "POST",
@@ -768,7 +767,7 @@ async function result(token, options = {}) {
   patternRequest
     .then((pattern) => {
       if (token !== session || screen !== "result") return;
-      qrImage.src = qrImageUrl(pattern.url);
+      qrImage.src = qrSvgDataUrl(pattern.url);
       qrImage.hidden = false;
       qrTitle.textContent = "QR \uCF54\uB4DC \uB2E4\uC6B4 \uBC1B\uAE30";
       qrText.textContent = "\uC2A4\uCE94\uD574\uC11C \uB2E4\uC2DC \uBCF4\uAE30";
