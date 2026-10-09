@@ -263,8 +263,10 @@ export async function renderReceipt({
       h = img.height * fit;
     ctx.drawImage(img, p.x - w / 2, p.y + r - 5, w, h);
   });
-  ctx.drawImage(designLogo, W - 48 - 109, 952, 109, 27);
+  ctx.drawImage(designLogo, W - 48 - 140, 895, 140, 35);
   ctx.textAlign = "left";
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0, 1018, W, logicalHeight - 1018);
   ctx.strokeStyle = "#777";
   ctx.lineWidth = 1.5;
   ctx.beginPath();
@@ -277,28 +279,12 @@ export async function renderReceipt({
   return canvas;
 }
 export function printReceipt(canvas) {
-  // Convert the pixels themselves so color printer settings cannot retain color.
-  const monochrome = document.createElement("canvas");
-  monochrome.width = canvas.width;
-  monochrome.height = canvas.height;
-  const printContext = monochrome.getContext("2d");
-  printContext.drawImage(canvas, 0, 0);
-  const pixels = printContext.getImageData(
-    0,
-    0,
-    monochrome.width,
-    monochrome.height,
-  );
-  for (let i = 0; i < pixels.data.length; i += 4) {
-    const grey = Math.round(
-      pixels.data[i] * 0.2126 +
-        pixels.data[i + 1] * 0.7152 +
-        pixels.data[i + 2] * 0.0722,
-    );
-    pixels.data[i] = pixels.data[i + 1] = pixels.data[i + 2] = grey;
-  }
-  printContext.putImageData(pixels, 0, 0);
-  // Print only the artwork; the kiosk's dark theme must never reach the paper.
+  const artwork = document.querySelector("#receipt-artwork");
+  const fallback = `<img class="print-fallback" src="${canvas.toDataURL("image/png")}" alt="나의 첫 단추 영수증">`;
+  const content = artwork ? artwork.outerHTML : fallback;
+
+  // Print the receipt DOM/SVG instead of a flattened PNG so small text stays sharp
+  // on the SRP-330II thermal printer.
   document.querySelector("#receipt-print-frame")?.remove();
   const frame = document.createElement("iframe");
   frame.id = "receipt-print-frame";
@@ -306,18 +292,58 @@ export function printReceipt(canvas) {
   frame.setAttribute("aria-hidden", "true");
   frame.style.cssText =
     "position:fixed;width:0;height:0;border:0;bottom:0;left:0;";
-  const height = ((canvas.height / canvas.width) * 72).toFixed(2);
+  const stylesheet = assetUrl("scripts/style.css");
   frame.onload = async () => {
-    await frame.contentDocument.querySelector("img").decode();
+    await frame.contentDocument.fonts?.ready;
+    await Promise.all(
+      [...frame.contentDocument.images].map((img) =>
+        img.complete ? undefined : img.decode().catch(() => undefined),
+      ),
+    );
     frame.contentWindow.focus();
     requestAnimationFrame(() => frame.contentWindow.print());
   };
-  frame.srcdoc = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>영수증</title><style>
-    @page { size: 80mm ${height}mm; margin: 0; }
+  frame.srcdoc = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>영수증</title><link rel="stylesheet" href="${stylesheet}"><style>
+    @page { size: 80mm auto; margin: 0; }
     :root { color-scheme: light; }
     html, body { margin: 0; padding: 0; background: #fff; }
     body { width: 80mm; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-    img { display: block; width: 72mm; height: auto; margin: 0 4mm; }
-  </style></head><body><img src="${monochrome.toDataURL("image/png")}" alt="나의 첫 단추 흑백 영수증"></body></html>`;
+    #receipt-artwork,
+    .print-fallback {
+      display: block;
+      width: 72mm;
+      height: auto;
+      margin: 0 5mm 0 3mm;
+      transform: translateY(-2mm);
+    }
+    .receipt-vector-details {
+      background: #fff;
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.55;
+    }
+    .receipt-vector-details h2 {
+      color: #000;
+      font-weight: 800;
+    }
+    .receipt-pills span {
+      color: #000;
+      border-color: #111;
+    }
+    .receipt-vector {
+      background: #fff;
+    }
+    .receipt-vector-title {
+      background: #000;
+    }
+    .receipt-vector-pattern {
+      background: transparent;
+    }
+    .receipt-vector-pattern > g:first-of-type {
+      stroke: #000;
+      stroke-width: 4.8;
+    }
+  </style></head><body>${content}</body></html>`;
   document.body.append(frame);
 }
