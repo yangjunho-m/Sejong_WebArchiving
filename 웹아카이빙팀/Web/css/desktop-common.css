@@ -41,3 +41,22 @@
 
 /* Thin text dividers in program speakers and course faculty credits. */
 body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sans-serif; font-weight: 300; font-style: normal; }
+
+@media (min-width:1101px) {
+  body header.scroll-navigation nav.site-nav.site-nav a.type-nav {
+    opacity: .55;
+    transition: opacity 160ms ease;
+  }
+  body header.scroll-navigation nav.site-nav.site-nav a.type-nav:is([aria-current="page"], :hover, :focus-visible) {
+    opacity: 1;
+  }
+}
+
+@media (min-width:1101px) {
+  body.home-page header.scroll-navigation nav.site-nav.site-nav a.type-nav {
+    opacity: 1;
+  }
+  body.home-page header.scroll-navigation nav.site-nav.site-nav:has(a.type-nav:hover) a.type-nav:not(:hover) {
+    opacity: .55;
+  }
+}
