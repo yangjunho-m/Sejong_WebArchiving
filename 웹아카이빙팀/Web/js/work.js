@@ -64,7 +64,7 @@ fetch('../data/projects.json').then((response) => {
   return response.json();
 }).then(({ projects }) => {
   panels.forEach((panel) => {
-    const courseProjects = projects.filter((project) => project.category === panel.id && project.thumbnail);
+    const courseProjects = projects.filter((project) => (project.category === panel.id || project.workCategories?.includes(panel.id)) && project.thumbnail);
     // Shuffle each course once per page load, keeping its order while switching tabs.
     for (let index = courseProjects.length - 1; index > 0; index -= 1) {
       const randomIndex = Math.floor(Math.random() * (index + 1));
@@ -73,7 +73,7 @@ fetch('../data/projects.json').then((response) => {
     const cards = courseProjects.map((project) => {
       const card = document.createElement('a');
       card.className = 'project-card';
-      card.href = `work-detail.html?id=${encodeURIComponent(project.id)}`;
+      card.href = `work-detail.html?id=${encodeURIComponent(project.id)}${project.workCategories ? `&category=${encodeURIComponent(panel.id)}` : ''}`;
       card.setAttribute('aria-label', `${project.title || project.sourceTeam} 작품 상세 보기`);
       const image = document.createElement('img');
       image.src = project.thumbnail;

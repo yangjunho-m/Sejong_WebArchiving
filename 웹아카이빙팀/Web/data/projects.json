@@ -859,7 +859,13 @@
       "description": "",
       "missingFields": [
         "title"
-      ]
+      ],
+      "videoPlayback": {
+        "autoplay": true,
+        "loop": true,
+        "muted": true,
+        "controls": false
+      }
     },
     {
       "id": "identity-040-043",
@@ -1141,6 +1147,10 @@
       "description": "",
       "missingFields": [
         "title"
+      ],
+      "workCategories": [
+        "identity",
+        "system"
       ]
     },
     {

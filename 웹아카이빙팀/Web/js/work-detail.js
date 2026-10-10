@@ -14,7 +14,8 @@ const submittedProjectId = params.get('id');
     const displayTitle = project.title || project.sourceTeam;
     title.textContent = displayTitle;
     document.title = `${displayTitle} — BUTTON UP!`;
-    document.querySelector('.work-detail-back').href = project.category === 'fusion' ? 'designers.html' : `work.html#${project.category}`;
+    const sourceCategory = project.workCategories?.includes(params.get('category')) ? params.get('category') : project.workCategories?.[0] || project.category;
+    document.querySelector('.work-detail-back').href = sourceCategory === 'fusion' ? 'designers.html' : `work.html#${sourceCategory}`;
     document.querySelector('.work-detail-tags').replaceChildren(...project.tags.map((tag) => {
       const span = document.createElement('span'); span.textContent = tag; return span;
     }));
@@ -38,6 +39,14 @@ const submittedProjectId = params.get('id');
     article.replaceChildren(...project.images.map((src, index) => {
       const image = document.createElement('img'); image.src = src; image.alt = `${displayTitle} 작품 상세 이미지 ${index + 1}`; image.loading = index ? 'lazy' : 'eager'; return image;
     }), ...project.videos.map((src) => {
-      const video = document.createElement('video'); video.src = src; video.controls = true; video.preload = 'metadata'; video.playsInline = true; return video;
+      const video = document.createElement('video'); video.src = src; video.controls = true; video.preload = 'metadata'; video.playsInline = true;
+      if (project.videoPlayback) {
+        video.controls = project.videoPlayback.controls !== false;
+        video.muted = Boolean(project.videoPlayback.muted);
+        video.defaultMuted = video.muted;
+        video.loop = Boolean(project.videoPlayback.loop);
+        video.autoplay = Boolean(project.videoPlayback.autoplay);
+      }
+      return video;
     }));
   }).catch((error) => console.error(error));
