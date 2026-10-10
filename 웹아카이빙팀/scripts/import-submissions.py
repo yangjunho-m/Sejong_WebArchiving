@@ -103,21 +103,20 @@ for (course, team), files in sorted(records.items()):
         is_thumb = r in thumbs
         im = ImageOps.exif_transpose(Image.open(io.BytesIO(r['data'])))
         original = im.size
-        # Preserve tall posters and their embedded lettering; constrain width only.
-        max_width = 800 if is_thumb else 1600
-        if im.width > max_width: im = im.resize((max_width, round(im.height*max_width/im.width)), Image.Resampling.LANCZOS)
+        # Preserve original resolution and save without lossy compression.
+        max_width = im.width
         im = im.convert('RGBA' if 'A' in im.getbands() else 'RGB')
         digest = hashlib.sha256(r['data'] + str(max_width).encode()).hexdigest()
         role = 'thumbnail' if is_thumb else f'detail-{len(detail_paths)+1:02d}'
         if digest in hash_paths:
             relative = hash_paths[digest]
         else:
-            extension = '.png' if im.height > 16383 else '.webp'
+            extension = '.png'
             out = WEB / 'img/projects' / pid / (role+extension)
             out.parent.mkdir(parents=True,exist_ok=True)
             if not out.exists() or out.stat().st_size == 0:
                 if extension == '.png': im.save(out,'PNG',optimize=True)
-                else: im.save(out,'WEBP',quality=92 if not is_thumb else 86,method=4)
+                else: im.save(out,'PNG')
             relative = '../' + out.relative_to(WEB).as_posix()
             hash_paths[digest] = relative
             output_bytes += out.stat().st_size
@@ -156,4 +155,7 @@ for p,data in [(WEB/'data/designers.json',existing),(WEB/'data/projects.json',{'
 print(json.dumps({k:v for k,v in summary.items() if k not in ('contactConflicts','missingDesigners','projectIssues','ignored')},ensure_ascii=False,indent=2))
 print('conflicts',[(x['name'],x['values']) for x in conflicts])
 
-subprocess.run([__import__('sys').executable, str(ROOT/'scripts/optimize-tall-submissions.py')], check=True)
+# Full-resolution PNGs do not require WebP height-limit splitting.
+
+# Apply readable names after importing assets and updating their references.
+__import__('subprocess').run([__import__('sys').executable, str(Path(__file__).resolve().parent / 'name-image-files.py')], check=True)

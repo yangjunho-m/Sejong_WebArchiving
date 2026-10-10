@@ -169,9 +169,7 @@
   place-items:center;
   color:#b9f985;
   text-align:center;
-  background:
-    linear-gradient(rgba(0,0,0,.58),rgba(0,0,0,.58)),
-    url("../img/detail-work-01.png") center / cover no-repeat
+  background: #111
 }
 .project-hero h2{
   margin:0 0 14px;

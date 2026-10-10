@@ -26,9 +26,8 @@ with zipfile.ZipFile(sys.argv[1]) as archive:
             continue
         image = ImageOps.exif_transpose(Image.open(io.BytesIO(archive.read(entry)))).convert('RGB')
         original_size = image.size
-        image.thumbnail((1000, 1500), Image.Resampling.LANCZOS)
-        path = output / f"designer-{designer['id']:03d}.webp"
-        image.save(path, 'WEBP', quality=90, method=6)
+        path = output / f"designer-{designer['id']:03d}.png"
+        image.save(path, 'PNG')
         designer['profileImage'] = f'../img/profiles/{path.name}'
         report['matched'].append({'id': designer['id'], 'name': name, 'source': filename, 'originalSize': original_size, 'webSize': image.size})
         report['sourceBytes'] += entry.file_size
@@ -37,3 +36,6 @@ report['missing'] = [{'id': d['id'], 'name': d['nameKo']} for d in designers if 
 data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 (root / 'reports/submission-import/profile-import-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')
 print(json.dumps({**report, 'matched': len(report['matched'])}, ensure_ascii=False))
+
+# Apply readable names after importing assets and updating their references.
+__import__('subprocess').run([__import__('sys').executable, str(Path(__file__).resolve().parent / 'name-image-files.py')], check=True)

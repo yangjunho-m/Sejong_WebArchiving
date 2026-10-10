@@ -32,33 +32,6 @@ if (initialId && document.getElementById(initialId)) {
   showWork(initialId);
 }
 
-document.querySelectorAll('.project-card').forEach((card, index) => {
-  const title = card.querySelector('span')?.textContent?.trim() || 'PROJECT NAME';
-  card.setAttribute('role', 'link');
-  card.setAttribute('tabindex', '0');
-  card.setAttribute('aria-label', `${title} 상세 페이지 보기`);
-
-  const openDetail = () => {
-    const panel = card.closest('.work-section');
-    const category = panel?.id || 'identity';
-    const params = new URLSearchParams({
-      project: title,
-      category,
-      index: String(index),
-    });
-    location.href = `work-detail.html?${params.toString()}`;
-  };
-
-  card.addEventListener('click', openDetail);
-  card.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      openDetail();
-    }
-  });
-});
-
-// Replace design placeholders with the submitted course records.
 fetch('../data/projects.json').then((response) => {
   if (!response.ok) throw new Error('Project data could not be loaded.');
   return response.json();

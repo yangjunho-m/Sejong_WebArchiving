@@ -1,18 +1,3 @@
-const prototypeDesigners = (count, start) => Array.from({ length: count }, (_, index) => ({
-  id: start + index,
-  nameKo: '김나윤',
-  nameEn: 'Kim Nayun',
-  instagram: '@kimnayun',
-  email: 'nayun@naver.com',
-  profileImage: '',
-  works: [],
-}));
-
-const prototypeData = {
-  industrial: prototypeDesigners(22, 1),
-  visual: prototypeDesigners(44, 23),
-};
-
 async function loadDesigners() {
   try {
     const response = await fetch('../data/designers.json');
@@ -20,8 +5,9 @@ async function loadDesigners() {
     const data = await response.json();
     if (!Array.isArray(data.industrial) || !Array.isArray(data.visual)) throw new Error('Invalid designer data.');
     return groupDesignersByMajor([...data.industrial, ...data.visual]);
-  } catch {
-    return prototypeData;
+  } catch (error) {
+    console.error(error);
+    return { industrial: [], visual: [] };
   }
 }
 

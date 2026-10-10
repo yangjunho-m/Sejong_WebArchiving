@@ -1,0 +1,646 @@
+{
+  "source": "https://docs.google.com/spreadsheets/d/1oMCxTKj15rKjQtH9IetUmeI0WUR7jU0kwgDTj7UWGqw/edit",
+  "sheet": "시트1",
+  "matched": [
+    {
+      "id": "digital--e3346d",
+      "previousTitle": "",
+      "title": "망원인 연구소",
+      "sourceCell": "L3",
+      "sheetTeam": [
+        "공유첸",
+        "동첸유"
+      ]
+    },
+    {
+      "id": "digital-046-057",
+      "previousTitle": "",
+      "title": "FRYDAY 180°C",
+      "sourceCell": "L5",
+      "sheetTeam": [
+        "김나윤",
+        "이유나"
+      ]
+    },
+    {
+      "id": "digital-063-064",
+      "previousTitle": "",
+      "title": "극락왕생 보험사",
+      "sourceCell": "L7",
+      "sheetTeam": [
+        "김미리",
+        "이수민"
+      ]
+    },
+    {
+      "id": "digital-031-050",
+      "previousTitle": "",
+      "title": "NEUE PHILOSOPHER UNION",
+      "sourceCell": "L9",
+      "sheetTeam": [
+        "김상민",
+        "이승민"
+      ]
+    },
+    {
+      "id": "digital-049-059",
+      "previousTitle": "",
+      "title": "TOONG",
+      "sourceCell": "L11",
+      "sheetTeam": [
+        "김선우",
+        "탁빛나"
+      ]
+    },
+    {
+      "id": "digital-047-058",
+      "previousTitle": "",
+      "title": "파독각",
+      "sourceCell": "L13",
+      "sheetTeam": [
+        "김윤아",
+        "백율리"
+      ]
+    },
+    {
+      "id": "digital-048-052-053",
+      "previousTitle": "",
+      "title": "COMA NOVA : SPOT LIGHT",
+      "sourceCell": "L15",
+      "sheetTeam": [
+        "박우희",
+        "장유진",
+        "최예진"
+      ]
+    },
+    {
+      "id": "digital-051-055-056",
+      "previousTitle": "",
+      "title": "장기파업",
+      "sourceCell": "L18",
+      "sheetTeam": [
+        "박은진",
+        "송민주",
+        "이한나"
+      ]
+    },
+    {
+      "id": "digital-029-060",
+      "previousTitle": "",
+      "title": "ZZZ",
+      "sourceCell": "L21",
+      "sheetTeam": [
+        "송민서",
+        "이상학"
+      ]
+    },
+    {
+      "id": "digital-033-035",
+      "previousTitle": "",
+      "title": "신명원 : 디지털 신당",
+      "sourceCell": "L23",
+      "sheetTeam": [
+        "신아영",
+        "허유진"
+      ]
+    },
+    {
+      "id": "digital-030-040-045",
+      "previousTitle": "",
+      "title": "What a Peaceful Neverland",
+      "sourceCell": "L25",
+      "sheetTeam": [
+        "안소현",
+        "이소현",
+        "이정무"
+      ]
+    },
+    {
+      "id": "digital-042",
+      "previousTitle": "",
+      "title": "해피한 척하기, 해-피한 척하기",
+      "sourceCell": "L30",
+      "sheetTeam": [
+        "이가연"
+      ]
+    },
+    {
+      "id": "digital-043-044",
+      "previousTitle": "",
+      "title": "사이비담",
+      "sourceCell": "L28",
+      "sheetTeam": [
+        "원서영",
+        "이윤주"
+      ]
+    },
+    {
+      "id": "digital-041-9b436e",
+      "previousTitle": "",
+      "title": "Slott",
+      "sourceCell": "L31",
+      "sheetTeam": [
+        "이채연",
+        "지서은"
+      ]
+    },
+    {
+      "id": "digital-036-054",
+      "previousTitle": "",
+      "title": "OHJOTAK",
+      "sourceCell": "L33",
+      "sheetTeam": [
+        "이현지",
+        "이혜경"
+      ]
+    },
+    {
+      "id": "digital-032-034",
+      "previousTitle": "",
+      "title": "구설귀",
+      "sourceCell": "L35",
+      "sheetTeam": [
+        "장윤진",
+        "최성경"
+      ]
+    },
+    {
+      "id": "digital-027",
+      "previousTitle": "",
+      "title": "SEGNO MUSIC FESTIVAL",
+      "sourceCell": "L37",
+      "sheetTeam": [
+        "최수빈"
+      ]
+    },
+    {
+      "id": "digital-037-039",
+      "previousTitle": "",
+      "title": "난리블루스",
+      "sourceCell": "L38",
+      "sheetTeam": [
+        "최지훈",
+        "홍서연"
+      ]
+    },
+    {
+      "id": "digital-028",
+      "previousTitle": "",
+      "title": "사물팔자",
+      "sourceCell": "L40",
+      "sheetTeam": [
+        "최한얼"
+      ]
+    },
+    {
+      "id": "digital-038",
+      "previousTitle": "",
+      "title": "망쳐도 괜찮아",
+      "sourceCell": "L41",
+      "sheetTeam": [
+        "호영하"
+      ]
+    },
+    {
+      "id": "identity--e3346d",
+      "previousTitle": "",
+      "title": "MOODIT",
+      "sourceCell": "E3",
+      "sheetTeam": [
+        "공유첸",
+        "동첸유"
+      ]
+    },
+    {
+      "id": "identity-046-057",
+      "previousTitle": "",
+      "title": "CatchA!",
+      "sourceCell": "E5",
+      "sheetTeam": [
+        "김나윤",
+        "이유나"
+      ]
+    },
+    {
+      "id": "identity-063-064",
+      "previousTitle": "",
+      "title": "ORVIX",
+      "sourceCell": "E7",
+      "sheetTeam": [
+        "김미리",
+        "이수민"
+      ]
+    },
+    {
+      "id": "identity-028-031-050",
+      "previousTitle": "",
+      "title": "밀도",
+      "sourceCell": "E9",
+      "sheetTeam": [
+        "김상민",
+        "최한얼",
+        "이승민"
+      ]
+    },
+    {
+      "id": "identity-047-058",
+      "previousTitle": "",
+      "title": "OVE",
+      "sourceCell": "E12",
+      "sheetTeam": [
+        "김윤아",
+        "백율리"
+      ]
+    },
+    {
+      "id": "identity-048-053",
+      "previousTitle": "",
+      "title": "FORTO",
+      "sourceCell": "E14",
+      "sheetTeam": [
+        "박우희",
+        "장유진"
+      ]
+    },
+    {
+      "id": "identity-051-054-056",
+      "previousTitle": "",
+      "title": "STRAV",
+      "sourceCell": "E16",
+      "sheetTeam": [
+        "박은진",
+        "송민주",
+        "이혜경"
+      ]
+    },
+    {
+      "id": "identity-060",
+      "previousTitle": "",
+      "title": "AETHER",
+      "sourceCell": "E19",
+      "sheetTeam": [
+        "송민서"
+      ]
+    },
+    {
+      "id": "identity-033-035",
+      "previousTitle": "",
+      "title": "SAI",
+      "sourceCell": "E20",
+      "sheetTeam": [
+        "신아영",
+        "허유진"
+      ]
+    },
+    {
+      "id": "identity-042-045",
+      "previousTitle": "",
+      "title": "INAWT",
+      "sourceCell": "E22",
+      "sheetTeam": [
+        "안소현",
+        "이가연"
+      ]
+    },
+    {
+      "id": "identity-029",
+      "previousTitle": "",
+      "title": "FRMFRM",
+      "sourceCell": "E24",
+      "sheetTeam": [
+        "이상학"
+      ]
+    },
+    {
+      "id": "identity-040-043",
+      "previousTitle": "",
+      "title": "EWA",
+      "sourceCell": "E27",
+      "sheetTeam": [
+        "이소현",
+        "이윤주"
+      ]
+    },
+    {
+      "id": "identity-026",
+      "previousTitle": "",
+      "title": "SHABETREE",
+      "sourceCell": "E29",
+      "sheetTeam": [
+        "이수아"
+      ]
+    },
+    {
+      "id": "identity-030",
+      "previousTitle": "",
+      "title": "PATINA",
+      "sourceCell": "E30",
+      "sheetTeam": [
+        "이정무"
+      ]
+    },
+    {
+      "id": "identity-041-9b436e",
+      "previousTitle": "",
+      "title": "Studio. Query",
+      "sourceCell": "E31",
+      "sheetTeam": [
+        "이채연",
+        "지서은"
+      ]
+    },
+    {
+      "id": "identity-044-055",
+      "previousTitle": "",
+      "title": "CELLUMI",
+      "sourceCell": "E25",
+      "sheetTeam": [
+        "원서영",
+        "이한나"
+      ]
+    },
+    {
+      "id": "identity-032-036",
+      "previousTitle": "",
+      "title": "FLARIA",
+      "sourceCell": "E33",
+      "sheetTeam": [
+        "이현지",
+        "최성경"
+      ]
+    },
+    {
+      "id": "identity-034-052",
+      "previousTitle": "",
+      "title": "MOLTYPE",
+      "sourceCell": "E35",
+      "sheetTeam": [
+        "장윤진",
+        "최예진"
+      ]
+    },
+    {
+      "id": "identity-027",
+      "previousTitle": "",
+      "title": "NAUM RACE",
+      "sourceCell": "E37",
+      "sheetTeam": [
+        "최수빈"
+      ]
+    },
+    {
+      "id": "identity-037-039",
+      "previousTitle": "",
+      "title": "Xelra",
+      "sourceCell": "E38",
+      "sheetTeam": [
+        "최지훈",
+        "홍서연"
+      ]
+    },
+    {
+      "id": "fusion-006-007-049-059",
+      "previousTitle": "",
+      "title": "Journey",
+      "sourceCell": "AG3",
+      "sheetTeam": [
+        "박한울",
+        "엄지혁",
+        "김선우",
+        "탁빛나"
+      ]
+    },
+    {
+      "id": "product-010-018",
+      "previousTitle": "",
+      "title": "Free to Face",
+      "sourceCell": "S3",
+      "sheetTeam": [
+        "강하영",
+        "임준우"
+      ]
+    },
+    {
+      "id": "product-001-024",
+      "previousTitle": "",
+      "title": "zibi",
+      "sourceCell": "S5",
+      "sheetTeam": [
+        "고희원",
+        "이준석"
+      ]
+    },
+    {
+      "id": "product-002-007",
+      "previousTitle": "",
+      "title": "ReRoot",
+      "sourceCell": "S9",
+      "sheetTeam": [
+        "김경덕",
+        "엄지혁"
+      ]
+    },
+    {
+      "id": "product-011-012",
+      "previousTitle": "",
+      "title": "FIT STOP",
+      "sourceCell": "S11",
+      "sheetTeam": [
+        "김민선",
+        "송현수"
+      ]
+    },
+    {
+      "id": "product-004-014",
+      "previousTitle": "",
+      "title": "For-D",
+      "sourceCell": "S7",
+      "sheetTeam": [
+        "권동혁",
+        "김병관"
+      ]
+    },
+    {
+      "id": "product-008-025",
+      "previousTitle": "",
+      "title": "N : LOOP",
+      "sourceCell": "S13",
+      "sheetTeam": [
+        "김승민",
+        "이윤호"
+      ]
+    },
+    {
+      "id": "product-009-023",
+      "previousTitle": "",
+      "title": "FLAP",
+      "sourceCell": "S15",
+      "sheetTeam": [
+        "김자현",
+        "이은주"
+      ]
+    },
+    {
+      "id": "product-015-017",
+      "previousTitle": "",
+      "title": "OVERWATCH : Melo",
+      "sourceCell": "S17",
+      "sheetTeam": [
+        "김지윤",
+        "이지민"
+      ]
+    },
+    {
+      "id": "product-019-020",
+      "previousTitle": "",
+      "title": "SERO",
+      "sourceCell": "S19",
+      "sheetTeam": [
+        "김채연",
+        "황예은"
+      ]
+    },
+    {
+      "id": "product-013-d47919",
+      "previousTitle": "",
+      "title": "Hey, Nua",
+      "sourceCell": "S21",
+      "sheetTeam": [
+        "박민경",
+        "안서연"
+      ]
+    },
+    {
+      "id": "product-021-022",
+      "previousTitle": "",
+      "title": "lit",
+      "sourceCell": "S25",
+      "sheetTeam": [
+        "이지수",
+        "황어진"
+      ]
+    },
+    {
+      "id": "product-005-016",
+      "previousTitle": "",
+      "title": "Libera",
+      "sourceCell": "S27",
+      "sheetTeam": [
+        "조유진",
+        "진민석"
+      ]
+    },
+    {
+      "id": "system-013-018-021",
+      "previousTitle": "",
+      "title": "WayFello",
+      "sourceCell": "Z3",
+      "sheetTeam": [
+        "강하영",
+        "안서연",
+        "황어진"
+      ]
+    },
+    {
+      "id": "system-014-024",
+      "previousTitle": "",
+      "title": "Beta",
+      "sourceCell": "Z6",
+      "sheetTeam": [
+        "고희원",
+        "김병관"
+      ]
+    },
+    {
+      "id": "system-003-004",
+      "previousTitle": "",
+      "title": "SULSAEM",
+      "sourceCell": "Z8",
+      "sheetTeam": [
+        "권동혁",
+        "박범수"
+      ]
+    },
+    {
+      "id": "system-009-012",
+      "previousTitle": "",
+      "title": "HOVIO",
+      "sourceCell": "Z12",
+      "sheetTeam": [
+        "김민선",
+        "이은주"
+      ]
+    },
+    {
+      "id": "system-008-025",
+      "previousTitle": "",
+      "title": "PBR",
+      "sourceCell": "Z14",
+      "sheetTeam": [
+        "김승민",
+        "이윤호"
+      ]
+    },
+    {
+      "id": "system-022-023",
+      "previousTitle": "",
+      "title": "oodt",
+      "sourceCell": "Z16",
+      "sheetTeam": [
+        "김자현",
+        "이지수"
+      ]
+    },
+    {
+      "id": "system-015-017",
+      "previousTitle": "",
+      "title": "MARS:KIN",
+      "sourceCell": "Z18",
+      "sheetTeam": [
+        "김지윤",
+        "이지민"
+      ]
+    },
+    {
+      "id": "system-019-020",
+      "previousTitle": "",
+      "title": "SANCTUM",
+      "sourceCell": "Z20",
+      "sheetTeam": [
+        "김채연",
+        "황예은"
+      ]
+    },
+    {
+      "id": "system-011-016",
+      "previousTitle": "",
+      "title": "ASCLEPIUS",
+      "sourceCell": "Z22",
+      "sheetTeam": [
+        "송현수",
+        "조유진"
+      ]
+    },
+    {
+      "id": "system-001-005",
+      "previousTitle": "",
+      "title": "HOWDY",
+      "sourceCell": "Z24",
+      "sheetTeam": [
+        "이준석",
+        "진민석"
+      ]
+    },
+    {
+      "id": "system-002-010",
+      "previousTitle": "Lobby Boy",
+      "title": "LOBBY BOY",
+      "sourceCell": "Z10",
+      "sheetTeam": [
+        "김경덕",
+        "임준우"
+      ]
+    }
+  ],
+  "missing": []
+}

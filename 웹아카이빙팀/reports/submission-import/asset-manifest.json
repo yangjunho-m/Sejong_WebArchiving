@@ -1,555 +1,23 @@
 [
   {
-    "projectId": "digital--e3346d",
+    "projectId": "identity-030",
     "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/공위천, 동천위/D_공위천_동천위_썸네일이미지.png",
-    "path": "../img/projects/digital--e3346d/thumbnail.webp",
+    "source": "/아이덴티티 디자인 (I)/이정무/I_이정무_썸네일이미지.png",
+    "path": "../img/projects/I_PATINA_이정무/아이덴티티디자인_PATINA_이정무_썸네일.png",
     "originalSize": [
       1080,
       1080
     ],
     "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital--e3346d",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/공위천, 동천위/D_공위천_동천위_본문이미지.png",
-    "path": "../img/projects/digital--e3346d/detail-01.webp",
-    "originalSize": [
-      1080,
-      6938
-    ],
-    "webSize": [
-      1080,
-      6938
-    ]
-  },
-  {
-    "projectId": "digital-046-057",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/김나윤, 이유나/D_김나윤_이유나_웹.zip/D_김나윤_이유나_썸네일이미지.png",
-    "path": "../img/projects/digital-046-057/thumbnail.webp",
-    "originalSize": [
       1080,
       1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-046-057",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/김나윤, 이유나/D_김나윤_이유나_웹.zip/D_김나윤_이유나_본문이미지.png",
-    "path": "../img/projects/digital-046-057/detail-01.webp",
-    "originalSize": [
-      1080,
-      3419
-    ],
-    "webSize": [
-      1080,
-      3419
-    ]
-  },
-  {
-    "projectId": "digital-063-064",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/김미리, 이수민/D_김미리_이수민_웹.zip/D_김미리_이수민_웹/D_김미리_이수민_썸네일이미지.png",
-    "path": "../img/projects/digital-063-064/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-063-064",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/김미리, 이수민/D_김미리_이수민_웹.zip/D_김미리_이수민_웹/D_김미리_이수민_본문이미지.png",
-    "path": "../img/projects/digital-063-064/detail-01.webp",
-    "originalSize": [
-      1080,
-      7145
-    ],
-    "webSize": [
-      1080,
-      7145
-    ]
-  },
-  {
-    "projectId": "digital-031-050",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/김상민, 이승민/D_김상민_이승민_썸네일이미지.png",
-    "path": "../img/projects/digital-031-050/thumbnail.webp",
-    "originalSize": [
-      1081,
-      1081
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-031-050",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/김상민, 이승민/D_김상민_이승민_본문이미지.png",
-    "path": "../img/projects/digital-031-050/detail-01.webp",
-    "originalSize": [
-      1081,
-      7149
-    ],
-    "webSize": [
-      1081,
-      7149
-    ]
-  },
-  {
-    "projectId": "digital-049-059",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/김선우, 탁빛나/D_김선우_탁빛나_웹.zip/D_김선우_탁빛나_웹/D_김선우_탁빛나_썸네일이미지.png",
-    "path": "../img/projects/digital-049-059/thumbnail.webp",
-    "originalSize": [
-      2160,
-      2160
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-049-059",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/김선우, 탁빛나/D_김선우_탁빛나_웹.zip/D_김선우_탁빛나_웹/D_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/digital-049-059/detail-01.webp",
-    "originalSize": [
-      2160,
-      14130
-    ],
-    "webSize": [
-      1600,
-      10467
-    ]
-  },
-  {
-    "projectId": "digital-047-058",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/김윤아, 백율리/D_김윤아_백율리_웹.zip/D_김윤아_백율리_썸네일이미지.png",
-    "path": "../img/projects/digital-047-058/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-047-058",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/김윤아, 백율리/D_김윤아_백율리_웹.zip/D_김윤아_백율리_본문이미지.png",
-    "path": "../img/projects/digital-047-058/detail-01.webp",
-    "originalSize": [
-      1080,
-      4180
-    ],
-    "webSize": [
-      1080,
-      4180
-    ]
-  },
-  {
-    "projectId": "digital-048-052-053",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/박우희, 장유진, 최예진/D_박우희_장유진_최예진_썸네일.png",
-    "path": "../img/projects/digital-048-052-053/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-048-052-053",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/박우희, 장유진, 최예진/D_박우희_장유진_최예진_본문이미지.png",
-    "path": "../img/projects/digital-048-052-053/detail-01.webp",
-    "originalSize": [
-      1080,
-      4183
-    ],
-    "webSize": [
-      1080,
-      4183
-    ]
-  },
-  {
-    "projectId": "digital-051-055-056",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/박은진, 송민주, 이한나/D_박은진_송민주_이한나_웹.zip/D_박은진_송민주_이한나_웹/D_박은진_송민주_이한나_썸네일이미지.png",
-    "path": "../img/projects/digital-051-055-056/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-051-055-056",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/박은진, 송민주, 이한나/D_박은진_송민주_이한나_웹.zip/D_박은진_송민주_이한나_웹/D_박은진_송민주_이한나_본문이미지.png",
-    "path": "../img/projects/digital-051-055-056/detail-01.webp",
-    "originalSize": [
-      1080,
-      3048
-    ],
-    "webSize": [
-      1080,
-      3048
-    ]
-  },
-  {
-    "projectId": "digital-029-060",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/송민서, 이상학/D_송민서_이상학_웹.zip/D_송민서_이상학_웹/D_송민서_이상학_썸네일이미지.png",
-    "path": "../img/projects/digital-029-060/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-029-060",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/송민서, 이상학/D_송민서_이상학_웹.zip/D_송민서_이상학_웹/D_송민서_이상학_본문이미지.png",
-    "path": "../img/projects/digital-029-060/detail-01.webp",
-    "originalSize": [
-      1080,
-      7832
-    ],
-    "webSize": [
-      1080,
-      7832
-    ]
-  },
-  {
-    "projectId": "digital-033-035",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/신아영, 허유진/D_신아영_허유진_웹.zip/D_신아영_허유진_웹/D_신아영_허유진_썸네일이미지.png",
-    "path": "../img/projects/digital-033-035/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-033-035",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/신아영, 허유진/D_신아영_허유진_웹.zip/D_신아영_허유진_웹/D_신아영_허유진_본문이미지.png",
-    "path": "../img/projects/digital-033-035/detail-01.webp",
-    "originalSize": [
-      1080,
-      5666
-    ],
-    "webSize": [
-      1080,
-      5666
-    ]
-  },
-  {
-    "projectId": "digital-030-040-045",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/안소현, 이소현, 이정무/D_이정무_이소현_안소현_썸네일이미지.png",
-    "path": "../img/projects/digital-030-040-045/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-030-040-045",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/안소현, 이소현, 이정무/D_이정무_이소현_안소현_본문이미지.png",
-    "path": "../img/projects/digital-030-040-045/detail-01.webp",
-    "originalSize": [
-      1080,
-      3495
-    ],
-    "webSize": [
-      1080,
-      3495
-    ]
-  },
-  {
-    "projectId": "digital-042",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/이가연/D_이가연_웹.zip/D_이가연_썸네일이미지.png",
-    "path": "../img/projects/digital-042/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-042",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/이가연/D_이가연_웹.zip/D_이가연_본문이미지.png",
-    "path": "../img/projects/digital-042/detail-01.webp",
-    "originalSize": [
-      1080,
-      3465
-    ],
-    "webSize": [
-      1080,
-      3465
-    ]
-  },
-  {
-    "projectId": "digital-043-044",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/이윤주, 원서영/D_원서영_이윤주_웹.zip/D_원서영_이윤주_웹/D_이윤주_원서영_썸네일이미지.png",
-    "path": "../img/projects/digital-043-044/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-043-044",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/이윤주, 원서영/D_원서영_이윤주_웹.zip/D_원서영_이윤주_웹/D_이윤주_원서영_본문이미지.png",
-    "path": "../img/projects/digital-043-044/detail-01.webp",
-    "originalSize": [
-      1080,
-      6404
-    ],
-    "webSize": [
-      1080,
-      6404
-    ]
-  },
-  {
-    "projectId": "digital-041-9b436e",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/이채연, 지서은/D_이채연_지서은_웹.zip/D_이채연_지서은_웹/D_이채연_지서은_썸네일이미지.png",
-    "path": "../img/projects/digital-041-9b436e/thumbnail.webp",
-    "originalSize": [
-      1404,
-      1404
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-041-9b436e",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/이채연, 지서은/D_이채연_지서은_웹.zip/D_이채연_지서은_웹/D_이채연_지서은_본문이미지.png",
-    "path": "../img/projects/digital-041-9b436e/detail-01.webp",
-    "originalSize": [
-      1296,
-      4776
-    ],
-    "webSize": [
-      1296,
-      4776
-    ]
-  },
-  {
-    "projectId": "digital-036-054",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/이현지, 이혜경/D_이현지_이혜경_웹.zip/D_이현지_이혜경_썸네일이미지.png",
-    "path": "../img/projects/digital-036-054/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-036-054",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/이현지, 이혜경/D_이현지_이혜경_웹.zip/D_이현지_이혜경_본문이미지.png",
-    "path": "../img/projects/digital-036-054/detail-01.webp",
-    "originalSize": [
-      1080,
-      4586
-    ],
-    "webSize": [
-      1080,
-      4586
-    ]
-  },
-  {
-    "projectId": "digital-032-034",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/장윤진, 최성경/D_장윤진_최성경_웹.zip/D_장윤진_최성경_썸네일이미지.png",
-    "path": "../img/projects/digital-032-034/thumbnail.webp",
-    "originalSize": [
-      540,
-      540
-    ],
-    "webSize": [
-      540,
-      540
-    ]
-  },
-  {
-    "projectId": "digital-032-034",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/장윤진, 최성경/D_장윤진_최성경_웹.zip/D_장윤진_최성경_본문이미지.png",
-    "path": "../img/projects/digital-032-034/detail-01.webp",
-    "originalSize": [
-      1080,
-      7419
-    ],
-    "webSize": [
-      1080,
-      7419
-    ]
-  },
-  {
-    "projectId": "digital-027",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/최수빈/D_최수빈_썸네일이미지.png",
-    "path": "../img/projects/digital-027/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-027",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/최수빈/D_최수빈_본문이미지.png",
-    "path": "../img/projects/digital-027/detail-01.webp",
-    "originalSize": [
-      1080,
-      4403
-    ],
-    "webSize": [
-      1080,
-      4403
-    ]
-  },
-  {
-    "projectId": "digital-037-039",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/최지훈, 홍서연/D_최지훈_홍서연_웹.zip/D_최지훈_홍서연_썸네일이미지.png",
-    "path": "../img/projects/digital-037-039/thumbnail.webp",
-    "originalSize": [
-      1081,
-      1081
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-037-039",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/최지훈, 홍서연/D_최지훈_홍서연_웹.zip/D_최지훈_홍서연_본문이미지.png",
-    "path": "../img/projects/digital-037-039/detail-01.webp",
-    "originalSize": [
-      1081,
-      4550
-    ],
-    "webSize": [
-      1081,
-      4550
-    ]
-  },
-  {
-    "projectId": "digital-028",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/최한얼/D_최한얼_웹.zip/D_최한얼_웹/D_최한얼_썸네일이미지.png",
-    "path": "../img/projects/digital-028/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "digital-028",
-    "role": "detail-01",
-    "source": "/디지털미디어프로젝트 (D)/최한얼/D_최한얼_웹.zip/D_최한얼_웹/D_최한얼_본문이미지.png",
-    "path": "../img/projects/digital-028/detail-01.webp",
-    "originalSize": [
-      1080,
-      4428
-    ],
-    "webSize": [
-      1080,
-      4428
-    ]
-  },
-  {
-    "projectId": "digital-038",
-    "role": "thumbnail",
-    "source": "/디지털미디어프로젝트 (D)/호영하/D_HU YINGHE_썸네일이미지.png",
-    "path": "../img/projects/digital-038/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
     ]
   },
   {
     "projectId": "digital-038",
     "role": "detail-01",
     "source": "/디지털미디어프로젝트 (D)/호영하/D_HU YINGHE_본문이미지.png",
-    "path": "../img/projects/digital-038/detail-01.webp",
+    "path": "../img/projects/D_망쳐도_괜찮아_호영하/디지털미디어프로젝트_망쳐도_괜찮아_호영하_상세_01.png",
     "originalSize": [
       1080,
       2492
@@ -560,1134 +28,52 @@
     ]
   },
   {
-    "projectId": "identity--e3346d",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/공위천, 동천위/I_공위천_동천위_썸네일이미지.png",
-    "path": "../img/projects/identity--e3346d/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity--e3346d",
+    "projectId": "product-009-023",
     "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/공위천, 동천위/I_공위천_동천위_본문이미지.png",
-    "path": "../img/projects/identity--e3346d/detail-01.webp",
-    "originalSize": [
-      1081,
-      7444
-    ],
-    "webSize": [
-      1081,
-      7444
-    ]
-  },
-  {
-    "projectId": "identity-046-057",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/김나윤, 이유나/I_김나윤_이유나_웹.zip/I_김나윤_이유나_웹/I_김나윤_이유나_썸네일이미지.png",
-    "path": "../img/projects/identity-046-057/thumbnail.webp",
+    "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/T_김자현_이은주_본문이미지.png",
+    "path": "../img/projects/T_FLAP_김자현_이은주/제품및운송기기디자인_FLAP_김자현_이은주_상세_01.png",
     "originalSize": [
       1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-046-057",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/김나윤, 이유나/I_김나윤_이유나_웹.zip/I_김나윤_이유나_웹/I_김나윤_이유나_본문이미지.png",
-    "path": "../img/projects/identity-046-057/detail-01.webp",
-    "originalSize": [
-      1080,
-      6266
+      17256
     ],
     "webSize": [
       1080,
-      6266
-    ]
-  },
-  {
-    "projectId": "identity-063-064",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/김미리, 이수민/I_김미리_이수민_웹.zip/I_김미리_이수민_썸네일이미지..png",
-    "path": "../img/projects/identity-063-064/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-063-064",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/김미리, 이수민/I_김미리_이수민_웹.zip/I_김미리_이수민_본문이미지..png",
-    "path": "../img/projects/identity-063-064/detail-01.webp",
-    "originalSize": [
-      1080,
-      7370
-    ],
-    "webSize": [
-      1080,
-      7370
-    ]
-  },
-  {
-    "projectId": "identity-028-031-050",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/김상민, 이승민, 최한얼/I_김상민_이승민_최한얼_썸네일이미지.png",
-    "path": "../img/projects/identity-028-031-050/thumbnail.webp",
-    "originalSize": [
-      1081,
-      1081
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-028-031-050",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/김상민, 이승민, 최한얼/I_김상민_이승민_최한얼_본문이미지.png",
-    "path": "../img/projects/identity-028-031-050/detail-01.webp",
-    "originalSize": [
-      1081,
-      11006
-    ],
-    "webSize": [
-      1081,
-      11006
-    ]
-  },
-  {
-    "projectId": "identity-047-058",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/김윤아, 백율리/I_김윤아_백율리_웹.zip/I_김윤아_백율리_썸네일이미지.png",
-    "path": "../img/projects/identity-047-058/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-047-058",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/김윤아, 백율리/I_김윤아_백율리_웹.zip/I_김윤아_백율리_본문이미지.png",
-    "path": "../img/projects/identity-047-058/detail-01.webp",
-    "originalSize": [
-      1080,
-      4770
-    ],
-    "webSize": [
-      1080,
-      4770
-    ]
-  },
-  {
-    "projectId": "identity-048-053",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/I_장유진_박우희_썸네일.png",
-    "path": "../img/projects/identity-048-053/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-048-053",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/I_장유진_박우희_본문이미지.png",
-    "path": "../img/projects/identity-048-053/detail-01.webp",
-    "originalSize": [
-      1080,
-      5760
-    ],
-    "webSize": [
-      1080,
-      5760
-    ]
-  },
-  {
-    "projectId": "identity-051-054-056",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/박은진, 송민주, 이혜경/I_박은진_송민주_이혜경_웹.zip/I_박은진_송민주_이혜경_썸네일이미지.png",
-    "path": "../img/projects/identity-051-054-056/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-051-054-056",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/박은진, 송민주, 이혜경/I_박은진_송민주_이혜경_웹.zip/I_박은진_송민주_이혜경_본문이미지.png",
-    "path": "../img/projects/identity-051-054-056/detail-01.webp",
-    "originalSize": [
-      1080,
-      5732
-    ],
-    "webSize": [
-      1080,
-      5732
-    ]
-  },
-  {
-    "projectId": "identity-060",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/송민서/I_송민서_썸네일이미지.png",
-    "path": "../img/projects/identity-060/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-060",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/송민서/I_송민서_본문이미지png.png",
-    "path": "../img/projects/identity-060/detail-01.webp",
-    "originalSize": [
-      1084,
-      4839
-    ],
-    "webSize": [
-      1084,
-      4839
-    ]
-  },
-  {
-    "projectId": "identity-033-035",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/신아영, 허유진/I_신아영_허유진_웹.zip/I_신아영_허유진_웹/I_신아영_허유진_썸네일이미지.png",
-    "path": "../img/projects/identity-033-035/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-033-035",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/신아영, 허유진/I_신아영_허유진_웹.zip/I_신아영_허유진_웹/I_신아영_허유진_본문이미지.png",
-    "path": "../img/projects/identity-033-035/detail-01.webp",
-    "originalSize": [
-      1080,
-      6653
-    ],
-    "webSize": [
-      1080,
-      6653
-    ]
-  },
-  {
-    "projectId": "identity-042-045",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/안소현, 이가연/I_안소현_이가연_썸네일.png",
-    "path": "../img/projects/identity-042-045/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-042-045",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/안소현, 이가연/I_안소현_이가연_본문이미지.png",
-    "path": "../img/projects/identity-042-045/detail-01.webp",
-    "originalSize": [
-      1080,
-      6805
-    ],
-    "webSize": [
-      1080,
-      6805
-    ]
-  },
-  {
-    "projectId": "identity-029",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이상학/I_이상학_웹.zip/I_이상학_웹/I_이상학_썸네일이미지.png",
-    "path": "../img/projects/identity-029/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-029",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이상학/I_이상학_웹.zip/I_이상학_웹/I_이상학_본문이미지.png",
-    "path": "../img/projects/identity-029/detail-01.webp",
-    "originalSize": [
-      1080,
-      11612
-    ],
-    "webSize": [
-      1080,
-      11612
-    ]
-  },
-  {
-    "projectId": "identity-040-043",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이소현, 이윤주/I_이소현_이윤주_웹.zip/I_이소현_이윤주_썸네일이미지.png",
-    "path": "../img/projects/identity-040-043/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-040-043",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이소현, 이윤주/I_이소현_이윤주_웹.zip/I_이소현_이윤주_본문이미지.png",
-    "path": "../img/projects/identity-040-043/detail-01.webp",
-    "originalSize": [
-      1080,
-      6913
-    ],
-    "webSize": [
-      1080,
-      6913
-    ]
-  },
-  {
-    "projectId": "identity-026",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이수아/I_이수아_웹.zip/I_이수아_썸네일이미지.png",
-    "path": "../img/projects/identity-026/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-026",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이수아/I_이수아_웹.zip/I_이수아_본문이미지.png",
-    "path": "../img/projects/identity-026/detail-01.webp",
-    "originalSize": [
-      1080,
-      8037
-    ],
-    "webSize": [
-      1080,
-      8037
-    ]
-  },
-  {
-    "projectId": "identity-030",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이정무/I_이정무_썸네일이미지.png",
-    "path": "../img/projects/identity-030/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-030",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이정무/I_이정무_본문이미지.png",
-    "path": "../img/projects/identity-030/detail-01.webp",
-    "originalSize": [
-      1081,
-      4916
-    ],
-    "webSize": [
-      1081,
-      4916
-    ]
-  },
-  {
-    "projectId": "identity-041-9b436e",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이채연, 지서은/I_이채연_지서은_웹.zip/I_이채연_지서은_웹/I_이채연_지서은_썸네일이미지.png",
-    "path": "../img/projects/identity-041-9b436e/thumbnail.webp",
-    "originalSize": [
-      1836,
-      1836
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-041-9b436e",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이채연, 지서은/I_이채연_지서은_웹.zip/I_이채연_지서은_웹/I_이채연_지서은_본문이미지.png",
-    "path": "../img/projects/identity-041-9b436e/detail-01.webp",
-    "originalSize": [
-      1296,
-      6892
-    ],
-    "webSize": [
-      1296,
-      6892
-    ]
-  },
-  {
-    "projectId": "identity-044-055",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이한나, 원서영/I_원서영_이한나_웹.zip/I_원서영_이한나_웹/I_원서영_이한나_썸네일이미지.png",
-    "path": "../img/projects/identity-044-055/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-044-055",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이한나, 원서영/I_원서영_이한나_웹.zip/I_원서영_이한나_웹/I_원서영_이한나_본문이미지.png",
-    "path": "../img/projects/identity-044-055/detail-01.webp",
-    "originalSize": [
-      1080,
-      6098
-    ],
-    "webSize": [
-      1080,
-      6098
-    ]
-  },
-  {
-    "projectId": "identity-032-036",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/이현지, 최성경/I_이현지_최성경_웹.zip/I_이현지_최성경_썸네일이미지.png",
-    "path": "../img/projects/identity-032-036/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-032-036",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/이현지, 최성경/I_이현지_최성경_웹.zip/I_이현지_최성경_본문이미지.png",
-    "path": "../img/projects/identity-032-036/detail-01.webp",
-    "originalSize": [
-      1080,
-      8285
-    ],
-    "webSize": [
-      1080,
-      8285
-    ]
-  },
-  {
-    "projectId": "identity-034-052",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/장윤진, 최예진/I_장윤진_최예진_썸네일.png",
-    "path": "../img/projects/identity-034-052/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-034-052",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/장윤진, 최예진/I_장윤진_최예진_본문이미지.png",
-    "path": "../img/projects/identity-034-052/detail-01.webp",
-    "originalSize": [
-      1440,
-      10431
-    ],
-    "webSize": [
-      1440,
-      10431
-    ]
-  },
-  {
-    "projectId": "identity-027",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/최수빈/I_최수빈_썸네일이미지.png",
-    "path": "../img/projects/identity-027/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-027",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/최수빈/I_최수빈_본문이미지.png",
-    "path": "../img/projects/identity-027/detail-01.webp",
-    "originalSize": [
-      1080,
-      6215
-    ],
-    "webSize": [
-      1080,
-      6215
-    ]
-  },
-  {
-    "projectId": "identity-037-039",
-    "role": "thumbnail",
-    "source": "/아이덴티티 디자인 (I)/최지훈, 홍서연/I_최지훈_홍서연_웹.zip/I_최지훈_홍서연_웹/I_최지훈_홍서연_썸네일이미지.png",
-    "path": "../img/projects/identity-037-039/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "identity-037-039",
-    "role": "detail-01",
-    "source": "/아이덴티티 디자인 (I)/최지훈, 홍서연/I_최지훈_홍서연_웹.zip/I_최지훈_홍서연_웹/I_최지훈_홍서연_본문이미지.png",
-    "path": "../img/projects/identity-037-039/detail-01.webp",
-    "originalSize": [
-      1080,
-      3400
-    ],
-    "webSize": [
-      1080,
-      3400
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "thumbnail",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_썸네일이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/thumbnail.webp",
-    "originalSize": [
-      2160,
-      2160
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "detail-01",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/detail-01-part-01.webp",
-    "originalSize": [
-      1585,
-      32768
-    ],
-    "webSize": [
-      1585,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1585,
-      8000
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "detail-01",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/detail-01-part-02.webp",
-    "originalSize": [
-      1585,
-      32768
-    ],
-    "webSize": [
-      1585,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1585,
-      16000
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "detail-01",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/detail-01-part-03.webp",
-    "originalSize": [
-      1585,
-      32768
-    ],
-    "webSize": [
-      1585,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1585,
-      24000
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "detail-01",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/detail-01-part-04.webp",
-    "originalSize": [
-      1585,
-      32768
-    ],
-    "webSize": [
-      1585,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      24000,
-      1585,
-      32000
-    ]
-  },
-  {
-    "projectId": "fusion-006-007-049-059",
-    "role": "detail-01",
-    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
-    "path": "../img/projects/fusion-006-007-049-059/detail-01-part-05.webp",
-    "originalSize": [
-      1585,
-      32768
-    ],
-    "webSize": [
-      1585,
-      768
-    ],
-    "sourceCrop": [
-      0,
-      32000,
-      1585,
-      32768
-    ]
-  },
-  {
-    "projectId": "product-010-018",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_썸네일이미지.png",
-    "path": "../img/projects/product-010-018/thumbnail.webp",
-    "originalSize": [
-      1620,
-      1620
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-010-018",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_본문이미지.png",
-    "path": "../img/projects/product-010-018/detail-01-part-01.webp",
-    "originalSize": [
-      1620,
-      16667
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1600,
-      8000
-    ]
-  },
-  {
-    "projectId": "product-010-018",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_본문이미지.png",
-    "path": "../img/projects/product-010-018/detail-01-part-02.webp",
-    "originalSize": [
-      1620,
-      16667
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1600,
-      16000
-    ]
-  },
-  {
-    "projectId": "product-010-018",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_본문이미지.png",
-    "path": "../img/projects/product-010-018/detail-01-part-03.webp",
-    "originalSize": [
-      1620,
-      16667
-    ],
-    "webSize": [
-      1600,
-      461
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1600,
-      16461
-    ]
-  },
-  {
-    "projectId": "product-001-024",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/고희원, 이준석/T_고희원_이준석_웹.zip/T_고희원_이준석_웹/T_고희원_이준석_썸네일이미지.png",
-    "path": "../img/projects/product-001-024/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-001-024",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/고희원, 이준석/T_고희원_이준석_웹.zip/T_고희원_이준석_웹/T_고희원_이준석_본문이미지.jpg",
-    "path": "../img/projects/product-001-024/detail-01.webp",
-    "originalSize": [
-      1080,
-      3282
-    ],
-    "webSize": [
-      1080,
-      3282
-    ]
-  },
-  {
-    "projectId": "product-002-007",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김경덕, 엄지혁/T_김경덕_엄지혁_웹.zip/T_김경덕_엄지혁_웹/T_김경덕_엄지혁_썸네일이미지.png",
-    "path": "../img/projects/product-002-007/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-002-007",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김경덕, 엄지혁/T_김경덕_엄지혁_웹.zip/T_김경덕_엄지혁_웹/T_김경덕_엄지혁_본문이미지.png",
-    "path": "../img/projects/product-002-007/detail-01.webp",
-    "originalSize": [
-      1080,
-      13511
-    ],
-    "webSize": [
-      1080,
-      13511
-    ]
-  },
-  {
-    "projectId": "product-011-012",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김민선, 송현수/T_김민선_송현수_웹.zip/T_김민선_송현수_웹/T_김민선_송현수_썸네일이미지.png",
-    "path": "../img/projects/product-011-012/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-011-012",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김민선, 송현수/T_김민선_송현수_웹.zip/T_김민선_송현수_웹/T_김민선_송현수_본문이미지.png",
-    "path": "../img/projects/product-011-012/detail-01.webp",
-    "originalSize": [
-      1080,
-      11123
-    ],
-    "webSize": [
-      1080,
-      11123
-    ]
-  },
-  {
-    "projectId": "product-004-014",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_썸네일이미지.png",
-    "path": "../img/projects/product-004-014/thumbnail.webp",
-    "originalSize": [
-      3240,
-      3240
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-004-014",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_본문이미지.png",
-    "path": "../img/projects/product-004-014/detail-01-part-01.webp",
-    "originalSize": [
-      1620,
-      19307
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1600,
-      8000
-    ]
-  },
-  {
-    "projectId": "product-004-014",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_본문이미지.png",
-    "path": "../img/projects/product-004-014/detail-01-part-02.webp",
-    "originalSize": [
-      1620,
-      19307
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1600,
-      16000
-    ]
-  },
-  {
-    "projectId": "product-004-014",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_본문이미지.png",
-    "path": "../img/projects/product-004-014/detail-01-part-03.webp",
-    "originalSize": [
-      1620,
-      19307
-    ],
-    "webSize": [
-      1600,
-      3069
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1600,
-      19069
-    ]
-  },
-  {
-    "projectId": "product-008-025",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김승민, 이윤호/T_김승민_이윤호_웹.zip/T_김승민_이윤호_썸네일이미지.png",
-    "path": "../img/projects/product-008-025/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-008-025",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김승민, 이윤호/T_김승민_이윤호_웹.zip/T_김승민_이윤호_본문이미지.png",
-    "path": "../img/projects/product-008-025/detail-01.webp",
-    "originalSize": [
-      1080,
-      9434
-    ],
-    "webSize": [
-      1080,
-      9434
+      17256
     ]
   },
   {
     "projectId": "product-009-023",
     "role": "thumbnail",
     "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/T_김자현_이은주_썸네일이미지.png",
-    "path": "../img/projects/product-009-023/thumbnail.webp",
+    "path": "../img/projects/T_FLAP_김자현_이은주/제품및운송기기디자인_FLAP_김자현_이은주_썸네일.png",
     "originalSize": [
       1080,
       1080
     ],
     "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-009-023",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/T_김자현_이은주_본문이미지.png",
-    "path": "../img/projects/product-009-023/detail-01-part-01.webp",
-    "originalSize": [
-      1080,
-      17256
-    ],
-    "webSize": [
-      1080,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1080,
-      8000
-    ]
-  },
-  {
-    "projectId": "product-009-023",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/T_김자현_이은주_본문이미지.png",
-    "path": "../img/projects/product-009-023/detail-01-part-02.webp",
-    "originalSize": [
-      1080,
-      17256
-    ],
-    "webSize": [
-      1080,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1080,
-      16000
-    ]
-  },
-  {
-    "projectId": "product-009-023",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/T_김자현_이은주_본문이미지.png",
-    "path": "../img/projects/product-009-023/detail-01-part-03.webp",
-    "originalSize": [
-      1080,
-      17256
-    ],
-    "webSize": [
-      1080,
-      1256
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1080,
-      17256
-    ]
-  },
-  {
-    "projectId": "product-015-017",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김지윤, 이지민/T_김지윤_이지민_웹.zip/T_김지윤_이지민_썸네일이미지.png",
-    "path": "../img/projects/product-015-017/thumbnail.webp",
-    "originalSize": [
       1080,
       1080
-    ],
-    "webSize": [
-      800,
-      800
     ]
   },
   {
-    "projectId": "product-015-017",
+    "projectId": "digital--e3346d",
     "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김지윤, 이지민/T_김지윤_이지민_웹.zip/T_김지윤_이지민_본문이미지.png",
-    "path": "../img/projects/product-015-017/detail-01.webp",
+    "source": "/디지털미디어프로젝트 (D)/공위천, 동천위/D_공위천_동천위_본문이미지.png",
+    "path": "../img/projects/D_망원인_연구소_공위천_동천위/디지털미디어프로젝트_망원인_연구소_공위천_동천위_상세_01.png",
     "originalSize": [
       1080,
-      6409
+      6938
     ],
     "webSize": [
       1080,
-      6409
-    ]
-  },
-  {
-    "projectId": "product-019-020",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_썸네일이미지.png",
-    "path": "../img/projects/product-019-020/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-019-020",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_본문이미지.png",
-    "path": "../img/projects/product-019-020/detail-01-part-01.webp",
-    "originalSize": [
-      1836,
-      19477
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1600,
-      8000
-    ]
-  },
-  {
-    "projectId": "product-019-020",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_본문이미지.png",
-    "path": "../img/projects/product-019-020/detail-01-part-02.webp",
-    "originalSize": [
-      1836,
-      19477
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1600,
-      16000
-    ]
-  },
-  {
-    "projectId": "product-019-020",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_본문이미지.png",
-    "path": "../img/projects/product-019-020/detail-01-part-03.webp",
-    "originalSize": [
-      1836,
-      19477
-    ],
-    "webSize": [
-      1600,
-      973
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1600,
-      16973
-    ]
-  },
-  {
-    "projectId": "product-013-d47919",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/박민경, 안서연/T_박민경_안서연_웹.zip.zip/T_박민경_안서연_웹.zip/T_박민경_안서연_웹/T_박민경_안서연_썸네일이미지.png",
-    "path": "../img/projects/product-013-d47919/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
+      6938
     ]
   },
   {
     "projectId": "product-013-d47919",
     "role": "detail-01",
     "source": "/제품 및 운송기기 디자인 (T)/박민경, 안서연/T_박민경_안서연_웹.zip.zip/T_박민경_안서연_웹.zip/T_박민경_안서연_웹/T_박민경_안서연_본문이미지.png",
-    "path": "../img/projects/product-013-d47919/detail-01.webp",
+    "path": "../img/projects/T_Hey_Nua_박민경_안서연/제품및운송기기디자인_Hey_Nua_박민경_안서연_상세_01.png",
     "originalSize": [
       1080,
       6000
@@ -1695,419 +81,433 @@
     "webSize": [
       1080,
       6000
+    ]
+  },
+  {
+    "projectId": "product-013-d47919",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/박민경, 안서연/T_박민경_안서연_웹.zip.zip/T_박민경_안서연_웹.zip/T_박민경_안서연_웹/T_박민경_안서연_썸네일이미지.png",
+    "path": "../img/projects/T_Hey_Nua_박민경_안서연/제품및운송기기디자인_Hey_Nua_박민경_안서연_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-048-052-053",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/박우희, 장유진, 최예진/D_박우희_장유진_최예진_썸네일.png",
+    "path": "../img/projects/D_COMA_NOVA_SPOT_LIGHT_박우희_장유진_최예진/디지털미디어프로젝트_COMA_NOVA_SPOT_LIGHT_박우희_장유진_최예진_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-037-039",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/최지훈, 홍서연/I_최지훈_홍서연_웹.zip/I_최지훈_홍서연_웹/I_최지훈_홍서연_본문이미지.png",
+    "path": "../img/projects/I_Xelra_최지훈_홍서연/아이덴티티디자인_Xelra_최지훈_홍서연_상세_01.png",
+    "originalSize": [
+      1080,
+      3400
+    ],
+    "webSize": [
+      1080,
+      3400
+    ]
+  },
+  {
+    "projectId": "identity-037-039",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/최지훈, 홍서연/I_최지훈_홍서연_웹.zip/I_최지훈_홍서연_웹/I_최지훈_홍서연_썸네일이미지.png",
+    "path": "../img/projects/I_Xelra_최지훈_홍서연/아이덴티티디자인_Xelra_최지훈_홍서연_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-010-018",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_본문이미지.png",
+    "path": "../img/projects/T_Free_to_Face_강하영_임준우/제품및운송기기디자인_Free_to_Face_강하영_임준우_상세_01.png",
+    "originalSize": [
+      1620,
+      16667
+    ],
+    "webSize": [
+      1620,
+      16667
+    ]
+  },
+  {
+    "projectId": "product-010-018",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/강하영, 임준우/T_강하영_임준우_웹.zip/T_강하영_임준우_웹/T_강하영_임준우_썸네일이미지.png",
+    "path": "../img/projects/T_Free_to_Face_강하영_임준우/제품및운송기기디자인_Free_to_Face_강하영_임준우_썸네일.png",
+    "originalSize": [
+      1620,
+      1620
+    ],
+    "webSize": [
+      1620,
+      1620
+    ]
+  },
+  {
+    "projectId": "identity-060",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/송민서/I_송민서_썸네일이미지.png",
+    "path": "../img/projects/I_AETHER_송민서/아이덴티티디자인_AETHER_송민서_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital--e3346d",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/공위천, 동천위/D_공위천_동천위_썸네일이미지.png",
+    "path": "../img/projects/D_망원인_연구소_공위천_동천위/디지털미디어프로젝트_망원인_연구소_공위천_동천위_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-034-052",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/장윤진, 최예진/I_장윤진_최예진_썸네일.png",
+    "path": "../img/projects/I_MOLTYPE_장윤진_최예진/아이덴티티디자인_MOLTYPE_장윤진_최예진_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-033-035",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/신아영, 허유진/D_신아영_허유진_웹.zip/D_신아영_허유진_웹/D_신아영_허유진_썸네일이미지.png",
+    "path": "../img/projects/D_신명원_디지털_신당_신아영_허유진/디지털미디어프로젝트_신명원_디지털_신당_신아영_허유진_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-033-035",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/신아영, 허유진/D_신아영_허유진_웹.zip/D_신아영_허유진_웹/D_신아영_허유진_본문이미지.png",
+    "path": "../img/projects/D_신명원_디지털_신당_신아영_허유진/디지털미디어프로젝트_신명원_디지털_신당_신아영_허유진_상세_01.png",
+    "originalSize": [
+      1080,
+      5666
+    ],
+    "webSize": [
+      1080,
+      5666
+    ]
+  },
+  {
+    "projectId": "digital-047-058",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/김윤아, 백율리/D_김윤아_백율리_웹.zip/D_김윤아_백율리_썸네일이미지.png",
+    "path": "../img/projects/D_파독각_김윤아_백율리/디지털미디어프로젝트_파독각_김윤아_백율리_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-047-058",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/김윤아, 백율리/D_김윤아_백율리_웹.zip/D_김윤아_백율리_본문이미지.png",
+    "path": "../img/projects/D_파독각_김윤아_백율리/디지털미디어프로젝트_파독각_김윤아_백율리_상세_01.png",
+    "originalSize": [
+      1080,
+      4180
+    ],
+    "webSize": [
+      1080,
+      4180
+    ]
+  },
+  {
+    "projectId": "identity-033-035",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/신아영, 허유진/I_신아영_허유진_웹.zip/I_신아영_허유진_웹/I_신아영_허유진_썸네일이미지.png",
+    "path": "../img/projects/I_SAI_신아영_허유진/아이덴티티디자인_SAI_신아영_허유진_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-033-035",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/신아영, 허유진/I_신아영_허유진_웹.zip/I_신아영_허유진_웹/I_신아영_허유진_본문이미지.png",
+    "path": "../img/projects/I_SAI_신아영_허유진/아이덴티티디자인_SAI_신아영_허유진_상세_01.png",
+    "originalSize": [
+      1080,
+      6653
+    ],
+    "webSize": [
+      1080,
+      6653
+    ]
+  },
+  {
+    "projectId": "digital-048-052-053",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/박우희, 장유진, 최예진/D_박우희_장유진_최예진_본문이미지.png",
+    "path": "../img/projects/D_COMA_NOVA_SPOT_LIGHT_박우희_장유진_최예진/디지털미디어프로젝트_COMA_NOVA_SPOT_LIGHT_박우희_장유진_최예진_상세_01.png",
+    "originalSize": [
+      1080,
+      4183
+    ],
+    "webSize": [
+      1080,
+      4183
+    ]
+  },
+  {
+    "projectId": "digital-046-057",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/김나윤, 이유나/D_김나윤_이유나_웹.zip/D_김나윤_이유나_본문이미지.png",
+    "path": "../img/projects/D_FRYDAY_180°C_김나윤_이유나/디지털미디어프로젝트_FRYDAY_180°C_김나윤_이유나_상세_01.png",
+    "originalSize": [
+      1080,
+      3419
+    ],
+    "webSize": [
+      1080,
+      3419
+    ]
+  },
+  {
+    "projectId": "digital-046-057",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/김나윤, 이유나/D_김나윤_이유나_웹.zip/D_김나윤_이유나_썸네일이미지.png",
+    "path": "../img/projects/D_FRYDAY_180°C_김나윤_이유나/디지털미디어프로젝트_FRYDAY_180°C_김나윤_이유나_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-060",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/송민서/I_송민서_본문이미지png.png",
+    "path": "../img/projects/I_AETHER_송민서/아이덴티티디자인_AETHER_송민서_상세_01.png",
+    "originalSize": [
+      1084,
+      4839
+    ],
+    "webSize": [
+      1084,
+      4839
+    ]
+  },
+  {
+    "projectId": "product-021-022",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/이지수, 황어진/T_이지수_황어진_웹.zip/T_이지수_황어진_본문이미지.png",
+    "path": "../img/projects/T_lit_이지수_황어진/제품및운송기기디자인_lit_이지수_황어진_상세_01.png",
+    "originalSize": [
+      1080,
+      16437
+    ],
+    "webSize": [
+      1080,
+      16437
     ]
   },
   {
     "projectId": "product-021-022",
     "role": "thumbnail",
     "source": "/제품 및 운송기기 디자인 (T)/이지수, 황어진/T_이지수_황어진_웹.zip/T_이지수_황어진_썸네일이미지.png",
-    "path": "../img/projects/product-021-022/thumbnail.webp",
+    "path": "../img/projects/T_lit_이지수_황어진/제품및운송기기디자인_lit_이지수_황어진_썸네일.png",
     "originalSize": [
       1080,
       1080
     ],
     "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-021-022",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/이지수, 황어진/T_이지수_황어진_웹.zip/T_이지수_황어진_본문이미지.png",
-    "path": "../img/projects/product-021-022/detail-01-part-01.webp",
-    "originalSize": [
-      1080,
-      16437
-    ],
-    "webSize": [
-      1080,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1080,
-      8000
-    ]
-  },
-  {
-    "projectId": "product-021-022",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/이지수, 황어진/T_이지수_황어진_웹.zip/T_이지수_황어진_본문이미지.png",
-    "path": "../img/projects/product-021-022/detail-01-part-02.webp",
-    "originalSize": [
-      1080,
-      16437
-    ],
-    "webSize": [
-      1080,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1080,
-      16000
-    ]
-  },
-  {
-    "projectId": "product-021-022",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/이지수, 황어진/T_이지수_황어진_웹.zip/T_이지수_황어진_본문이미지.png",
-    "path": "../img/projects/product-021-022/detail-01-part-03.webp",
-    "originalSize": [
-      1080,
-      16437
-    ],
-    "webSize": [
-      1080,
-      437
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1080,
-      16437
-    ]
-  },
-  {
-    "projectId": "product-005-016",
-    "role": "thumbnail",
-    "source": "/제품 및 운송기기 디자인 (T)/조유진, 진민석/T_조유진_진민석_웹.zip/T_조유진_진민석_웹/T_조유진_진민석_썸네일이미지.png",
-    "path": "../img/projects/product-005-016/thumbnail.webp",
-    "originalSize": [
       1080,
       1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "product-005-016",
-    "role": "detail-01",
-    "source": "/제품 및 운송기기 디자인 (T)/조유진, 진민석/T_조유진_진민석_웹.zip/T_조유진_진민석_웹/T_조유진_진민석_본문이미지.png",
-    "path": "../img/projects/product-005-016/detail-01.webp",
-    "originalSize": [
-      1080,
-      4420
-    ],
-    "webSize": [
-      1080,
-      4420
-    ]
-  },
-  {
-    "projectId": "system-013-018-021",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_썸네일이미지.png",
-    "path": "../img/projects/system-013-018-021/thumbnail.webp",
-    "originalSize": [
-      1620,
-      1620
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-013-018-021",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_본문이미지.png",
-    "path": "../img/projects/system-013-018-021/detail-01-part-01.webp",
-    "originalSize": [
-      1614,
-      30738
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      0,
-      1600,
-      8000
-    ]
-  },
-  {
-    "projectId": "system-013-018-021",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_본문이미지.png",
-    "path": "../img/projects/system-013-018-021/detail-01-part-02.webp",
-    "originalSize": [
-      1614,
-      30738
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      8000,
-      1600,
-      16000
-    ]
-  },
-  {
-    "projectId": "system-013-018-021",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_본문이미지.png",
-    "path": "../img/projects/system-013-018-021/detail-01-part-03.webp",
-    "originalSize": [
-      1614,
-      30738
-    ],
-    "webSize": [
-      1600,
-      8000
-    ],
-    "sourceCrop": [
-      0,
-      16000,
-      1600,
-      24000
-    ]
-  },
-  {
-    "projectId": "system-013-018-021",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_본문이미지.png",
-    "path": "../img/projects/system-013-018-021/detail-01-part-04.webp",
-    "originalSize": [
-      1614,
-      30738
-    ],
-    "webSize": [
-      1600,
-      6471
-    ],
-    "sourceCrop": [
-      0,
-      24000,
-      1600,
-      30471
-    ]
-  },
-  {
-    "projectId": "system-014-024",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/고희원, 김병관/S_고희원_김병관_웹.zip/S_고희원_김병관_웹/S_고희원_김병관_썸네일이미지.png",
-    "path": "../img/projects/system-014-024/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-014-024",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/고희원, 김병관/S_고희원_김병관_웹.zip/S_고희원_김병관_웹/S_고희원_김병관_본문이미지.png",
-    "path": "../img/projects/system-014-024/detail-01.webp",
-    "originalSize": [
-      1080,
-      7281
-    ],
-    "webSize": [
-      1080,
-      7281
-    ]
-  },
-  {
-    "projectId": "system-003-004",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/권동혁, 박범수/S_박범수_권동혁_웹.zip/S_박범수_권동혁_웹/S_박범수_권동혁_썸네일이미지.png",
-    "path": "../img/projects/system-003-004/thumbnail.webp",
-    "originalSize": [
-      4500,
-      4500
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-003-004",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/권동혁, 박범수/S_박범수_권동혁_웹.zip/S_박범수_권동혁_웹/S_박범수_권동혁_본문이미지.png",
-    "path": "../img/projects/system-003-004/detail-01.webp",
-    "originalSize": [
-      4500,
-      31679
-    ],
-    "webSize": [
-      1600,
-      11264
-    ]
-  },
-  {
-    "projectId": "system-009-012",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/김민선, 이은주/S_김민선_이은주_웹.zip/S_김민선_이은주_웹/S_김민선_이은주_썸네일이미지.png",
-    "path": "../img/projects/system-009-012/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-009-012",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/김민선, 이은주/S_김민선_이은주_웹.zip/S_김민선_이은주_웹/S_김민선_이은주_본문이미지.png",
-    "path": "../img/projects/system-009-012/detail-01.webp",
-    "originalSize": [
-      1080,
-      12830
-    ],
-    "webSize": [
-      1080,
-      12830
-    ]
-  },
-  {
-    "projectId": "system-008-025",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/김승민, 이윤호/S_김승민_이윤호_웹.zip/S_김승민_이윤호_썸네일이미지.png",
-    "path": "../img/projects/system-008-025/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-008-025",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/김승민, 이윤호/S_김승민_이윤호_웹.zip/S_김승민_이윤호_본문이미지.png",
-    "path": "../img/projects/system-008-025/detail-01.webp",
-    "originalSize": [
-      1080,
-      14700
-    ],
-    "webSize": [
-      1080,
-      14700
-    ]
-  },
-  {
-    "projectId": "system-022-023",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/S_김자현_이지수_썸네일이미지.png",
-    "path": "../img/projects/system-022-023/thumbnail.webp",
-    "originalSize": [
-      1500,
-      844
-    ],
-    "webSize": [
-      800,
-      450
-    ]
-  },
-  {
-    "projectId": "system-022-023",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/S_김자현_이지수_본문이미지.png",
-    "path": "../img/projects/system-022-023/detail-01.webp",
-    "originalSize": [
-      1080,
-      11625
-    ],
-    "webSize": [
-      1080,
-      11625
-    ]
-  },
-  {
-    "projectId": "system-015-017",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/김지윤, 이지민/S_김지윤_이지민_웹.zip/S_김지윤_이지민_썸네일이미지.png",
-    "path": "../img/projects/system-015-017/thumbnail.webp",
-    "originalSize": [
-      1080,
-      1080
-    ],
-    "webSize": [
-      800,
-      800
-    ]
-  },
-  {
-    "projectId": "system-015-017",
-    "role": "detail-01",
-    "source": "/제품시스템디자인 (S)/김지윤, 이지민/S_김지윤_이지민_웹.zip/S_김지윤_이지민_본문이미지.png",
-    "path": "../img/projects/system-015-017/detail-01.webp",
-    "originalSize": [
-      1080,
-      9265
-    ],
-    "webSize": [
-      1080,
-      9265
-    ]
-  },
-  {
-    "projectId": "system-019-020",
-    "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/김채연, 황예은/S_김채연_황예은_웹.zip/S_김채연_황예은_웹/S_김채연_황예은_썸네일이미지.png",
-    "path": "../img/projects/system-019-020/thumbnail.webp",
-    "originalSize": [
-      2160,
-      2160
-    ],
-    "webSize": [
-      800,
-      800
     ]
   },
   {
     "projectId": "system-019-020",
     "role": "detail-01",
     "source": "/제품시스템디자인 (S)/김채연, 황예은/S_김채연_황예은_웹.zip/S_김채연_황예은_웹/S_김채연_황예은_본문이미지.png",
-    "path": "../img/projects/system-019-020/detail-01.webp",
+    "path": "../img/projects/S_SANCTUM_김채연_황예은/제품시스템디자인_SANCTUM_김채연_황예은_상세_01.png",
     "originalSize": [
       1620,
       12887
     ],
     "webSize": [
-      1600,
-      12728
+      1620,
+      12887
     ]
   },
   {
-    "projectId": "system-011-016",
+    "projectId": "system-019-020",
     "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/송현수, 조유진/S_송현수_조유진_웹.zip/S_송현수_조유진_웹/S_조유진_송현수_썸네일이미지.png",
-    "path": "../img/projects/system-011-016/thumbnail.webp",
+    "source": "/제품시스템디자인 (S)/김채연, 황예은/S_김채연_황예은_웹.zip/S_김채연_황예은_웹/S_김채연_황예은_썸네일이미지.png",
+    "path": "../img/projects/S_SANCTUM_김채연_황예은/제품시스템디자인_SANCTUM_김채연_황예은_썸네일.png",
+    "originalSize": [
+      2160,
+      2160
+    ],
+    "webSize": [
+      2160,
+      2160
+    ]
+  },
+  {
+    "projectId": "digital-029-060",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/송민서, 이상학/D_송민서_이상학_웹.zip/D_송민서_이상학_웹/D_송민서_이상학_본문이미지.png",
+    "path": "../img/projects/D_ZZZ_송민서_이상학/디지털미디어프로젝트_ZZZ_송민서_이상학_상세_01.png",
+    "originalSize": [
+      1080,
+      7832
+    ],
+    "webSize": [
+      1080,
+      7832
+    ]
+  },
+  {
+    "projectId": "digital-029-060",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/송민서, 이상학/D_송민서_이상학_웹.zip/D_송민서_이상학_웹/D_송민서_이상학_썸네일이미지.png",
+    "path": "../img/projects/D_ZZZ_송민서_이상학/디지털미디어프로젝트_ZZZ_송민서_이상학_썸네일.png",
     "originalSize": [
       1080,
       1080
     ],
     "webSize": [
-      800,
-      800
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-038",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/호영하/D_HU YINGHE_썸네일이미지.png",
+    "path": "../img/projects/D_망쳐도_괜찮아_호영하/디지털미디어프로젝트_망쳐도_괜찮아_호영하_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-030-040-045",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/안소현, 이소현, 이정무/D_이정무_이소현_안소현_썸네일이미지.png",
+    "path": "../img/projects/D_What_a_Peaceful_Neverland_안소현_이소현_이정무/디지털미디어프로젝트_What_a_Peaceful_Neverland_안소현_이소현_이정무_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-008-025",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김승민, 이윤호/T_김승민_이윤호_웹.zip/T_김승민_이윤호_본문이미지.png",
+    "path": "../img/projects/T_N_LOOP_김승민_이윤호/제품및운송기기디자인_N_LOOP_김승민_이윤호_상세_01.png",
+    "originalSize": [
+      1080,
+      9434
+    ],
+    "webSize": [
+      1080,
+      9434
+    ]
+  },
+  {
+    "projectId": "product-008-025",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김승민, 이윤호/T_김승민_이윤호_웹.zip/T_김승민_이윤호_썸네일이미지.png",
+    "path": "../img/projects/T_N_LOOP_김승민_이윤호/제품및운송기기디자인_N_LOOP_김승민_이윤호_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity--e3346d",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/공위천, 동천위/I_공위천_동천위_본문이미지.png",
+    "path": "../img/projects/I_MOODIT_공위천_동천위/아이덴티티디자인_MOODIT_공위천_동천위_상세_01.png",
+    "originalSize": [
+      1081,
+      7444
+    ],
+    "webSize": [
+      1081,
+      7444
     ]
   },
   {
     "projectId": "system-011-016",
     "role": "detail-01",
     "source": "/제품시스템디자인 (S)/송현수, 조유진/S_송현수_조유진_웹.zip/S_송현수_조유진_웹/S_조유진_송현수_본문이미지.png",
-    "path": "../img/projects/system-011-016/detail-01.webp",
+    "path": "../img/projects/S_ASCLEPIUS_송현수_조유진/제품시스템디자인_ASCLEPIUS_송현수_조유진_상세_01.png",
     "originalSize": [
       1080,
       6017
@@ -2118,24 +518,500 @@
     ]
   },
   {
-    "projectId": "system-001-005",
+    "projectId": "system-011-016",
     "role": "thumbnail",
-    "source": "/제품시스템디자인 (S)/이준석, 진민석/S_이준석_진민석_웹.zip/S_이준석_진민석_웹/S_이준석_진민석_썸네일이미지.png",
-    "path": "../img/projects/system-001-005/thumbnail.webp",
+    "source": "/제품시스템디자인 (S)/송현수, 조유진/S_송현수_조유진_웹.zip/S_송현수_조유진_웹/S_조유진_송현수_썸네일이미지.png",
+    "path": "../img/projects/S_ASCLEPIUS_송현수_조유진/제품시스템디자인_ASCLEPIUS_송현수_조유진_썸네일.png",
     "originalSize": [
       1080,
       1080
     ],
     "webSize": [
-      800,
-      800
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-028-031-050",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/김상민, 이승민, 최한얼/I_김상민_이승민_최한얼_썸네일이미지.png",
+    "path": "../img/projects/I_밀도_김상민_이승민_최한얼/아이덴티티디자인_밀도_김상민_이승민_최한얼_썸네일.png",
+    "originalSize": [
+      1081,
+      1081
+    ],
+    "webSize": [
+      1081,
+      1081
+    ]
+  },
+  {
+    "projectId": "digital-036-054",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/이현지, 이혜경/D_이현지_이혜경_웹.zip/D_이현지_이혜경_본문이미지.png",
+    "path": "../img/projects/D_OHJOTAK_이현지_이혜경/디지털미디어프로젝트_OHJOTAK_이현지_이혜경_상세_01.png",
+    "originalSize": [
+      1080,
+      4586
+    ],
+    "webSize": [
+      1080,
+      4586
+    ]
+  },
+  {
+    "projectId": "digital-036-054",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/이현지, 이혜경/D_이현지_이혜경_웹.zip/D_이현지_이혜경_썸네일이미지.png",
+    "path": "../img/projects/D_OHJOTAK_이현지_이혜경/디지털미디어프로젝트_OHJOTAK_이현지_이혜경_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-047-058",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/김윤아, 백율리/I_김윤아_백율리_웹.zip/I_김윤아_백율리_본문이미지.png",
+    "path": "../img/projects/I_OVE_김윤아_백율리/아이덴티티디자인_OVE_김윤아_백율리_상세_01.png",
+    "originalSize": [
+      1080,
+      4770
+    ],
+    "webSize": [
+      1080,
+      4770
+    ]
+  },
+  {
+    "projectId": "identity-047-058",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/김윤아, 백율리/I_김윤아_백율리_웹.zip/I_김윤아_백율리_썸네일이미지.png",
+    "path": "../img/projects/I_OVE_김윤아_백율리/아이덴티티디자인_OVE_김윤아_백율리_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "system-022-023",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/S_김자현_이지수_본문이미지.png",
+    "path": "../img/projects/S_oodt_김자현_이지수/제품시스템디자인_oodt_김자현_이지수_상세_01.png",
+    "originalSize": [
+      1080,
+      11625
+    ],
+    "webSize": [
+      1080,
+      11625
+    ]
+  },
+  {
+    "projectId": "system-022-023",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/S_김자현_이지수_썸네일이미지.png",
+    "path": "../img/projects/S_oodt_김자현_이지수/제품시스템디자인_oodt_김자현_이지수_썸네일.png",
+    "originalSize": [
+      1500,
+      844
+    ],
+    "webSize": [
+      1500,
+      844
+    ]
+  },
+  {
+    "projectId": "identity-042-045",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/안소현, 이가연/I_안소현_이가연_썸네일.png",
+    "path": "../img/projects/I_INAWT_안소현_이가연/아이덴티티디자인_INAWT_안소현_이가연_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-031-050",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/김상민, 이승민/D_김상민_이승민_썸네일이미지.png",
+    "path": "../img/projects/D_NEUE_PHILOSOPHER_UNION_김상민_이승민/디지털미디어프로젝트_NEUE_PHILOSOPHER_UNION_김상민_이승민_썸네일.png",
+    "originalSize": [
+      1081,
+      1081
+    ],
+    "webSize": [
+      1081,
+      1081
+    ]
+  },
+  {
+    "projectId": "digital-041-9b436e",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/이채연, 지서은/D_이채연_지서은_웹.zip/D_이채연_지서은_웹/D_이채연_지서은_썸네일이미지.png",
+    "path": "../img/projects/D_Slott_이채연_지서은/디지털미디어프로젝트_Slott_이채연_지서은_썸네일.png",
+    "originalSize": [
+      1404,
+      1404
+    ],
+    "webSize": [
+      1404,
+      1404
+    ]
+  },
+  {
+    "projectId": "digital-041-9b436e",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/이채연, 지서은/D_이채연_지서은_웹.zip/D_이채연_지서은_웹/D_이채연_지서은_본문이미지.png",
+    "path": "../img/projects/D_Slott_이채연_지서은/디지털미디어프로젝트_Slott_이채연_지서은_상세_01.png",
+    "originalSize": [
+      1296,
+      4776
+    ],
+    "webSize": [
+      1296,
+      4776
+    ]
+  },
+  {
+    "projectId": "digital-051-055-056",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/박은진, 송민주, 이한나/D_박은진_송민주_이한나_웹.zip/D_박은진_송민주_이한나_웹/D_박은진_송민주_이한나_본문이미지.png",
+    "path": "../img/projects/D_장기파업_박은진_송민주_이한나/디지털미디어프로젝트_장기파업_박은진_송민주_이한나_상세_01.png",
+    "originalSize": [
+      1080,
+      3048
+    ],
+    "webSize": [
+      1080,
+      3048
+    ]
+  },
+  {
+    "projectId": "digital-051-055-056",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/박은진, 송민주, 이한나/D_박은진_송민주_이한나_웹.zip/D_박은진_송민주_이한나_웹/D_박은진_송민주_이한나_썸네일이미지.png",
+    "path": "../img/projects/D_장기파업_박은진_송민주_이한나/디지털미디어프로젝트_장기파업_박은진_송민주_이한나_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "system-013-018-021",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_본문이미지.png",
+    "path": "../img/projects/S_WayFello_강하영_안서연_황어진/제품시스템디자인_WayFello_강하영_안서연_황어진_상세_01.png",
+    "originalSize": [
+      1614,
+      30738
+    ],
+    "webSize": [
+      1614,
+      30738
+    ]
+  },
+  {
+    "projectId": "system-013-018-021",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/강하영, 안서연, 황어진/S_강하영_황어진_안서연_웹.zip/S_강하영_황어진_안서연_웹/S_강하영_황어진_안서연_썸네일이미지.png",
+    "path": "../img/projects/S_WayFello_강하영_안서연_황어진/제품시스템디자인_WayFello_강하영_안서연_황어진_썸네일.png",
+    "originalSize": [
+      1620,
+      1620
+    ],
+    "webSize": [
+      1620,
+      1620
+    ]
+  },
+  {
+    "projectId": "identity--e3346d",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/공위천, 동천위/I_공위천_동천위_썸네일이미지.png",
+    "path": "../img/projects/I_MOODIT_공위천_동천위/아이덴티티디자인_MOODIT_공위천_동천위_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-029",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이상학/I_이상학_웹.zip/I_이상학_웹/I_이상학_본문이미지.png",
+    "path": "../img/projects/I_FRMFRM_이상학/아이덴티티디자인_FRMFRM_이상학_상세_01.png",
+    "originalSize": [
+      1080,
+      11612
+    ],
+    "webSize": [
+      1080,
+      11612
+    ]
+  },
+  {
+    "projectId": "identity-029",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이상학/I_이상학_웹.zip/I_이상학_웹/I_이상학_썸네일이미지.png",
+    "path": "../img/projects/I_FRMFRM_이상학/아이덴티티디자인_FRMFRM_이상학_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-005-016",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/조유진, 진민석/T_조유진_진민석_웹.zip/T_조유진_진민석_웹/T_조유진_진민석_본문이미지.png",
+    "path": "../img/projects/T_Libera_조유진_진민석/제품및운송기기디자인_Libera_조유진_진민석_상세_01.png",
+    "originalSize": [
+      1080,
+      4420
+    ],
+    "webSize": [
+      1080,
+      4420
+    ]
+  },
+  {
+    "projectId": "product-005-016",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/조유진, 진민석/T_조유진_진민석_웹.zip/T_조유진_진민석_웹/T_조유진_진민석_썸네일이미지.png",
+    "path": "../img/projects/T_Libera_조유진_진민석/제품및운송기기디자인_Libera_조유진_진민석_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-040-043",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이소현, 이윤주/I_이소현_이윤주_웹.zip/I_이소현_이윤주_본문이미지.png",
+    "path": "../img/projects/I_EWA_이소현_이윤주/아이덴티티디자인_EWA_이소현_이윤주_상세_01.png",
+    "originalSize": [
+      1080,
+      6913
+    ],
+    "webSize": [
+      1080,
+      6913
+    ]
+  },
+  {
+    "projectId": "identity-040-043",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이소현, 이윤주/I_이소현_이윤주_웹.zip/I_이소현_이윤주_썸네일이미지.png",
+    "path": "../img/projects/I_EWA_이소현_이윤주/아이덴티티디자인_EWA_이소현_이윤주_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "system-009-012",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/김민선, 이은주/S_김민선_이은주_웹.zip/S_김민선_이은주_웹/S_김민선_이은주_본문이미지.png",
+    "path": "../img/projects/S_HOVIO_김민선_이은주/제품시스템디자인_HOVIO_김민선_이은주_상세_01.png",
+    "originalSize": [
+      1080,
+      12830
+    ],
+    "webSize": [
+      1080,
+      12830
+    ]
+  },
+  {
+    "projectId": "system-009-012",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/김민선, 이은주/S_김민선_이은주_웹.zip/S_김민선_이은주_웹/S_김민선_이은주_썸네일이미지.png",
+    "path": "../img/projects/S_HOVIO_김민선_이은주/제품시스템디자인_HOVIO_김민선_이은주_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-027",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/최수빈/I_최수빈_썸네일이미지.png",
+    "path": "../img/projects/I_NAUM_RACE_최수빈/아이덴티티디자인_NAUM_RACE_최수빈_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-031-050",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/김상민, 이승민/D_김상민_이승민_본문이미지.png",
+    "path": "../img/projects/D_NEUE_PHILOSOPHER_UNION_김상민_이승민/디지털미디어프로젝트_NEUE_PHILOSOPHER_UNION_김상민_이승민_상세_01.png",
+    "originalSize": [
+      1081,
+      7149
+    ],
+    "webSize": [
+      1081,
+      7149
+    ]
+  },
+  {
+    "projectId": "digital-030-040-045",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/안소현, 이소현, 이정무/D_이정무_이소현_안소현_본문이미지.png",
+    "path": "../img/projects/D_What_a_Peaceful_Neverland_안소현_이소현_이정무/디지털미디어프로젝트_What_a_Peaceful_Neverland_안소현_이소현_이정무_상세_01.png",
+    "originalSize": [
+      1080,
+      3495
+    ],
+    "webSize": [
+      1080,
+      3495
+    ]
+  },
+  {
+    "projectId": "digital-027",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/최수빈/D_최수빈_썸네일이미지.png",
+    "path": "../img/projects/D_SEGNO_MUSIC_FESTIVAL_최수빈/디지털미디어프로젝트_SEGNO_MUSIC_FESTIVAL_최수빈_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-063-064",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/김미리, 이수민/D_김미리_이수민_웹.zip/D_김미리_이수민_웹/D_김미리_이수민_본문이미지.png",
+    "path": "../img/projects/D_극락왕생_보험사_김미리_이수민/디지털미디어프로젝트_극락왕생_보험사_김미리_이수민_상세_01.png",
+    "originalSize": [
+      1080,
+      7145
+    ],
+    "webSize": [
+      1080,
+      7145
+    ]
+  },
+  {
+    "projectId": "digital-063-064",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/김미리, 이수민/D_김미리_이수민_웹.zip/D_김미리_이수민_웹/D_김미리_이수민_썸네일이미지.png",
+    "path": "../img/projects/D_극락왕생_보험사_김미리_이수민/디지털미디어프로젝트_극락왕생_보험사_김미리_이수민_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-043-044",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/이윤주, 원서영/D_원서영_이윤주_웹.zip/D_원서영_이윤주_웹/D_이윤주_원서영_본문이미지.png",
+    "path": "../img/projects/D_사이비담_이윤주_원서영/디지털미디어프로젝트_사이비담_이윤주_원서영_상세_01.png",
+    "originalSize": [
+      1080,
+      6404
+    ],
+    "webSize": [
+      1080,
+      6404
+    ]
+  },
+  {
+    "projectId": "digital-043-044",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/이윤주, 원서영/D_원서영_이윤주_웹.zip/D_원서영_이윤주_웹/D_이윤주_원서영_썸네일이미지.png",
+    "path": "../img/projects/D_사이비담_이윤주_원서영/디지털미디어프로젝트_사이비담_이윤주_원서영_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-042",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/이가연/D_이가연_웹.zip/D_이가연_본문이미지.png",
+    "path": "../img/projects/D_해피한_척하기_해-피한_척하기_이가연/디지털미디어프로젝트_해피한_척하기_해-피한_척하기_이가연_상세_01.png",
+    "originalSize": [
+      1080,
+      3465
+    ],
+    "webSize": [
+      1080,
+      3465
+    ]
+  },
+  {
+    "projectId": "digital-042",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/이가연/D_이가연_웹.zip/D_이가연_썸네일이미지.png",
+    "path": "../img/projects/D_해피한_척하기_해-피한_척하기_이가연/디지털미디어프로젝트_해피한_척하기_해-피한_척하기_이가연_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
     ]
   },
   {
     "projectId": "system-001-005",
     "role": "detail-01",
     "source": "/제품시스템디자인 (S)/이준석, 진민석/S_이준석_진민석_웹.zip/S_이준석_진민석_웹/S_이준석_진민석_본문이미지.png",
-    "path": "../img/projects/system-001-005/detail-01.webp",
+    "path": "../img/projects/S_HOWDY_이준석_진민석/제품시스템디자인_HOWDY_이준석_진민석_상세_01.png",
     "originalSize": [
       1080,
       5558
@@ -2143,6 +1019,748 @@
     "webSize": [
       1080,
       5558
+    ]
+  },
+  {
+    "projectId": "system-001-005",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/이준석, 진민석/S_이준석_진민석_웹.zip/S_이준석_진민석_웹/S_이준석_진민석_썸네일이미지.png",
+    "path": "../img/projects/S_HOWDY_이준석_진민석/제품시스템디자인_HOWDY_이준석_진민석_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-037-039",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/최지훈, 홍서연/D_최지훈_홍서연_웹.zip/D_최지훈_홍서연_본문이미지.png",
+    "path": "../img/projects/D_난리블루스_최지훈_홍서연/디지털미디어프로젝트_난리블루스_최지훈_홍서연_상세_01.png",
+    "originalSize": [
+      1081,
+      4550
+    ],
+    "webSize": [
+      1081,
+      4550
+    ]
+  },
+  {
+    "projectId": "digital-037-039",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/최지훈, 홍서연/D_최지훈_홍서연_웹.zip/D_최지훈_홍서연_썸네일이미지.png",
+    "path": "../img/projects/D_난리블루스_최지훈_홍서연/디지털미디어프로젝트_난리블루스_최지훈_홍서연_썸네일.png",
+    "originalSize": [
+      1081,
+      1081
+    ],
+    "webSize": [
+      1081,
+      1081
+    ]
+  },
+  {
+    "projectId": "system-008-025",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/김승민, 이윤호/S_김승민_이윤호_웹.zip/S_김승민_이윤호_본문이미지.png",
+    "path": "../img/projects/S_PBR_김승민_이윤호/제품시스템디자인_PBR_김승민_이윤호_상세_01.png",
+    "originalSize": [
+      1080,
+      14700
+    ],
+    "webSize": [
+      1080,
+      14700
+    ]
+  },
+  {
+    "projectId": "system-008-025",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/김승민, 이윤호/S_김승민_이윤호_웹.zip/S_김승민_이윤호_썸네일이미지.png",
+    "path": "../img/projects/S_PBR_김승민_이윤호/제품시스템디자인_PBR_김승민_이윤호_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-015-017",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김지윤, 이지민/T_김지윤_이지민_웹.zip/T_김지윤_이지민_본문이미지.png",
+    "path": "../img/projects/T_OVERWATCH_Melo_김지윤_이지민/제품및운송기기디자인_OVERWATCH_Melo_김지윤_이지민_상세_01.png",
+    "originalSize": [
+      1080,
+      6409
+    ],
+    "webSize": [
+      1080,
+      6409
+    ]
+  },
+  {
+    "projectId": "product-015-017",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김지윤, 이지민/T_김지윤_이지민_웹.zip/T_김지윤_이지민_썸네일이미지.png",
+    "path": "../img/projects/T_OVERWATCH_Melo_김지윤_이지민/제품및운송기기디자인_OVERWATCH_Melo_김지윤_이지민_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-041-9b436e",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이채연, 지서은/I_이채연_지서은_웹.zip/I_이채연_지서은_웹/I_이채연_지서은_썸네일이미지.png",
+    "path": "../img/projects/I_Studio._Query_이채연_지서은/아이덴티티디자인_Studio._Query_이채연_지서은_썸네일.png",
+    "originalSize": [
+      1836,
+      1836
+    ],
+    "webSize": [
+      1836,
+      1836
+    ]
+  },
+  {
+    "projectId": "identity-041-9b436e",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이채연, 지서은/I_이채연_지서은_웹.zip/I_이채연_지서은_웹/I_이채연_지서은_본문이미지.png",
+    "path": "../img/projects/I_Studio._Query_이채연_지서은/아이덴티티디자인_Studio._Query_이채연_지서은_상세_01.png",
+    "originalSize": [
+      1296,
+      6892
+    ],
+    "webSize": [
+      1296,
+      6892
+    ]
+  },
+  {
+    "projectId": "fusion-006-007-049-059",
+    "role": "thumbnail",
+    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_썸네일이미지.png",
+    "path": "../img/projects/C_Journey_김선우_박한울_엄지혁_탁빛나/융합디자인_Journey_김선우_박한울_엄지혁_탁빛나_썸네일.png",
+    "originalSize": [
+      2160,
+      2160
+    ],
+    "webSize": [
+      2160,
+      2160
+    ]
+  },
+  {
+    "projectId": "fusion-006-007-049-059",
+    "role": "detail-01",
+    "source": "/융합디자인 (IP)/김선우, 박한울, 엄지혁, 탁빛나/IP_엄지혁_박한울_김선우_탁빛나_웹.zip/IP_엄지혁_박한울_김선우_탁빛나_웹/IP_엄지혁_박한울_김선우_탁빛나_본문이미지.png",
+    "path": "../img/projects/C_Journey_김선우_박한울_엄지혁_탁빛나/융합디자인_Journey_김선우_박한울_엄지혁_탁빛나_상세_01.png",
+    "originalSize": [
+      1585,
+      32768
+    ],
+    "webSize": [
+      1585,
+      32768
+    ]
+  },
+  {
+    "projectId": "identity-028-031-050",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/김상민, 이승민, 최한얼/I_김상민_이승민_최한얼_본문이미지.png",
+    "path": "../img/projects/I_밀도_김상민_이승민_최한얼/아이덴티티디자인_밀도_김상민_이승민_최한얼_상세_01.png",
+    "originalSize": [
+      1081,
+      11006
+    ],
+    "webSize": [
+      1081,
+      11006
+    ]
+  },
+  {
+    "projectId": "system-015-017",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/김지윤, 이지민/S_김지윤_이지민_웹.zip/S_김지윤_이지민_본문이미지.png",
+    "path": "../img/projects/S_MARS_KIN_김지윤_이지민/제품시스템디자인_MARS_KIN_김지윤_이지민_상세_01.png",
+    "originalSize": [
+      1080,
+      9265
+    ],
+    "webSize": [
+      1080,
+      9265
+    ]
+  },
+  {
+    "projectId": "system-015-017",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/김지윤, 이지민/S_김지윤_이지민_웹.zip/S_김지윤_이지민_썸네일이미지.png",
+    "path": "../img/projects/S_MARS_KIN_김지윤_이지민/제품시스템디자인_MARS_KIN_김지윤_이지민_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-032-034",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/장윤진, 최성경/D_장윤진_최성경_웹.zip/D_장윤진_최성경_본문이미지.png",
+    "path": "../img/projects/D_구설귀_장윤진_최성경/디지털미디어프로젝트_구설귀_장윤진_최성경_상세_01.png",
+    "originalSize": [
+      1080,
+      7419
+    ],
+    "webSize": [
+      1080,
+      7419
+    ]
+  },
+  {
+    "projectId": "digital-032-034",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/장윤진, 최성경/D_장윤진_최성경_웹.zip/D_장윤진_최성경_썸네일이미지.png",
+    "path": "../img/projects/D_구설귀_장윤진_최성경/디지털미디어프로젝트_구설귀_장윤진_최성경_썸네일.png",
+    "originalSize": [
+      540,
+      540
+    ],
+    "webSize": [
+      540,
+      540
+    ]
+  },
+  {
+    "projectId": "product-011-012",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김민선, 송현수/T_김민선_송현수_웹.zip/T_김민선_송현수_웹/T_김민선_송현수_본문이미지.png",
+    "path": "../img/projects/T_FIT_STOP_김민선_송현수/제품및운송기기디자인_FIT_STOP_김민선_송현수_상세_01.png",
+    "originalSize": [
+      1080,
+      11123
+    ],
+    "webSize": [
+      1080,
+      11123
+    ]
+  },
+  {
+    "projectId": "product-011-012",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김민선, 송현수/T_김민선_송현수_웹.zip/T_김민선_송현수_웹/T_김민선_송현수_썸네일이미지.png",
+    "path": "../img/projects/T_FIT_STOP_김민선_송현수/제품및운송기기디자인_FIT_STOP_김민선_송현수_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-026",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이수아/I_이수아_웹.zip/I_이수아_본문이미지.png",
+    "path": "../img/projects/I_SHABETREE_이수아/아이덴티티디자인_SHABETREE_이수아_상세_01.png",
+    "originalSize": [
+      1080,
+      8037
+    ],
+    "webSize": [
+      1080,
+      8037
+    ]
+  },
+  {
+    "projectId": "identity-026",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이수아/I_이수아_웹.zip/I_이수아_썸네일이미지.png",
+    "path": "../img/projects/I_SHABETREE_이수아/아이덴티티디자인_SHABETREE_이수아_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-063-064",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/김미리, 이수민/I_김미리_이수민_웹.zip/I_김미리_이수민_본문이미지..png",
+    "path": "../img/projects/I_ORVIX_김미리_이수민/아이덴티티디자인_ORVIX_김미리_이수민_상세_01.png",
+    "originalSize": [
+      1080,
+      7370
+    ],
+    "webSize": [
+      1080,
+      7370
+    ]
+  },
+  {
+    "projectId": "identity-063-064",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/김미리, 이수민/I_김미리_이수민_웹.zip/I_김미리_이수민_썸네일이미지..png",
+    "path": "../img/projects/I_ORVIX_김미리_이수민/아이덴티티디자인_ORVIX_김미리_이수민_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-030",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이정무/I_이정무_본문이미지.png",
+    "path": "../img/projects/I_PATINA_이정무/아이덴티티디자인_PATINA_이정무_상세_01.png",
+    "originalSize": [
+      1081,
+      4916
+    ],
+    "webSize": [
+      1081,
+      4916
+    ]
+  },
+  {
+    "projectId": "system-014-024",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/고희원, 김병관/S_고희원_김병관_웹.zip/S_고희원_김병관_웹/S_고희원_김병관_본문이미지.png",
+    "path": "../img/projects/S_Beta_고희원_김병관/제품시스템디자인_Beta_고희원_김병관_상세_01.png",
+    "originalSize": [
+      1080,
+      7281
+    ],
+    "webSize": [
+      1080,
+      7281
+    ]
+  },
+  {
+    "projectId": "system-014-024",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/고희원, 김병관/S_고희원_김병관_웹.zip/S_고희원_김병관_웹/S_고희원_김병관_썸네일이미지.png",
+    "path": "../img/projects/S_Beta_고희원_김병관/제품시스템디자인_Beta_고희원_김병관_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-004-014",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_본문이미지.png",
+    "path": "../img/projects/T_For-D_김병관_권동혁/제품및운송기기디자인_For-D_김병관_권동혁_상세_01.png",
+    "originalSize": [
+      1620,
+      19307
+    ],
+    "webSize": [
+      1620,
+      19307
+    ]
+  },
+  {
+    "projectId": "product-004-014",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김병관, 권동혁/T_권동혁_김병관_웹.zip/T_권동혁_김병관_썸네일이미지.png",
+    "path": "../img/projects/T_For-D_김병관_권동혁/제품및운송기기디자인_For-D_김병관_권동혁_썸네일.png",
+    "originalSize": [
+      3240,
+      3240
+    ],
+    "webSize": [
+      3240,
+      3240
+    ]
+  },
+  {
+    "projectId": "digital-028",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/최한얼/D_최한얼_웹.zip/D_최한얼_웹/D_최한얼_본문이미지.png",
+    "path": "../img/projects/D_사물팔자_최한얼/디지털미디어프로젝트_사물팔자_최한얼_상세_01.png",
+    "originalSize": [
+      1080,
+      4428
+    ],
+    "webSize": [
+      1080,
+      4428
+    ]
+  },
+  {
+    "projectId": "digital-028",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/최한얼/D_최한얼_웹.zip/D_최한얼_웹/D_최한얼_썸네일이미지.png",
+    "path": "../img/projects/D_사물팔자_최한얼/디지털미디어프로젝트_사물팔자_최한얼_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-001-024",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/고희원, 이준석/T_고희원_이준석_웹.zip/T_고희원_이준석_웹/T_고희원_이준석_본문이미지.jpg",
+    "path": "../img/projects/T_zibi_고희원_이준석/제품및운송기기디자인_zibi_고희원_이준석_상세_01.png",
+    "originalSize": [
+      1080,
+      3282
+    ],
+    "webSize": [
+      1080,
+      3282
+    ]
+  },
+  {
+    "projectId": "product-001-024",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/고희원, 이준석/T_고희원_이준석_웹.zip/T_고희원_이준석_웹/T_고희원_이준석_썸네일이미지.png",
+    "path": "../img/projects/T_zibi_고희원_이준석/제품및운송기기디자인_zibi_고희원_이준석_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "digital-027",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/최수빈/D_최수빈_본문이미지.png",
+    "path": "../img/projects/D_SEGNO_MUSIC_FESTIVAL_최수빈/디지털미디어프로젝트_SEGNO_MUSIC_FESTIVAL_최수빈_상세_01.png",
+    "originalSize": [
+      1080,
+      4403
+    ],
+    "webSize": [
+      1080,
+      4403
+    ]
+  },
+  {
+    "projectId": "digital-049-059",
+    "role": "thumbnail",
+    "source": "/디지털미디어프로젝트 (D)/김선우, 탁빛나/D_김선우_탁빛나_웹.zip/D_김선우_탁빛나_웹/D_김선우_탁빛나_썸네일이미지.png",
+    "path": "../img/projects/D_TOONG_김선우_탁빛나/디지털미디어프로젝트_TOONG_김선우_탁빛나_썸네일.png",
+    "originalSize": [
+      2160,
+      2160
+    ],
+    "webSize": [
+      2160,
+      2160
+    ]
+  },
+  {
+    "projectId": "digital-049-059",
+    "role": "detail-01",
+    "source": "/디지털미디어프로젝트 (D)/김선우, 탁빛나/D_김선우_탁빛나_웹.zip/D_김선우_탁빛나_웹/D_김선우_탁빛나_본문이미지.png",
+    "path": "../img/projects/D_TOONG_김선우_탁빛나/디지털미디어프로젝트_TOONG_김선우_탁빛나_상세_01.png",
+    "originalSize": [
+      2160,
+      14130
+    ],
+    "webSize": [
+      2160,
+      14130
+    ]
+  },
+  {
+    "projectId": "identity-027",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/최수빈/I_최수빈_본문이미지.png",
+    "path": "../img/projects/I_NAUM_RACE_최수빈/아이덴티티디자인_NAUM_RACE_최수빈_상세_01.png",
+    "originalSize": [
+      1080,
+      6215
+    ],
+    "webSize": [
+      1080,
+      6215
+    ]
+  },
+  {
+    "projectId": "product-002-007",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김경덕, 엄지혁/T_김경덕_엄지혁_웹.zip/T_김경덕_엄지혁_웹/T_김경덕_엄지혁_본문이미지.png",
+    "path": "../img/projects/T_ReRoot_김경덕_엄지혁/제품및운송기기디자인_ReRoot_김경덕_엄지혁_상세_01.png",
+    "originalSize": [
+      1080,
+      13511
+    ],
+    "webSize": [
+      1080,
+      13511
+    ]
+  },
+  {
+    "projectId": "product-002-007",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김경덕, 엄지혁/T_김경덕_엄지혁_웹.zip/T_김경덕_엄지혁_웹/T_김경덕_엄지혁_썸네일이미지.png",
+    "path": "../img/projects/T_ReRoot_김경덕_엄지혁/제품및운송기기디자인_ReRoot_김경덕_엄지혁_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-034-052",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/장윤진, 최예진/I_장윤진_최예진_본문이미지.png",
+    "path": "../img/projects/I_MOLTYPE_장윤진_최예진/아이덴티티디자인_MOLTYPE_장윤진_최예진_상세_01.png",
+    "originalSize": [
+      1440,
+      10431
+    ],
+    "webSize": [
+      1440,
+      10431
+    ]
+  },
+  {
+    "projectId": "identity-046-057",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/김나윤, 이유나/I_김나윤_이유나_웹.zip/I_김나윤_이유나_웹/I_김나윤_이유나_본문이미지.png",
+    "path": "../img/projects/I_CatchA!_김나윤_이유나/아이덴티티디자인_CatchA!_김나윤_이유나_상세_01.png",
+    "originalSize": [
+      1080,
+      6266
+    ],
+    "webSize": [
+      1080,
+      6266
+    ]
+  },
+  {
+    "projectId": "identity-046-057",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/김나윤, 이유나/I_김나윤_이유나_웹.zip/I_김나윤_이유나_웹/I_김나윤_이유나_썸네일이미지.png",
+    "path": "../img/projects/I_CatchA!_김나윤_이유나/아이덴티티디자인_CatchA!_김나윤_이유나_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-044-055",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이한나, 원서영/I_원서영_이한나_웹.zip/I_원서영_이한나_웹/I_원서영_이한나_본문이미지.png",
+    "path": "../img/projects/I_CELLUMI_이한나_원서영/아이덴티티디자인_CELLUMI_이한나_원서영_상세_01.png",
+    "originalSize": [
+      1080,
+      6098
+    ],
+    "webSize": [
+      1080,
+      6098
+    ]
+  },
+  {
+    "projectId": "identity-044-055",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이한나, 원서영/I_원서영_이한나_웹.zip/I_원서영_이한나_웹/I_원서영_이한나_썸네일이미지.png",
+    "path": "../img/projects/I_CELLUMI_이한나_원서영/아이덴티티디자인_CELLUMI_이한나_원서영_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-048-053",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/I_장유진_박우희_본문이미지.png",
+    "path": "../img/projects/I_FORTO_박우희_장유진/아이덴티티디자인_FORTO_박우희_장유진_상세_01.png",
+    "originalSize": [
+      1080,
+      5760
+    ],
+    "webSize": [
+      1080,
+      5760
+    ]
+  },
+  {
+    "projectId": "identity-048-053",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/I_장유진_박우희_썸네일.png",
+    "path": "../img/projects/I_FORTO_박우희_장유진/아이덴티티디자인_FORTO_박우희_장유진_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-019-020",
+    "role": "thumbnail",
+    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_썸네일이미지.png",
+    "path": "../img/projects/T_SERO_김채연_황예은/제품및운송기기디자인_SERO_김채연_황예은_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "product-019-020",
+    "role": "detail-01",
+    "source": "/제품 및 운송기기 디자인 (T)/김채연, 황예은/T_김채연_황예은_웹.zip/T_김채연_황예은_웹/T_김채연_황예은_본문이미지.png",
+    "path": "../img/projects/T_SERO_김채연_황예은/제품및운송기기디자인_SERO_김채연_황예은_상세_01.png",
+    "originalSize": [
+      1836,
+      19477
+    ],
+    "webSize": [
+      1836,
+      19477
+    ]
+  },
+  {
+    "projectId": "identity-042-045",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/안소현, 이가연/I_안소현_이가연_본문이미지.png",
+    "path": "../img/projects/I_INAWT_안소현_이가연/아이덴티티디자인_INAWT_안소현_이가연_상세_01.png",
+    "originalSize": [
+      1080,
+      6805
+    ],
+    "webSize": [
+      1080,
+      6805
+    ]
+  },
+  {
+    "projectId": "identity-032-036",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/이현지, 최성경/I_이현지_최성경_웹.zip/I_이현지_최성경_본문이미지.png",
+    "path": "../img/projects/I_FLARIA_이현지_최성경/아이덴티티디자인_FLARIA_이현지_최성경_상세_01.png",
+    "originalSize": [
+      1080,
+      8285
+    ],
+    "webSize": [
+      1080,
+      8285
+    ]
+  },
+  {
+    "projectId": "identity-032-036",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/이현지, 최성경/I_이현지_최성경_웹.zip/I_이현지_최성경_썸네일이미지.png",
+    "path": "../img/projects/I_FLARIA_이현지_최성경/아이덴티티디자인_FLARIA_이현지_최성경_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "identity-051-054-056",
+    "role": "detail-01",
+    "source": "/아이덴티티 디자인 (I)/박은진, 송민주, 이혜경/I_박은진_송민주_이혜경_웹.zip/I_박은진_송민주_이혜경_본문이미지.png",
+    "path": "../img/projects/I_STRAV_박은진_송민주_이혜경/아이덴티티디자인_STRAV_박은진_송민주_이혜경_상세_01.png",
+    "originalSize": [
+      1080,
+      5732
+    ],
+    "webSize": [
+      1080,
+      5732
+    ]
+  },
+  {
+    "projectId": "identity-051-054-056",
+    "role": "thumbnail",
+    "source": "/아이덴티티 디자인 (I)/박은진, 송민주, 이혜경/I_박은진_송민주_이혜경_웹.zip/I_박은진_송민주_이혜경_썸네일이미지.png",
+    "path": "../img/projects/I_STRAV_박은진_송민주_이혜경/아이덴티티디자인_STRAV_박은진_송민주_이혜경_썸네일.png",
+    "originalSize": [
+      1080,
+      1080
+    ],
+    "webSize": [
+      1080,
+      1080
+    ]
+  },
+  {
+    "projectId": "system-003-004",
+    "role": "detail-01",
+    "source": "/제품시스템디자인 (S)/권동혁, 박범수/S_박범수_권동혁_웹.zip/S_박범수_권동혁_웹/S_박범수_권동혁_본문이미지.png",
+    "path": "../img/projects/S_SULSAEM_권동혁_박범수/제품시스템디자인_SULSAEM_권동혁_박범수_상세_01.png",
+    "originalSize": [
+      4500,
+      31679
+    ],
+    "webSize": [
+      4500,
+      31679
+    ]
+  },
+  {
+    "projectId": "system-003-004",
+    "role": "thumbnail",
+    "source": "/제품시스템디자인 (S)/권동혁, 박범수/S_박범수_권동혁_웹.zip/S_박범수_권동혁_웹/S_박범수_권동혁_썸네일이미지.png",
+    "path": "../img/projects/S_SULSAEM_권동혁_박범수/제품시스템디자인_SULSAEM_권동혁_박범수_썸네일.png",
+    "originalSize": [
+      4500,
+      4500
+    ],
+    "webSize": [
+      4500,
+      4500
     ]
   }
 ]

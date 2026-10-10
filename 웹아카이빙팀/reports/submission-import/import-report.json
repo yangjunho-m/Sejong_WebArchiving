@@ -9,9 +9,9 @@
     "fusion": 1
   },
   "imageSourceBytes": 522210927,
-  "imageWebBytes": 92903052,
-  "images": 143,
-  "uniqueImageFiles": 143,
+  "imageWebBytes": 523101288,
+  "images": 126,
+  "uniqueImageFiles": 126,
   "confirmedInstagram": 61,
   "contactConflicts": [
     {
@@ -1122,5 +1122,6 @@
       ]
     }
   ],
-  "ignored": []
+  "ignored": [],
+  "imageFormat": "PNG, original resolution, lossless"
 }
