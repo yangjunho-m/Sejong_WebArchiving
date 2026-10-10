@@ -38,3 +38,6 @@
   body footer.site-footer .footer-link:nth-of-type(3) { grid-column: 10 / 13; }
   body footer.site-footer .footer-address { grid-column: 3 / 13; }
 }
+
+/* Thin text dividers in program speakers and course faculty credits. */
+body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sans-serif; font-weight: 300; font-style: normal; }
