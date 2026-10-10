@@ -6,14 +6,13 @@
   body .scroll-navigation > .site-logo { left: 60px; }
   body .scroll-navigation nav.site-nav.site-nav { width: 650px; justify-content: space-between; gap: 0; }
   body .site-nav .type-nav { font-size: 18px; }
-  body header nav.site-nav a.type-nav { color: #141414 !important; }
+  body header.scroll-navigation nav.site-nav.site-nav a.type-nav { color: var(--nav-text-color, #141414) !important; }
   body .scroll-navigation::before { background: transparent; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 0; }
   body .scroll-navigation.is-at-top::before {
     opacity: 0;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
-  body:is(.partners-page, .program-page, .designers-page, .work-page, .work-detail-page) .scroll-navigation.is-at-top nav.site-nav a.type-nav { color: #e4e4e4 !important; }
 }
 @media (min-width: 701px) {
   body footer.site-footer {

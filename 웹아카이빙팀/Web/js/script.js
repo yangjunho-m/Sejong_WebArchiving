@@ -57,8 +57,38 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   setVisible(false);
   syncDesktop();
 
+  // Read the content beneath each link so split backgrounds remain legible.
+  const updateMenuContrast = () => {
+    if (!desktop.matches) return;
+    nav.querySelectorAll('a').forEach((link) => {
+      const rect = link.getBoundingClientRect();
+      const x = rect.left + rect.width / 2;
+      const y = Math.max(0, Math.min(innerHeight - 1, rect.top + rect.height / 2));
+      let element = document.elementsFromPoint(x, y).find((item) => !bar.contains(item));
+      let color = [255, 255, 255];
+      while (element) {
+        const style = getComputedStyle(element);
+        const background = style.backgroundColor.match(/[\d.]+/g)?.map(Number);
+        if (background && (background[3] ?? 1) > 0.5) {
+          color = background;
+          break;
+        }
+        // The page gradients start with their light surface color.
+        const gradient = style.backgroundImage.match(/rgba?\(([^)]+)\)/);
+        if (gradient) {
+          color = gradient[1].match(/[\d.]+/g).map(Number);
+          break;
+        }
+        element = element.parentElement;
+      }
+      const brightness = (color[0] * 299 + color[1] * 587 + color[2] * 114) / 1000;
+      link.style.setProperty('--nav-text-color', brightness < 140 ? '#e4e4e4' : '#141414');
+    });
+  };
+
   const update = () => {
     queued = false;
+    updateMenuContrast();
     const y = Math.max(0, window.scrollY);
     const wasInTopRegion = bar.classList.contains('is-at-top');
     const inTopRegion = desktop.matches && y <= bar.offsetHeight;
