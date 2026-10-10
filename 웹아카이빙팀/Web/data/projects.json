@@ -1770,6 +1770,36 @@
       "missingFields": [
         "title"
       ]
+    },
+    {
+      "id": "system-002-010",
+      "category": "system",
+      "title": "Lobby Boy",
+      "sourceTeam": "김경덕, 임준우",
+      "designerIds": [
+        2,
+        10
+      ],
+      "designerNames": [
+        "김경덕",
+        "임준우"
+      ],
+      "thumbnail": "../img/projects/system-002-010/thumbnail.webp",
+      "images": [
+        "../img/projects/system-002-010/detail-01-part-01.webp",
+        "../img/projects/system-002-010/detail-01-part-02.webp",
+        "../img/projects/system-002-010/detail-01-part-03.webp"
+      ],
+      "videos": [],
+      "tags": [
+        "모빌리티",
+        "제품디자인",
+        "로보틱스"
+      ],
+      "description": "",
+      "missingFields": [
+        "description"
+      ]
     }
   ]
 }
