@@ -270,3 +270,35 @@
 }
 
 
+
+.project-image { position:absolute; inset:0; overflow:hidden; }
+.project-image img {
+  display:block; position:absolute; left:calc(50% + var(--image-x, 0%)); top:calc(50% + var(--image-y, 0%));
+  width:calc(100% * var(--image-scale, 1)); height:calc(100% * var(--image-scale, 1));
+  max-width:none; transform:translate(-50%,-50%); object-fit:cover;
+}
+@media (min-width:701px) {
+  .work-header { height:89px; background:#141414; }
+  .work-menu {
+    min-height:636.88px; padding:141px 60px 160.28px;
+    display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:20px; align-items:start;
+    background:#141414; border:0;
+  }
+  .work-category { width:auto; top:0; grid-column:span 3; color:#e4e4e4; }
+  .disc { width:calc(100% - 64px); height:auto; aspect-ratio:203.28 / 203.76; margin:0 auto 36px; }
+  .work-category b { padding:0; font:600 clamp(12px,1.388889vw,20px)/1.2 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:-.02em; }
+  .work-section { padding:120px 60px; background:linear-gradient(180deg,#f0f3f7 54%,#b5c9ea 70%,#7eacf2 93%); border:0; }
+  .project-copy { max-width:none; min-height:312px; margin-bottom:0; }
+  .project-copy h1,.project-copy h2 { font:600 clamp(28px,3.333333vw,48px)/1.4 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:0; margin:0 0 4.8px; }
+  .project-copy .credit { font:600 18px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; margin:0 0 40px; }
+  .project-copy p:last-child { width:min(100%,762px); font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .project-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
+  .project-card::before { display:none; }
+  .project-card span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+  .work-section { scroll-margin-top:89px; }
+}
+@media (min-width:701px) and (max-width:1000px) {
+  .disc { width:calc(100% - 24px); }
+  .work-category b { font-size:12px; }
+  .project-copy { min-height:312px; padding-bottom:60px; }
+}

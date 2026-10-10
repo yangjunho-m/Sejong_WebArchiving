@@ -29,16 +29,19 @@
     <link rel="stylesheet" href="css/mobile-layout.css">
     <link rel="stylesheet" href="css/text-wrap.css">
     <link rel="stylesheet" href="css/home-mobile.css">
+    <link rel="stylesheet" href="css/home-redesign.css">
+    <link rel="stylesheet" href="css/desktop-common.css">
 </head>
 
 <body class="home-page">
     
     <header class="masthead masthead--video">
         <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="img/home-hero.mp4" type="video/mp4" media="(min-width: 701px)">
             <source src="img/hero-motion.mp4" type="video/mp4">
         </video>
         <a class="logo site-logo" href="#top" aria-label="Button Up home">
-            <img src="img/buttonup.svg" alt="BUTTON UP!">
+            <img src="img/home/nav-logo.svg" alt="BUTTON UP!">
         </a>
         <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="site-menu">
             <span></span>
@@ -57,13 +60,21 @@
 
     <main id="top">
         <section class="intro" id="works">
+            <div class="intro-heading" lang="en">
+                <p class="exhibition-date">10.30 - 11.10</p>
+                <div class="exhibition-wordmark" aria-label="forward, BUTTON UP!">
+                    <div class="forward-mark"><img src="img/home/forward.svg" alt="forward,"></div>
+                    <div class="buttonup-mark"><img src="img/home/buttonup.svg" alt="BUTTON UP!"></div>
+                </div>
+                <p class="exhibition-hours">11am - 7pm</p>
+            </div>
             <article class="poster intro-poster">
                 <img src="img/poster.png" alt="2026 세종대학교 디자인이노베이션 졸업전시 포스터">
             </article>
             <div class="intro-details">
                 <img class="hero-logo" src="img/buttonup.svg" alt="BUTTON UP!">
                 <div class="intro-copy">
-                    <h2 class="type-title-ko">버튼을 실로 꿰다</h2>
+                    <h2 class="type-title-ko">첫 단추 끼우기</h2>
                     <p class="type-body">첫 단추를 잘 끼워야 한다는 말처럼, 단추는 시작을 여는 장치입니다. 서로 다른 색과 모양, 크기를 지닌 단추들이 각자의 자리에서 저마다의 시간을 지나 한곳에 모였습니다. 각기 다른 생각과 방식으로 만들어 온 결과들은 실로 꿰어진 단추처럼 연결되며 새로운 가능성의 시작이 됩니다.</p>
                     <p class="type-body">이번 졸업전시는 하나의 과정을 마무리하는 동시에, 익숙한 자리를 벗어나 새로운 곳으로 나아가는 출발점입니다. 앞으로의 모습은 알 수 없지만, 지금 끼우는 첫 단추는 각자가 만들어 갈 수많은 미래로 이어질 것입니다.</p>
                     <p class="type-body">가지각색의 우리가 함께 끼우는 첫 단추를 통해, 이곳에서 시작된 가능성들이 각자의 다음 자리로 이어지길 바랍니다.</p>
@@ -81,6 +92,12 @@
             </div>
         </section>
         <section class="committee" id="committee">
+            <div class="committee-poster">
+                <video autoplay muted loop playsinline aria-label="졸업전시 포스터 모션">
+                    <source src="img/포스터 모션.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="committee-content">
             <h2 class="type-committee-title" lang="en">COMMITTEE</h2>
             <div class="members">
                 <div class="member-row">
@@ -131,6 +148,7 @@
                         <p class="committee-label desktop-credit"><span class="type-committee-name">엄지혁</span><small class="type-committee-en" lang="en">EOM JIHYEOK</small></p>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     </main> 

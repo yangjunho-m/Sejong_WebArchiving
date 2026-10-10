@@ -17,7 +17,7 @@
 
   footer.innerHTML = `
     <a class="footer-symbol" href="${homeHref}" aria-label="Button Up home">
-      <img src="${assetPrefix}img/footer-logo.png" alt="Design Innovation">
+      <picture><source media="(min-width: 701px)" srcset="${assetPrefix}img/home/sdi-logo.svg"><img src="${assetPrefix}img/${isHome ? 'home/sdi-logo.svg' : 'footer-logo.png'}" alt="Design Innovation"></picture>
     </a>
     <div class="${linkClass}"><a href="https://www.instagram.com/sdi.graduate/" target="_blank" rel="noopener noreferrer">INSTAGRAM</a></div>
     <div class="${linkClass}"><a href="https://www.behance.net/digitalsejong?locale=ko_KR" target="_blank" rel="noopener noreferrer">BEHANCE</a></div>

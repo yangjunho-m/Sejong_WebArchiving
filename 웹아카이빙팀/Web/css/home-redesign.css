@@ -1,0 +1,134 @@
+/* Home frame 1558:34051. Retain the 60px / 20px / twelve-column grid. */
+.intro-heading,
+.committee-poster { display: none; }
+.committee-content { min-width: 0; }
+.home-page .type-committee-en { color: #777777; }
+
+@media (min-width: 701px) {
+  .home-page .masthead--video { height: 565px; min-height: 0; }
+  .home-page .hero-title { display: none; }
+  .home-page .intro {
+    padding-block: 80px 120px;
+    row-gap: 120px;
+    align-items: start;
+  }
+  .home-page .intro-poster,
+  .home-page .intro-details > .hero-logo { display: none; }
+  .home-page .intro-details { display: contents; }
+  .home-page .intro-heading {
+    --wordmark-width: clamp(220px, 29.583333vw, 426px);
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--wordmark-width) minmax(0, 1fr);
+    column-gap: 20px;
+    align-items: start;
+  }
+  .intro-heading p {
+    margin: 0;
+    font: 500 clamp(16px, 1.527778vw, 22px)/1.3 var(--font-en);
+    letter-spacing: -.04em;
+    color: #e4e4e4;
+    white-space: nowrap;
+  }
+  .intro-heading .exhibition-date,
+  .intro-heading .exhibition-hours { width: 100%; min-width: 0; }
+  .exhibition-date { grid-column: 1; justify-self: start; text-align: left; }
+  .exhibition-hours { grid-column: 3; justify-self: end; text-align: right; }
+  .exhibition-wordmark {
+    grid-column: 2;
+    position: relative;
+    height: 171.684px;
+    width: 426px;
+    justify-self: center;
+    transform: scale(calc(var(--wordmark-width) / 426px));
+    transform-origin: top center;
+  }
+  .forward-mark { position: absolute; left: 96.5px; top: 0; }
+  .buttonup-mark { position: absolute; left: -.639px; top: 70.711px; }
+  .exhibition-wordmark img { display: block; }
+  .home-page .intro-details .intro-copy {
+    grid-column: 1 / 9;
+    width: 100%;
+    gap: 8px;
+    margin: 0;
+  }
+  .home-page .intro-details .intro-copy > h2 {
+    margin: 0 0 8px;
+    font-size: 22px;
+  }
+  .home-page .intro-details .intro-copy > p { width: min(100%, 762px); }
+  .home-page .exhibition-info { grid-column: 9 / 13; }
+  .home-page .exhibition-info h3 { font-size: 18px; margin-bottom: 16px; }
+  .home-page .exhibition-info p { font-size: 16px; }
+
+  .home-page .committee {
+    padding-block: 120px 200px;
+    align-items: center;
+    background: linear-gradient(0deg, #f0f3f7 54%, #b5c9ea 70%, #7eacf2 93%);
+  }
+  .home-page .committee-poster {
+    display: block;
+    grid-column: 2 / 7;
+    aspect-ratio: 538 / 758;
+    background: #141414;
+    overflow: hidden;
+  }
+  .committee-poster video { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .home-page .committee-content { grid-column: 8 / 12; }
+  .home-page .committee-content > h2 { font-size: 32px; margin: 0 0 40px; }
+  .home-page .members { width: 100%; margin: 0; gap: 40px; }
+  .home-page .member-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .home-page .member-row > .committee-label,
+  .home-page .member-row > .committee-people { grid-column: auto; }
+  .home-page .committee-people { gap: 12px; }
+  .home-page .type-committee-name { font-size: 18px; font-weight: 600; }
+  .home-page .type-committee-en { font-size: 16px; font-weight: 500; }
+  .home-page .desktop-credit { display: none; }
+  .home-page .member-row:nth-child(1) { order: 1; }
+  .home-page .member-row:nth-child(2) { order: 2; }
+  .home-page .member-row:nth-child(3) { order: 3; }
+  .home-page .member-row:nth-child(7) { order: 4; }
+  .home-page .member-row:nth-child(4) { order: 5; }
+  .home-page .member-row:nth-child(6) { order: 6; }
+  .home-page .member-row:nth-child(5) { order: 7; }
+
+  .home-page footer.site-footer { padding-block: 60px 110px; }
+  .home-page footer .footer-link,
+  .home-page footer .footer-address { margin-top: 17px; padding-top: 0; }
+  .home-page footer .type-footer,
+  .home-page footer .type-footer * { font-size: 16px !important; }
+  .home-page footer .footer-symbol img { width: auto; height: auto; filter: none; }
+  .home-page footer .copyright { bottom: 60px; }
+}
+
+@media (min-width: 1101px) {
+  .home-page .scroll-navigation { --nav-height: 89px; }
+  body.home-page .site-logo.site-logo { width: 169.144px !important; }
+  .home-page .scroll-navigation nav.site-nav.site-nav {
+    width: 650px;
+    justify-content: space-between;
+    gap: 0;
+  }
+  .home-page .site-nav .type-nav { font-size: 18px; }
+  body.home-page header nav.site-nav a.type-nav { color: #141414 !important; }
+  .home-page .scroll-navigation::before {
+    background: transparent;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-bottom: 0;
+  }
+  .home-page .scroll-navigation.is-at-top::before { opacity: 0; }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .home-page .intro-details .intro-copy { grid-column: 1 / 8; }
+  .home-page .exhibition-info { grid-column: 9 / 13; grid-template-columns: 1fr; row-gap: 24px; }
+  .home-page .committee-poster { grid-column: 1 / 7; }
+  .home-page .committee-content { grid-column: 8 / 13; }
+}
+
+@media (max-width: 700px) {
+  .home-page .committee-content { display: contents; }
+  .home-page .committee-content > h2 { font-size: 22px; margin: 0; }
+  .home-page footer .footer-symbol img { width: 100%; height: 100%; filter: none; }
+}

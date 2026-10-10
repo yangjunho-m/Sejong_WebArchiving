@@ -1,0 +1,1126 @@
+{
+  "sourceArchiveBytes": 524773904,
+  "projects": 63,
+  "categories": {
+    "identity": 20,
+    "digital": 20,
+    "product": 12,
+    "system": 10,
+    "fusion": 1
+  },
+  "imageSourceBytes": 522210927,
+  "imageWebBytes": 92903052,
+  "images": 143,
+  "uniqueImageFiles": 143,
+  "confirmedInstagram": 61,
+  "contactConflicts": [
+    {
+      "name": "김자현",
+      "id": 23,
+      "values": [
+        "@la.nac",
+        "@lec.c"
+      ],
+      "sources": [
+        {
+          "project": "product-009-023",
+          "value": "@lec.c",
+          "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/김자현(@lec.c), 이은주(@_leeeunjju)_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "product-009-023",
+          "value": "@la.nac",
+          "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/김자현(@lec.c), 이은주(@_leeeunjju)_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "product-009-023",
+          "value": "@lec.c",
+          "source": "/제품 및 운송기기 디자인 (T)/김자현, 이은주/T_김자현_이은주_웹.zip/김자현(@lec.c), 이은주(@_leeeunjju)_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "system-022-023",
+          "value": "@lec.c",
+          "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/김자현(@lec.c @la.nac), 이지수_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "system-022-023",
+          "value": "@la.nac",
+          "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/김자현(@lec.c @la.nac), 이지수_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "system-022-023",
+          "value": "@lec.c",
+          "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/김자현(@lec.c @la.nac), 이지수_ 제품디자인_가구디자인.txt"
+        },
+        {
+          "project": "system-022-023",
+          "value": "@la.nac",
+          "source": "/제품시스템디자인 (S)/김자현, 이지수/S_김자현_이지수_웹.zip/S_김자현_이지수_웹/김자현(@lec.c @la.nac), 이지수_ 제품디자인_가구디자인.txt"
+        }
+      ]
+    },
+    {
+      "name": "장유진",
+      "id": 48,
+      "values": [
+        "@iiamyooo",
+        "@iiamyoooo"
+      ],
+      "sources": [
+        {
+          "project": "digital-048-052-053",
+          "value": "@iiamyoooo",
+          "source": "/디지털미디어프로젝트 (D)/박우희, 장유진, 최예진/박우희(@real_woohee)_장유진(@iiamyoooo)_최예진(@bright__jin_)_UXUI_인터렉션_웹디자인.txt"
+        },
+        {
+          "project": "identity-048-053",
+          "value": "@iiamyooo",
+          "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/장유진(@iiamyooo)_박우희(@real_woohee)_브랜딩_그래픽디자인_영상디자인.txt"
+        },
+        {
+          "project": "identity-048-053",
+          "value": "@iiamyooo",
+          "source": "/아이덴티티 디자인 (I)/박우희, 장유진/I_장유진_박우희_웹.zip/I_장유진_박우희_웹/장유진(@iiamyooo)_박우희(@real_woohee)_브랜딩_그래픽디자인_영상디자인.txt"
+        }
+      ]
+    }
+  ],
+  "unmatchedNames": [
+    "공위천",
+    "동천위",
+    "박민경",
+    "지서은"
+  ],
+  "missingDesigners": [
+    {
+      "id": 1,
+      "name": "이준석",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "김경덕",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "박범수",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "권동혁",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "진민석",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "박한울",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "엄지혁",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "김승민",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "이은주",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "임준우",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "송현수",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "김민선",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "안서연",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "김병관",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "김지윤",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "조유진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "이지민",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "강하영",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "황예은",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "김채연",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "황어진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "이지수",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "김자현",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "고희원",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "이윤호",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "이수아",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "최수빈",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "최한얼",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "이상학",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "이정무",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "김상민",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "최성경",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "신아영",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "장윤진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "허유진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "이현지",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "최지훈",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "호영하",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "홍서연",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "이소현",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "이채연",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "이가연",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "이윤주",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "원서영",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "안소현",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "이유나",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "김윤아",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "장유진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "김선우",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "이승민",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "박은진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "최예진",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "박우희",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "이혜경",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "이한나",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "송민주",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "김나윤",
+      "missingFields": [
+        "profileImage"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "백율리",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "탁빛나",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "송민서",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "동첸유",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "공유첸",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "instagram",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "이수민",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "김미리",
+      "missingFields": [
+        "nameEn",
+        "email",
+        "profileImage"
+      ]
+    }
+  ],
+  "projectIssues": [
+    {
+      "projectId": "digital--e3346d",
+      "team": "공위천, 동천위",
+      "missingFields": [
+        "title",
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "projectId": "digital-046-057",
+      "team": "김나윤, 이유나",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-063-064",
+      "team": "김미리, 이수민",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-031-050",
+      "team": "김상민, 이승민",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-049-059",
+      "team": "김선우, 탁빛나",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-047-058",
+      "team": "김윤아, 백율리",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-048-052-053",
+      "team": "박우희, 장유진, 최예진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-051-055-056",
+      "team": "박은진, 송민주, 이한나",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-029-060",
+      "team": "송민서, 이상학",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-033-035",
+      "team": "신아영, 허유진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-030-040-045",
+      "team": "안소현, 이소현, 이정무",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-042",
+      "team": "이가연",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-043-044",
+      "team": "이윤주, 원서영",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-041-9b436e",
+      "team": "이채연, 지서은",
+      "missingFields": [
+        "title",
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "projectId": "digital-036-054",
+      "team": "이현지, 이혜경",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-032-034",
+      "team": "장윤진, 최성경",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-027",
+      "team": "최수빈",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-037-039",
+      "team": "최지훈, 홍서연",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-028",
+      "team": "최한얼",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "digital-038",
+      "team": "호영하",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity--e3346d",
+      "team": "공위천, 동천위",
+      "missingFields": [
+        "title",
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "projectId": "identity-046-057",
+      "team": "김나윤, 이유나",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-063-064",
+      "team": "김미리, 이수민",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-028-031-050",
+      "team": "김상민, 이승민, 최한얼",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-047-058",
+      "team": "김윤아, 백율리",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-048-053",
+      "team": "박우희, 장유진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-051-054-056",
+      "team": "박은진, 송민주, 이혜경",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-060",
+      "team": "송민서",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-033-035",
+      "team": "신아영, 허유진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-042-045",
+      "team": "안소현, 이가연",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-029",
+      "team": "이상학",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-040-043",
+      "team": "이소현, 이윤주",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-026",
+      "team": "이수아",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-030",
+      "team": "이정무",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-041-9b436e",
+      "team": "이채연, 지서은",
+      "missingFields": [
+        "title",
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "projectId": "identity-044-055",
+      "team": "이한나, 원서영",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-032-036",
+      "team": "이현지, 최성경",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-034-052",
+      "team": "장윤진, 최예진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-027",
+      "team": "최수빈",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "identity-037-039",
+      "team": "최지훈, 홍서연",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "fusion-006-007-049-059",
+      "team": "김선우, 박한울, 엄지혁, 탁빛나",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-010-018",
+      "team": "강하영, 임준우",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-001-024",
+      "team": "고희원, 이준석",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-002-007",
+      "team": "김경덕, 엄지혁",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-011-012",
+      "team": "김민선, 송현수",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-004-014",
+      "team": "김병관, 권동혁",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-008-025",
+      "team": "김승민, 이윤호",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-009-023",
+      "team": "김자현, 이은주",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-015-017",
+      "team": "김지윤, 이지민",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-019-020",
+      "team": "김채연, 황예은",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-013-d47919",
+      "team": "박민경, 안서연",
+      "missingFields": [
+        "title",
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "projectId": "product-021-022",
+      "team": "이지수, 황어진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "product-005-016",
+      "team": "조유진, 진민석",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-013-018-021",
+      "team": "강하영, 안서연, 황어진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-014-024",
+      "team": "고희원, 김병관",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-003-004",
+      "team": "권동혁, 박범수",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-009-012",
+      "team": "김민선, 이은주",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-008-025",
+      "team": "김승민, 이윤호",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-022-023",
+      "team": "김자현, 이지수",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-015-017",
+      "team": "김지윤, 이지민",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-019-020",
+      "team": "김채연, 황예은",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-011-016",
+      "team": "송현수, 조유진",
+      "missingFields": [
+        "title"
+      ]
+    },
+    {
+      "projectId": "system-001-005",
+      "team": "이준석, 진민석",
+      "missingFields": [
+        "title"
+      ]
+    }
+  ],
+  "ignored": []
+}

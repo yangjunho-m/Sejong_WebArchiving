@@ -23,7 +23,9 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   logo.className = 'site-logo';
   logo.href = sourceLogo.matches('a') ? sourceLogo.getAttribute('href') : '../';
   logo.setAttribute('aria-label', 'Button Up home');
-  logo.append(sourceLogo.querySelector('img').cloneNode(true));
+  const logoImage = sourceLogo.querySelector('img').cloneNode(true);
+  logoImage.src = new URL('../img/home/nav-logo.svg', document.currentScript.src).href;
+  logo.append(logoImage);
   const nav = sourceNav.cloneNode(true);
   // 복제 메뉴의 ID 충돌을 방지합니다.
   nav.removeAttribute('id');

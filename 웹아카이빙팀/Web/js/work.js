@@ -8,9 +8,7 @@ function showWork(targetId) {
   categories.forEach((category) => {
     const isActive = category.getAttribute('href') === `#${targetId}`;
     category.classList.toggle('active', isActive);
-    category.querySelector('.disc img').src = isActive
-      ? '../img/work-img.png'
-      : '../img/work-img2.png';
+    category.setAttribute('aria-current', isActive ? 'true' : 'false');
   });
 }
 
@@ -26,6 +24,8 @@ categories.forEach((category) => {
     });
   });
 });
+
+showWork('identity');
 
 const initialId = location.hash.slice(1);
 if (initialId && document.getElementById(initialId)) {
@@ -57,3 +57,28 @@ document.querySelectorAll('.project-card').forEach((card, index) => {
     }
   });
 });
+
+// Replace design placeholders with the submitted course records.
+fetch('../data/projects.json').then((response) => {
+  if (!response.ok) throw new Error('Project data could not be loaded.');
+  return response.json();
+}).then(({ projects }) => {
+  panels.forEach((panel) => {
+    const cards = projects.filter((project) => project.category === panel.id && project.thumbnail).map((project) => {
+      const card = document.createElement('a');
+      card.className = 'project-card';
+      card.href = `work-detail.html?id=${encodeURIComponent(project.id)}`;
+      card.setAttribute('aria-label', `${project.title || project.sourceTeam} 작품 상세 보기`);
+      const image = document.createElement('img');
+      image.src = project.thumbnail;
+      image.alt = project.title || `${project.sourceTeam} 작품 썸네일`;
+      image.loading = 'lazy';
+      const wrapper = document.createElement('div');
+      wrapper.className = 'project-image';
+      wrapper.append(image);
+      card.append(wrapper);
+      return card;
+    });
+    panel.querySelector('.project-grid').replaceChildren(...cards);
+  });
+}).catch((error) => console.error(error));

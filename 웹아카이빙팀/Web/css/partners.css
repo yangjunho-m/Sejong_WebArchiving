@@ -306,3 +306,27 @@
 }
 
 
+
+/* Revised desktop frame, aligned to the existing twelve-column grid. */
+@media (min-width:701px) {
+  .partners-header { height:479px; background:#141414; }
+  .partners-title { top:230px; width:calc(100% - 120px); }
+  .partners-title h1 { font-weight:500; color:#e4e4e4; margin-bottom:3px; }
+  .partners-title p { font-size:16px; color:#e4e4e4; }
+  .partners-main { min-height:0; padding:120px 60px 200px; background:linear-gradient(180deg,#f0f3f7 26.228%,#b5c9ea 77.241%,#7eacf2 102.5%); }
+  .partners-grid { max-width:none; grid-template-columns:repeat(12,minmax(0,1fr)); column-gap:20px; row-gap:80px; }
+  .partner-row { grid-column:2 / 12; grid-template-columns:repeat(10,minmax(0,1fr)); gap:20px; }
+  .partner-logo { grid-column:1 / 4; height:240px; position:relative; overflow:hidden; display:block; }
+  .partner-copy { grid-column:5 / 11; }
+  .partner-copy h2 { font-size:24px; margin-bottom:24px; }
+  .partner-row:first-child h2 { margin-bottom:16px; }
+  .partner-copy p { max-width:none; font-size:16px; text-align:justify; letter-spacing:-.02em; }
+  .partner-logo picture { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+  .partner-logo img { max-height:none; max-width:none; object-fit:cover; }
+  .sandoll img { width:182px; height:140px; }
+  .yoondesign img { width:270px; height:139px; mix-blend-mode:multiply; }
+  .rixfont img { width:auto; height:auto; }
+  .rin img { width:366px; height:240px; }
+  .soosung img { width:268px; height:240px; }
+  .printaku img { width:180px; height:98px; }
+}

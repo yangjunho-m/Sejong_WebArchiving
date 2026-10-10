@@ -462,3 +462,37 @@
     margin-bottom:42px
   }
 }
+.submitted-project img,
+.submitted-project video { display:block; width:100%; height:auto; }
+.work-detail-links { display:flex; flex-wrap:wrap; gap:16px; }
+.work-detail-links a,
+.work-detail-author-block > a { color:inherit; text-decoration:none; }
+
+/* Submitted projects: shared layout, author grid follows the actual team size. */
+.work-detail-author-block { min-width:0; }
+.work-detail-authors[data-count="4"] { grid-template-columns:repeat(2,minmax(0,1fr)); }
+@media (min-width:701px) {
+  .work-detail-page { background:#141414; color:#fff; }
+  .work-detail-main { --detail-sidebar-bg:#141414; min-height:0; }
+  .work-detail-sidebar { min-height:0; background:#141414; }
+  .work-detail-sidebar::before { background:#141414; }
+  .work-detail-side-header { height:89px; padding:24px 0; }
+  .work-detail-info { padding:61px 0 80px; }
+  .work-detail-info h1 { margin:0 0 24px; color:#fff; font:600 36px/1 "ITC Avant Garde Gothic Pro",Pretendard,Arial,sans-serif; letter-spacing:0; }
+  .work-detail-tags { margin:0 0 40px; gap:10px; }
+  .work-detail-tags span { color:#fff; border-color:#fff; padding:4px 8px; font:500 14px/1.6 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-authors { grid-template-columns:1fr; margin:0 0 60px; gap:20px; }
+  .work-detail-authors:is([data-count="2"],[data-count="3"],[data-count="4"]) { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .work-detail-author-block { display:flex; flex-direction:column; gap:12px; align-items:flex-start; }
+  .work-detail-author { display:block; margin:0; color:#fff; font:600 20px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-links { color:#fff; gap:12px; font:500 16px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-desc { width:min(100%,387px); max-width:none; color:#fff; font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+  .work-detail-content { width:calc(100% + var(--detail-side)); min-height:0; background:#141414; }
+  .work-detail-header { height:150px; }
+  .project-detail-article { margin:0; padding:0; }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  .work-detail-page .work-detail-header nav.site-nav { position:static; padding:24px 30px; flex-wrap:wrap; gap:12px; justify-content:flex-start; }
+  .work-detail-page .work-detail-header .type-nav { font-size:14px; }
+  .work-detail-authors:is([data-count="2"],[data-count="3"],[data-count="4"]) { grid-template-columns:1fr; }
+}

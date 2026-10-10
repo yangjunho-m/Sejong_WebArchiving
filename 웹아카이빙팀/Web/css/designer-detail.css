@@ -383,3 +383,46 @@
     letter-spacing:-.02em
   }
 }
+
+.detail-work-card > a { display:block; }
+.detail-work-card > a img { display:block; width:100%; height:auto; }
+
+/* Personal detail frame 1516:4262; imagery and copy come from submitted JSON. */
+.detail-work-copy { min-width:0; }
+@media (min-width:701px) {
+  .designer-detail-page { background:#141414; }
+  .designer-detail-main { min-height:1200px; grid-template-columns:minmax(0,calc(60px + (100% - 100px)/3)) minmax(0,1fr); }
+  .designer-profile { background:#141414; color:#fff; }
+  .profile-header { height:89px; width:100%; padding:24px 60px; }
+  .profile-header .back-button { display:none; }
+  .profile-body { padding:61px 60px 100px; }
+  .profile-photo { width:100%; aspect-ratio:426 / 568; background-image:none; }
+  .profile-name { margin-top:36px; gap:15.106px; }
+  .profile-name strong { font:700 26px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .profile-name b { font:600 18.883px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; color:#999; }
+  .profile-name b:empty { display:none; }
+  .profile-links { margin-top:28px; gap:5px; }
+  .profile-links a { font:500 18px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; color:#fff; }
+  .profile-links a[hidden] { display:none; }
+  .designer-detail-content { min-height:1200px; background:linear-gradient(180deg,#f0f3f7 67.838%,#b5c9ea 86.626%,#7eacf2 101.19%); }
+  .detail-header { height:89px; }
+  .designer-works { max-width:none; margin:61px 60px 100px; grid-template-columns:1fr; gap:40px; }
+  .detail-work-card { display:grid; grid-template-columns:minmax(0,350fr) minmax(0,423fr); gap:40px; align-items:start; }
+  .detail-work-card > a img { aspect-ratio:1; object-fit:cover; }
+  .detail-work-copy { display:flex; flex-direction:column; gap:16px; }
+  .detail-work-card h1,
+  .detail-work-card h2 { font:600 24px/1.3 Pretendard,Arial,sans-serif; margin:0; letter-spacing:-.02em; }
+  .detail-tags { margin:0; gap:8.822px; flex-wrap:wrap; }
+  .detail-tags span { border-width:.882px; padding:4.411px 8.822px; font:500 12px/1.6 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .detail-work-card p { font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  .profile-header { padding-inline:30px; }
+  .profile-body { padding-inline:30px; }
+  .designer-works { margin-inline:30px; }
+  .detail-work-card { grid-template-columns:1fr; gap:20px; }
+}
+@media (min-width:701px) and (max-width:1100px) {
+  .designer-detail-page .detail-header nav.site-nav { position:static; padding:24px 30px; flex-wrap:wrap; gap:12px; justify-content:flex-start; }
+  .designer-detail-page .detail-header .type-nav { font-size:14px; }
+}

@@ -1,647 +1,826 @@
 {
-    "industrial":  [
-                       {
-                           "id":  1,
-                           "nameKo":  "이준석",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  2,
-                           "nameKo":  "김경덕",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  3,
-                           "nameKo":  "박범수",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  4,
-                           "nameKo":  "권동혁",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  5,
-                           "nameKo":  "진민석",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  6,
-                           "nameKo":  "박한울",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  7,
-                           "nameKo":  "엄지혁",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  8,
-                           "nameKo":  "김승민",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  9,
-                           "nameKo":  "이은주",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  10,
-                           "nameKo":  "임준우",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  11,
-                           "nameKo":  "송현수",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  12,
-                           "nameKo":  "김민선",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  13,
-                           "nameKo":  "안서연",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  14,
-                           "nameKo":  "김병관",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  15,
-                           "nameKo":  "김지윤",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  16,
-                           "nameKo":  "조유진",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  17,
-                           "nameKo":  "이지민",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  18,
-                           "nameKo":  "강하영",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  19,
-                           "nameKo":  "황예은",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  20,
-                           "nameKo":  "김채연",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  21,
-                           "nameKo":  "황어진",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  22,
-                           "nameKo":  "이지수",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  23,
-                           "nameKo":  "김자현",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  24,
-                           "nameKo":  "고희원",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       },
-                       {
-                           "id":  25,
-                           "nameKo":  "이윤호",
-                           "nameEn":  ".",
-                           "major":  "industrial design",
-                           "instagram":  ".",
-                           "email":  ".",
-                           "profileImage":  "",
-                           "works": []
-                       }
-                   ],
-    "visual":  [
-                   {
-                       "id":  26,
-                       "nameKo":  "이수아",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  27,
-                       "nameKo":  "최수빈",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  28,
-                       "nameKo":  "최한얼",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  29,
-                       "nameKo":  "이상학",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  30,
-                       "nameKo":  "이정무",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  31,
-                       "nameKo":  "김상민",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  32,
-                       "nameKo":  "최성경",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  33,
-                       "nameKo":  "신아영",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  34,
-                       "nameKo":  "장윤진",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  35,
-                       "nameKo":  "허유진",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  36,
-                       "nameKo":  "이현지",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  37,
-                       "nameKo":  "최지훈",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  38,
-                       "nameKo":  "호영하",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  39,
-                       "nameKo":  "홍서연",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  40,
-                       "nameKo":  "이소현",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  41,
-                       "nameKo":  "이채연",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  42,
-                       "nameKo":  "이가연",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  43,
-                       "nameKo":  "이윤주",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  44,
-                       "nameKo":  "원서영",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  45,
-                       "nameKo":  "안소현",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  46,
-                       "nameKo":  "이유나",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  47,
-                       "nameKo":  "김윤아",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  48,
-                       "nameKo":  "장유진",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  49,
-                       "nameKo":  "김선우",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  50,
-                       "nameKo":  "이승민",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  51,
-                       "nameKo":  "박은진",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  52,
-                       "nameKo":  "최예진",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  53,
-                       "nameKo":  "박우희",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  54,
-                       "nameKo":  "이혜경",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  55,
-                       "nameKo":  "이한나",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  56,
-                       "nameKo":  "송민주",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  57,
-                       "nameKo":  "김나윤",
-                       "nameEn": "Kim Nayun",
-                       "major":  "visual design",
-                       "instagram": "@kimnayun",
-      		"email": "nayun@naver.com",
-      		"profileImage": "",
-      		"works": []
-                   },
-                   {
-                       "id":  58,
-                       "nameKo":  "백율리",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  59,
-                       "nameKo":  "탁빛나",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  60,
-                       "nameKo":  "송민서",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  61,
-                       "nameKo":  "동첸유",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  62,
-                       "nameKo":  "공유첸",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  63,
-                       "nameKo":  "이수민",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   },
-                   {
-                       "id":  64,
-                       "nameKo":  "김미리",
-                       "nameEn":  ".",
-                       "major":  "visual design",
-                       "instagram":  ".",
-                       "email":  ".",
-                       "profileImage":  "",
-                       "works": []
-                   }
-               ]
+  "industrial": [
+    {
+      "id": 1,
+      "nameKo": "이준석",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-001-024",
+        "system-001-005"
+      ]
+    },
+    {
+      "id": 2,
+      "nameKo": "김경덕",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@kyungdeok0914",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-002-007"
+      ]
+    },
+    {
+      "id": 3,
+      "nameKo": "박범수",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@paakbs",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "system-003-004"
+      ]
+    },
+    {
+      "id": 4,
+      "nameKo": "권동혁",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@4or2_don",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-004-014",
+        "system-003-004"
+      ]
+    },
+    {
+      "id": 5,
+      "nameKo": "진민석",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@wheresmyarcpaulie",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-005-016",
+        "system-001-005"
+      ]
+    },
+    {
+      "id": 6,
+      "nameKo": "박한울",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@0newhoul",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "fusion-006-007-049-059"
+      ]
+    },
+    {
+      "id": 7,
+      "nameKo": "엄지혁",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@jihyeok_eom",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "fusion-006-007-049-059",
+        "product-002-007"
+      ]
+    },
+    {
+      "id": 8,
+      "nameKo": "김승민",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@830.015",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-008-025",
+        "system-008-025"
+      ]
+    },
+    {
+      "id": 9,
+      "nameKo": "이은주",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@_leeeunjju",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-009-023",
+        "system-009-012"
+      ]
+    },
+    {
+      "id": 10,
+      "nameKo": "임준우",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@limjunwoo_",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-010-018"
+      ]
+    },
+    {
+      "id": 11,
+      "nameKo": "송현수",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@shsii2001",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-011-012",
+        "system-011-016"
+      ]
+    },
+    {
+      "id": 12,
+      "nameKo": "김민선",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@imin_2s",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-011-012",
+        "system-009-012"
+      ]
+    },
+    {
+      "id": 13,
+      "nameKo": "안서연",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@seoyeonanne",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-013-d47919",
+        "system-013-018-021"
+      ]
+    },
+    {
+      "id": 14,
+      "nameKo": "김병관",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@kbusy02",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-004-014",
+        "system-014-024"
+      ]
+    },
+    {
+      "id": 15,
+      "nameKo": "김지윤",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@_xne_fleur",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-015-017",
+        "system-015-017"
+      ]
+    },
+    {
+      "id": 16,
+      "nameKo": "조유진",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@yujinn.y",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-005-016",
+        "system-011-016"
+      ]
+    },
+    {
+      "id": 17,
+      "nameKo": "이지민",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@set0lee",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-015-017",
+        "system-015-017"
+      ]
+    },
+    {
+      "id": 18,
+      "nameKo": "강하영",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@hayoung_k_design",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-010-018",
+        "system-013-018-021"
+      ]
+    },
+    {
+      "id": 19,
+      "nameKo": "황예은",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@oal.rlo",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-019-020",
+        "system-019-020"
+      ]
+    },
+    {
+      "id": 20,
+      "nameKo": "김채연",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@chaeyeon.design",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-019-020",
+        "system-019-020"
+      ]
+    },
+    {
+      "id": 21,
+      "nameKo": "황어진",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@nwanaeoiin",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-021-022",
+        "system-013-018-021"
+      ]
+    },
+    {
+      "id": 22,
+      "nameKo": "이지수",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-021-022",
+        "system-022-023"
+      ]
+    },
+    {
+      "id": 23,
+      "nameKo": "김자현",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-009-023",
+        "system-022-023"
+      ]
+    },
+    {
+      "id": 24,
+      "nameKo": "고희원",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@rhgldjs",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-001-024",
+        "system-014-024"
+      ]
+    },
+    {
+      "id": 25,
+      "nameKo": "이윤호",
+      "nameEn": "",
+      "major": "industrial design",
+      "instagram": "@lee_studio",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "product-008-025",
+        "system-008-025"
+      ]
+    }
+  ],
+  "visual": [
+    {
+      "id": 26,
+      "nameKo": "이수아",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@blue0_0s",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "identity-026"
+      ]
+    },
+    {
+      "id": 27,
+      "nameKo": "최수빈",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@binibe_",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-027",
+        "identity-027"
+      ]
+    },
+    {
+      "id": 28,
+      "nameKo": "최한얼",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@choi_hanul",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-028",
+        "identity-028-031-050"
+      ]
+    },
+    {
+      "id": 29,
+      "nameKo": "이상학",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@friendly_neighborhoood",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-029-060",
+        "identity-029"
+      ]
+    },
+    {
+      "id": 30,
+      "nameKo": "이정무",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@jung_mu",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-030-040-045",
+        "identity-030"
+      ]
+    },
+    {
+      "id": 31,
+      "nameKo": "김상민",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@vd_ksm",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-031-050",
+        "identity-028-031-050"
+      ]
+    },
+    {
+      "id": 32,
+      "nameKo": "최성경",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@onelady_238",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-032-034",
+        "identity-032-036"
+      ]
+    },
+    {
+      "id": 33,
+      "nameKo": "신아영",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@ah0_____",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-033-035",
+        "identity-033-035"
+      ]
+    },
+    {
+      "id": 34,
+      "nameKo": "장윤진",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@yjpower0529",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-032-034",
+        "identity-034-052"
+      ]
+    },
+    {
+      "id": 35,
+      "nameKo": "허유진",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@oossyrupoo",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-033-035",
+        "identity-033-035"
+      ]
+    },
+    {
+      "id": 36,
+      "nameKo": "이현지",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@design_jay07",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-036-054",
+        "identity-032-036"
+      ]
+    },
+    {
+      "id": 37,
+      "nameKo": "최지훈",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@syuah__n",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-037-039",
+        "identity-037-039"
+      ]
+    },
+    {
+      "id": 38,
+      "nameKo": "호영하",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-038"
+      ]
+    },
+    {
+      "id": 39,
+      "nameKo": "홍서연",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@_westyeonh",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-037-039",
+        "identity-037-039"
+      ]
+    },
+    {
+      "id": 40,
+      "nameKo": "이소현",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@th_gus.01",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-030-040-045",
+        "identity-040-043"
+      ]
+    },
+    {
+      "id": 41,
+      "nameKo": "이채연",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@aceehnoy",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-041-9b436e",
+        "identity-041-9b436e"
+      ]
+    },
+    {
+      "id": 42,
+      "nameKo": "이가연",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@gayeon_0124",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-042",
+        "identity-042-045"
+      ]
+    },
+    {
+      "id": 43,
+      "nameKo": "이윤주",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@bbft11008",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-043-044",
+        "identity-040-043"
+      ]
+    },
+    {
+      "id": 44,
+      "nameKo": "원서영",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@fhzh0617",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-043-044",
+        "identity-044-055"
+      ]
+    },
+    {
+      "id": 45,
+      "nameKo": "안소현",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@a.a_sh__03",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-030-040-045",
+        "identity-042-045"
+      ]
+    },
+    {
+      "id": 46,
+      "nameKo": "이유나",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@u.xme_37",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-046-057",
+        "identity-046-057"
+      ]
+    },
+    {
+      "id": 47,
+      "nameKo": "김윤아",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@_yyxx12",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-047-058",
+        "identity-047-058"
+      ]
+    },
+    {
+      "id": 48,
+      "nameKo": "장유진",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-048-052-053",
+        "identity-048-053"
+      ]
+    },
+    {
+      "id": 49,
+      "nameKo": "김선우",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@0s.nux",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-049-059",
+        "fusion-006-007-049-059"
+      ]
+    },
+    {
+      "id": 50,
+      "nameKo": "이승민",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@tolinaun",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-031-050",
+        "identity-028-031-050"
+      ]
+    },
+    {
+      "id": 51,
+      "nameKo": "박은진",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@bbambbamok",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-051-055-056",
+        "identity-051-054-056"
+      ]
+    },
+    {
+      "id": 52,
+      "nameKo": "최예진",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@bright__jin_",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-048-052-053",
+        "identity-034-052"
+      ]
+    },
+    {
+      "id": 53,
+      "nameKo": "박우희",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@real_woohee",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-048-052-053",
+        "identity-048-053"
+      ]
+    },
+    {
+      "id": 54,
+      "nameKo": "이혜경",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@hamsotto",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-036-054",
+        "identity-051-054-056"
+      ]
+    },
+    {
+      "id": 55,
+      "nameKo": "이한나",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@2_hamah",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-051-055-056",
+        "identity-044-055"
+      ]
+    },
+    {
+      "id": 56,
+      "nameKo": "송민주",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@ggo9ma_dried",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-051-055-056",
+        "identity-051-054-056"
+      ]
+    },
+    {
+      "id": 57,
+      "nameKo": "김나윤",
+      "nameEn": "Kim Nayun",
+      "major": "visual design",
+      "instagram": "@__i.yun",
+      "email": "nayun@naver.com",
+      "profileImage": "",
+      "works": [
+        "digital-046-057",
+        "identity-046-057"
+      ]
+    },
+    {
+      "id": 58,
+      "nameKo": "백율리",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@yul.hive",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-047-058",
+        "identity-047-058"
+      ]
+    },
+    {
+      "id": 59,
+      "nameKo": "탁빛나",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@loz6.xx",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-049-059",
+        "fusion-006-007-049-059"
+      ]
+    },
+    {
+      "id": 60,
+      "nameKo": "송민서",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@mell_itt",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-029-060",
+        "identity-060"
+      ]
+    },
+    {
+      "id": 61,
+      "nameKo": "동첸유",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 62,
+      "nameKo": "공유첸",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "",
+      "email": "",
+      "profileImage": "",
+      "works": []
+    },
+    {
+      "id": 63,
+      "nameKo": "이수민",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@leessumin",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-063-064",
+        "identity-063-064"
+      ]
+    },
+    {
+      "id": 64,
+      "nameKo": "김미리",
+      "nameEn": "",
+      "major": "visual design",
+      "instagram": "@in_advance85",
+      "email": "",
+      "profileImage": "",
+      "works": [
+        "digital-063-064",
+        "identity-063-064"
+      ]
+    }
+  ]
 }
-

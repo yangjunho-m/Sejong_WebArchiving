@@ -276,3 +276,25 @@
     letter-spacing:-.02em
   }
 }
+
+/* Revised desktop frame: four-column cards separated by two columns. */
+@media (min-width:701px) {
+  .program-page { --program-side:60px; --program-gutter:20px; }
+  .program-header { height:479px; background:#141414; }
+  .program-title { top:230px; display:block; }
+  .program-title h1 { font-weight:500; color:#e4e4e4; margin-bottom:3px; }
+  .program-title p { font-size:16px; color:#e4e4e4; }
+  .program-main { min-height:1374px; background:linear-gradient(180deg,#f0f3f7 51.083%,#b5c9ea 87.165%,#7eacf2 103.95%); }
+  .program-list { grid-column:2 / 12; grid-template-columns:repeat(10,minmax(0,1fr)); column-gap:20px; row-gap:160px; align-content:start; }
+  .program-card:nth-child(odd) { grid-column:1 / 5; }
+  .program-card:nth-child(even) { grid-column:7 / 11; }
+  .program-card { min-height:0; }
+  .program-card-head { gap:10px; flex-wrap:wrap; }
+  .program-card-head span { margin:0; padding:5px 10px; }
+  .program-card h3 { font-size:28px; line-height:1.4; }
+  .program-card-body p { max-width:none; }
+  .program-date { display:flex; flex-direction:column; gap:4px; }
+  .program-date br { display:none; }
+  .program-card:nth-child(2) .program-card-body > p:not(.program-date),
+  .program-card:nth-child(4) .program-card-body > p:not(.program-date) { line-height:1.6; }
+}
