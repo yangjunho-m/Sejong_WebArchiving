@@ -1,0 +1,815 @@
+{
+  "source": "/Users/yisanghak/Downloads/2026_졸업작품명 취합 - 시트1.csv",
+  "updated": [
+    {
+      "name": "공유첸",
+      "field": "nameEn",
+      "before": "",
+      "after": "Gong Yuchen"
+    },
+    {
+      "name": "공유첸",
+      "field": "email",
+      "before": "",
+      "after": "pokeyjua@naver.com"
+    },
+    {
+      "name": "강하영",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kang Hayoung"
+    },
+    {
+      "name": "강하영",
+      "field": "email",
+      "before": "",
+      "after": "khy26717156@gmail.com"
+    },
+    {
+      "name": "박한울",
+      "field": "nameEn",
+      "before": "",
+      "after": "Park Hanul"
+    },
+    {
+      "name": "박한울",
+      "field": "email",
+      "before": "",
+      "after": "a63055611@gmail.com"
+    },
+    {
+      "name": "동첸유",
+      "field": "nameEn",
+      "before": "",
+      "after": "Dong Chenyu"
+    },
+    {
+      "name": "동첸유",
+      "field": "email",
+      "before": "",
+      "after": "kaijumiemie@naver.com"
+    },
+    {
+      "name": "임준우",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lim Junwoo"
+    },
+    {
+      "name": "임준우",
+      "field": "email",
+      "before": "",
+      "after": "info.limjunwoo@gmail.com"
+    },
+    {
+      "name": "안서연",
+      "field": "nameEn",
+      "before": "",
+      "after": "An Seoyeon"
+    },
+    {
+      "name": "안서연",
+      "field": "email",
+      "before": "",
+      "after": "0814pink@naver.com"
+    },
+    {
+      "name": "엄지혁",
+      "field": "nameEn",
+      "before": "",
+      "after": "Eom Jihyeok"
+    },
+    {
+      "name": "엄지혁",
+      "field": "email",
+      "before": "",
+      "after": "shjh0325@naver.com"
+    },
+    {
+      "name": "김나윤",
+      "field": "email",
+      "before": "nayun@naver.com",
+      "after": "skdbsdl04@naver.com"
+    },
+    {
+      "name": "고희원",
+      "field": "nameEn",
+      "before": "",
+      "after": "Ko Heewon"
+    },
+    {
+      "name": "고희원",
+      "field": "email",
+      "before": "",
+      "after": "gloria2002ko@gmail.com"
+    },
+    {
+      "name": "황어진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Hwang Eo Jin"
+    },
+    {
+      "name": "황어진",
+      "field": "email",
+      "before": "",
+      "after": "kejrria@gmail.com"
+    },
+    {
+      "name": "김선우",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Sunwoo"
+    },
+    {
+      "name": "김선우",
+      "field": "email",
+      "before": "",
+      "after": "seonukim03@gmail.com"
+    },
+    {
+      "name": "이유나",
+      "field": "email",
+      "before": "",
+      "after": "yunalee3652@gmail.com"
+    },
+    {
+      "name": "이준석",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Joonseok"
+    },
+    {
+      "name": "이준석",
+      "field": "email",
+      "before": "",
+      "after": "joonbong2@naver.com"
+    },
+    {
+      "name": "탁빛나",
+      "field": "nameEn",
+      "before": "",
+      "after": "Tak Bitna"
+    },
+    {
+      "name": "탁빛나",
+      "field": "email",
+      "before": "",
+      "after": "loz6xx@naver.com"
+    },
+    {
+      "name": "김미리",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Miri"
+    },
+    {
+      "name": "김미리",
+      "field": "email",
+      "before": "",
+      "after": "alfud03@naver.com"
+    },
+    {
+      "name": "권동혁",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kweon Donghyeok"
+    },
+    {
+      "name": "권동혁",
+      "field": "email",
+      "before": "",
+      "after": "kidhim1888@naver.com"
+    },
+    {
+      "name": "김병관",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Byeonggwan"
+    },
+    {
+      "name": "김병관",
+      "field": "email",
+      "before": "",
+      "after": "byeonggwan37@gmail.com"
+    },
+    {
+      "name": "이수민",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Sumin"
+    },
+    {
+      "name": "이수민",
+      "field": "email",
+      "before": "",
+      "after": "suminlee2020@naver.com"
+    },
+    {
+      "name": "김상민",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Sangmin"
+    },
+    {
+      "name": "김상민",
+      "field": "email",
+      "before": "",
+      "after": "tkdals3316@naver.com"
+    },
+    {
+      "name": "김경덕",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kyungdeok Kim"
+    },
+    {
+      "name": "김경덕",
+      "field": "email",
+      "before": "",
+      "after": "kskd2@naver.com"
+    },
+    {
+      "name": "박범수",
+      "field": "nameEn",
+      "before": "",
+      "after": "Park Beomsoo"
+    },
+    {
+      "name": "박범수",
+      "field": "email",
+      "before": "",
+      "after": "zbxlznf99@gmail.com"
+    },
+    {
+      "name": "최한얼",
+      "field": "nameEn",
+      "before": "",
+      "after": "Choi Haneol"
+    },
+    {
+      "name": "최한얼",
+      "field": "email",
+      "before": "",
+      "after": "hanulc2001@naver.com"
+    },
+    {
+      "name": "이승민",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Seungmin"
+    },
+    {
+      "name": "이승민",
+      "field": "email",
+      "before": "",
+      "after": "bbs070@naver.com"
+    },
+    {
+      "name": "김민선",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Min Sun"
+    },
+    {
+      "name": "김민선",
+      "field": "email",
+      "before": "",
+      "after": "kmsms0606@daum.net"
+    },
+    {
+      "name": "김윤아",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Yuna"
+    },
+    {
+      "name": "김윤아",
+      "field": "email",
+      "before": "",
+      "after": "kimya4243@naver.com"
+    },
+    {
+      "name": "송현수",
+      "field": "nameEn",
+      "before": "",
+      "after": "Song Hyeon Su"
+    },
+    {
+      "name": "송현수",
+      "field": "email",
+      "before": "",
+      "after": "shsii2001@naver.com"
+    },
+    {
+      "name": "백율리",
+      "field": "nameEn",
+      "before": "",
+      "after": "Baik Yulli"
+    },
+    {
+      "name": "백율리",
+      "field": "email",
+      "before": "",
+      "after": "yulli1234@naver.com"
+    },
+    {
+      "name": "김승민",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Seungmin"
+    },
+    {
+      "name": "김승민",
+      "field": "email",
+      "before": "",
+      "after": "seungminkim228@gmail.com"
+    },
+    {
+      "name": "이은주",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Eunju"
+    },
+    {
+      "name": "이은주",
+      "field": "email",
+      "before": "",
+      "after": "quiepcf@naver.com"
+    },
+    {
+      "name": "박우희",
+      "field": "nameEn",
+      "before": "",
+      "after": "Park Woohi"
+    },
+    {
+      "name": "박우희",
+      "field": "email",
+      "before": "",
+      "after": "imovei@naver.com"
+    },
+    {
+      "name": "이윤호",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Younho"
+    },
+    {
+      "name": "이윤호",
+      "field": "email",
+      "before": "",
+      "after": "leeyounho99@naver.com"
+    },
+    {
+      "name": "장유진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Jang Yujin"
+    },
+    {
+      "name": "장유진",
+      "field": "email",
+      "before": "",
+      "after": "zzz3876@naver.com"
+    },
+    {
+      "name": "김자현",
+      "field": "email",
+      "before": "",
+      "after": "lanacrelune@gmail.com"
+    },
+    {
+      "name": "박은진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Park Eunjin"
+    },
+    {
+      "name": "박은진",
+      "field": "email",
+      "before": "",
+      "after": "jhfamily960@gmail.com"
+    },
+    {
+      "name": "송민주",
+      "field": "nameEn",
+      "before": "",
+      "after": "Song Minju"
+    },
+    {
+      "name": "송민주",
+      "field": "email",
+      "before": "",
+      "after": "thdalswn04@naver.com"
+    },
+    {
+      "name": "최예진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Choi Yejin"
+    },
+    {
+      "name": "최예진",
+      "field": "email",
+      "before": "",
+      "after": "cyj0364@naver.com"
+    },
+    {
+      "name": "김지윤",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Jiyoon"
+    },
+    {
+      "name": "김지윤",
+      "field": "email",
+      "before": "",
+      "after": "lover3021@naver.com"
+    },
+    {
+      "name": "이지수",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Jisoo"
+    },
+    {
+      "name": "이지수",
+      "field": "email",
+      "before": "",
+      "after": "jennifer1204@naver.com"
+    },
+    {
+      "name": "이혜경",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Hyea Kyung"
+    },
+    {
+      "name": "이혜경",
+      "field": "email",
+      "before": "",
+      "after": "l24072112@gmail.com"
+    },
+    {
+      "name": "이지민",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Jimin"
+    },
+    {
+      "name": "이지민",
+      "field": "email",
+      "before": "",
+      "after": "set0leeeel0tes@gmail.com"
+    },
+    {
+      "name": "송민서",
+      "field": "nameEn",
+      "before": "",
+      "after": "Song Minseo"
+    },
+    {
+      "name": "송민서",
+      "field": "email",
+      "before": "",
+      "after": "aidensong@naver.com"
+    },
+    {
+      "name": "김채연",
+      "field": "nameEn",
+      "before": "",
+      "after": "Kim Chae Yeon"
+    },
+    {
+      "name": "김채연",
+      "field": "email",
+      "before": "",
+      "after": "rlacodus.work@gmail.com"
+    },
+    {
+      "name": "신아영",
+      "field": "nameEn",
+      "before": "",
+      "after": "Shin Ahyoung"
+    },
+    {
+      "name": "신아영",
+      "field": "email",
+      "before": "",
+      "after": "essenti0626@gmail.com"
+    },
+    {
+      "name": "이한나",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Hannah"
+    },
+    {
+      "name": "이한나",
+      "field": "email",
+      "before": "",
+      "after": "hanlee0221@naver.com"
+    },
+    {
+      "name": "황예은",
+      "field": "nameEn",
+      "before": "",
+      "after": "Hwang Ye Eun"
+    },
+    {
+      "name": "황예은",
+      "field": "email",
+      "before": "",
+      "after": "yeeunb@naver.com"
+    },
+    {
+      "name": "허유진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Heo Yujin"
+    },
+    {
+      "name": "허유진",
+      "field": "email",
+      "before": "",
+      "after": "gjdbwls0731@naver.com"
+    },
+    {
+      "name": "박민경",
+      "field": "email",
+      "before": "",
+      "after": "izzonm0417@naver.com"
+    },
+    {
+      "name": "안소현",
+      "field": "nameEn",
+      "before": "",
+      "after": "An Sohyun"
+    },
+    {
+      "name": "안소현",
+      "field": "email",
+      "before": "",
+      "after": "erza0019@naver.com"
+    },
+    {
+      "name": "이상학",
+      "field": "nameEn",
+      "before": "",
+      "after": "Yi Sanghak"
+    },
+    {
+      "name": "이상학",
+      "field": "email",
+      "before": "",
+      "after": "sanghak22@naver.com"
+    },
+    {
+      "name": "이가연",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Gayeon"
+    },
+    {
+      "name": "이가연",
+      "field": "email",
+      "before": "",
+      "after": "contact.gayeon@gmail.com"
+    },
+    {
+      "name": "조유진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Cho Yu Jin"
+    },
+    {
+      "name": "조유진",
+      "field": "email",
+      "before": "",
+      "after": "yujinnyea@gmail.com"
+    },
+    {
+      "name": "원서영",
+      "field": "nameEn",
+      "before": "",
+      "after": "Won Seoyeong"
+    },
+    {
+      "name": "원서영",
+      "field": "email",
+      "before": "",
+      "after": "fhzh7899@naver.com"
+    },
+    {
+      "name": "진민석",
+      "field": "email",
+      "before": "",
+      "after": "monkey8819@naver.com"
+    },
+    {
+      "name": "이소현",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Sohyun"
+    },
+    {
+      "name": "이소현",
+      "field": "email",
+      "before": "",
+      "after": "pistachio7399@naver.com"
+    },
+    {
+      "name": "이정무",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Jeongmu"
+    },
+    {
+      "name": "이정무",
+      "field": "email",
+      "before": "",
+      "after": "jm010620@naver.com"
+    },
+    {
+      "name": "이윤주",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee yunju"
+    },
+    {
+      "name": "이윤주",
+      "field": "email",
+      "before": "",
+      "after": "yunju031202@naver.com"
+    },
+    {
+      "name": "이수아",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee su ah"
+    },
+    {
+      "name": "이수아",
+      "field": "email",
+      "before": "",
+      "after": "shacett0@gmail.com"
+    },
+    {
+      "name": "이채연",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Chaeyeon"
+    },
+    {
+      "name": "이채연",
+      "field": "email",
+      "before": "",
+      "after": "acehnoy@naver.com"
+    },
+    {
+      "name": "지서은",
+      "field": "nameEn",
+      "before": "",
+      "after": "Ji Seoeun"
+    },
+    {
+      "name": "지서은",
+      "field": "email",
+      "before": "",
+      "after": "euni979797@gmail.com"
+    },
+    {
+      "name": "이현지",
+      "field": "nameEn",
+      "before": "",
+      "after": "Lee Hyun Ji"
+    },
+    {
+      "name": "이현지",
+      "field": "email",
+      "before": "",
+      "after": "designjay07@gmail.com"
+    },
+    {
+      "name": "최성경",
+      "field": "nameEn",
+      "before": "",
+      "after": "Choi Seonggyeong"
+    },
+    {
+      "name": "최성경",
+      "field": "email",
+      "before": "",
+      "after": "one238@naver.com"
+    },
+    {
+      "name": "장윤진",
+      "field": "nameEn",
+      "before": "",
+      "after": "Jang Yunjin"
+    },
+    {
+      "name": "장윤진",
+      "field": "email",
+      "before": "",
+      "after": "liveon123@naver.com"
+    },
+    {
+      "name": "최수빈",
+      "field": "nameEn",
+      "before": "",
+      "after": "Choi Subin"
+    },
+    {
+      "name": "최수빈",
+      "field": "email",
+      "before": "",
+      "after": "ttsubin3467@gmail.com"
+    },
+    {
+      "name": "최지훈",
+      "field": "nameEn",
+      "before": "",
+      "after": "Choi Jihoon"
+    },
+    {
+      "name": "최지훈",
+      "field": "email",
+      "before": "",
+      "after": "0koinohibi@gmail.com"
+    },
+    {
+      "name": "홍서연",
+      "field": "nameEn",
+      "before": "",
+      "after": "Hong Seoyeon"
+    },
+    {
+      "name": "홍서연",
+      "field": "email",
+      "before": "",
+      "after": "hongsy3060@naver.com"
+    },
+    {
+      "name": "호영하",
+      "field": "nameEn",
+      "before": "",
+      "after": "Hu Yinghe"
+    },
+    {
+      "name": "호영하",
+      "field": "email",
+      "before": "",
+      "after": "huyinghe6@gmail.com"
+    }
+  ],
+  "conflicts": [
+    {
+      "name": "이유나",
+      "field": "nameEn",
+      "values": {
+        "Lee yuna": [
+          {
+            "row": 6,
+            "column": 3
+          }
+        ],
+        "Lee Una": [
+          {
+            "row": 6,
+            "column": 10
+          }
+        ]
+      }
+    }
+  ],
+  "unmatched": [],
+  "invalidEmails": [],
+  "missing": [
+    {
+      "name": "진민석",
+      "fields": [
+        "nameEn"
+      ]
+    },
+    {
+      "name": "김자현",
+      "fields": [
+        "nameEn"
+      ]
+    },
+    {
+      "name": "박민경",
+      "fields": [
+        "nameEn"
+      ]
+    },
+    {
+      "name": "이유나",
+      "fields": [
+        "nameEn"
+      ]
+    }
+  ]
+}
