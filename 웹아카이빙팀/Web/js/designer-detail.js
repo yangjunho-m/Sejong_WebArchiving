@@ -56,6 +56,8 @@ loadDesigners().then(async (data) => {
     ? `https://instagram.com/${designer.instagram.slice(1)}`
     : designer.instagram;
   document.querySelector('.profile-links a:last-child').textContent = 'INSTAGRAM';
+  document.querySelector('.profile-links a:last-child').target = '_blank';
+  document.querySelector('.profile-links a:last-child').rel = 'noopener noreferrer';
 
   const projectResponse = await fetch('../data/projects.json');
   if (projectResponse.ok) {
