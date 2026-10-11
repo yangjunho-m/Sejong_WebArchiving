@@ -317,3 +317,20 @@
   .program-card-body > p:not(.program-date) { margin-bottom: 20px; }
   .program-card-body > p:first-of-type br { display: none; }
 }
+
+/* Updated mobile Program typography and spacing from 1587:29492. */
+@media (max-width:700px) {
+  .program-page .program-header { height:243px; background:#141414; }
+  .program-page .program-title { top:120px; }
+  .program-page .program-title h1 { color:#e4e4e4; font:600 24px/1.3 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:0; margin:0 0 10px; }
+  .program-page .program-title p { color:#e4e4e4; font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .program-page .program-main { padding:80px 20px; background:linear-gradient(180deg,#f0f3f7 54%,#b5c9ea 70%,#7eacf2 93%); }
+  .program-page .program-list { row-gap:100px; }
+  .program-page .program-card-head { gap:10px; }
+  .program-page .program-card-head span { padding:4px 8px; border:1px solid #000; font:500 12px/1.6 Pretendard,Arial,sans-serif; letter-spacing:-.02em; color:#000; }
+  .program-page .program-card-body { padding-top:20px; }
+  .program-page .program-card h3 { margin:0 0 20px; font:700 22px/1.3 Pretendard,Arial,sans-serif; letter-spacing:-.03em; color:#000; }
+  .program-page .program-card-body p { margin:0 0 20px; font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; color:#000; }
+  .program-page .program-card-body .program-date { display:flex; flex-direction:column; gap:4px; margin:0; font:600 14px/1.4 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .program-page .program-date br { display:none; }
+}
