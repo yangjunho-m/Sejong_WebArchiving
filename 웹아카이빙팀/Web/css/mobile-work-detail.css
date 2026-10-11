@@ -1,0 +1,20 @@
+/* Mobile project detail: 1 author, 2 authors, 2+1 authors, or 2+2 authors. */
+@media (max-width:700px) {
+  .work-detail-page { background:#fff; }
+  .work-detail-page .work-detail-sidebar { background:#141414; color:#e4e4e4; }
+  .work-detail-page .work-detail-side-header { height:120px; padding:0; }
+  .work-detail-page .work-detail-back { display:none; }
+  .work-detail-page .work-detail-info { padding:0 20px 80px; }
+  .work-detail-page .work-detail-info h1 { margin:0 0 20px; color:#e4e4e4; font:600 24px/1.3 "ITC Avant Garde Gothic Pro",Pretendard,Arial,sans-serif; letter-spacing:0; }
+  .work-detail-page .work-detail-tags { margin:0 0 40px; gap:10px; }
+  .work-detail-page .work-detail-tags span { color:#e4e4e4; border-color:#e4e4e4; padding:4px 8px; font:500 12px/1.6 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-page .work-detail-authors { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 12px; margin:0 0 40px; }
+  .work-detail-page .work-detail-author-block { display:flex; flex-direction:column; align-items:flex-start; gap:12px; }
+  .work-detail-page .work-detail-author { margin:0; color:#e4e4e4; font:600 20px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-page .work-detail-links { margin:0; color:#e4e4e4; display:flex; flex-wrap:wrap; gap:12px; font:500 14px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:-.02em; }
+  .work-detail-page .work-detail-desc { width:100%; max-width:none; margin:0; color:#e4e4e4; font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; white-space:pre-line !important; }
+  .work-detail-page .work-detail-desc[hidden] { display:none; }
+  .work-detail-page .work-detail-authors:has(+ .work-detail-desc[hidden]) { margin-bottom:0; }
+  .work-detail-page .work-detail-content { width:100%; min-height:0; background:#fff; }
+  .work-detail-page .project-detail-article { margin:0; padding:0; }
+}
