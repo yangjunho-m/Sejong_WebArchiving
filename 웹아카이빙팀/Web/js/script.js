@@ -255,3 +255,44 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   document.addEventListener('visibilitychange', hide);
   pointer.addEventListener('change', hide);
 })();
+
+// One shared mobile header, including both detail screens.
+(() => {
+  const source = document.querySelector('.site-nav');
+  if (!source) return;
+  const prefix = new URL('../', document.currentScript.src);
+  const header = document.createElement('header');
+  header.className = 'mobile-global-header';
+  const logo = document.createElement('a');
+  logo.className = 'mobile-global-logo';
+  logo.href = prefix.href;
+  logo.setAttribute('aria-label', 'Button Up home');
+  const image = document.createElement('img');
+  image.src = new URL('img/mobile/nav-logo.svg', prefix).href;
+  image.alt = 'BUTTON UP!';
+  logo.append(image);
+  const button = document.createElement('button');
+  button.className = 'mobile-global-toggle';
+  button.type = 'button';
+  button.setAttribute('aria-label', '메뉴 열기');
+  button.setAttribute('aria-expanded', 'false');
+  const icon = document.createElement('img');
+  icon.src = new URL('img/mobile/menu.svg', prefix).href;
+  icon.alt = '';
+  button.append(icon);
+  const nav = source.cloneNode(true);
+  nav.className = 'mobile-global-nav';
+  nav.removeAttribute('id');
+  nav.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
+  nav.hidden = true;
+  nav.inert = false;
+  button.addEventListener('click', () => {
+    const open = nav.hidden;
+    nav.hidden = !open;
+    header.classList.toggle('mobile-menu-open', open);
+    button.setAttribute('aria-expanded', String(open));
+    button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  });
+  header.append(logo, button, nav);
+  document.body.append(header);
+})();

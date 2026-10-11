@@ -335,3 +335,22 @@
   .soosung picture { width: min(268px, calc(100% - 20px)); height: auto; }
   .soosung img { width: 100%; height: auto; object-fit: contain; object-position: center; }
 }
+
+@media(max-width:700px) {
+  .partners-page .partners-header { height:243px; background:#141414; }
+  .partners-page .partners-title { top:120px; left:20px; width:calc(100% - 40px); transform:none; text-align:left; white-space:normal; }
+  .partners-page .partners-title h1 { color:#e4e4e4; font:600 24px/1.3 "ITC Avant Garde Gothic Pro",Arial,sans-serif; text-align:left; margin:0 0 10px; }
+  .partners-page .partners-title p { color:#e4e4e4; font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .partners-page .partners-main { padding:60px 20px; background:linear-gradient(180deg,#f0f3f7 54%,#b5c9ea 70%,#7eacf2 93%); }
+  .partners-page .partners-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .partners-page .partner-row { grid-column:auto; min-width:0; }
+  .partners-page .partner-logo { position:relative; display:grid; place-items:center; aspect-ratio:169.034 / 125.011; overflow:hidden; }
+  .partners-page .partner-logo picture { display:block; }
+  .partners-page .partner-logo img { max-width:none; max-height:none; object-fit:contain; }
+  .partners-page .sandoll img { width:115px; height:88px; }
+  .partners-page .yoondesign img { width:144.661px; height:74.676px; mix-blend-mode:multiply; }
+  .partners-page .rixfont img { width:107px; height:24px; }
+  .partners-page .rin img { width:189.924px; height:125.006px; }
+  .partners-page .soosung img { width:124.087px; height:23.476px; }
+  .partners-page .printaku img { width:96.6px; height:52.562px; }
+}

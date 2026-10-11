@@ -127,3 +127,54 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
     -webkit-backdrop-filter:none;
   }
 }
+
+.mobile-global-header,.mobile-footer-break { display:none; }
+@media(max-width:700px) {
+  body .site-logo,body .menu-toggle,body header .site-nav,
+  body .profile-logotype { visibility:hidden !important; pointer-events:none; }
+  body header.mobile-global-header {
+    display:grid; visibility:visible; position:absolute; z-index:100;
+    top:24px; left:20px; width:calc(100% - 40px); height:auto;
+    padding:0 !important; margin:0; background:transparent;
+    grid-template-columns:100px 24px; justify-content:space-between; align-items:center;
+  }
+  .mobile-global-logo { display:block; width:100px; height:23.552px; }
+  .mobile-global-logo img { display:block; width:100px; height:23.552px; }
+  .mobile-global-toggle { display:block; border:0; padding:0; background:none; width:24px; height:24px; cursor:pointer; }
+  .mobile-global-toggle img { display:block; width:24px; height:24px; }
+  body .mobile-global-nav {
+    grid-column:1/-1; position:static !important; display:flex; flex-direction:column;
+    gap:24px; margin-top:24px; width:100%; padding:24px !important;
+    background:#141414; border-radius:20px;
+  }
+  body .mobile-global-nav[hidden] { display:none; }
+  body .mobile-global-nav a { color:#e4e4e4 !important; text-decoration:none; font-size:18px; }
+  body .mobile-global-nav a[aria-current="page"] { text-decoration:underline; text-underline-offset:5px; }
+  body footer.site-footer {
+    display:grid !important; grid-template-columns:max-content max-content max-content !important;
+    grid-template-areas:"symbol symbol symbol" "instagram behance vimeo" "address address address" "copyright copyright copyright" !important;
+    height:auto !important; min-height:0 !important; padding:28px 20px 40px !important;
+    column-gap:20px !important; row-gap:40px !important; background:#141414; color:#e4e4e4;
+  }
+  body footer.site-footer > * { margin:0 !important; padding:0 !important; }
+  body footer.site-footer .footer-symbol { grid-area:symbol; width:30.216px !important; height:30px !important; }
+  body footer.site-footer .footer-symbol img { width:30.216px !important; height:30px !important; filter:none; }
+  body footer.site-footer .footer-link:nth-of-type(1) { grid-area:instagram; }
+  body footer.site-footer .footer-link:nth-of-type(2) { grid-area:behance; }
+  body footer.site-footer .footer-link:nth-of-type(3) { grid-area:vimeo; }
+  body footer.site-footer .footer-address { grid-area:address; display:flex; flex-direction:column; gap:4px; font-style:normal; }
+  body footer.site-footer .type-footer,body footer.site-footer .type-footer * {
+    font:600 14px/1.4 "ITC Avant Garde Gothic Pro",Arial,sans-serif !important; letter-spacing:0 !important; color:#e4e4e4;
+  }
+  body footer.site-footer .copyright {
+    grid-area:copyright; position:static; transform:none; width:100%;
+    white-space:normal; text-align:center; font:500 10px/1.5 "ITC Avant Garde Gothic Pro",Arial,sans-serif !important; letter-spacing:0;
+  }
+  .mobile-footer-break { display:inline; }
+}
+@media(max-width:700px) {
+  body footer.site-footer .copyright { display:block !important; }
+}
+@media(max-width:700px) {
+  .partners-page .mobile-global-toggle img { filter:invert(.9); }
+}
