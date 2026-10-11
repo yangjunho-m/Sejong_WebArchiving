@@ -494,3 +494,15 @@
   .work-detail-page .work-detail-header .type-nav { font-size:14px; }
   .work-detail-authors:is([data-count="2"],[data-count="3"],[data-count="4"]) { grid-template-columns:1fr; }
 }
+
+/* Stay within the project section and return to the original position at the top. */
+@media (min-width:701px) {
+  .work-detail-info {
+    position:sticky;
+    top:89px;
+    max-height:calc(100dvh - 89px);
+    overflow-y:auto;
+    scrollbar-width:thin;
+    padding-bottom:40px;
+  }
+}
