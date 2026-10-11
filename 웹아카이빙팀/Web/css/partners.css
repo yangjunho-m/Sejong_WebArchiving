@@ -332,6 +332,6 @@
 }
 
 @media (min-width: 701px) {
-  .soosung picture { width: 268px; height: 268px; }
-  .soosung img { width: 268px; height: 268px; object-position: bottom; }
+  .soosung picture { width: min(268px, calc(100% - 20px)); height: auto; }
+  .soosung img { width: 100%; height: auto; object-fit: contain; object-position: center; }
 }

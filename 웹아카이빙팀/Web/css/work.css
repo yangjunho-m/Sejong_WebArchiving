@@ -298,7 +298,7 @@
   .project-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
   .project-card::before { display:none; }
   .project-card span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
-  .work-section { scroll-margin-top:89px; }
+  .work-section { scroll-margin-top:0; }
 }
 @media (min-width:701px) and (max-width:1000px) {
   .work-category { padding-inline:12px; }

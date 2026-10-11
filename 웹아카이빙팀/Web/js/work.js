@@ -1,9 +1,26 @@
 const categories = document.querySelectorAll('.work-category');
 const panels = document.querySelectorAll('.work-section');
 
+function shuffleCards(panel) {
+  const grid = panel.querySelector('.project-grid');
+  const original = [...grid.children];
+  if (original.length < 2) return;
+  const cards = [...original];
+  for (let index = cards.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [cards[index], cards[randomIndex]] = [cards[randomIndex], cards[index]];
+  }
+  // Make every return visibly different, even if the shuffle repeats its order.
+  if (cards.every((card, index) => card === original[index])) {
+    cards.push(cards.shift());
+  }
+  grid.replaceChildren(...cards);
+}
+
 function showWork(targetId) {
   panels.forEach((panel) => {
     panel.hidden = panel.id !== targetId;
+    if (!panel.hidden) shuffleCards(panel);
   });
   categories.forEach((category) => {
     const isActive = category.getAttribute('href') === `#${targetId}`;
@@ -25,6 +42,11 @@ categories.forEach((category) => {
   });
 });
 
+// Back/forward cache restores the DOM without running the initial fetch again.
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) panels.forEach(shuffleCards);
+});
+
 showWork('identity');
 
 const initialId = location.hash.slice(1);
@@ -38,7 +60,7 @@ fetch('../data/projects.json').then((response) => {
 }).then(({ projects }) => {
   panels.forEach((panel) => {
     const courseProjects = projects.filter((project) => (project.category === panel.id || project.workCategories?.includes(panel.id)) && project.thumbnail);
-    // Shuffle each course once per page load, keeping its order while switching tabs.
+    // Start each fresh visit with a random order; returns and selections reshuffle it.
     for (let index = courseProjects.length - 1; index > 0; index -= 1) {
       const randomIndex = Math.floor(Math.random() * (index + 1));
       [courseProjects[index], courseProjects[randomIndex]] = [courseProjects[randomIndex], courseProjects[index]];
