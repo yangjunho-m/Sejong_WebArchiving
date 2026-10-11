@@ -14,3 +14,9 @@ body :is(h1, h2, h3, h4, h5, h6, p, a, span, b, strong, em, small, label, button
 body :is(pre, pre *, textarea, .message-card-message) {
   white-space: pre-wrap !important;
 }
+
+/* Wrap long messages even when visitors do not enter spaces. */
+body.message-page #encouragement {
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+}

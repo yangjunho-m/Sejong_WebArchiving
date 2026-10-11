@@ -13,7 +13,7 @@
     <!-- 공통 메뉴 서체: 모든 페이지에서 동일한 설정 사용 -->
     <link rel="stylesheet" href="../css/navigation.css">
     <link rel="stylesheet" href="../css/mobile-layout.css">
-    <link rel="stylesheet" href="../css/text-wrap.css">
+    <link rel="stylesheet" href="../css/text-wrap.css?v=20261011-message-wrap">
     <link rel="stylesheet" href="../css/desktop-common.css?v=20261011-mobile-menu-f0f3f7">
 </head>
 <body class="message-page">
@@ -42,7 +42,7 @@
         <label class="sr-only" for="nickname">닉네임</label>
         <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임" required>
         <label class="sr-only" for="encouragement">응원의 메시지</label>
-        <textarea id="encouragement" name="encouragement" rows="4" maxlength="300" placeholder="기억에 남은 작품, 전시를 본 소감, 전하고 싶은 응원을 자유롭게 남겨주세요." required></textarea>
+        <textarea id="encouragement" name="encouragement" rows="4" wrap="soft" maxlength="300" placeholder="기억에 남은 작품, 전시를 본 소감, 전하고 싶은 응원을 자유롭게 남겨주세요." required></textarea>
       </div>
       <div class="message-actions"><p>메시지는 방명록에 공개됩니다. <span id="message-count">0 / 300</span></p><button type="submit">응원 남기기</button></div>
     </form>
