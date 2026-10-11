@@ -55,7 +55,7 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
   body.home-page header.scroll-navigation nav.site-nav.site-nav a.type-nav {
     opacity: 1;
   }
-  body.home-page header.scroll-navigation nav.site-nav.site-nav:has(a.type-nav:hover) a.type-nav:not(:hover) {
+  body.home-page header.scroll-navigation nav.site-nav.site-nav:has(a.type-nav:hover) a.type-nav:not(:hover):not([aria-current="page"]):not(:focus-visible) {
     opacity: .55;
   }
 }
@@ -109,5 +109,12 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
     margin: 0;
     font: 500 16px/1.5 Pretendard, Arial, sans-serif;
     letter-spacing: -.02em;
+  }
+}
+
+/* Shared image-aware color; opacity retains hover/current-page emphasis. */
+@media (min-width:1101px) {
+  body header.scroll-navigation nav.site-nav.site-nav a.type-nav {
+    transition:color 160ms ease, opacity 160ms ease;
   }
 }

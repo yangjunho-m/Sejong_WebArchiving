@@ -57,38 +57,113 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   setVisible(false);
   syncDesktop();
 
-  // Read the content beneath each link so split backgrounds remain legible.
-  const updateMenuContrast = () => {
-    if (!desktop.matches) return;
+  // Sample the rendered image crop, then choose one color for the whole menu.
+  const imageSamples = new WeakMap();
+  let lastContrastCheck = -Infinity;
+  let contrastTimer;
+  const colorValues = (value) => value.match(/[\d.]+/g)?.map(Number);
+  const offset = (position, space) => {
+    if (position.endsWith('%')) return space * parseFloat(position) / 100;
+    if (position === 'center') return space / 2;
+    if (position === 'right' || position === 'bottom') return space;
+    return parseFloat(position) || 0;
+  };
+  const imageColorAt = (image, x, y) => {
+    if (!image.complete || !image.naturalWidth || !image.naturalHeight) return null;
+    const source = image.currentSrc || image.src;
+    let sample = imageSamples.get(image);
+    if (!sample || sample.source !== source) {
+      try {
+        const canvas = document.createElement('canvas');
+        const scale = Math.min(1, 512 / Math.max(image.naturalWidth, image.naturalHeight));
+        canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+        canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+        const context = canvas.getContext('2d', { willReadFrequently: true });
+        context.drawImage(image, 0, 0, canvas.width, canvas.height);
+        sample = { source, width:canvas.width, height:canvas.height,
+          data:context.getImageData(0, 0, canvas.width, canvas.height).data };
+      } catch {
+        // If pixels are unavailable, fall back to the existing surface-color reading.
+        sample = { source, data:null };
+      }
+      imageSamples.set(image, sample);
+    }
+    if (!sample.data) return null;
+    const rect = image.getBoundingClientRect();
+    if (!rect.width || !rect.height) return null;
+    const style = getComputedStyle(image);
+    let width = rect.width, height = rect.height;
+    if (style.objectFit !== 'fill') {
+      let scale = style.objectFit === 'cover'
+        ? Math.max(width / image.naturalWidth, height / image.naturalHeight)
+        : Math.min(width / image.naturalWidth, height / image.naturalHeight);
+      if (style.objectFit === 'none') scale = 1;
+      if (style.objectFit === 'scale-down') scale = Math.min(1, scale);
+      width = image.naturalWidth * scale;
+      height = image.naturalHeight * scale;
+    }
+    const [px = '50%', py = '50%'] = style.objectPosition.split(' ');
+    const u = (x - rect.left - offset(px, rect.width - width)) / width;
+    const v = (y - rect.top - offset(py, rect.height - height)) / height;
+    if (u < 0 || u >= 1 || v < 0 || v >= 1) return null;
+    const index = (Math.floor(v * sample.height) * sample.width + Math.floor(u * sample.width)) * 4;
+    return [sample.data[index], sample.data[index + 1], sample.data[index + 2], sample.data[index + 3] / 255];
+  };
+  const backdropAt = (x, y) => {
+    const layers = [];
+    const stack = document.elementsFromPoint(x, y).filter((element) =>
+      !bar.contains(element) && !element.closest('.graphic-cursor'));
+    for (const element of stack) {
+      if (element instanceof HTMLImageElement) {
+        const pixel = imageColorAt(element, x, y);
+        if (pixel) layers.push(pixel);
+      }
+      const style = getComputedStyle(element);
+      const gradient = style.backgroundImage.match(/rgba?\(([^)]+)\)/);
+      if (gradient) layers.push(colorValues(gradient[0]));
+      const background = colorValues(style.backgroundColor);
+      if (background && (background[3] ?? 1) > 0) layers.push(background);
+      if (layers.some((color) => (color[3] ?? 1) >= 1)) break;
+    }
+    return layers.reduceRight((back, front) => {
+      const alpha = front[3] ?? 1;
+      return front.slice(0, 3).map((value, i) => value * alpha + back[i] * (1 - alpha));
+    }, [255, 255, 255]);
+  };
+  const updateMenuContrast = (force = false) => {
+    if (!desktop.matches || !shown) return;
+    const now = performance.now();
+    if (!force && now - lastContrastCheck < 80) return;
+    lastContrastCheck = now;
+    const luminances = [];
     nav.querySelectorAll('a').forEach((link) => {
       const rect = link.getBoundingClientRect();
-      const x = rect.left + rect.width / 2;
-      const y = Math.max(0, Math.min(innerHeight - 1, rect.top + rect.height / 2));
-      let element = document.elementsFromPoint(x, y).find((item) => !bar.contains(item));
-      let color = [255, 255, 255];
-      while (element) {
-        const style = getComputedStyle(element);
-        const background = style.backgroundColor.match(/[\d.]+/g)?.map(Number);
-        if (background && (background[3] ?? 1) > 0.5) {
-          color = background;
-          break;
+      if (rect.bottom <= 0 || rect.top >= innerHeight) return;
+      for (let row = 0; row < 3; row++) {
+        for (let column = 0; column < 5; column++) {
+          const rgb = backdropAt(rect.left + rect.width * (column + .5) / 5,
+            Math.max(0, Math.min(innerHeight - 1, rect.top + rect.height * (row + .5) / 3)));
+          const linear = rgb.map((value) => {
+            const channel = value / 255;
+            return channel <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4;
+          });
+          luminances.push(linear[0] * .2126 + linear[1] * .7152 + linear[2] * .0722);
         }
-        // The page gradients start with their light surface color.
-        const gradient = style.backgroundImage.match(/rgba?\(([^)]+)\)/);
-        if (gradient) {
-          color = gradient[1].match(/[\d.]+/g).map(Number);
-          break;
-        }
-        element = element.parentElement;
       }
-      const brightness = (color[0] * 299 + color[1] * 587 + color[2] * 114) / 1000;
-      link.style.setProperty('--nav-text-color', brightness < 140 ? '#e4e4e4' : '#141414');
     });
+    if (!luminances.length) return;
+    // The median favors the predominant surface instead of a few bright highlights.
+    luminances.sort((a, b) => a - b);
+    const representative = luminances[Math.floor(luminances.length / 2)];
+    const threshold = nav.dataset.contrast ? (nav.dataset.contrast === 'light' ? .20 : .14) : .17;
+    const light = representative < threshold;
+    nav.dataset.contrast = light ? 'light' : 'dark';
+    // All links share the decision, including hover/current-page states.
+    nav.querySelectorAll('a').forEach((link) => link.style.setProperty('--nav-text-color', light ? '#e4e4e4' : '#141414'));
   };
 
   const update = () => {
     queued = false;
-    updateMenuContrast();
     const y = Math.max(0, window.scrollY);
     const wasInTopRegion = bar.classList.contains('is-at-top');
     const inTopRegion = desktop.matches && y <= bar.offsetHeight;
@@ -98,6 +173,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
       bar.style.transform = inTopRegion ? `translateY(${-y}px)` : '';
       setVisible(desktop.matches);
       anchorY = y;
+      updateMenuContrast();
       return;
     }
     bar.style.removeProperty('transform');
@@ -111,14 +187,19 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
       setVisible(y < anchorY || (shown && bar.contains(document.activeElement)));
       anchorY = y;
     }
+    updateMenuContrast();
   };
   window.addEventListener('scroll', () => {
+    clearTimeout(contrastTimer);
+    contrastTimer = setTimeout(() => updateMenuContrast(true), 120);
     if (!queued) {
       queued = true;
       window.requestAnimationFrame(update);
     }
   }, { passive: true });
-  const refresh = () => { syncDesktop(); update(); };
+  const refresh = () => { lastContrastCheck = -Infinity; syncDesktop(); update(); };
+  document.addEventListener('load', () => updateMenuContrast(true), true);
+  bar.addEventListener('transitionend', () => updateMenuContrast(true));
   window.addEventListener('resize', refresh);
   desktop.addEventListener('change', refresh);
   update();
