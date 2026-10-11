@@ -55,7 +55,24 @@ fetch('../data/projects.json').then((response) => {
       const wrapper = document.createElement('div');
       wrapper.className = 'project-image';
       wrapper.append(image);
-      card.append(wrapper);
+      const overlay = document.createElement('div');
+      overlay.className = 'project-hover';
+      overlay.setAttribute('aria-hidden', 'true');
+      const info = document.createElement('div');
+      info.className = 'project-hover-info';
+      const title = document.createElement('p');
+      title.className = 'project-hover-title';
+      title.textContent = project.title || project.sourceTeam;
+      const names = document.createElement('div');
+      names.className = 'project-hover-names';
+      (project.designerNames || []).forEach((name) => {
+        const person = document.createElement('p');
+        person.textContent = name;
+        names.append(person);
+      });
+      info.append(title, names);
+      overlay.append(info);
+      card.append(wrapper, overlay);
       return card;
     });
     panel.querySelector('.project-grid').replaceChildren(...cards);

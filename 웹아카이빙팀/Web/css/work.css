@@ -305,3 +305,34 @@
   .work-category b { font-size:12px; }
   .project-copy { min-height:312px; padding-bottom:60px; }
 }
+
+.project-hover { display:none; }
+@media (min-width:701px) and (hover:hover) and (pointer:fine) {
+  .project-hover {
+    display:block; position:absolute; inset:0; pointer-events:none;
+    opacity:0; transition:opacity 180ms ease;
+  }
+  .project-hover::before {
+    content:''; position:absolute; inset:30% 0 0;
+    background:linear-gradient(to bottom,transparent,rgba(0,0,0,.8));
+  }
+  .project-hover-info {
+    position:absolute; left:20px; bottom:20px; width:calc(100% - 60px);
+    display:flex; flex-direction:column; align-items:flex-start; gap:8px;
+    color:#e4e4e4; font-family:Pretendard,Arial,sans-serif;
+  }
+  .project-hover-title {
+    margin:0; width:100%; font-size:22px; font-weight:600;
+    line-height:normal; letter-spacing:-.02em; overflow-wrap:anywhere;
+  }
+  .project-hover-names {
+    display:flex; flex-wrap:wrap; align-items:flex-start; gap:8px; width:100%;
+    font-size:14px; font-weight:400; line-height:normal; letter-spacing:-.02em;
+  }
+  .project-hover-names p { margin:0; white-space:nowrap; }
+  .project-card:hover .project-hover,
+  .project-card:focus-visible .project-hover { opacity:1; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .project-hover { transition:none; }
+}
