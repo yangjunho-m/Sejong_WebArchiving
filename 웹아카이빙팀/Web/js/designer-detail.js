@@ -60,7 +60,7 @@ loadDesigners().then(async (data) => {
       if (project.title) { const heading = document.createElement('h2'); heading.textContent = project.title; copy.append(heading); }
       copy.append(tags);
       card.append(link, copy);
-      if (project.description) { const description = document.createElement('p'); description.textContent = project.description; copy.append(description); }
+      if (project.summary) { const description = document.createElement('p'); description.textContent = project.summary; copy.append(description); }
       return card;
     }));
   }

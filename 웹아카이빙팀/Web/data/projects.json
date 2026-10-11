@@ -24,7 +24,8 @@
         "모션그래픽"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-046-057",
@@ -50,7 +51,8 @@
         "캐릭터디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-063-064",
@@ -76,7 +78,8 @@
         "캐릭터디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-031-050",
@@ -102,7 +105,8 @@
         "영상디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-049-059",
@@ -128,7 +132,8 @@
         "인터랙션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-047-058",
@@ -154,7 +159,8 @@
         "캐릭터디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-048-052-053",
@@ -182,7 +188,8 @@
         "웹디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-051-055-056",
@@ -210,7 +217,8 @@
         "영상디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-029-060",
@@ -236,7 +244,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-033-035",
@@ -262,7 +271,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-030-040-045",
@@ -290,7 +300,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-042",
@@ -314,7 +325,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-043-044",
@@ -340,7 +352,8 @@
         "모션그래픽"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-041-9b436e",
@@ -368,7 +381,8 @@
       "description": "",
       "missingFields": [
         "unmatchedDesigners"
-      ]
+      ],
+      "summary": ""
     },
     {
       "id": "digital-036-054",
@@ -394,7 +408,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-032-034",
@@ -419,7 +434,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-027",
@@ -443,7 +459,8 @@
         "인터렉션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-037-039",
@@ -468,7 +485,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-028",
@@ -492,7 +510,8 @@
         "영상디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "digital-038",
@@ -515,7 +534,8 @@
         "영상디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity--e3346d",
@@ -541,7 +561,8 @@
         "브랜딩"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-046-057",
@@ -567,7 +588,8 @@
         "UXUI"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-063-064",
@@ -593,7 +615,8 @@
         "인터렉션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-028-031-050",
@@ -621,7 +644,8 @@
         "패키지"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-047-058",
@@ -647,7 +671,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-048-053",
@@ -673,7 +698,8 @@
         "영상디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-051-054-056",
@@ -700,7 +726,8 @@
         "그래픽디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-060",
@@ -724,7 +751,8 @@
         "그래픽디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-033-035",
@@ -750,7 +778,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-042-045",
@@ -776,7 +805,8 @@
         "패션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-029",
@@ -808,7 +838,8 @@
         "loop": true,
         "muted": true,
         "controls": false
-      }
+      },
+      "summary": ""
     },
     {
       "id": "identity-040-043",
@@ -834,7 +865,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-026",
@@ -857,7 +889,8 @@
         "캐릭터디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-030",
@@ -881,7 +914,8 @@
         "그래픽디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-041-9b436e",
@@ -909,7 +943,8 @@
       "description": "",
       "missingFields": [
         "unmatchedDesigners"
-      ]
+      ],
+      "summary": ""
     },
     {
       "id": "identity-044-055",
@@ -935,7 +970,8 @@
         "그래픽디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-032-036",
@@ -961,7 +997,8 @@
         "캐릭터디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-034-052",
@@ -987,7 +1024,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-027",
@@ -1011,7 +1049,8 @@
         "그래픽디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "identity-037-039",
@@ -1037,7 +1076,8 @@
         "패션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "fusion-006-007-049-059",
@@ -1071,7 +1111,8 @@
       "workCategories": [
         "identity",
         "system"
-      ]
+      ],
+      "summary": ""
     },
     {
       "id": "product-010-018",
@@ -1097,7 +1138,8 @@
         "공공디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-001-024",
@@ -1122,7 +1164,8 @@
         "브랜딩"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-002-007",
@@ -1148,7 +1191,8 @@
         "CMF"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-011-012",
@@ -1174,7 +1218,8 @@
         "브랜딩"
       ],
       "description": "FIT STOP은 도심 러닝 트랙과 공공 산책로에 설치될 수 있도록 설계된 하족부 전문 리커버리 스테이션이다. 한강 러닝 트랙을 중심으로 2~3km 간격으로 배치되는 스마트 거점으로, 러너가 운동의 흐름을 끊지 않고도 즉각적인 신체 회복을 경험할 수 있도록 ‘피트 스탑’의 개념을 적용했다.\n\n반복적인 이동을 수행하는 현대인을 GROUND RACERS로 정의하고, 종아리와 햄스트링의 이완에 효과적인 스트레칭 자세를 핵심 기회영역으로 설정했다. 이를 통해 GROUND RACERS는 발을 딛는 간단한 동작만으로 1분 이내에 하족부의 근육을 이완하고 회복할 수 있다.",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-004-014",
@@ -1200,7 +1245,8 @@
         "CMF"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-008-025",
@@ -1226,7 +1272,8 @@
         "제품디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-009-023",
@@ -1251,7 +1298,8 @@
         "가구디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-015-017",
@@ -1276,7 +1324,8 @@
         "AI디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-019-020",
@@ -1302,7 +1351,8 @@
         "공공디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-013-d47919",
@@ -1330,7 +1380,8 @@
       "description": "",
       "missingFields": [
         "unmatchedDesigners"
-      ]
+      ],
+      "summary": ""
     },
     {
       "id": "product-021-022",
@@ -1356,7 +1407,8 @@
         "인터렉션"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "product-005-016",
@@ -1382,7 +1434,8 @@
         "로보틱스"
       ],
       "description": "미래의 자율주행 차량은 독서, 업무, 콘텐츠 감상 등 다양한 활동이 이루어지는 공간으로 확장되고 있다. 그러나 변화하는 사용자 경험에 비해, 탑승객의 신체는 여전히 차량의 물리적 움직임에 직접적인 영향을 받는다. 특히 시각과 전정기관 사이에서 발생하는 감각의 불일치는 이동 시간을 온전히 활용하는 데 큰 한계로 작용한다. Libera는 이 문제를 해결하기 위해, 차량의 움직임에 맞춰 좌석을 능동적으로 조절하는 시스템이다. 신체에 전달되는 물리적 변화를 보다 완만하게 만들어, 탑승객이 이동 중에도 자신의 활동에 깊이 몰입할 수 있도록 한다. 더 나아가 이동 시간을 단순한 이동의 과정이 아닌, 보다 의미 있게 활용할 수 있는 시간으로 변화시키고자 한다.",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-013-018-021",
@@ -1410,7 +1463,8 @@
         "UXUI"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-014-024",
@@ -1435,7 +1489,8 @@
         "웨어러블"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-003-004",
@@ -1460,7 +1515,8 @@
         "cmf"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-009-012",
@@ -1486,7 +1542,8 @@
         "UXUI"
       ],
       "description": "HOVIO는 ‘부착’만으로 작동이 시작되는 가정용 CPR & AED 스마트 디바이스 시스템입니다. 사용자는 복잡한 절차나 판단 없이 디바이스를 신체에 부착하고, HOVIO는 초기 목격자 기준 좌표로 응급 대응을 유도합니다. 2050년 초고령화 사회에서는 가정 내 심정지 상황이 증가할 가능성이 높습니다. HOVIO는 이러한 상황에서 비전문가도 직관적으로 사용할 수 있는 새로운 응급 CPR 시스템을 제안합니다. 초기 목격자가 즉시 개입할 수 있도록 기기 사용에 대한 인지 부담을 줄이고, 직관적인 인지 기반의 UX를 제공합니다. 골든타임 내 대응을 가능하게 하여 누구나 응급 상황에 개입할 수 있는 환경을 구축합니다.",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-008-025",
@@ -1514,7 +1571,8 @@
         "로보틱스"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-022-023",
@@ -1539,7 +1597,8 @@
         "가구디자인"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-015-017",
@@ -1565,7 +1624,8 @@
         "브랜딩"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-019-020",
@@ -1591,7 +1651,8 @@
         "UXUI"
       ],
       "description": "",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-011-016",
@@ -1617,7 +1678,8 @@
         "AI디자인"
       ],
       "description": "ASCLEPIUS는 과거 목욕이 지녔던 정화, 전환, 회복의 의미를 오늘의 작은 욕실 안에 맞게 재해석한 개인 화된 마이크로 스파 시스템이다. 물, 향, 빛, 미스트와 같은 감각적 매개체를 통해 사용자가 일상의 긴장을 내려놓고, 회복을 위한 몰입 상태로 자연스럽게 전환되도록 돕는다. 개인의 감각과 컨디션에 따라 서로 다 른 회복 경험을 제공하며, 사용자는 작은 욕실 안에서도 자신에게 맞는 감각의 흐름을 선택해 정화와 몰입, 그리고 재탄생으로 이어지는 자신만의 회복 순간을 경험할 수 있다.",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-001-005",
@@ -1643,7 +1705,8 @@
         "공간디자인"
       ],
       "description": "도시에는 수많은 사람들이 살아가지만, 서로의 삶은 쉽게 스쳐 지나간다. Howdy는 이러한 도시에서도 자연스러운 만남이 어떻게 만들어질 수 있을까 고민한 프로젝트이다. 낯선 사람 사이에서도 개 한 마리가 눈맞춤과 대화를 이끌어내듯, 작은 계기 하나가 사람 사이의 경계를 허물 수 있다는 믿음으로 주거와 모빌리티의 관계를 다시 생각해보았다. 서로에게 가볍게 “How do you do?”라고 건네는 순간들이 모여, 비로소 거대한 도시가 작은 인사로도 움직일 수 있길 바란다.",
-      "missingFields": []
+      "missingFields": [],
+      "summary": ""
     },
     {
       "id": "system-002-010",
@@ -1673,7 +1736,8 @@
       "description": "",
       "missingFields": [
         "description"
-      ]
+      ],
+      "summary": ""
     }
   ]
 }

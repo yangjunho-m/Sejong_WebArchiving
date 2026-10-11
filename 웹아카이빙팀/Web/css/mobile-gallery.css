@@ -57,3 +57,16 @@
   .project-card::before { display:none; }
   .project-card > span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
 }
+
+/* A single solid surface prevents a seam between the title and categories. */
+@media (max-width:700px) {
+  body.work-page,
+  body.work-page > main { background:#141414; }
+  body.work-page .work-header,
+  body.work-page .work-menu {
+    background:transparent !important;
+    border:0 !important;
+    outline:0;
+    box-shadow:none !important;
+  }
+}
