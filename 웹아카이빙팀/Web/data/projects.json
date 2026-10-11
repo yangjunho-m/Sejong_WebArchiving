@@ -4,11 +4,14 @@
       "id": "digital--e3346d",
       "category": "digital",
       "title": "망원인 연구소",
-      "sourceTeam": "공위천, 동천위",
-      "designerIds": [],
+      "sourceTeam": "공유첸, 동첸유",
+      "designerIds": [
+        62,
+        61
+      ],
       "designerNames": [
-        "공위천",
-        "동천위"
+        "공유첸",
+        "동첸유"
       ],
       "thumbnail": "../img/projects/D_망원인_연구소_공위천_동천위/디지털미디어프로젝트_망원인_연구소_공위천_동천위_썸네일.png",
       "images": [
@@ -21,9 +24,7 @@
         "모션그래픽"
       ],
       "description": "",
-      "missingFields": [
-        "unmatchedDesigners"
-      ]
+      "missingFields": []
     },
     {
       "id": "digital-046-057",
@@ -520,11 +521,14 @@
       "id": "identity--e3346d",
       "category": "identity",
       "title": "MOODIT",
-      "sourceTeam": "공위천, 동천위",
-      "designerIds": [],
+      "sourceTeam": "공유첸, 동첸유",
+      "designerIds": [
+        62,
+        61
+      ],
       "designerNames": [
-        "공위천",
-        "동천위"
+        "공유첸",
+        "동첸유"
       ],
       "thumbnail": "../img/projects/I_MOODIT_공위천_동천위/아이덴티티디자인_MOODIT_공위천_동천위_썸네일.png",
       "images": [
@@ -537,9 +541,7 @@
         "브랜딩"
       ],
       "description": "",
-      "missingFields": [
-        "unmatchedDesigners"
-      ]
+      "missingFields": []
     },
     {
       "id": "identity-046-057",

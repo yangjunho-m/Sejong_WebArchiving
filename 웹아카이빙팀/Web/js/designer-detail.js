@@ -32,7 +32,7 @@ loadDesigners().then(async (data) => {
 
   document.title = `${designer.nameEn || designer.nameKo} — BUTTON UP!`;
   document.querySelector('#profile-name-ko').textContent = designer.nameKo;
-  document.querySelector('#profile-name-en').textContent = designer.nameEn.toUpperCase();
+  document.querySelector('#profile-name-en').textContent = designer.nameEn;
   const emailLink = document.querySelector('.profile-links a[href^="mailto:"]');
   emailLink.hidden = !designer.email;
   emailLink.href = `mailto:${designer.email}`;

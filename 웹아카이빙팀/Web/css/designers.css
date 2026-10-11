@@ -251,8 +251,8 @@
   .designer-card { background:rgba(255,255,255,.8); color:#000; padding:20px; display:grid; grid-template-columns:minmax(0,max-content) minmax(0,1fr); grid-template-rows:18px 14px; gap:8px 12px; align-content:center; align-items:center; letter-spacing:0; }
   .designer-card div { display:contents; }
   .designer-card strong { font:600 18px/1 Pretendard,Arial,sans-serif; letter-spacing:-.01em; }
-  .designer-card small { font:500 14px/1 Pretendard,Arial,sans-serif; letter-spacing:-.03em; color:#999; }
-  .designer-card b { font:400 12px/1 Pretendard,Arial,sans-serif; letter-spacing:0; }
+  .designer-card small { font:500 14px/1.4 Pretendard,Arial,sans-serif; letter-spacing:-.03em; color:#999; }
+  .designer-card b { font:400 12px/1.4 Pretendard,Arial,sans-serif; letter-spacing:0; }
   /* Each name and contact share one row, matching the Figma card. */
   .designer-card strong { grid-column:1; grid-row:1; }
   .designer-card small { grid-column:1; grid-row:2; }

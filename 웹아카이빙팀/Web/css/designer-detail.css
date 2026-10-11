@@ -64,6 +64,9 @@
   width: min(309px, 100%);
   aspect-ratio: 3 / 4;
   background: #d9d9d9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .profile-name {
@@ -84,7 +87,7 @@
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .profile-links a {
