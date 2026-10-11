@@ -334,3 +334,14 @@
   .program-page .program-card-body .program-date { display:flex; flex-direction:column; gap:4px; margin:0; font:600 14px/1.4 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
   .program-page .program-date br { display:none; }
 }
+
+/* Match the title/description auto-layout in Figma. */
+.program-page .program-card-copy {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:20px;
+}
+.program-page .program-card .program-card-copy > :is(h3, p) {
+  margin:0;
+}
