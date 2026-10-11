@@ -249,7 +249,12 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   const image = document.createElement('img');
   image.src = new URL('img/mobile/nav-logo.svg', prefix).href;
   image.alt = 'BUTTON UP!';
-  logo.append(image);
+  image.className = 'mobile-logo-wordmark';
+  const buttonMark = document.createElement('img');
+  buttonMark.src = new URL('img/Cursor_graphic.svg', prefix).href;
+  buttonMark.alt = '';
+  buttonMark.className = 'mobile-logo-button';
+  logo.append(image, buttonMark);
   const button = document.createElement('button');
   button.className = 'mobile-global-toggle';
   button.type = 'button';
@@ -277,7 +282,9 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   document.body.append(header);
   const mobile = window.matchMedia('(max-width: 700px)');
   const syncMobileBackdrop = () => {
-    header.classList.toggle('is-scrolled', (document.scrollingElement?.scrollTop || window.scrollY) > 4);
+    const scrollTop = document.scrollingElement?.scrollTop || window.scrollY;
+    header.classList.toggle('is-scrolled', scrollTop > 4);
+    header.classList.toggle('has-button-logo', scrollTop > 1);
   };
   let contrastQueued = false;
   const updateContrast = () => {

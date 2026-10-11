@@ -138,8 +138,12 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
     padding:0 !important; margin:0; background:transparent;
     grid-template-columns:100px 24px; justify-content:space-between; align-items:center;
   }
-  .mobile-global-logo { display:block; width:100px; height:23.552px; }
-  .mobile-global-logo img { display:block; width:100px; height:23.552px; }
+  .mobile-global-logo { display:block; width:100px; height:30px; }
+  .mobile-global-logo img { object-fit:contain; }
+  .mobile-global-logo .mobile-logo-wordmark { display:block; width:100px; height:23.552px; margin-top:3.224px; }
+  .mobile-global-logo .mobile-logo-button { display:none; width:30px; height:30px; }
+  .has-button-logo .mobile-global-logo .mobile-logo-wordmark { display:none; }
+  .has-button-logo .mobile-global-logo .mobile-logo-button { display:block; }
   .mobile-global-toggle { display:block; border:0; padding:0; background:none; width:24px; height:24px; cursor:pointer; }
   .mobile-global-toggle img { display:block; width:24px; height:24px; }
   body .mobile-global-nav {
