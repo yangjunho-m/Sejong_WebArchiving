@@ -7,16 +7,16 @@
   const initialMessages = [];
   const messageInput = form?.querySelector('#encouragement');
 
-  if (messageInput) {
-    const mobile = window.matchMedia('(max-width: 700px)');
-    const syncMessagePlaceholder = () => {
-      messageInput.placeholder = mobile.matches ? '메시지를 입력하세요' : '응원의 메시지를 보내보세요!';
-    };
-    syncMessagePlaceholder();
-    mobile.addEventListener('change', syncMessagePlaceholder);
-  }
+  const counter = document.querySelector('#message-count');
+  const sort = document.querySelector('#message-sort');
+  const more = document.querySelector('#message-more');
+  let allMessages = [];
+  let visibleCount = 12;
+  const columns = window.matchMedia('(max-width: 900px)');
+  const syncCounter = () => { counter.textContent = `${messageInput.value.length} / 300`; };
+  messageInput.addEventListener('input', syncCounter);
 
-  const createCard = ({ name, message }) => {
+  const createCard = ({ name, message, createdAt }) => {
     const card = document.createElement('article');
     card.className = 'message-card';
     const text = document.createElement('p');
@@ -25,16 +25,30 @@
     const author = document.createElement('p');
     author.className = 'message-card-name';
     author.textContent = name;
-    card.append(text, author);
+    const metadata = document.createElement('div');
+    metadata.className = 'message-card-meta';
+    metadata.append(author);
+    // The API supplies its saved local date; keep it independent of viewer timezone.
+    const dateParts = typeof createdAt === 'string' && createdAt.match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T]|$)/);
+    if (dateParts) {
+      const [, year, month, day] = dateParts;
+      const date = document.createElement('time');
+      date.className = 'message-card-date';
+      date.dateTime = `${year}-${month}-${day}`;
+      date.textContent = `${year}. ${month}. ${day}`;
+      metadata.append(date);
+    }
+    card.append(text, metadata);
     return card;
   };
 
   const normalizeMessages = messages => {
     if (!Array.isArray(messages)) return [];
     return messages
-      .map(({ nickname, name, message }) => ({
+      .map(({ nickname, name, message, created_at }) => ({
         name: nickname || name || '',
         message: message || '',
+        createdAt: created_at || '',
       }))
       .filter(item => item.name && item.message);
   };
@@ -74,9 +88,25 @@
     }
   };
 
+  const displayMessages = () => {
+    const ordered = sort.value === 'oldest' ? [...allMessages].reverse() : allMessages;
+    const columnCount = columns.matches ? 2 : 4;
+    const containers = Array.from({ length: columnCount }, () => {
+      const column = document.createElement('div');
+      column.className = 'message-column';
+      return column;
+    });
+    ordered.slice(0, visibleCount).forEach((item, index) => containers[index % columnCount].append(createCard(item)));
+    board.replaceChildren(...containers);
+    more.hidden = visibleCount >= ordered.length;
+  };
+  sort.addEventListener('change', () => { visibleCount = 12; displayMessages(); });
+  more.addEventListener('click', () => { visibleCount += 12; displayMessages(); });
+  columns.addEventListener('change', displayMessages);
   const renderMessages = async () => {
     const messages = await readMessages();
-    board.replaceChildren(...[...messages, ...initialMessages].map(createCard));
+    allMessages = [...messages, ...initialMessages];
+    displayMessages();
   };
 
   form.addEventListener('submit', async event => {
@@ -86,13 +116,20 @@
     const message = data.get('encouragement').trim();
     if (!name || !message) return;
 
+    const button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    button.textContent = '남기는 중…';
     try {
       await saveMessage({ name, message });
       await renderMessages();
       form.reset();
+      syncCounter();
       status.textContent = '응원 메시지가 등록되었습니다.';
     } catch (error) {
       status.textContent = `메시지를 저장하지 못했습니다. ${error.message}`;
+    } finally {
+      button.disabled = false;
+      button.textContent = '응원 남기기';
     }
   });
 

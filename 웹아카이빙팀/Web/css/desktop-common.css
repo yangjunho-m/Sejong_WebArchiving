@@ -118,3 +118,12 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
     transition:color 160ms ease, opacity 160ms ease;
   }
 }
+
+/* At the top, the designer profile/header split must stay sharp. */
+@media (min-width:1101px) {
+  body.designer-detail-page .scroll-navigation.is-at-top::before {
+    opacity:0;
+    backdrop-filter:none;
+    -webkit-backdrop-filter:none;
+  }
+}

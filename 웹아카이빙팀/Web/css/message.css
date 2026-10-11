@@ -380,3 +380,47 @@
     color:#777
   }
 }
+
+/* Message revision 1735:8434. */
+.message-page { background:linear-gradient(180deg,#f0f3f7 11%,#b5c9ea 57%,#7eacf2 90%); }
+.message-page .message-header { height:89px; background:transparent; }
+.message-page .message-main { background:transparent; padding:60px 60px 100px; font-family:Pretendard,Arial,sans-serif; }
+.message-page .message-main h1 { position:static; width:auto; height:auto; clip:auto; overflow:visible; white-space:normal; max-width:1096px; margin:0 auto 32px; font:700 32px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+.message-page .message-form { display:flex; flex-direction:column; max-width:1096px; gap:16px; margin:0 auto; }
+.message-page .message-fields { display:contents; }
+.message-page .message-form :is(input,textarea) { color:#000; -webkit-text-fill-color:#000; font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; border:1px solid #cacaca; padding:18px 24px; background:#fff; }
+.message-page .message-form :is(input,textarea)::placeholder { color:#757575; -webkit-text-fill-color:#757575; font:inherit; opacity:1; }
+.message-page .message-form input { width:203px; height:60px; border-radius:30px; order:0; }
+.message-page .message-form textarea { width:100%; height:120px; min-height:120px; border-radius:20px; overflow:auto; margin:0; order:0; }
+.message-page .message-form :is(input,textarea):focus-visible { outline:2px solid #5591f3; outline-offset:2px; }
+.message-actions { display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+.message-actions p { margin:0; font:400 14px/1.5 Pretendard,Arial,sans-serif; color:#777; letter-spacing:-.03em; }
+.message-page .message-form button,.message-more button { width:auto; height:60px; flex-shrink:0; padding:18px 30px; border:0; border-radius:999px; background:#5591f3; color:white; font:500 16px/1.5 Pretendard,Arial,sans-serif; cursor:pointer; }
+.message-page .message-form button:disabled { opacity:.6; cursor:wait; }
+.message-page .message-status { max-width:1096px; min-height:21px; margin:12px auto 64px; font:400 14px/1.5 Pretendard,Arial,sans-serif; color:#141414; }
+.message-list-heading { display:flex; justify-content:space-between; align-items:center; margin:0 0 24px; }
+.message-list-heading h2 { margin:0; font:600 22px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+.message-list-heading select { background:transparent; border:0; color:#777; font:400 14px Pretendard,Arial,sans-serif; }
+.message-page .message-board { width:100%; max-width:none; transform:none; display:flex; gap:20px; }
+.message-column { flex:1; min-width:0; display:flex; flex-direction:column; gap:20px; }
+.message-page .message-card { width:100%; background:rgba(255,255,255,.8); }
+.message-more { text-align:center; margin-top:48px; }
+.message-more button { background:rgba(255,255,255,.8); border:1px solid #cacaca; color:#141414; }
+.message-more button[hidden] { display:none; }
+@media(max-width:700px) {
+  .message-page .message-main { padding:40px 20px 60px; }
+  .message-page .message-main h1 { font-size:26px; }
+  .message-actions p { max-width:170px; font-size:12px; }
+  .message-page .message-form button { padding-inline:20px; }
+  .message-page .message-card { padding:20px; }
+}
+
+.message-card-meta {
+  display:flex; align-items:baseline; justify-content:space-between;
+  flex-wrap:wrap; gap:4px 12px; width:100%;
+}
+.message-card-meta .message-card-name { min-width:0; overflow-wrap:anywhere; }
+.message-card-date {
+  color:#777; font:400 12px/1.5 Pretendard,Arial,sans-serif;
+  letter-spacing:0; white-space:nowrap; margin-left:auto;
+}

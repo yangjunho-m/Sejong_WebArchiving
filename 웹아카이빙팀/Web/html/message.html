@@ -36,18 +36,20 @@
   </header>
 
   <main class="message-main">
-    <h1>MESSAGE</h1>
+    <h1>첫 단추를 끼운 우리에게...</h1>
     <form class="message-form" id="message-form">
       <div class="message-fields">
         <label class="sr-only" for="nickname">닉네임</label>
         <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임" required>
         <label class="sr-only" for="encouragement">응원의 메시지</label>
-        <textarea id="encouragement" name="encouragement" rows="1" maxlength="300" placeholder="응원의 메시지를 보내보세요!" required></textarea>
+        <textarea id="encouragement" name="encouragement" rows="4" maxlength="300" placeholder="기억에 남은 작품, 전시를 본 소감, 전하고 싶은 응원을 자유롭게 남겨주세요." required></textarea>
       </div>
-      <button type="submit">전송하기</button>
+      <div class="message-actions"><p>메시지는 방명록에 공개됩니다. <span id="message-count">0 / 300</span></p><button type="submit">응원 남기기</button></div>
     </form>
     <p id="message-status" class="message-status" aria-live="polite"></p>
+    <div class="message-list-heading"><h2>함께 남긴 응원</h2><select id="message-sort" aria-label="메시지 정렬"><option value="newest">최신순</option><option value="oldest">오래된순</option></select></div>
     <section id="message-board" class="message-board" aria-label="응원 메시지"></section>
+  <div class="message-more"><button id="message-more" type="button" hidden>응원 더 보기</button></div>
   </main>
 
   <footer id="footer"></footer>
