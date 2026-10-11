@@ -276,10 +276,13 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   header.append(logo, button, nav);
   document.body.append(header);
   const mobile = window.matchMedia('(max-width: 700px)');
+  const syncMobileBackdrop = () => {
+    header.classList.toggle('is-scrolled', (document.scrollingElement?.scrollTop || window.scrollY) > 4);
+  };
   let contrastQueued = false;
   const updateContrast = () => {
     contrastQueued = false;
-    header.classList.toggle('is-scrolled', window.scrollY > 4);
+    syncMobileBackdrop();
     if (!mobile.matches || !window.navigationBackdropAt) return;
     const rect = button.getBoundingClientRect();
     if (rect.bottom <= 0 || rect.top >= innerHeight) return;
@@ -307,9 +310,15 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     contrastQueued = true;
     requestAnimationFrame(updateContrast);
   };
-  window.addEventListener('scroll', queueContrast, { passive: true });
+  document.addEventListener('scroll', () => {
+    syncMobileBackdrop();
+    queueContrast();
+  }, { passive: true, capture: true });
   window.addEventListener('resize', queueContrast);
-  window.addEventListener('pageshow', queueContrast);
+  window.addEventListener('pageshow', () => {
+    syncMobileBackdrop();
+    queueContrast();
+  });
   document.addEventListener('load', queueContrast, true);
   mobile.addEventListener('change', queueContrast);
   updateContrast();

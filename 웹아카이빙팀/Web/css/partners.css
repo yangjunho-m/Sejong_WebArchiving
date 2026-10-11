@@ -354,3 +354,20 @@
   .partners-page .soosung img { width:124.087px; height:23.476px; }
   .partners-page .printaku img { width:96.6px; height:52.562px; }
 }
+
+.partner-description-mobile { display:none; }
+/* Mobile Partners: Figma 1756:8667. */
+@media (max-width:700px) {
+  .partners-page .partners-main { padding:60px 20px 80px; }
+  .partners-page .partners-grid { display:flex; flex-direction:column; gap:64px; }
+  .partners-page .partner-row { display:flex; flex-direction:column; gap:12px; width:100%; }
+  .partners-page .partner-logo { width:100%; height:104px; aspect-ratio:auto; background:transparent; overflow:visible; }
+  .partners-page .partner-copy { display:block; width:100%; }
+  .partners-page .partner-copy h2,
+  .partners-page .partner-description-desktop { display:none; }
+  .partners-page .partner-description-mobile { display:block; margin:0; font:500 14px/1.7 Pretendard,Arial,sans-serif; letter-spacing:-.03em; color:#141414; text-align:left; }
+  .partners-page .sandoll img { width:136px; height:105px; }
+  .partners-page .yoondesign img { width:155px; height:80px; }
+  .partners-page .rixfont img { width:111.86px; height:25px; }
+  .partners-page .rin img { width:188px; height:124px; }
+}
