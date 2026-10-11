@@ -176,5 +176,32 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
   body footer.site-footer .copyright { display:block !important; }
 }
 @media(max-width:700px) {
-  .partners-page .mobile-global-toggle img { filter:invert(.9); }
+  .mobile-global-toggle { color:#141414; }
+  .mobile-global-toggle::before {
+    content:""; display:block; width:24px; height:24px;
+    background-color:currentColor;
+    -webkit-mask:var(--mobile-menu-mask) center / contain no-repeat;
+    mask:var(--mobile-menu-mask) center / contain no-repeat;
+  }
+  .mobile-global-toggle img { display:none; }
+}
+/* Keep the shared footer within narrow phone screens. */
+@media (max-width:360px) {
+  body footer.site-footer { column-gap:16px !important; }
+  body footer.site-footer .footer-link,
+  body footer.site-footer .footer-link a,
+  body footer.site-footer .footer-address,
+  body footer.site-footer .footer-address * { font-size:12px !important; }
+  body footer.site-footer .footer-address { min-width:0; }
+}
+
+/* Page headings use the design system's 0% tracking at every viewport. */
+body :is(.program-title, .designers-title, .partners-title) h1 {
+  letter-spacing:0;
+}
+
+body.work-page .mobile-work-title,
+body.work-page .project-copy h1,
+body.work-page .project-copy h2 {
+  letter-spacing:0;
 }

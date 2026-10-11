@@ -112,7 +112,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   const backdropAt = (x, y) => {
     const layers = [];
     const stack = document.elementsFromPoint(x, y).filter((element) =>
-      !bar.contains(element) && !element.closest('.graphic-cursor'));
+      !bar.contains(element) && !element.closest('.mobile-global-header, .graphic-cursor'));
     for (const element of stack) {
       if (element instanceof HTMLImageElement) {
         const pixel = imageColorAt(element, x, y);
@@ -130,6 +130,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
       return front.slice(0, 3).map((value, i) => value * alpha + back[i] * (1 - alpha));
     }, [255, 255, 255]);
   };
+  window.navigationBackdropAt = backdropAt;
   const updateMenuContrast = (force = false) => {
     if (!desktop.matches || !shown) return;
     const now = performance.now();
@@ -280,6 +281,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   icon.src = new URL('img/mobile/menu.svg', prefix).href;
   icon.alt = '';
   button.append(icon);
+  button.style.setProperty('--mobile-menu-mask', `url("${icon.src}")`);
   const nav = source.cloneNode(true);
   nav.className = 'mobile-global-nav';
   nav.removeAttribute('id');
@@ -295,4 +297,41 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   });
   header.append(logo, button, nav);
   document.body.append(header);
+  const mobile = window.matchMedia('(max-width: 700px)');
+  let contrastQueued = false;
+  const updateContrast = () => {
+    contrastQueued = false;
+    if (!mobile.matches || !window.navigationBackdropAt) return;
+    const rect = button.getBoundingClientRect();
+    if (rect.bottom <= 0 || rect.top >= innerHeight) return;
+    const samples = [];
+    for (let row = 0; row < 3; row++) {
+      for (let column = 0; column < 3; column++) {
+        const rgb = window.navigationBackdropAt(rect.left + rect.width * (column + .5) / 3,
+          rect.top + rect.height * (row + .5) / 3);
+        const linear = rgb.map(value => {
+          const c = value / 255;
+          return c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4;
+        });
+        samples.push(linear[0] * .2126 + linear[1] * .7152 + linear[2] * .0722);
+      }
+    }
+    samples.sort((a, b) => a - b);
+    const threshold = button.dataset.contrast === 'light' ? .20 :
+      button.dataset.contrast === 'dark' ? .14 : .17;
+    const light = samples[4] < threshold;
+    button.dataset.contrast = light ? 'light' : 'dark';
+    button.style.color = light ? '#e4e4e4' : '#141414';
+  };
+  const queueContrast = () => {
+    if (contrastQueued) return;
+    contrastQueued = true;
+    requestAnimationFrame(updateContrast);
+  };
+  window.addEventListener('scroll', queueContrast, { passive: true });
+  window.addEventListener('resize', queueContrast);
+  window.addEventListener('pageshow', queueContrast);
+  document.addEventListener('load', queueContrast, true);
+  mobile.addEventListener('change', queueContrast);
+  updateContrast();
 })();
