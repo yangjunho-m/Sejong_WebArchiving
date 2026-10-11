@@ -281,11 +281,14 @@
   .work-header { height:89px; background:#141414; }
   .work-menu {
     min-height:636.88px; padding:141px 60px 160.28px;
-    display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:20px; align-items:start;
+    display:grid; grid-template-columns:repeat(4,minmax(0,315px)); gap:20px; align-items:start; justify-content:center;
     background:#141414; border:0;
   }
-  .work-category { width:auto; top:0; grid-column:span 3; color:#e4e4e4; }
-  .disc { width:calc(100% - 64px); height:auto; aspect-ratio:203.28 / 203.76; margin:0 auto 36px; }
+  .work-category { width:100%; max-width:315px; padding-inline:36px; top:0; grid-column:auto; color:#e4e4e4; }
+  .disc { width:100%; max-width:243px; height:auto; aspect-ratio:203.28 / 203.76; margin:0 auto 36px; }
+  .work-category:nth-child(2) .disc,
+  .work-category:nth-child(4) .disc { aspect-ratio:201.6 / 202.08; }
+  .work-category:nth-child(3) .disc { aspect-ratio:206.16 / 206.88; }
   .work-category b { padding:0; font:600 clamp(12px,1.388889vw,20px)/1.2 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:-.02em; }
   .work-section { padding:120px 60px; background:linear-gradient(180deg,#f0f3f7 54%,#b5c9ea 70%,#7eacf2 93%); border:0; }
   .project-copy { max-width:none; min-height:312px; margin-bottom:0; }
@@ -298,7 +301,7 @@
   .work-section { scroll-margin-top:89px; }
 }
 @media (min-width:701px) and (max-width:1000px) {
-  .disc { width:calc(100% - 24px); }
+  .work-category { padding-inline:12px; }
   .work-category b { font-size:12px; }
   .project-copy { min-height:312px; padding-bottom:60px; }
 }
