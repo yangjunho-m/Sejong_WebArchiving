@@ -1,6 +1,6 @@
 async function loadDesigners() {
   try {
-    const response = await fetch('../data/designers.json');
+    const response = await fetch('../data/designers.json?v=20261011-profile-webp');
     if (!response.ok) throw new Error('Designer JSON was not found.');
     const data = await response.json();
     if (!Array.isArray(data.industrial) || !Array.isArray(data.visual)) throw new Error('Invalid designer data.');
@@ -45,6 +45,12 @@ loadDesigners().then(async (data) => {
   document.querySelector('.profile-links a:last-child').target = '_blank';
   document.querySelector('.profile-links a:last-child').rel = 'noopener noreferrer';
 
+  if (designer.profileImage) {
+    const profile = document.querySelector('.profile-photo');
+    profile.style.backgroundImage = `url(${designer.profileImage})`;
+    profile.textContent = '';
+  }
+
   const projectResponse = await fetch('../data/projects.json');
   if (projectResponse.ok) {
     const { projects } = await projectResponse.json();
@@ -65,9 +71,4 @@ loadDesigners().then(async (data) => {
     }));
   }
 
-  if (designer.profileImage) {
-    const profile = document.querySelector('.profile-photo');
-    profile.style.backgroundImage = `url(${designer.profileImage})`;
-    profile.textContent = '';
-  }
 });
