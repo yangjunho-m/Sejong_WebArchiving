@@ -298,3 +298,22 @@
   .program-card:nth-child(2) .program-card-body > p:not(.program-date),
   .program-card:nth-child(4) .program-card-body > p:not(.program-date) { line-height:1.6; }
 }
+
+@media (min-width: 1101px) {
+  .program-main { height: 1374px; min-height: 1374px; padding-bottom: 0; align-content: start; }
+  .program-list {
+    grid-column: 1 / -1;
+    width: 876px;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 316px));
+    column-gap: 244px;
+    row-gap: 160px;
+  }
+  .program-card:nth-child(odd) { grid-column: 1; }
+  .program-card:nth-child(even) { grid-column: 2; }
+  .program-card-body { padding-top: 20px; }
+  .program-card h3 { margin-bottom: 20px; letter-spacing: -.03em; }
+  .program-card-body > p:not(.program-date) { margin-bottom: 20px; }
+  .program-card-body > p:first-of-type br { display: none; }
+}

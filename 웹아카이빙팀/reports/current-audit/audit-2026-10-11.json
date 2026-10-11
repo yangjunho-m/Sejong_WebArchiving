@@ -1,0 +1,1080 @@
+{
+  "designers": [
+    {
+      "id": 1,
+      "name": "이준석",
+      "major": "산업",
+      "missing": [
+        "인스타그램"
+      ],
+      "notes": [],
+      "projects": [
+        "zibi",
+        "HOWDY"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "zibi"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "김경덕",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "ReRoot",
+        "LOBBY BOY"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "ReRoot",
+        "LOBBY BOY"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "박범수",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "SULSAEM"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "SULSAEM"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "권동혁",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "For-D",
+        "SULSAEM"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "For-D",
+        "SULSAEM"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "진민석",
+      "major": "산업",
+      "missing": [
+        "영문명"
+      ],
+      "notes": [],
+      "projects": [
+        "Libera",
+        "HOWDY"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": []
+    },
+    {
+      "id": 6,
+      "name": "박한울",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Journey"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Journey"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "엄지혁",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Journey",
+        "ReRoot"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Journey",
+        "ReRoot"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "김승민",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "N : LOOP",
+        "PBR"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "N : LOOP",
+        "PBR"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "이은주",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "FLAP",
+        "HOVIO"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "FLAP"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "임준우",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Free to Face",
+        "LOBBY BOY"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Free to Face",
+        "LOBBY BOY"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "송현수",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "FIT STOP",
+        "ASCLEPIUS"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": []
+    },
+    {
+      "id": 12,
+      "name": "김민선",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "FIT STOP",
+        "HOVIO"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": []
+    },
+    {
+      "id": 13,
+      "name": "안서연",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Hey, Nua",
+        "WayFello"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Hey, Nua",
+        "WayFello"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "김병관",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "For-D",
+        "Beta"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "For-D",
+        "Beta"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "김지윤",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "OVERWATCH : Melo",
+        "MARS:KIN"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "OVERWATCH : Melo",
+        "MARS:KIN"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "조유진",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Libera",
+        "ASCLEPIUS"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": []
+    },
+    {
+      "id": 17,
+      "name": "이지민",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "OVERWATCH : Melo",
+        "MARS:KIN"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "OVERWATCH : Melo",
+        "MARS:KIN"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "강하영",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Free to Face",
+        "WayFello"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Free to Face",
+        "WayFello"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "황예은",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "SERO",
+        "SANCTUM"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "SERO",
+        "SANCTUM"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "김채연",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "SERO",
+        "SANCTUM"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "SERO",
+        "SANCTUM"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "황어진",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "lit",
+        "WayFello"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "lit",
+        "WayFello"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "이지수",
+      "major": "산업",
+      "missing": [
+        "인스타그램"
+      ],
+      "notes": [],
+      "projects": [
+        "lit",
+        "oodt"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "lit",
+        "oodt"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "김자현",
+      "major": "산업",
+      "missing": [
+        "영문명"
+      ],
+      "notes": [],
+      "projects": [
+        "FLAP",
+        "oodt"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "FLAP",
+        "oodt"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "고희원",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "zibi",
+        "Beta"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "zibi",
+        "Beta"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "이윤호",
+      "major": "산업",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "N : LOOP",
+        "PBR"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "N : LOOP",
+        "PBR"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "박민경",
+      "major": "산업",
+      "missing": [
+        "영문명"
+      ],
+      "notes": [],
+      "projects": [
+        "Hey, Nua"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Hey, Nua"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "이수아",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "SHABETREE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "SHABETREE"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "최수빈",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "SEGNO MUSIC FESTIVAL",
+        "NAUM RACE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "SEGNO MUSIC FESTIVAL",
+        "NAUM RACE"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "최한얼",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "사물팔자",
+        "밀도"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "사물팔자",
+        "밀도"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "이상학",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "ZZZ",
+        "FRMFRM"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "ZZZ",
+        "FRMFRM"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "이정무",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "What a Peaceful Neverland",
+        "PATINA"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "What a Peaceful Neverland",
+        "PATINA"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "김상민",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "NEUE PHILOSOPHER UNION",
+        "밀도"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "NEUE PHILOSOPHER UNION",
+        "밀도"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "최성경",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "구설귀",
+        "FLARIA"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "구설귀",
+        "FLARIA"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "신아영",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "신명원 : 디지털 신당",
+        "SAI"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "신명원 : 디지털 신당",
+        "SAI"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "장윤진",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "구설귀",
+        "MOLTYPE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "구설귀",
+        "MOLTYPE"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "허유진",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "신명원 : 디지털 신당",
+        "SAI"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "신명원 : 디지털 신당",
+        "SAI"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "이현지",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "OHJOTAK",
+        "FLARIA"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "OHJOTAK",
+        "FLARIA"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "최지훈",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "난리블루스",
+        "Xelra"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "난리블루스",
+        "Xelra"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "호영하",
+      "major": "시각",
+      "missing": [
+        "인스타그램"
+      ],
+      "notes": [],
+      "projects": [
+        "망쳐도 괜찮아"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "망쳐도 괜찮아"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "홍서연",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "난리블루스",
+        "Xelra"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "난리블루스",
+        "Xelra"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "이소현",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "What a Peaceful Neverland",
+        "EWA"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "What a Peaceful Neverland",
+        "EWA"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "이채연",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Slott",
+        "Studio. Query"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Slott",
+        "Studio. Query"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "이가연",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "해피한 척하기, 해-피한 척하기",
+        "INAWT"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "해피한 척하기, 해-피한 척하기",
+        "INAWT"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "이윤주",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "사이비담",
+        "EWA"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "사이비담",
+        "EWA"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "원서영",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "사이비담",
+        "CELLUMI"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "사이비담",
+        "CELLUMI"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "안소현",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "What a Peaceful Neverland",
+        "INAWT"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "What a Peaceful Neverland",
+        "INAWT"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "이유나",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "FRYDAY 180°C",
+        "CatchA!"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "FRYDAY 180°C",
+        "CatchA!"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "김윤아",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "파독각",
+        "OVE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "파독각",
+        "OVE"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "장유진",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "COMA NOVA : SPOT LIGHT",
+        "FORTO"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "COMA NOVA : SPOT LIGHT",
+        "FORTO"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "김선우",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "TOONG",
+        "Journey"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "TOONG",
+        "Journey"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "이승민",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "NEUE PHILOSOPHER UNION",
+        "밀도"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "NEUE PHILOSOPHER UNION",
+        "밀도"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "박은진",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "장기파업",
+        "STRAV"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "장기파업",
+        "STRAV"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "최예진",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "COMA NOVA : SPOT LIGHT",
+        "MOLTYPE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "COMA NOVA : SPOT LIGHT",
+        "MOLTYPE"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "박우희",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "COMA NOVA : SPOT LIGHT",
+        "FORTO"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "COMA NOVA : SPOT LIGHT",
+        "FORTO"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "이혜경",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "OHJOTAK",
+        "STRAV"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "OHJOTAK",
+        "STRAV"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "이한나",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "장기파업",
+        "CELLUMI"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "장기파업",
+        "CELLUMI"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "송민주",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "장기파업",
+        "STRAV"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "장기파업",
+        "STRAV"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "김나윤",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "FRYDAY 180°C",
+        "CatchA!"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "FRYDAY 180°C",
+        "CatchA!"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "백율리",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "파독각",
+        "OVE"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "파독각",
+        "OVE"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "탁빛나",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "TOONG",
+        "Journey"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "TOONG",
+        "Journey"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "송민서",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "ZZZ",
+        "AETHER"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "ZZZ",
+        "AETHER"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "동첸유",
+      "major": "시각",
+      "missing": [],
+      "notes": [
+        "개인 페이지 작품 연결 없음",
+        "제출명 동천위의 작품 2개 연결 확인 필요"
+      ],
+      "projects": [],
+      "probableProjects": [
+        "망원인 연구소",
+        "MOODIT"
+      ],
+      "descriptionMissing": [
+        "망원인 연구소",
+        "MOODIT"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "공유첸",
+      "major": "시각",
+      "missing": [],
+      "notes": [
+        "개인 페이지 작품 연결 없음",
+        "제출명 공위천의 작품 2개 연결 확인 필요"
+      ],
+      "projects": [],
+      "probableProjects": [
+        "망원인 연구소",
+        "MOODIT"
+      ],
+      "descriptionMissing": [
+        "망원인 연구소",
+        "MOODIT"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "이수민",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "극락왕생 보험사",
+        "ORVIX"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "극락왕생 보험사",
+        "ORVIX"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "김미리",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "극락왕생 보험사",
+        "ORVIX"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "극락왕생 보험사",
+        "ORVIX"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "지서은",
+      "major": "시각",
+      "missing": [],
+      "notes": [],
+      "projects": [
+        "Slott",
+        "Studio. Query"
+      ],
+      "probableProjects": [],
+      "descriptionMissing": [
+        "Slott",
+        "Studio. Query"
+      ]
+    }
+  ],
+  "fileCounts": {
+    "프로필": 66,
+    "썸네일": 64,
+    "상세 이미지": 66,
+    "영상": 3
+  },
+  "missingFiles": [],
+  "unlinkedProjects": [
+    {
+      "title": "망원인 연구소",
+      "id": "digital--e3346d",
+      "unlinkedAuthors": [
+        "공위천",
+        "동천위"
+      ]
+    },
+    {
+      "title": "MOODIT",
+      "id": "identity--e3346d",
+      "unlinkedAuthors": [
+        "공위천",
+        "동천위"
+      ]
+    }
+  ],
+  "emptyDescriptions": 59
+}

@@ -330,3 +330,8 @@
   .soosung img { width:268px; height:240px; }
   .printaku img { width:180px; height:98px; }
 }
+
+@media (min-width: 701px) {
+  .soosung picture { width: 268px; height: 268px; }
+  .soosung img { width: 268px; height: 268px; object-position: bottom; }
+}

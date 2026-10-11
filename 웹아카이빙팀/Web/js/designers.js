@@ -43,8 +43,11 @@ function createCard(designer) {
   link.href = `designer-detail.html?designer=${designer.id}`;
   nameKo.textContent = designer.nameKo;
   nameEn.textContent = designer.nameEn;
-  instagram.textContent = designer.instagram;
-  email.textContent = designer.email;
+  instagram.textContent = String(designer.instagram || '').trim();
+  email.textContent = String(designer.email || '').trim();
+  instagram.hidden = !instagram.textContent;
+  email.hidden = !email.textContent;
+  link.dataset.contactCount = String([instagram, email].filter((contact) => !contact.hidden).length);
   return card;
 }
 
