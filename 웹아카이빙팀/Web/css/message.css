@@ -424,3 +424,30 @@
   color:#777; font:400 12px/1.5 Pretendard,Arial,sans-serif;
   letter-spacing:0; white-space:nowrap; margin-left:auto;
 }
+
+/* Mobile Message — Figma 1764:8912. */
+@media (max-width:700px) {
+  .message-page { background:linear-gradient(180deg,#f0f3f7 54%,#b5c9ea 70%,#7eacf2 93%); }
+  .message-page .message-header { height:0; min-height:0; padding:0; }
+  .message-page .message-main { padding:120px 20px 80px; }
+  .message-page .message-main h1 { margin:0 0 20px; font:700 20px/1 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+  .message-page .message-form { gap:12px; }
+  .message-page .message-form :is(input,textarea) { padding:16px 20px; font:500 14px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .message-page .message-form :is(input,textarea)::placeholder { color:#999; -webkit-text-fill-color:#999; }
+  .message-page .message-form input { width:170px; height:44px; padding-block:10px; border-radius:22px; }
+  .message-page .message-form textarea { height:112px; min-height:112px; border-radius:20px; }
+  .message-actions { flex-direction:column; gap:12px; align-items:flex-end; }
+  .message-actions p { display:flex; justify-content:space-between; gap:12px; max-width:none; width:100%; font:500 12px/1.5 Pretendard,Arial,sans-serif; letter-spacing:0; }
+  .message-page .message-form button { height:44px; padding:10px 24px; border-radius:28px; background:#7eacf2; color:#141414; font-size:14px; line-height:1.5; }
+  .message-page .message-status { min-height:0; margin:12px 0 48px; font-size:12px; }
+  .message-list-heading { margin-bottom:20px; }
+  .message-list-heading h2 { font:600 18px/1.4 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .message-list-heading select { font:500 12px/1.5 Pretendard,Arial,sans-serif; }
+  .message-page .message-board,.message-column { gap:12px; }
+  .message-page .message-card { display:flex; flex-direction:column; gap:24px; padding:24px; border-radius:20px; }
+  .message-card-message { font:500 14px/1.7 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+  .message-card-meta .message-card-name { margin:0; font:500 14px/1.5 Pretendard,Arial,sans-serif; color:#141414; letter-spacing:-.02em; }
+  .message-card-date { font-weight:500; }
+  .message-more { margin-top:20px; }
+  .message-more button { height:auto; padding:14px 24px; font:500 14px/1.5 Pretendard,Arial,sans-serif; }
+}

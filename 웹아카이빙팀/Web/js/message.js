@@ -13,6 +13,7 @@
   let allMessages = [];
   let visibleCount = 12;
   const columns = window.matchMedia('(max-width: 900px)');
+  const mobileColumns = window.matchMedia('(max-width: 700px)');
   const syncCounter = () => { counter.textContent = `${messageInput.value.length} / 300`; };
   messageInput.addEventListener('input', syncCounter);
 
@@ -90,7 +91,7 @@
 
   const displayMessages = () => {
     const ordered = sort.value === 'oldest' ? [...allMessages].reverse() : allMessages;
-    const columnCount = columns.matches ? 2 : 4;
+    const columnCount = mobileColumns.matches ? 1 : columns.matches ? 2 : 4;
     const containers = Array.from({ length: columnCount }, () => {
       const column = document.createElement('div');
       column.className = 'message-column';
@@ -103,6 +104,7 @@
   sort.addEventListener('change', () => { visibleCount = 12; displayMessages(); });
   more.addEventListener('click', () => { visibleCount += 12; displayMessages(); });
   columns.addEventListener('change', displayMessages);
+  mobileColumns.addEventListener('change', displayMessages);
   const renderMessages = async () => {
     const messages = await readMessages();
     allMessages = [...messages, ...initialMessages];

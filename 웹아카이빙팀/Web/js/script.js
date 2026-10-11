@@ -271,12 +271,20 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   nav.querySelectorAll('[id]').forEach(n => n.removeAttribute('id'));
   nav.hidden = true;
   nav.inert = false;
+  nav.id = 'mobile-global-navigation';
+  button.setAttribute('aria-controls', nav.id);
   button.addEventListener('click', () => {
     const open = nav.hidden;
     nav.hidden = !open;
     header.classList.toggle('mobile-menu-open', open);
     button.setAttribute('aria-expanded', String(open));
     button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
+  });
+  header.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !nav.hidden) {
+      button.click();
+      button.focus();
+    }
   });
   header.append(logo, button, nav);
   document.body.append(header);
