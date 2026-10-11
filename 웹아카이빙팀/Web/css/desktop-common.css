@@ -133,7 +133,7 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
   body .site-logo,body .menu-toggle,body header .site-nav,
   body .profile-logotype { visibility:hidden !important; pointer-events:none; }
   body header.mobile-global-header {
-    display:grid; visibility:visible; position:absolute; z-index:100;
+    display:grid; visibility:visible; position:fixed; z-index:100;
     top:24px; left:20px; width:calc(100% - 40px); height:auto;
     padding:0 !important; margin:0; background:transparent;
     grid-template-columns:100px 24px; justify-content:space-between; align-items:center;
@@ -210,4 +210,22 @@ body.work-page .project-copy h2 {
 @media (max-width:700px) {
   body .back-button,
   body .work-detail-back { display:none !important; }
+}
+
+/* A feathered glass layer separates the fixed mobile controls from scrolling content. */
+@media (max-width:700px) {
+  body header.mobile-global-header::before {
+    content:""; position:absolute; z-index:0; pointer-events:none;
+    top:-24px; left:-20px; width:100vw; height:80px;
+    background:rgba(20,20,20,.10);
+    -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
+    opacity:0; transition:opacity 200ms ease;
+  }
+  body header.mobile-global-header.is-scrolled::before { opacity:1; }
+  .mobile-global-header > * { position:relative; z-index:1; }
+  @media (prefers-reduced-motion:reduce) {
+    body header.mobile-global-header::before { transition:none; }
+  }
 }

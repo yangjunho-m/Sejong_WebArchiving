@@ -33,11 +33,8 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   bar.append(logo, nav);
   document.body.append(bar);
 
-  let shown = false;
-  let anchorY = window.scrollY;
   let queued = false;
   const setVisible = (visible) => {
-    shown = visible;
     bar.classList.toggle('is-visible', visible);
     bar.inert = !visible;
     bar.setAttribute('aria-hidden', String(!visible));
@@ -132,7 +129,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   };
   window.navigationBackdropAt = backdropAt;
   const updateMenuContrast = (force = false) => {
-    if (!desktop.matches || !shown) return;
+    if (!desktop.matches || !bar.classList.contains('is-visible')) return;
     const now = performance.now();
     if (!force && now - lastContrastCheck < 80) return;
     lastContrastCheck = now;
@@ -166,28 +163,9 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   const update = () => {
     queued = false;
     const y = Math.max(0, window.scrollY);
-    const wasInTopRegion = bar.classList.contains('is-at-top');
-    const inTopRegion = desktop.matches && y <= bar.offsetHeight;
-    bar.classList.toggle('is-at-top', inTopRegion);
-    if (!desktop.matches || inTopRegion) {
-      // 첫 화면에서는 문서와 같은 속도로 올라가며 배경 레이어를 숨깁니다.
-      bar.style.transform = inTopRegion ? `translateY(${-y}px)` : '';
-      setVisible(desktop.matches);
-      anchorY = y;
-      updateMenuContrast();
-      return;
-    }
+    bar.classList.toggle('is-at-top', desktop.matches && y <= 1);
     bar.style.removeProperty('transform');
-    if (wasInTopRegion) {
-      setVisible(false);
-      anchorY = y;
-      return;
-    }
-    // 작은 스크롤 흔들림은 무시하고, 키보드로 사용 중인 메뉴는 유지합니다.
-    if (Math.abs(y - anchorY) >= 8) {
-      setVisible(y < anchorY || (shown && bar.contains(document.activeElement)));
-      anchorY = y;
-    }
+    setVisible(desktop.matches);
     updateMenuContrast();
   };
   window.addEventListener('scroll', () => {
@@ -301,6 +279,7 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   let contrastQueued = false;
   const updateContrast = () => {
     contrastQueued = false;
+    header.classList.toggle('is-scrolled', window.scrollY > 4);
     if (!mobile.matches || !window.navigationBackdropAt) return;
     const rect = button.getBoundingClientRect();
     if (rect.bottom <= 0 || rect.top >= innerHeight) return;
