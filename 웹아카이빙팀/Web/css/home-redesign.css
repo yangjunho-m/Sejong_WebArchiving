@@ -154,13 +154,13 @@
     width:min(650px,100%); aspect-ratio:650 / 916; flex:none;
   }
   .home-page .committee-content {
-    display:grid; grid-template-columns:203px minmax(0,1fr);
-    gap:132px; width:100%; max-width:1320px; align-items:start;
+    display:grid; grid-template-columns:calc((100% - 220px) * 3 / 12 + 40px) minmax(0,1fr);
+    gap:20px; width:100%; max-width:none; align-items:start;
   }
   .home-page .committee-content > h2 {
     margin:0; font:600 32px/1.3 "ITC Avant Garde Gothic Pro",Arial,sans-serif;
   }
-  .home-page .committee-roster { grid-template-columns:repeat(4,minmax(0,203px)); gap:60px 20px; }
+  .home-page .committee-roster { grid-template-columns:repeat(4,minmax(0,1fr)); gap:60px 20px; }
   .home-page .committee-person:nth-child(9) { gap:8px; }
 }
 @media (min-width:701px) and (max-width:1100px) {

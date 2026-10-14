@@ -340,3 +340,38 @@ body.work-detail-page .work-detail-links a:is(:hover, :focus-visible) {
     font-size:var(--desktop-type-tag);
   }
 }
+
+/* Footer: logo on column 1; links and contact share columns 4–12. */
+body footer.site-footer .footer-info { display:contents; }
+@media (min-width:1101px) {
+  body footer.site-footer .footer-info {
+    grid-column:4 / 13;
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:20px;
+    min-width:0;
+  }
+  body footer.site-footer .footer-info > .footer-link { flex-shrink:0; }
+  body footer.site-footer .footer-info > .footer-address {
+    flex:0 0 auto;
+    width:max-content;
+    max-width:100%;
+  }
+}
+
+/* Reading defaults informed by WCAG 1.4.8; not a full AAA conformance claim. */
+body :is(.intro-copy > p,.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date),.work-detail-desc) {
+  text-align:left;
+  line-height:1.6;
+  overflow-wrap:anywhere!important;
+}
+body :is(.intro-copy > p,.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date)) {
+  max-width:40em;
+  max-width:40ic;
+}
+body .intro-copy > p + p,
+body .partner-copy > p + p,
+body .detail-work-copy > p + p {
+  margin-top:2.4em;
+}
