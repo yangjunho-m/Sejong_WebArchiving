@@ -11,12 +11,12 @@
   /* Match the mobile glass effect, fading below the navigation controls. */
   body .scroll-navigation::before {
     inset:0 0 auto;
-    height:calc(100% + 40px);
+    height:calc(100% + 8px);
     background:rgba(20,20,20,.10);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 40px),rgba(0,0,0,.7) calc(100% - 24px),transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 40px),rgba(0,0,0,.7) calc(100% - 24px),transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 8px),rgba(0,0,0,.7) calc(100% - 4px),transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 8px),rgba(0,0,0,.7) calc(100% - 4px),transparent 100%);
     border:0;
     transition:opacity 200ms ease;
   }
