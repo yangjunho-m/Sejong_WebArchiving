@@ -384,7 +384,7 @@
 /* Message revision 1735:8434. */
 .message-page { background:linear-gradient(180deg,#f0f3f7 11%,#b5c9ea 57%,#7eacf2 90%); }
 .message-page .message-header { height:89px; background:transparent; }
-.message-page .message-main { background:transparent; padding:60px 60px 100px; font-family:Pretendard,Arial,sans-serif; }
+.message-page .message-main { background:transparent; padding:60px 60px 200px; font-family:Pretendard,Arial,sans-serif; }
 .message-page .message-main h1 { position:static; width:auto; height:auto; clip:auto; overflow:visible; white-space:normal; max-width:1096px; margin:0 auto 32px; font:700 32px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
 .message-page .message-form { display:flex; flex-direction:column; max-width:1096px; gap:16px; margin:0 auto; }
 .message-page .message-fields { display:contents; }

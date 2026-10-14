@@ -148,7 +148,7 @@
   .home-page .intro { padding-top:60px; }
   .home-page .committee {
     display:flex; flex-direction:column; align-items:center;
-    padding:120px 60px 180px; gap:200px;
+    padding:120px 60px 200px; gap:200px;
   }
   .home-page .committee-poster {
     width:min(650px,100%); aspect-ratio:650 / 916; flex:none;

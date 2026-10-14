@@ -300,7 +300,7 @@
 }
 
 @media (min-width: 1101px) {
-  .program-main { height: 1374px; min-height: 1374px; padding-bottom: 0; align-content: start; }
+  .program-main { height: auto; min-height: 0; padding-bottom: var(--program-bottom-gap); align-content: start; }
   .program-list {
     grid-column: 1 / -1;
     width: 876px;
