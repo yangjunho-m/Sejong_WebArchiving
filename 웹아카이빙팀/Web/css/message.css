@@ -449,5 +449,6 @@
   .message-card-meta .message-card-name { margin:0; font:500 14px/1.5 Pretendard,Arial,sans-serif; color:#141414; letter-spacing:-.02em; }
   .message-card-date { font-weight:500; }
   .message-more { margin-top:20px; }
+  .message-more:has(button[hidden]) { display:none; }
   .message-more button { height:auto; padding:14px 24px; font:500 14px/1.5 Pretendard,Arial,sans-serif; }
 }
