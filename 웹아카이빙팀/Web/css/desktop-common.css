@@ -1,5 +1,30 @@
 @font-face { font-family: Pretendard; src: url("../font/PretendardVariable.woff2") format("woff2"); font-weight: 100 900; font-style: normal; font-display: swap; }
 /* Shared desktop chrome; page content and mobile styling stay independent. */
+@media (min-width:701px) and (max-width:1100px) {
+  /* Keep the existing logo and 60px margins; fit navigation in the remaining row. */
+  body :is(.masthead,.work-header,.designers-header,.program-header,.partners-header,.message-header) nav.site-nav {
+    position:absolute;
+    inset:30px 60px auto 258.08px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+    justify-content:space-between;
+    width:auto;
+    height:41px;
+    padding:0;
+    gap:12px;
+    transform:none;
+  }
+  body :is(.masthead,.work-header,.designers-header,.program-header,.partners-header,.message-header) nav.site-nav .type-nav {
+    flex:0 0 auto;
+    font-size:clamp(14px,calc(1vw + 7px),18px);
+    white-space:nowrap;
+  }
+  body :is(.work-header,.designers-header,.program-header,.partners-header) nav.site-nav a.type-nav[aria-current="page"] {
+    color:#e4e4e4 !important;
+  }
+}
 @media (min-width: 1101px) {
   body .site-logo.site-logo { width: 169.144px !important; height: 41px !important; }
   body .scroll-navigation { --nav-height: 89px; }

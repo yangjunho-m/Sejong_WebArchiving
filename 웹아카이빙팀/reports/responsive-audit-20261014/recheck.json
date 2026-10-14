@@ -1,0 +1,3562 @@
+[
+  {
+    "width": 390,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 390,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 390,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 700,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 700,
+    "copyOffset": 0,
+    "nav": []
+  },
+  {
+    "width": 701,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 323.34375,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 412.15625,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 499,
+        "font": "14.01px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 579.0625,
+        "font": "14.01px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 279,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.046875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 420.609375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 501.21875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 575.046875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 701,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 701,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 290.328125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 349.375,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 431.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 586.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 327.6875,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 421.15625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 512.625,
+        "font": "14.2px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.234375,
+        "font": "14.2px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 285.328125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 344.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 426.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 507.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 581.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 720,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 720,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 296.65625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 355.703125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 438.265625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 518.875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 592.703125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 338.640625,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 443.875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 547.046875,
+        "font": "14.68px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 643.109375,
+        "font": "14.68px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 301.328125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 360.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 442.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 523.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 597.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 768,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 768,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 312.65625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 371.703125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 454.265625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 534.875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 608.703125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 368.78125,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 506.34375,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 641.6875,
+        "font": "16px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 769.265625,
+        "font": "16px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 345.328125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 404.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 486.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 567.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 641.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 900,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 900,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 356.65625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 415.703125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 498.265625,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 578.875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 652.703125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 397.078125,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 565.046875,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 730.59375,
+        "font": "17.24px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 887.796875,
+        "font": "17.24px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 398,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 457.046875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 539.609375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 620.21875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 694.046875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1024,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1024,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 397.984375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 457.03125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 539.59375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 620.203125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 694.03125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(228, 228, 228)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 258.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 414.421875,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 601.015625,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 785.078125,
+        "font": "18px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 960.4375,
+        "font": "18px",
+        "color": "rgb(0, 0, 0)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 423.328125,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 482.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 564.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 645.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 719.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1100,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1100,
+    "copyOffset": 0,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 423.328125,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 482.375,
+        "font": "14px",
+        "color": "rgb(0, 0, 0)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 564.9375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 645.546875,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 719.375,
+        "font": "14px",
+        "color": "rgb(153, 153, 153)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1101,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1101,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 391,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 512.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 666.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 816.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 958.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(207, 207, 207)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(207, 207, 207)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(207, 207, 207)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(207, 207, 207)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(207, 207, 207)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(41, 41, 41)"
+      }
+    ]
+  },
+  {
+    "width": 1280,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1280,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 570,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 691.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 845.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 995.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1137.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1512,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1512,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 802,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 923.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1077.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1227.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1369.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(191, 191, 191)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(86, 86, 86)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(86, 86, 86)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(86, 86, 86)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(86, 86, 86)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(86, 86, 86)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 1728,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 1728,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1018,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1139.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 1293.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 1443.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 1585.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "index.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/work.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(167, 167, 167)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/designers.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/program.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(85, 85, 85)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/partners.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(132, 132, 132)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/message.html",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/work-detail.html?id=digital--e3346d",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  },
+  {
+    "width": 2560,
+    "path": "html/designer-detail.html?designer=1",
+    "issues": [],
+    "scroll": 2560,
+    "copyOffset": -0.5,
+    "nav": [
+      {
+        "text": "WORKS",
+        "left": 1850,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "DESIGNERS",
+        "left": 1971.921875,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PROGRAM",
+        "left": 2125.53125,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "PARTNERS",
+        "left": 2275.890625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      },
+      {
+        "text": "MESSAGE",
+        "left": 2417.90625,
+        "font": "18px",
+        "color": "rgb(20, 20, 20)"
+      }
+    ]
+  }
+]
