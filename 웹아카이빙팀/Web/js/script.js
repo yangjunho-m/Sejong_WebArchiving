@@ -289,10 +289,11 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
   header.append(logo, button, nav);
   document.body.append(header);
   const mobile = window.matchMedia('(max-width: 700px)');
+  const isHome = document.body.classList.contains('home-page');
   const syncMobileBackdrop = () => {
     const scrollTop = document.scrollingElement?.scrollTop || window.scrollY;
     header.classList.toggle('is-scrolled', scrollTop > 4);
-    header.classList.toggle('has-button-logo', scrollTop > 1);
+    header.classList.toggle('has-button-logo', !isHome || scrollTop > 1);
   };
   let contrastQueued = false;
   const updateContrast = () => {
