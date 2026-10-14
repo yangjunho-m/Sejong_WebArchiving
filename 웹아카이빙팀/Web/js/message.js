@@ -167,7 +167,7 @@
       status.textContent = `메시지를 저장하지 못했습니다. ${error.message}`;
     } finally {
       button.disabled = false;
-      button.textContent = '전송하기';
+      button.textContent = '응원 남기기';
     }
   });
 
