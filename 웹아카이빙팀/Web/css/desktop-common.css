@@ -281,3 +281,63 @@ body.work-page .project-copy h2 {
 @media (min-width:1101px) and (prefers-reduced-motion:reduce) {
   body .scroll-navigation::before { transition:none; }
 }
+
+/* Contact links show an underline on hover and keyboard focus. */
+body.designer-detail-page .profile-links a:is(:hover, :focus-visible),
+body.work-detail-page .work-detail-links a:is(:hover, :focus-visible) {
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+
+/* Shared desktop type sizes. Page-specific families and weights are preserved. */
+:root {
+  --desktop-type-page:48px;
+  --desktop-type-section:32px;
+  --desktop-type-title:24px;
+  --desktop-type-subtitle:22px;
+  --desktop-type-name:18px;
+  --desktop-type-body:16px;
+  --desktop-type-meta:14px;
+  --desktop-type-tag:12px;
+}
+@media (min-width:701px) {
+  body :is(.program-title, .partners-title, .designers-title) h1 {
+    font-size:var(--desktop-type-page);
+  }
+  body.home-page .committee-content > h2,
+  body.message-page .message-main h1 {
+    font-size:var(--desktop-type-section);
+  }
+  body.program-page .program-card h3,
+  body.partners-page .partner-copy h2,
+  body.designer-detail-page .detail-work-card :is(h1,h2),
+  body.designer-detail-page .profile-name strong,
+  body.designers-page .designer-group h2 {
+    font-size:var(--desktop-type-title);
+  }
+  body.home-page .intro-details .intro-copy > h2,
+  body.message-page .message-list-heading h2 {
+    font-size:var(--desktop-type-subtitle);
+  }
+  body.home-page .committee-person-name,
+  body.designers-page .designer-card strong {
+    font-size:var(--desktop-type-name);
+  }
+  body.home-page .intro-copy .type-body,
+  body.home-page .exhibition-info :is(h3,p),
+  body.program-page .program-card-body p,
+  body.partners-page .partner-copy p,
+  body.designer-detail-page .detail-work-card p,
+  body.work-detail-page .work-detail-desc {
+    font-size:var(--desktop-type-body);
+  }
+  body.home-page .committee-person-role,
+  body.designers-page .designer-card small {
+    font-size:var(--desktop-type-meta);
+  }
+  body.program-page .program-card-head span,
+  body.designer-detail-page .detail-tags span,
+  body.work-detail-page .work-detail-tags span {
+    font-size:var(--desktop-type-tag);
+  }
+}

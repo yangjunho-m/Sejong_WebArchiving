@@ -54,7 +54,7 @@ if (initialId && document.getElementById(initialId)) {
   showWork(initialId);
 }
 
-fetch('../data/projects.json').then((response) => {
+fetch('../data/projects.json?v=20261014-onmi-assets').then((response) => {
   if (!response.ok) throw new Error('Project data could not be loaded.');
   return response.json();
 }).then(({ projects }) => {

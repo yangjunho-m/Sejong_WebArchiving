@@ -1,6 +1,6 @@
 async function loadDesigners() {
   try {
-    const response = await fetch('../data/designers.json?v=20261011-profile-webp');
+    const response = await fetch('../data/designers.json?v=20261014-onmi-assets');
     if (!response.ok) throw new Error('Designer JSON was not found.');
     const data = await response.json();
     if (!Array.isArray(data.industrial) || !Array.isArray(data.visual)) throw new Error('Invalid designer data.');
@@ -51,7 +51,7 @@ loadDesigners().then(async (data) => {
     profile.textContent = '';
   }
 
-  const projectResponse = await fetch('../data/projects.json');
+  const projectResponse = await fetch('../data/projects.json?v=20261014-onmi-assets');
   if (projectResponse.ok) {
     const { projects } = await projectResponse.json();
     const container = document.querySelector('.designer-works');

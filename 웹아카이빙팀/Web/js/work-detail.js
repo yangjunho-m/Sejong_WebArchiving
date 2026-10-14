@@ -3,8 +3,8 @@ const title = document.getElementById('project-name');
 const authors = document.getElementById('project-authors');
 const submittedProjectId = params.get('id');
   Promise.all([
-    fetch('../data/projects.json').then((response) => response.json()),
-    fetch('../data/designers.json').then((response) => response.json()),
+    fetch('../data/projects.json?v=20261014-catalog-descriptions').then((response) => response.json()),
+    fetch('../data/designers.json?v=20261014-catalog-descriptions').then((response) => response.json()),
   ]).then(([{ projects }, data]) => {
     const project = submittedProjectId
       ? projects.find((item) => item.id === submittedProjectId)

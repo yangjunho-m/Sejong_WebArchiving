@@ -397,7 +397,7 @@
   .profile-photo { width:100%; aspect-ratio:426 / 568; background-image:none; }
   .profile-name { margin-top:36px; gap:15.106px; }
   .profile-name strong { font:700 26px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
-  .profile-name b { font:600 18.883px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; color:#999; }
+  .profile-name b { font:600 18px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; color:#999; }
   .profile-name b:empty { display:none; }
   .profile-links { margin-top:28px; gap:5px; }
   .profile-links a { font:500 18px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; color:#fff; }
