@@ -280,6 +280,10 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
     button.setAttribute('aria-expanded', String(open));
     button.setAttribute('aria-label', open ? '메뉴 닫기' : '메뉴 열기');
   });
+  document.addEventListener('click', (event) => {
+    if (nav.hidden || nav.contains(event.target) || button.contains(event.target)) return;
+    button.click();
+  });
   header.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && !nav.hidden) {
       button.click();
