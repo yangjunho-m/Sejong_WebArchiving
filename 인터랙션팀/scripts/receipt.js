@@ -267,8 +267,8 @@ export async function renderReceipt({
   ctx.textAlign = "left";
   ctx.fillStyle = "#fff";
   ctx.fillRect(0, 1018, W, logicalHeight - 1018);
-  ctx.strokeStyle = "#777";
-  ctx.lineWidth = 1.5;
+  ctx.strokeStyle = INK;
+  ctx.lineWidth = 4;
   ctx.beginPath();
   ctx.moveTo(48, 1018);
   ctx.lineTo(W - 48, 1018);

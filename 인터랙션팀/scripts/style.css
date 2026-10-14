@@ -1883,8 +1883,8 @@ body:has(#detail[open]) #app {
   margin: 0 0 12px;
 }
 .receipt-vector-details section:first-child {
-  border-top: 1px solid #aaa;
-  padding-top: 12px;
+  border-top: 3px solid #141414;
+  padding-top: 24px;
 }
 .receipt-vector-details h2 {
   margin: 0 0 6px;
