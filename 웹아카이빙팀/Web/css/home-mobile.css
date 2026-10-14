@@ -106,7 +106,7 @@
     height: auto;
     min-height: 261px;
     padding: 24px 20px 48px !important;
-    grid-template-columns: repeat(3, max-content) !important;
+    grid-template-columns: max-content max-content minmax(0, 1fr) !important;
     grid-template-areas: "symbol symbol symbol" "instagram behance vimeo" "address address address";
     column-gap: 20px !important;
     row-gap: 40px !important;

@@ -166,7 +166,8 @@ body:is(.program-page, .work-page) .text-separator { font-family: Pretendard, sa
   body .mobile-global-nav a { color:#e4e4e4 !important; text-decoration:none; font-size:18px; }
   body .mobile-global-nav a[aria-current="page"] { text-decoration:none; }
   body footer.site-footer {
-    display:grid !important; grid-template-columns:max-content max-content max-content !important;
+    /* Fill the footer width so the copyright centers on the viewport. */
+    display:grid !important; grid-template-columns:max-content max-content minmax(0,1fr) !important;
     grid-template-areas:"symbol symbol symbol" "instagram behance vimeo" "address address address" "copyright copyright copyright" !important;
     height:auto !important; min-height:0 !important; padding:28px 20px 40px !important;
     column-gap:20px !important; row-gap:40px !important; background:#141414; color:#e4e4e4;
