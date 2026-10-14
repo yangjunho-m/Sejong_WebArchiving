@@ -14,8 +14,28 @@
   let visibleCount = 12;
   const columns = window.matchMedia('(max-width: 900px)');
   const mobileColumns = window.matchMedia('(max-width: 700px)');
-  const syncCounter = () => { counter.textContent = `${messageInput.value.length} / 300`; };
+  const resizeMessageInput = () => {
+    const styles = getComputedStyle(messageInput);
+    const minimum = parseFloat(styles.minHeight);
+    const maximum = parseFloat(styles.maxHeight);
+    messageInput.style.height = '0px';
+    const contentHeight = messageInput.scrollHeight + parseFloat(styles.borderTopWidth) + parseFloat(styles.borderBottomWidth);
+    messageInput.style.height = `${Math.min(maximum, Math.max(minimum, contentHeight))}px`;
+    messageInput.style.overflowY = contentHeight > maximum ? 'auto' : 'hidden';
+  };
+  const syncCounter = () => {
+    counter.textContent = `${messageInput.value.length} / 300`;
+    resizeMessageInput();
+  };
   messageInput.addEventListener('input', syncCounter);
+  let lastInputWidth = 0;
+  const inputObserver = new ResizeObserver(([entry]) => {
+    if (entry.contentRect.width === lastInputWidth) return;
+    lastInputWidth = entry.contentRect.width;
+    resizeMessageInput();
+  });
+  inputObserver.observe(messageInput);
+  document.fonts.ready.then(resizeMessageInput);
 
   const createCard = ({ name, message, createdAt }) => {
     const card = document.createElement('article');
@@ -97,14 +117,30 @@
       column.className = 'message-column';
       return column;
     });
-    ordered.slice(0, visibleCount).forEach((item, index) => containers[index % columnCount].append(createCard(item)));
     board.replaceChildren(...containers);
+    // Place each chronological message in the shortest rendered column.
+    // Measuring live cards accounts for wrapping, dates and the actual column width.
+    const heights = containers.map(() => 0);
+    ordered.slice(0, visibleCount).forEach(item => {
+      const columnIndex = heights.indexOf(Math.min(...heights));
+      const column = containers[columnIndex];
+      column.append(createCard(item));
+      heights[columnIndex] = column.getBoundingClientRect().height;
+    });
     more.hidden = visibleCount >= ordered.length;
   };
   sort.addEventListener('change', () => { visibleCount = 12; displayMessages(); });
   more.addEventListener('click', () => { visibleCount += 12; displayMessages(); });
-  columns.addEventListener('change', displayMessages);
-  mobileColumns.addEventListener('change', displayMessages);
+  let layoutFrame;
+  let lastBoardWidth = 0;
+  const resizeObserver = new ResizeObserver(([entry]) => {
+    if (entry.contentRect.width === lastBoardWidth) return;
+    lastBoardWidth = entry.contentRect.width;
+    cancelAnimationFrame(layoutFrame);
+    layoutFrame = requestAnimationFrame(displayMessages);
+  });
+  resizeObserver.observe(board);
+  document.fonts.ready.then(displayMessages);
   const renderMessages = async () => {
     const messages = await readMessages();
     allMessages = [...messages, ...initialMessages];
@@ -131,7 +167,7 @@
       status.textContent = `메시지를 저장하지 못했습니다. ${error.message}`;
     } finally {
       button.disabled = false;
-      button.textContent = '응원 남기기';
+      button.textContent = '전송하기';
     }
   });
 

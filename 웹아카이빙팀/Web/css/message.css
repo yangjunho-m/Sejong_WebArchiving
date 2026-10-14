@@ -452,3 +452,41 @@
   .message-more:has(button[hidden]) { display:none; }
   .message-more button { height:auto; padding:14px 24px; font:500 14px/1.5 Pretendard,Arial,sans-serif; }
 }
+
+/* MESSAGE — horizontal form and three-column cards, Figma 1925:8708. */
+.message-input-wrap { position:relative; min-width:0; }
+.message-page #encouragement { padding-right:88px; }
+#message-count { position:absolute; right:16px; top:14px; color:#777; font:400 14px/1.5 Pretendard,Arial,sans-serif; pointer-events:none; }
+.message-page .message-main h1 { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); margin:-1px; }
+.message-page .message-board { display:flex; align-items:flex-start; }
+.message-page .message-card { min-width:0; padding:24px; gap:24px; justify-content:flex-start; }
+body.message-page .message-card-message { overflow-wrap:anywhere!important; }
+.message-list-heading { border-top:1px solid rgba(20,20,20,.2); padding-top:24px; }
+.message-list-heading select { width:112px; height:44px; padding:0 16px; border:1px solid rgba(20,20,20,.3); border-radius:24px; background:rgba(255,255,255,.5); cursor:pointer; }
+.message-more { margin-top:24px; }
+.message-more button { height:48px; padding:12px 24px; }
+@media(min-width:701px) {
+  .message-page .message-main { min-height:0; padding-top:64px; }
+  .message-page .message-form { max-width:none; width:calc((100% - 220px) * 10 / 12 + 180px); display:grid; grid-template-columns:203px minmax(0,1fr) 112px; gap:12px 20px; }
+  .message-page .message-form input { width:100%; height:48px; padding:11px 20px; }
+  .message-page .message-form textarea { height:48px; min-height:48px; padding:11px 88px 11px 20px; border-radius:999px; }
+  .message-page .message-form button { width:112px; height:48px; padding:12px 16px; }
+  .message-page .message-status { min-height:0; margin:12px auto 64px; }
+  .message-page .message-status:empty { margin-top:0; }
+}
+@media(min-width:701px) and (max-width:1100px) {
+  .message-page .message-form { width:100%; grid-template-columns:160px minmax(0,1fr) 112px; }
+}
+
+@media(max-width:700px) {
+  .message-page .message-form { display:flex; }
+  .message-page .message-form textarea { padding-bottom:36px; }
+  #message-count { top:auto; bottom:12px; font-size:12px; }
+  .message-page .message-form button { align-self:flex-end; width:auto; }
+
+  .message-list-heading select { height:40px; }
+}
+
+/* Grow the editor with wrapped text and explicit line breaks. */
+.message-page .message-form { align-items:start; }
+.message-page .message-form #encouragement { display:block; max-height:320px; resize:none; border-radius:24px; overflow-y:hidden; }
