@@ -371,3 +371,17 @@
   .partners-page .rixfont img { width:111.86px; height:25px; }
   .partners-page .rin img { width:188px; height:124px; }
 }
+
+/* Center each logo/copy group after limiting the paragraph reading width. */
+@media (min-width:701px) {
+  .partners-page .partner-row {
+    width:min(100%,calc((100vw - 100px) / 3 + 40em));
+    width:min(100%,calc((100vw - 100px) / 3 + 40ic));
+    font-size:16px;
+    justify-self:center;
+    grid-template-columns:minmax(0,calc((100vw - 100px) / 4 - 20px)) minmax(0,1fr);
+    column-gap:calc((100vw - 100px) / 12 + 20px);
+  }
+  .partners-page .partner-logo { grid-column:1; }
+  .partners-page .partner-copy { grid-column:2; min-width:0; }
+}
