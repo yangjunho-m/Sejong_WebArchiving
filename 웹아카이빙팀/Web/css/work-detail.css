@@ -484,7 +484,8 @@
   .work-detail-author-block { display:flex; flex-direction:column; gap:12px; align-items:flex-start; }
   .work-detail-author { display:block; margin:0; color:#fff; font:600 20px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
   .work-detail-links { color:#fff; gap:12px; font:500 16px/1 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:-.02em; }
-  .work-detail-desc { width:min(100%,387px); max-width:none; color:#fff; font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
+  /* The grid gutter already supplies 20px of the 60px gap to the image. */
+  .work-detail-desc { width:calc(100% - var(--detail-side) + var(--detail-gutter)); max-width:none; color:#fff; font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.03em; }
   .work-detail-content { width:calc(100% + var(--detail-side)); min-height:0; background:#141414; }
   .work-detail-header { height:150px; }
   .project-detail-article { margin:0; padding:0; }

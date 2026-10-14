@@ -331,7 +331,6 @@ body.work-detail-page .work-detail-links a:is(:hover, :focus-visible) {
   body.work-detail-page .work-detail-desc {
     font-size:var(--desktop-type-body);
   }
-  body.home-page .committee-person-role,
   body.designers-page .designer-card small {
     font-size:var(--desktop-type-meta);
   }
