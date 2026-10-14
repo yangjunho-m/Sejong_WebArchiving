@@ -16,28 +16,28 @@
   .home-page .intro-details > .hero-logo { display: none; }
   .home-page .intro-details { display: contents; }
   .home-page .intro-heading {
-    --wordmark-width: clamp(220px, 29.583333vw, 426px);
+    --wordmark-width: calc((100vw - 340px) * 5 / 12 + 80px);
     grid-column: 1 / 13;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) var(--wordmark-width) minmax(0, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     column-gap: 20px;
     align-items: start;
   }
   .intro-heading p {
     margin: 0;
-    font: 500 clamp(16px, 1.527778vw, 22px)/1.3 var(--font-en);
+    font: 500 clamp(22px, 2.5vw, 36px)/1.3 var(--font-en);
     letter-spacing: -.04em;
     color: #e4e4e4;
     white-space: nowrap;
   }
   .intro-heading .exhibition-date,
   .intro-heading .exhibition-hours { width: 100%; min-width: 0; }
-  .exhibition-date { grid-column: 1; justify-self: start; text-align: left; }
-  .exhibition-hours { grid-column: 3; justify-self: end; text-align: right; }
+  .exhibition-date { grid-column: 1 / 4; justify-self: start; text-align: left; }
+  .exhibition-hours { grid-column: 10 / 13; justify-self: end; text-align: right; }
   .exhibition-wordmark {
-    grid-column: 2;
+    grid-column: 4 / 10;
     position: relative;
-    height: 171.684px;
+    height: calc(var(--wordmark-width) * 0.403014);
     width: 426px;
     justify-self: center;
     transform: scale(calc(var(--wordmark-width) / 426px));
