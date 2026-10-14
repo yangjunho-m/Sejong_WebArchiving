@@ -541,3 +541,9 @@ body.message-page .message-card-message { overflow-wrap:anywhere!important; }
     border-radius:20px;
   }
 }
+
+/* Keep the message-page footer at the viewport bottom when the board is short. */
+.message-page { min-height:100vh; display:flex; flex-direction:column; }
+.message-page .message-main { flex:1 0 auto; }
+.message-page > footer.site-footer { flex-shrink:0; }
+
