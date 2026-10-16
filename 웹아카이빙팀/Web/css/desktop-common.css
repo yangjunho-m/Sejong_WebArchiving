@@ -392,7 +392,7 @@ body :is(.intro-copy > p,.project-copy > p:last-child,.partner-copy > p,.detail-
   line-height:1.6;
   overflow-wrap:anywhere!important;
 }
-body :is(.intro-copy > p,.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date)) {
+body :is(.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date)) {
   max-width:40em;
   max-width:40ic;
 }

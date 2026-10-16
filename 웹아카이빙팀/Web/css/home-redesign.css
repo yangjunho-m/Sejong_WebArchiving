@@ -47,7 +47,7 @@
   .buttonup-mark { position: absolute; left: -.639px; top: 70.711px; }
   .exhibition-wordmark img { display: block; }
   .home-page .intro-details .intro-copy {
-    grid-column: 1 / 9;
+    grid-column: 1 / 8;
     width: 100%;
     gap: 8px;
     margin: 0;
@@ -56,7 +56,7 @@
     margin: 0 0 8px;
     font-size: 22px;
   }
-  .home-page .intro-details .intro-copy > p { width: min(100%, 762px); }
+  .home-page .intro-details .intro-copy > p { width: 100%; }
   .home-page .exhibition-info { grid-column: 9 / 13; }
   .home-page .exhibition-info h3 { font-size: 18px; margin-bottom: 16px; }
   .home-page .exhibition-info p { font-size: 16px; }
