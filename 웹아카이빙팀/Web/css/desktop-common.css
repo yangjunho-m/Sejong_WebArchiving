@@ -253,16 +253,15 @@ body.work-page .project-copy h2 {
   body .work-detail-back { display:none !important; }
 }
 
-/* The mobile scroll edge uses the same gentle falloff, scaled to its controls. */
+/* A feathered glass layer separates the fixed mobile controls from scrolling content. */
 @media (max-width:700px) {
   body header.mobile-global-header::before {
     content:""; position:absolute; z-index:0; pointer-events:none;
-    /* Overscan above the viewport so Safari does not expose a sharp sampling edge. */
-    top:-144px; left:-20px; width:100vw; height:224px;
-    background:rgba(20,20,20,.08);
+    top:-24px; left:-20px; width:100vw; height:80px;
+    background:rgba(20,20,20,.10);
     -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 54px),rgba(0,0,0,.94) calc(100% - 44px),rgba(0,0,0,.72) calc(100% - 34px),rgba(0,0,0,.40) calc(100% - 22px),rgba(0,0,0,.12) calc(100% - 10px),transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 54px),rgba(0,0,0,.94) calc(100% - 44px),rgba(0,0,0,.72) calc(100% - 34px),rgba(0,0,0,.40) calc(100% - 22px),rgba(0,0,0,.12) calc(100% - 10px),transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
     opacity:0; transition:opacity 200ms ease;
   }
   body header.mobile-global-header.is-scrolled::before { opacity:1; }
