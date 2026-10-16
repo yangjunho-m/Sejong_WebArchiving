@@ -33,15 +33,15 @@
   body header.scroll-navigation nav.site-nav.site-nav a.type-nav { text-decoration: none !important; }
   body .site-nav .type-nav { font-size: 18px; letter-spacing: 0; text-box-trim: trim-both; text-box-edge: cap alphabetic; }
   body header.scroll-navigation nav.site-nav.site-nav a.type-nav { color: var(--nav-text-color, #141414) !important; }
-  /* Match the mobile glass effect, fading below the navigation controls. */
+  /* Soft scroll edge: keep contrast behind controls and feather into the content. */
   body .scroll-navigation::before {
     inset:0 0 auto;
-    height:calc(100% + 8px);
-    background:rgba(20,20,20,.10);
+    height:calc(100% + 40px);
+    background:rgba(20,20,20,.08);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 8px),rgba(0,0,0,.7) calc(100% - 4px),transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 8px),rgba(0,0,0,.7) calc(100% - 4px),transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 64px),rgba(0,0,0,.94) calc(100% - 52px),rgba(0,0,0,.72) calc(100% - 40px),rgba(0,0,0,.40) calc(100% - 26px),rgba(0,0,0,.12) calc(100% - 12px),transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 64px),rgba(0,0,0,.94) calc(100% - 52px),rgba(0,0,0,.72) calc(100% - 40px),rgba(0,0,0,.40) calc(100% - 26px),rgba(0,0,0,.12) calc(100% - 12px),transparent 100%);
     border:0;
     transition:opacity 200ms ease;
   }
@@ -253,15 +253,15 @@ body.work-page .project-copy h2 {
   body .work-detail-back { display:none !important; }
 }
 
-/* A feathered glass layer separates the fixed mobile controls from scrolling content. */
+/* The mobile scroll edge uses the same gentle falloff, scaled to its controls. */
 @media (max-width:700px) {
   body header.mobile-global-header::before {
     content:""; position:absolute; z-index:0; pointer-events:none;
-    top:-24px; left:-20px; width:100vw; height:80px;
-    background:rgba(20,20,20,.10);
+    top:-24px; left:-20px; width:100vw; height:104px;
+    background:rgba(20,20,20,.08);
     -webkit-backdrop-filter:blur(18px); backdrop-filter:blur(18px);
-    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0%,#000 52%,rgba(0,0,0,.7) 72%,transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 50px,rgba(0,0,0,.94) 60px,rgba(0,0,0,.72) 70px,rgba(0,0,0,.40) 82px,rgba(0,0,0,.12) 94px,transparent 104px);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 50px,rgba(0,0,0,.94) 60px,rgba(0,0,0,.72) 70px,rgba(0,0,0,.40) 82px,rgba(0,0,0,.12) 94px,transparent 104px);
     opacity:0; transition:opacity 200ms ease;
   }
   body header.mobile-global-header.is-scrolled::before { opacity:1; }
