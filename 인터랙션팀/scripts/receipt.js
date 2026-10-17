@@ -311,9 +311,9 @@ export function printReceipt(canvas) {
     #receipt-artwork,
     .print-fallback {
       display: block;
-      width: 72mm;
+      width: 80mm;
       height: auto;
-      margin: 0 0mm 0.5mm 0mm;
+      margin: 0 0mm 0.5cm 0mm;
       transform: translateY(-2mm);
     }
     .receipt-vector-details {
