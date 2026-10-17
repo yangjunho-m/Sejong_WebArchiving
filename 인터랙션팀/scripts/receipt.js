@@ -313,7 +313,7 @@ export function printReceipt(canvas) {
       display: block;
       width: 72mm;
       height: auto;
-      margin: 0 4mm 0 4mm;
+      margin: 0 0mm 0 0mm;
       transform: translateY(-2mm);
     }
     .receipt-vector-details {
