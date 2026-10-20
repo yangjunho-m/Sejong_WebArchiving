@@ -2,6 +2,7 @@
   const form = document.querySelector('#message-form');
   const board = document.querySelector('#message-board');
   const status = document.querySelector('#message-status');
+  const boardStatus = document.querySelector('#message-board-status');
   const apiConfig = window.MESSAGE_API_CONFIG || {};
   const apiEndpoint = apiConfig.endpoint;
   const initialMessages = [];
@@ -76,8 +77,7 @@
 
   const readMessages = async () => {
     if (!apiEndpoint) {
-      status.textContent = '메시지 API 주소가 설정되지 않았습니다.';
-      return [];
+      throw new Error('Message API endpoint is missing.');
     }
 
     const response = await fetch(apiEndpoint, {
@@ -143,6 +143,8 @@
   document.fonts.ready.then(displayMessages);
   const renderMessages = async () => {
     const messages = await readMessages();
+    boardStatus.textContent = '';
+    boardStatus.hidden = true;
     allMessages = [...messages, ...initialMessages];
     displayMessages();
   };
@@ -172,7 +174,8 @@
   });
 
   renderMessages().catch(() => {
-    status.textContent = '메시지를 불러오지 못했습니다.';
+    boardStatus.textContent = '메시지를 불러오지 못했습니다. 잠시 후 다시 시도해주세요.';
+    boardStatus.hidden = false;
     board.replaceChildren(...initialMessages.map(createCard));
   });
 })();

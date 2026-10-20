@@ -547,3 +547,15 @@ body.message-page .message-card-message { overflow-wrap:anywhere!important; }
 .message-page .message-main { flex:1 0 auto; }
 .message-page > footer.site-footer { flex-shrink:0; }
 
+/* Loading feedback belongs to the message list, separately from form feedback. */
+.message-page .message-board-status {
+  margin:0;
+  padding:40px 20px;
+  border-radius:12px;
+  background:rgba(255,255,255,.5);
+  color:#555;
+  font:400 14px/1.6 Pretendard,Arial,sans-serif;
+  text-align:center;
+}
+.message-page .message-board-status[hidden] { display:none; }
+
