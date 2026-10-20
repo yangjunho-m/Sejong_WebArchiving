@@ -51,7 +51,7 @@ loadDesigners().then(async (data) => {
     profile.textContent = '';
   }
 
-  const projectResponse = await fetch('../data/projects.json?v=20261014-onmi-assets');
+  const projectResponse = await fetch('../data/projects.json?v=20261020-webp-thumbnails');
   if (projectResponse.ok) {
     const { projects } = await projectResponse.json();
     const container = document.querySelector('.designer-works');
