@@ -367,21 +367,39 @@ body.work-detail-page .work-detail-links a:is(:hover, :focus-visible) {
   }
 }
 
-/* Footer: logo on column 1; links and contact share columns 4–12. */
+/* Footer content participates in the shared twelve-column grid. */
 body footer.site-footer .footer-info { display:contents; }
 @media (min-width:1101px) {
-  body footer.site-footer .footer-info {
-    grid-column:4 / 13;
-    display:flex;
-    align-items:flex-start;
-    justify-content:space-between;
-    gap:20px;
-    min-width:0;
+  /* Figma 2058:11154: capped content width, 40px top, 100px before copyright. */
+  body footer.site-footer {
+    height:auto;
+    min-height:266px;
+    padding:40px max(60px, calc((100% - 1320px) / 2)) 34px;
+    grid-template-rows:minmax(74px,auto) auto;
+    row-gap:100px;
   }
-  body footer.site-footer .footer-info > .footer-link { flex-shrink:0; }
-  body footer.site-footer .footer-info > .footer-address {
-    flex:0 0 auto;
-    width:max-content;
-    max-width:100%;
+  body footer.site-footer .footer-symbol { grid-column:1 / 4; }
+  body footer.site-footer .footer-link:nth-of-type(1) { grid-column:4 / 6; }
+  body footer.site-footer .footer-link:nth-of-type(2) { grid-column:6 / 8; }
+  body footer.site-footer .footer-link:nth-of-type(3) { grid-column:8 / 10; }
+  body footer.site-footer .footer-address {
+    grid-column:10 / 13;
+    gap:3.433px;
+  }
+  body footer.site-footer .footer-address,
+  body footer.site-footer .footer-address * {
+    font-size:13.733px !important;
+    line-height:1.4 !important;
+  }
+  body footer.site-footer .copyright {
+    grid-column:1 / -1;
+    grid-row:2;
+    position:static;
+    transform:none;
+    width:auto;
+    margin:0;
+    text-align:center;
+    font-size:12px;
+    line-height:1.5;
   }
 }
