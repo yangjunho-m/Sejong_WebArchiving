@@ -371,7 +371,8 @@ body.work-detail-page .work-detail-links a:is(:hover, :focus-visible) {
 body footer.site-footer .footer-info { display:contents; }
 @media (min-width:1101px) {
   /* Figma 2058:11154: capped content width, 40px top, 100px before copyright. */
-  body footer.site-footer {
+  body footer.site-footer,
+  body.home-page footer.site-footer {
     height:auto;
     min-height:266px;
     padding:40px max(60px, calc((100% - 1320px) / 2)) 34px;

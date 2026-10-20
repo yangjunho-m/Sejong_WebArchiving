@@ -1,6 +1,6 @@
 async function loadDesigners() {
   try {
-    const response = await fetch('../data/designers.json?v=20261014-onmi-assets');
+    const response = await fetch('../data/designers.json?v=20261020-mobile-webp');
     if (!response.ok) throw new Error('Designer JSON was not found.');
     const data = await response.json();
     if (!Array.isArray(data.industrial) || !Array.isArray(data.visual)) throw new Error('Invalid designer data.');
@@ -47,11 +47,18 @@ loadDesigners().then(async (data) => {
 
   if (designer.profileImage) {
     const profile = document.querySelector('.profile-photo');
-    profile.style.backgroundImage = `url(${designer.profileImage})`;
+    const mobileProfile = window.matchMedia('(max-width: 700px)');
+    const updateProfileImage = () => {
+      const src = mobileProfile.matches && designer.profileImageMobile
+        ? designer.profileImageMobile : designer.profileImage;
+      profile.style.backgroundImage = `url(${src})`;
+    };
+    updateProfileImage();
+    mobileProfile.addEventListener('change', updateProfileImage);
     profile.textContent = '';
   }
 
-  const projectResponse = await fetch('../data/projects.json?v=20261020-webp-thumbnails');
+  const projectResponse = await fetch('../data/projects.json?v=20261020-mobile-webp');
   if (projectResponse.ok) {
     const { projects } = await projectResponse.json();
     const container = document.querySelector('.designer-works');
@@ -59,7 +66,15 @@ loadDesigners().then(async (data) => {
       const card = document.createElement('article'); card.className = 'detail-work-card';
       const link = document.createElement('a'); link.href = `work-detail.html?id=${encodeURIComponent(project.id)}`;
       const image = document.createElement('img'); image.src = project.thumbnail; image.alt = project.title || project.sourceTeam; image.loading = 'lazy';
-      link.append(image);
+      const picture = document.createElement('picture');
+      if (project.thumbnailMobile) {
+        const source = document.createElement('source');
+        source.media = '(max-width: 700px)';
+        source.srcset = project.thumbnailMobile;
+        picture.append(source);
+      }
+      picture.append(image);
+      link.append(picture);
       const tags = document.createElement('div'); tags.className = 'detail-tags';
       tags.append(...project.tags.map(text => { const span = document.createElement('span'); span.textContent = text; return span; }));
       const copy = document.createElement('div'); copy.className = 'detail-work-copy';

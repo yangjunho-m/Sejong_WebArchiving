@@ -11,7 +11,8 @@
       "works": [
         "product-001-024",
         "system-001-005"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이준석_프로필-mobile.webp"
     },
     {
       "id": 2,
@@ -24,7 +25,8 @@
       "works": [
         "product-002-007",
         "system-002-010"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김경덕_프로필-mobile.webp"
     },
     {
       "id": 3,
@@ -37,7 +39,8 @@
       "works": [
         "product-003-006",
         "system-003-004"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/박범수_프로필-mobile.webp"
     },
     {
       "id": 4,
@@ -50,7 +53,8 @@
       "works": [
         "product-004-014",
         "system-003-004"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/권동혁_프로필-mobile.webp"
     },
     {
       "id": 5,
@@ -63,7 +67,8 @@
       "works": [
         "product-005-016",
         "system-001-005"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/진민석_프로필-mobile.webp"
     },
     {
       "id": 6,
@@ -76,7 +81,8 @@
       "works": [
         "product-003-006",
         "fusion-006-007-049-059"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/박한울_프로필-mobile.webp"
     },
     {
       "id": 7,
@@ -89,7 +95,8 @@
       "works": [
         "fusion-006-007-049-059",
         "product-002-007"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/엄지혁_프로필-mobile.webp"
     },
     {
       "id": 8,
@@ -102,7 +109,8 @@
       "works": [
         "product-008-025",
         "system-008-025"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김승민_프로필-mobile.webp"
     },
     {
       "id": 9,
@@ -115,7 +123,8 @@
       "works": [
         "product-009-023",
         "system-009-012"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이은주_프로필-mobile.webp"
     },
     {
       "id": 10,
@@ -128,7 +137,8 @@
       "works": [
         "product-010-018",
         "system-002-010"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/임준우_프로필-mobile.webp"
     },
     {
       "id": 11,
@@ -141,7 +151,8 @@
       "works": [
         "product-011-012",
         "system-011-016"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/송현수_프로필-mobile.webp"
     },
     {
       "id": 12,
@@ -154,7 +165,8 @@
       "works": [
         "product-011-012",
         "system-009-012"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김민선_프로필-mobile.webp"
     },
     {
       "id": 13,
@@ -167,7 +179,8 @@
       "works": [
         "product-013-d47919",
         "system-013-018-021"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/안서연_프로필-mobile.webp"
     },
     {
       "id": 14,
@@ -180,7 +193,8 @@
       "works": [
         "product-004-014",
         "system-014-024"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김병관_프로필-mobile.webp"
     },
     {
       "id": 15,
@@ -193,7 +207,8 @@
       "works": [
         "product-015-017",
         "system-015-017"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김지윤_프로필-mobile.webp"
     },
     {
       "id": 16,
@@ -206,7 +221,8 @@
       "works": [
         "product-005-016",
         "system-011-016"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/조유진_프로필-mobile.webp"
     },
     {
       "id": 17,
@@ -219,7 +235,8 @@
       "works": [
         "product-015-017",
         "system-015-017"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이지민_프로필-mobile.webp"
     },
     {
       "id": 18,
@@ -232,7 +249,8 @@
       "works": [
         "product-010-018",
         "system-013-018-021"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/강하영_프로필-mobile.webp"
     },
     {
       "id": 19,
@@ -245,7 +263,8 @@
       "works": [
         "product-019-020",
         "system-019-020"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/황예은_프로필-mobile.webp"
     },
     {
       "id": 20,
@@ -258,7 +277,8 @@
       "works": [
         "product-019-020",
         "system-019-020"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김채연_프로필-mobile.webp"
     },
     {
       "id": 21,
@@ -271,7 +291,8 @@
       "works": [
         "product-021-022",
         "system-013-018-021"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/황어진_프로필-mobile.webp"
     },
     {
       "id": 22,
@@ -284,7 +305,8 @@
       "works": [
         "product-021-022",
         "system-022-023"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이지수_프로필-mobile.webp"
     },
     {
       "id": 23,
@@ -297,7 +319,8 @@
       "works": [
         "product-009-023",
         "system-022-023"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김자현_프로필-mobile.webp"
     },
     {
       "id": 24,
@@ -310,7 +333,8 @@
       "works": [
         "product-001-024",
         "system-014-024"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/고희원_프로필-mobile.webp"
     },
     {
       "id": 25,
@@ -323,7 +347,8 @@
       "works": [
         "product-008-025",
         "system-008-025"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이윤호_프로필-mobile.webp"
     },
     {
       "id": 65,
@@ -335,7 +360,8 @@
       "profileImage": "../img/profiles/박민경_프로필.webp",
       "works": [
         "product-013-d47919"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/박민경_프로필-mobile.webp"
     }
   ],
   "visual": [
@@ -349,7 +375,8 @@
       "profileImage": "../img/profiles/이수아_프로필.webp",
       "works": [
         "identity-026"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이수아_프로필-mobile.webp"
     },
     {
       "id": 27,
@@ -362,7 +389,8 @@
       "works": [
         "digital-027",
         "identity-027"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/최수빈_프로필-mobile.webp"
     },
     {
       "id": 28,
@@ -375,7 +403,8 @@
       "works": [
         "digital-028",
         "identity-028-031-050"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/최한얼_프로필-mobile.webp"
     },
     {
       "id": 29,
@@ -388,7 +417,8 @@
       "works": [
         "digital-029-060",
         "identity-029"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이상학_프로필-mobile.webp"
     },
     {
       "id": 30,
@@ -401,7 +431,8 @@
       "works": [
         "digital-030-040-045",
         "identity-030"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이정무_프로필-mobile.webp"
     },
     {
       "id": 31,
@@ -414,7 +445,8 @@
       "works": [
         "digital-031-050",
         "identity-028-031-050"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김상민_프로필-mobile.webp"
     },
     {
       "id": 32,
@@ -427,7 +459,8 @@
       "works": [
         "digital-032-034",
         "identity-032-036"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/최성경_프로필-mobile.webp"
     },
     {
       "id": 33,
@@ -440,7 +473,8 @@
       "works": [
         "digital-033-035",
         "identity-033-035"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/신아영_프로필-mobile.webp"
     },
     {
       "id": 34,
@@ -453,7 +487,8 @@
       "works": [
         "digital-032-034",
         "identity-034-052"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/장윤진_프로필-mobile.webp"
     },
     {
       "id": 35,
@@ -466,7 +501,8 @@
       "works": [
         "digital-033-035",
         "identity-033-035"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/허유진_프로필-mobile.webp"
     },
     {
       "id": 36,
@@ -479,7 +515,8 @@
       "works": [
         "digital-036-054",
         "identity-032-036"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이현지_프로필-mobile.webp"
     },
     {
       "id": 37,
@@ -492,7 +529,8 @@
       "works": [
         "digital-037-039",
         "identity-037-039"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/최지훈_프로필-mobile.webp"
     },
     {
       "id": 38,
@@ -504,7 +542,8 @@
       "profileImage": "../img/profiles/호영하_프로필.webp",
       "works": [
         "digital-038"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/호영하_프로필-mobile.webp"
     },
     {
       "id": 39,
@@ -517,7 +556,8 @@
       "works": [
         "digital-037-039",
         "identity-037-039"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/홍서연_프로필-mobile.webp"
     },
     {
       "id": 40,
@@ -530,7 +570,8 @@
       "works": [
         "digital-030-040-045",
         "identity-040-043"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이소현_프로필-mobile.webp"
     },
     {
       "id": 41,
@@ -543,7 +584,8 @@
       "works": [
         "digital-041-9b436e",
         "identity-041-9b436e"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이채연_프로필-mobile.webp"
     },
     {
       "id": 42,
@@ -556,7 +598,8 @@
       "works": [
         "digital-042",
         "identity-042-045"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이가연_프로필-mobile.webp"
     },
     {
       "id": 43,
@@ -569,7 +612,8 @@
       "works": [
         "digital-043-044",
         "identity-040-043"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이윤주_프로필-mobile.webp"
     },
     {
       "id": 44,
@@ -582,7 +626,8 @@
       "works": [
         "digital-043-044",
         "identity-044-055"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/원서영_프로필-mobile.webp"
     },
     {
       "id": 45,
@@ -595,7 +640,8 @@
       "works": [
         "digital-030-040-045",
         "identity-042-045"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/안소현_프로필-mobile.webp"
     },
     {
       "id": 46,
@@ -608,7 +654,8 @@
       "works": [
         "digital-046-057",
         "identity-046-057"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이유나_프로필-mobile.webp"
     },
     {
       "id": 47,
@@ -621,7 +668,8 @@
       "works": [
         "digital-047-058",
         "identity-047-058"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김윤아_프로필-mobile.webp"
     },
     {
       "id": 48,
@@ -634,7 +682,8 @@
       "works": [
         "digital-048-052-053",
         "identity-048-053"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/장유진_프로필-mobile.webp"
     },
     {
       "id": 49,
@@ -647,7 +696,8 @@
       "works": [
         "digital-049-059",
         "fusion-006-007-049-059"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김선우_프로필-mobile.webp"
     },
     {
       "id": 50,
@@ -660,7 +710,8 @@
       "works": [
         "digital-031-050",
         "identity-028-031-050"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이승민_프로필-mobile.webp"
     },
     {
       "id": 51,
@@ -673,7 +724,8 @@
       "works": [
         "digital-051-055-056",
         "identity-051-054-056"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/박은진_프로필-mobile.webp"
     },
     {
       "id": 52,
@@ -686,7 +738,8 @@
       "works": [
         "digital-048-052-053",
         "identity-034-052"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/최예진_프로필-mobile.webp"
     },
     {
       "id": 53,
@@ -699,7 +752,8 @@
       "works": [
         "digital-048-052-053",
         "identity-048-053"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/박우희_프로필-mobile.webp"
     },
     {
       "id": 54,
@@ -712,7 +766,8 @@
       "works": [
         "digital-036-054",
         "identity-051-054-056"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이혜경_프로필-mobile.webp"
     },
     {
       "id": 55,
@@ -725,7 +780,8 @@
       "works": [
         "digital-051-055-056",
         "identity-044-055"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이한나_프로필-mobile.webp"
     },
     {
       "id": 56,
@@ -738,7 +794,8 @@
       "works": [
         "digital-051-055-056",
         "identity-051-054-056"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/송민주_프로필-mobile.webp"
     },
     {
       "id": 57,
@@ -751,7 +808,8 @@
       "works": [
         "digital-046-057",
         "identity-046-057"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김나윤_프로필-mobile.webp"
     },
     {
       "id": 58,
@@ -764,7 +822,8 @@
       "works": [
         "digital-047-058",
         "identity-047-058"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/백율리_프로필-mobile.webp"
     },
     {
       "id": 59,
@@ -777,7 +836,8 @@
       "works": [
         "digital-049-059",
         "fusion-006-007-049-059"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/탁빛나_프로필-mobile.webp"
     },
     {
       "id": 60,
@@ -790,7 +850,8 @@
       "works": [
         "digital-029-060",
         "identity-060"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/송민서_프로필-mobile.webp"
     },
     {
       "id": 61,
@@ -803,7 +864,8 @@
       "works": [
         "digital--e3346d",
         "identity--e3346d"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/동첸유_프로필-mobile.webp"
     },
     {
       "id": 62,
@@ -816,7 +878,8 @@
       "works": [
         "digital--e3346d",
         "identity--e3346d"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/공유첸_프로필-mobile.webp"
     },
     {
       "id": 63,
@@ -829,7 +892,8 @@
       "works": [
         "digital-063-064",
         "identity-063-064"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/이수민_프로필-mobile.webp"
     },
     {
       "id": 64,
@@ -842,7 +906,8 @@
       "works": [
         "digital-063-064",
         "identity-063-064"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/김미리_프로필-mobile.webp"
     },
     {
       "id": 66,
@@ -855,7 +920,8 @@
       "works": [
         "digital-041-9b436e",
         "identity-041-9b436e"
-      ]
+      ],
+      "profileImageMobile": "../img/profiles/지서은_프로필-mobile.webp"
     }
   ]
 }

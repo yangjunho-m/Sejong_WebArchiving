@@ -54,7 +54,7 @@ if (initialId && document.getElementById(initialId)) {
   showWork(initialId);
 }
 
-fetch('../data/projects.json?v=20261020-webp-thumbnails').then((response) => {
+fetch('../data/projects.json?v=20261020-mobile-webp').then((response) => {
   if (!response.ok) throw new Error('Project data could not be loaded.');
   return response.json();
 }).then(({ projects }) => {
@@ -76,7 +76,15 @@ fetch('../data/projects.json?v=20261020-webp-thumbnails').then((response) => {
       image.loading = 'lazy';
       const wrapper = document.createElement('div');
       wrapper.className = 'project-image';
-      wrapper.append(image);
+      const picture = document.createElement('picture');
+      if (project.thumbnailMobile) {
+        const source = document.createElement('source');
+        source.media = '(max-width: 700px)';
+        source.srcset = project.thumbnailMobile;
+        picture.append(source);
+      }
+      picture.append(image);
+      wrapper.append(picture);
       const overlay = document.createElement('div');
       overlay.className = 'project-hover';
       overlay.setAttribute('aria-hidden', 'true');
