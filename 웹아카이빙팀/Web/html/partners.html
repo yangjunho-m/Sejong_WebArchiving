@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/mobile-layout.css">
     <link rel="stylesheet" href="../css/text-wrap.css">
     <link rel="stylesheet" href="../css/desktop-common.css?v=20261020-shared-footer">
-</head>
+<style>@font-face{font-family:Pretendard;src:url("../font/PretendardVariable.woff2") format("woff2");font-weight:100 900;font-style:normal;}</style></head>
 <body class="partners-page">
   <header class="partners-header">
     <a class="logo site-logo" href="../" aria-label="Button Up home"><img src="../img/buttonup.svg" alt="BUTTON UP!"></a>
@@ -38,5 +38,20 @@
   <footer id="footer"></footer>
   <script src="../js/footer.js?v=20261014-auto-group"></script>
   <script src="../js/script.js?v=20261014-mobile-outside-close"></script>
+<script>
+if(location.hash.includes('figmacapture=')) (async()=>{
+ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+ const category=new URLSearchParams(location.search).get('finalCategory');
+ if(category&&typeof showWork==='function')showWork(category);
+ for(let i=0;i<100;i++){
+  const ready=location.pathname.includes('work.html')?document.querySelector('.project-card'):location.pathname.includes('designers.html')?document.querySelector('.designer-card'):location.pathname.includes('designer-detail.html')?document.querySelector('.detail-work-card'):location.pathname.includes('work-detail.html')?document.querySelector('.project-detail-article img'):true;
+  if(ready && document.querySelector('footer.site-footer') && (innerWidth<=700 || getComputedStyle(document.querySelector('footer')).paddingTop==='40px'))break;if(i===99)return;await sleep(200);
+ }
+ document.querySelectorAll('img').forEach(n=>n.loading='eager');
+ await Promise.race([document.fonts.ready,sleep(12000)]);
+ await Promise.race([Promise.all([...document.images].map(n=>n.complete?Promise.resolve():new Promise(r=>{n.onload=r;n.onerror=r;}))),sleep(12000)]);
+ document.title=(innerWidth<=700?'MO':'PC')+' / '+document.title+(category?' / '+category:'');const capture=document.createElement('script');capture.src='https://mcp.figma.com/mcp/html-to-design/capture.js';capture.async=true;document.head.append(capture);
+})();
+</script>
 </body>
 </html>

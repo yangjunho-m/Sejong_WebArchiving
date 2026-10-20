@@ -1,0 +1,42 @@
+{
+  "projects": 65,
+  "designers": 66,
+  "catalogAssets": 332,
+  "decodedImages": 329,
+  "staticReferences": 195,
+  "issues": [],
+  "metadataWarnings": [
+    {
+      "project": "Slott",
+      "missingFields": [
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "project": "Studio. Query",
+      "missingFields": [
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "project": "Hey, Nua",
+      "missingFields": [
+        "unmatchedDesigners"
+      ]
+    },
+    {
+      "project": "LOBBY BOY",
+      "missingFields": [
+        "description"
+      ]
+    }
+  ],
+  "emptyInstagram": [
+    "이준석",
+    "이지수",
+    "호영하"
+  ],
+  "notes": [
+    "Hey, Nua는 참여자 ID와 이름의 나열 순서만 다릅니다. 참여자 구성과 이름별 연결은 정상입니다."
+  ]
+}
