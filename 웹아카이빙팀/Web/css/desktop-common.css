@@ -385,19 +385,3 @@ body footer.site-footer .footer-info { display:contents; }
     max-width:100%;
   }
 }
-
-/* Reading defaults informed by WCAG 1.4.8; not a full AAA conformance claim. */
-body :is(.intro-copy > p,.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date),.work-detail-desc) {
-  text-align:left;
-  line-height:1.6;
-  overflow-wrap:anywhere!important;
-}
-body :is(.project-copy > p:last-child,.partner-copy > p,.detail-work-copy > p,.program-card-body > p:not(.program-date)) {
-  max-width:40em;
-  max-width:40ic;
-}
-body .intro-copy > p + p,
-body .partner-copy > p + p,
-body .detail-work-copy > p + p {
-  margin-top:2.4em;
-}

@@ -294,7 +294,7 @@
   .project-copy { max-width:none; min-height:312px; margin-bottom:0; }
   .project-copy h1,.project-copy h2 { font:600 clamp(28px,3.333333vw,48px)/1.4 "ITC Avant Garde Gothic Pro",Arial,sans-serif; letter-spacing:0; margin:0 0 4.8px; }
   .project-copy .credit { font:600 18px/1 Pretendard,Arial,sans-serif; letter-spacing:-.02em; margin:0 0 40px; }
-  .project-copy p:last-child { width:min(100%,762px); font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
+  .project-copy p:last-child { width:calc((100% - 20px) / 2); font:500 16px/1.5 Pretendard,Arial,sans-serif; letter-spacing:-.02em; }
   .project-grid { grid-template-columns:repeat(4,minmax(0,1fr)); gap:20px; }
   .project-card::before { display:none; }
   .project-card span { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
