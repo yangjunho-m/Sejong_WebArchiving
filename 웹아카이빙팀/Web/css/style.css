@@ -10,13 +10,9 @@
   box-sizing:border-box
 }
 
-/* Keep page content in place when scrolling beyond either vertical edge. */
-html,
-body{
-  overscroll-behavior-y:none
-}
-
 html{
+  /* Shared canvas color revealed beyond the page's scroll boundaries. */
+  background:#141414;
   scroll-behavior:smooth
 }
 
