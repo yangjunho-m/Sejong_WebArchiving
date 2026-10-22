@@ -559,3 +559,30 @@ body.message-page .message-card-message { overflow-wrap:anywhere!important; }
 }
 .message-page .message-board-status[hidden] { display:none; }
 
+.message-page #footer button.footer-symbol {
+  display:block; padding:0; border:0; background:transparent; cursor:pointer;
+}
+.message-admin-dialog {
+  box-sizing:border-box; width:400px; max-width:calc(100% - 40px);
+  max-height:calc(100dvh - 40px); overflow-y:auto; padding:28px;
+  border:0; border-radius:20px; color:#141414;
+  font:400 16px/1.5 Pretendard,Arial,sans-serif;
+}
+.message-admin-dialog::backdrop { background:rgba(0,0,0,.45); }
+.message-admin-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:24px; }
+.message-admin-heading h2 { margin:0; font-size:20px; }
+.message-admin-login { display:flex; flex-direction:column; gap:10px; }
+.message-admin-login[hidden], #message-admin-session[hidden] { display:none; }
+.message-admin-dialog input { box-sizing:border-box; width:100%; padding:12px; border:1px solid #777; border-radius:8px; font:inherit; }
+.message-admin-dialog button, .message-delete {
+  min-height:44px; padding:8px 16px; border:1px solid #777; border-radius:12px;
+  background:#fff; color:#141414; font:inherit; cursor:pointer;
+}
+.message-admin-login button[type="submit"] { margin-top:12px; border:0; background:#315fa8; color:#fff; }
+.message-delete { align-self:flex-end; color:#a32323; border-color:currentColor; font-size:14px; }
+.message-admin-dialog button:disabled, .message-delete:disabled { opacity:.6; cursor:wait; }
+.message-admin-dialog :is(button,input):focus-visible,
+.message-delete:focus-visible, .message-page #footer button.footer-symbol:focus-visible { outline:2px solid #315fa8; outline-offset:4px; }
+#message-admin-status { margin:16px 0 0; font-size:14px; }
+#message-admin-status:empty { margin:0; }
+
