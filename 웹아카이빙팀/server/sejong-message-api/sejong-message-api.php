@@ -2,15 +2,15 @@
 /**
  * Plugin Name: Sejong Message API
  * Description: 졸업전시 MESSAGE 페이지용 공개 REST API와 관리자 로그인·삭제 기능을 제공합니다.
- * Version: 1.1.0
- * Requires PHP: 7.4
+ * Version: 1.1.2
+ * Requires PHP: 7.0
  */
 
 if (!defined('ABSPATH')) {
     exit;
 }
 
-define('SEJONG_MESSAGE_API_VERSION', '1.1.0');
+define('SEJONG_MESSAGE_API_VERSION', '1.1.2');
 define('SEJONG_MESSAGE_ADMIN_COOKIE', 'sejong_message_admin');
 define('SEJONG_MESSAGE_ADMIN_PASSWORD_HASH', '$2y$12$nQHXWbeLvjMAGTjVFrTEzempC1OGD1ncIZZ9MT0DmWCuvjrV6dx/S');
 
@@ -103,9 +103,6 @@ function sejong_message_api_register_routes() {
 add_action('rest_api_init', 'sejong_message_api_register_routes');
 
 function sejong_message_admin_same_origin(WP_REST_Request $request) {
-    if (!is_ssl()) {
-        return new WP_Error('sejong_admin_https', '관리자 기능은 HTTPS 보안 연결에서만 사용할 수 있습니다.', array('status' => 403));
-    }
     $origin = $request->get_header('origin');
     $site = wp_parse_url(home_url());
     $expected_origin = $site['scheme'] . '://' . $site['host'] . (isset($site['port']) ? ':' . $site['port'] : '');
@@ -137,10 +134,19 @@ function sejong_message_admin_response($data) {
 }
 
 function sejong_message_admin_cookie($token, $expires) {
+    $path = wp_parse_url(rest_url('sejong/v1/messages'), PHP_URL_PATH);
+    // PHP 7.0–7.2 cannot pass SameSite options to setcookie().
+    if (PHP_VERSION_ID < 70300) {
+        $cookie = SEJONG_MESSAGE_ADMIN_COOKIE . '=' . rawurlencode($token)
+            . '; Expires=' . gmdate('D, d M Y H:i:s', $expires) . ' GMT'
+            . '; Path=' . $path . '; HttpOnly; SameSite=Strict';
+        header('Set-Cookie: ' . $cookie . (is_ssl() ? '; Secure' : ''), false);
+        return;
+    }
     setcookie(SEJONG_MESSAGE_ADMIN_COOKIE, $token, array(
         'expires' => $expires,
-        'path' => wp_parse_url(rest_url('sejong/v1/messages'), PHP_URL_PATH),
-        'secure' => true,
+        'path' => $path,
+        'secure' => is_ssl(),
         'httponly' => true,
         'samesite' => 'Strict',
     ));

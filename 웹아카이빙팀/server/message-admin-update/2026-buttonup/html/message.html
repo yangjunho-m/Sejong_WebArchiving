@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MESSAGE — BUTTON UP!</title>
+  <link rel="icon" type="image/png" href="../img/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/logo.css">
+  <link rel="stylesheet" href="../css/assets.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/message.css?v=20261023-admin">
+    <!-- 공통 메뉴 서체: 모든 페이지에서 동일한 설정 사용 -->
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/mobile-layout.css">
+    <link rel="stylesheet" href="../css/text-wrap.css?v=20261011-message-wrap">
+    <link rel="stylesheet" href="../css/desktop-common.css?v=20261020-shared-footer">
+</head>
+<body class="message-page">
+  <header class="message-header">
+    <a class="logo site-logo" href="../" aria-label="Button Up home">
+      <img src="../img/buttonup.svg" alt="BUTTON UP!">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav lang="en" class="site-nav" aria-label="Message navigation">
+      <a class="type-nav" href="work.html">WORKS</a>
+      <a class="type-nav" href="designers.html">DESIGNERS</a>
+      <a class="type-nav" href="program.html">PROGRAM</a>
+      <a class="type-nav" href="partners.html">PARTNERS</a>
+      <a class="type-nav" href="message.html" aria-current="page">MESSAGE</a>
+    </nav>
+  </header>
+
+  <main class="message-main">
+    <h1>MESSAGE</h1>
+    <form class="message-form" id="message-form">
+      <div class="message-fields">
+        <label class="sr-only" for="nickname">닉네임</label>
+        <input id="nickname" name="nickname" type="text" maxlength="20" placeholder="닉네임" required>
+        <label class="sr-only" for="encouragement">응원의 메시지</label>
+        <div class="message-input-wrap">
+        <textarea id="encouragement" name="encouragement" rows="1" wrap="soft" maxlength="300" placeholder="기억에 남은 작품, 전시를 본 소감, 전하고 싶은 응원을 자유롭게 남겨주세요." required></textarea>
+        <span id="message-count">0 / 300</span>
+        </div>
+      </div>
+      <button type="submit">응원 남기기</button>
+    </form>
+    <p id="message-status" class="message-status" aria-live="polite"></p>
+    <div class="message-list-heading"><h2>함께 남긴 응원</h2><select id="message-sort" aria-label="메시지 정렬"><option value="newest">최신순</option><option value="oldest">오래된순</option></select></div>
+    <p id="message-board-status" class="message-board-status" role="status" hidden></p>
+    <section id="message-board" class="message-board" aria-label="응원 메시지"></section>
+  <div class="message-more"><button id="message-more" type="button" hidden>응원 더 보기</button></div>
+  </main>
+
+  <footer id="footer"></footer>
+  <dialog id="message-admin-dialog" class="message-admin-dialog" aria-labelledby="message-admin-title">
+    <div class="message-admin-heading">
+      <h2 id="message-admin-title">메시지 관리자</h2>
+      <button id="message-admin-close" type="button" aria-label="관리자 창 닫기">닫기</button>
+    </div>
+    <form id="message-admin-login" class="message-admin-login">
+      <label for="message-admin-username">아이디</label>
+      <input id="message-admin-username" name="username" autocomplete="username" maxlength="64" autofocus required>
+      <label for="message-admin-password">비밀번호</label>
+      <input id="message-admin-password" name="password" type="password" autocomplete="current-password" maxlength="1024" required>
+      <button type="submit">로그인</button>
+    </form>
+    <div id="message-admin-session" hidden>
+      <p>관리자로 로그인되어 있습니다. 메시지의 삭제 버튼으로 관리할 수 있습니다.</p>
+      <button id="message-admin-logout" type="button">로그아웃</button>
+    </div>
+    <p id="message-admin-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <script src="../js/footer.js?v=20261014-auto-group"></script>
+  <script src="../js/script.js?v=20261014-mobile-outside-close"></script>
+  <script src="../js/message-api-config.js"></script>
+  <script src="../js/message.js?v=20261023-admin-http"></script>
+</body>
+</html>

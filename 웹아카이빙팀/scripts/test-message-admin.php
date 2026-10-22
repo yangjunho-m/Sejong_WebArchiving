@@ -6,30 +6,48 @@ define('HOUR_IN_SECONDS', 3600);
 $transients = array();
 $routes = array();
 class WP_Error {
-    public function __construct(public $code, public $message, public $data) {}
+    public $code, $message, $data;
+    public function __construct($code, $message, $data) {
+        $this->code = $code;
+        $this->message = $message;
+        $this->data = $data;
+    }
 }
 class WP_REST_Response {
-    public function __construct(public $data, public $status = 200, public $headers = array()) {}
+    public $data, $status, $headers;
+    public function __construct($data, $status = 200, $headers = array()) {
+        $this->data = $data;
+        $this->status = $status;
+        $this->headers = $headers;
+    }
 }
 class WP_REST_Server {
     const READABLE = 'GET', CREATABLE = 'POST', DELETABLE = 'DELETE';
 }
 class WP_REST_Request implements ArrayAccess {
-    public function __construct(public $params = array(), public $headers = array()) {}
+    public $params, $headers;
+    public function __construct($params = array(), $headers = array()) {
+        $this->params = $params;
+        $this->headers = $headers;
+    }
     public function get_param($key) { return $this->params[$key] ?? null; }
     public function get_header($key) { return $this->headers[strtolower($key)] ?? ''; }
-    public function offsetGet($key): mixed { return $this->get_param($key); }
-    public function offsetExists($key): bool { return isset($this->params[$key]); }
-    public function offsetSet($key, $value): void { $this->params[$key] = $value; }
-    public function offsetUnset($key): void { unset($this->params[$key]); }
+    #[\ReturnTypeWillChange]
+    public function offsetGet($key) { return $this->get_param($key); }
+    #[\ReturnTypeWillChange]
+    public function offsetExists($key) { return isset($this->params[$key]); }
+    #[\ReturnTypeWillChange]
+    public function offsetSet($key, $value) { $this->params[$key] = $value; }
+    #[\ReturnTypeWillChange]
+    public function offsetUnset($key) { unset($this->params[$key]); }
 }
 function register_activation_hook(...$args) {}
 function add_action(...$args) {}
 function register_rest_route($namespace, $path, $options) { $GLOBALS['routes'][$path] = $options; }
-function home_url() { return 'https://sj-di.com'; }
+function home_url() { return (is_ssl() ? 'https' : 'http') . '://sj-di.com'; }
 function rest_url($path) { return home_url() . '/wp-json/' . $path; }
 function wp_parse_url(...$args) { return parse_url(...$args); }
-function is_ssl() { return $GLOBALS['test_ssl'] ?? true; }
+function is_ssl() { return $GLOBALS['test_ssl'] ?? false; }
 function is_wp_error($value) { return $value instanceof WP_Error; }
 function get_transient($key) { return $GLOBALS['transients'][$key] ?? false; }
 function set_transient($key, $value, $ttl) { $GLOBALS['transients'][$key] = $value; return true; }
@@ -41,6 +59,13 @@ function error_status($value, $expected) {
     check($value instanceof WP_Error && $value->data['status'] === $expected, 'Expected error ' . $expected);
 }
 require __DIR__ . '/../server/sejong-message-api/sejong-message-api.php';
+if (PHP_SAPI === 'cli-server' && isset($_GET['cookie'])) {
+    $test_ssl = isset($_GET['ssl']);
+    $token = $_GET['cookie'] === 'logout' ? '' : str_repeat('a', 64);
+    sejong_message_admin_cookie($token, time() + ($token ? HOUR_IN_SECONDS : -HOUR_IN_SECONDS));
+    echo 'Cookie header fixture';
+    return;
+}
 $password = getenv('SEJONG_TEST_PASSWORD');
 check(is_string($password) && $password !== '', 'Set SEJONG_TEST_PASSWORD to test successful login.');
 $_SERVER['REMOTE_ADDR'] = '127.0.0.1';
@@ -55,9 +80,10 @@ check(sejong_message_admin_status()->data['authenticated'] === false, 'Guest sta
 check(sejong_message_admin_status()->headers['Cache-Control'] === 'no-store, private', 'Private status must not be cached.');
 error_status(sejong_message_admin_can_delete($request), 401);
 error_status(sejong_message_admin_same_origin(new WP_REST_Request()), 403);
-$test_ssl = false;
-error_status(sejong_message_admin_same_origin($request), 403);
+check(sejong_message_admin_same_origin($request) === true, 'HTTP admin requests are allowed.');
 $test_ssl = true;
+check(sejong_message_admin_same_origin(new WP_REST_Request(array(), array('origin' => home_url(), 'x-sejong-admin' => '1'))) === true, 'HTTPS admin requests are allowed.');
+$test_ssl = false;
 error_status(sejong_message_admin_same_origin(new WP_REST_Request(array(), array('origin' => 'http://evil.example', 'x-sejong-admin' => '1'))), 403);
 $_COOKIE[SEJONG_MESSAGE_ADMIN_COOKIE] = array('invalid');
 error_status(sejong_message_admin_can_delete($request), 401);

@@ -225,10 +225,16 @@ document.querySelectorAll('.menu-toggle').forEach((menuToggle) => {
       hide();
       return;
     }
+    // A modal is above body content regardless of the cursor's z-index.
+    const layer = target?.closest('dialog[open]') || document.body;
+    if (cursor.parentElement !== layer) layer.append(cursor);
     cursor.style.transform = `translate(${event.clientX}px, ${event.clientY}px) translate(-50%, -50%)`;
     cursor.classList.add('is-visible');
     document.body.classList.add('has-graphic-cursor');
   }, { passive: true });
+  document.addEventListener('close', (event) => {
+    if (event.target === cursor.parentElement) document.body.append(cursor);
+  }, true);
   document.documentElement.addEventListener('pointerleave', hide);
   window.addEventListener('blur', hide);
   document.addEventListener('visibilitychange', hide);

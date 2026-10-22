@@ -18,13 +18,6 @@
   const adminForm = document.querySelector('#message-admin-login');
   const adminSession = document.querySelector('#message-admin-session');
   const adminStatus = document.querySelector('#message-admin-status');
-  const adminHttps = document.querySelector('#message-admin-https');
-  const secureAdmin = location.protocol === 'https:' && apiEndpoint && new URL(apiEndpoint, location.href).protocol === 'https:';
-  const httpsUrl = new URL(location.href);
-  httpsUrl.protocol = 'https:';
-  adminHttps.querySelector('a').href = httpsUrl.href;
-  adminHttps.hidden = secureAdmin;
-  adminForm.hidden = !secureAdmin;
   const logoutButton = document.querySelector('#message-admin-logout');
   const footerLogo = document.querySelector('#footer .footer-symbol');
   const adminButton = document.createElement('button');
@@ -97,8 +90,8 @@
           await adminRequest(`/${encodeURIComponent(id)}`, 'DELETE');
           allMessages = allMessages.filter(item => item.id !== id);
           displayMessages();
-          boardStatus.textContent = '메시지가 삭제되었습니다.';
-          boardStatus.hidden = false;
+          boardStatus.textContent = '';
+          boardStatus.hidden = true;
         } catch (error) {
           boardStatus.textContent = error.message;
           boardStatus.hidden = false;
@@ -181,14 +174,13 @@
 
   const setAdminSession = session => {
     adminCsrf = session.authenticated && typeof session.csrf === 'string' ? session.csrf : '';
-    adminForm.hidden = Boolean(adminCsrf) || !secureAdmin;
+    adminForm.hidden = Boolean(adminCsrf);
     adminSession.hidden = !adminCsrf;
     adminButton.setAttribute('aria-label', adminCsrf ? '메시지 관리자 메뉴' : '메시지 관리자 로그인');
     displayMessages();
   };
   const adminRequest = async (path, method = 'GET', body) => {
     if (!apiEndpoint) throw new Error('관리자 로그인에 연결할 수 없습니다.');
-    if (!secureAdmin && method !== 'GET') throw new Error('관리자 기능은 HTTPS 보안 연결에서만 사용할 수 있습니다.');
     const response = await fetch(`${apiEndpoint.replace(/\/$/, '')}${path}`, {
       method,
       credentials: 'same-origin',
@@ -239,9 +231,6 @@
       adminForm.reset();
       adminStatus.textContent = '';
       adminDialog.close();
-      boardStatus.textContent = '관리자로 로그인했습니다. 삭제할 메시지의 삭제 버튼을 눌러주세요.';
-      boardStatus.hidden = false;
-      boardStatus.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } catch (error) {
       adminStatus.textContent = error.message;
     } finally {

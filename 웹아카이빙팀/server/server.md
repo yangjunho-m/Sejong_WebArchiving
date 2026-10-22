@@ -7,7 +7,7 @@ http://sj-di.com/wp-json/sejong/v1/messages
 
 워드프레스 플러그인에 Sejong Message API를 추가하는 형태로 진행하였다.
 
-### 메시지 관리자 로그인·삭제 (v1.1.0)
+### 메시지 관리자 로그인·삭제 (v1.1.2, PHP 7.0 이상)
 
 - `message.html`의 **푸터 로고**를 누르면 관리자 로그인 창이 열린다.
 - 계정은 `sejongdi` 하나이며 비밀번호는 요청 시 지정한 값을 사용한다. 회원가입이나 워드프레스 관리자 계정 생성은 필요하지 않다.
@@ -22,7 +22,7 @@ http://sj-di.com/wp-json/sejong/v1/messages
 로컬 파일만 수정한 상태에서는 운영 사이트가 바뀌지 않는다. 아래 서버 플러그인과 웹 파일을 **모두** 반영해야 한다.
 
 1. 워드프레스 관리자에서 기존 데이터베이스를 백업한다.
-2. **플러그인 → 새 플러그인 추가 → 플러그인 업로드**에서 이 폴더의 `sejong-message-api.zip`을 업로드하고 기존 Sejong Message API를 v1.1.0으로 교체한다. 플러그인을 활성화 상태로 둔다. 기존 메시지 테이블 구조와 저장된 메시지는 유지된다.
+2. **플러그인 → 새 플러그인 추가 → 플러그인 업로드**에서 이 폴더의 `sejong-message-api.zip`을 업로드하고 기존 Sejong Message API를 v1.1.2로 교체한다. 플러그인을 활성화 상태로 둔다. PHP 7.0부터 지원하므로 화면에 PHP 7.4 요구 오류가 나오면 이전 ZIP 대신 수정 ZIP을 다시 선택한다. 기존 메시지 테이블 구조와 저장된 메시지는 유지된다.
 3. 웹 서버의 `/2026-buttonup/` 아래에 다음 세 파일을 같은 경로로 덮어쓴다.
    - `Web/html/message.html` → `/2026-buttonup/html/message.html`
    - `Web/js/message.js` → `/2026-buttonup/js/message.js`
@@ -32,7 +32,7 @@ http://sj-di.com/wp-json/sejong/v1/messages
 
 `message-admin-update.zip`에는 위 웹 파일 3개(배포 경로 `2026-buttonup/`), 플러그인 ZIP과 이 설치 안내가 들어 있다. 플러그인 ZIP은 웹 공개 폴더에 올리지 말고 워드프레스 플러그인 업로드에서 설치한다.
 
-**보안:** 현재 안내된 사이트는 HTTP이다. HTTP에서는 비밀번호와 로그인 쿠키가 전송 중 암호화되지 않으므로 관리자 로그인·삭제를 HTTPS에서만 허용한다. HTTP 화면에서는 로그인 입력 대신 HTTPS 이동 링크를 표시한다. 운영 관리자 로그인 전에 호스팅에서 도메인의 HTTPS 인증서를 설정하고 워드프레스의 사이트/워드프레스 주소도 HTTPS로 설정해야 한다. 로그인 쿠키는 Secure·HttpOnly·SameSite=Strict 속성을 사용한다. 웹 페이지와 워드프레스 API는 같은 도메인·프로토콜로 사용해야 한다. SSL을 프록시에서 종료하는 호스팅은 워드프레스의 `is_ssl()`이 HTTPS 요청을 인식하도록 호스팅 설정도 확인한다.
+**접속 방식:** 요청에 따라 HTTP와 HTTPS 모두에서 관리자 로그인·삭제·로그아웃을 지원한다. 로그인 쿠키는 HttpOnly·SameSite=Strict 속성을 사용하며 HTTPS 요청에는 Secure 속성도 적용한다. 웹 페이지와 워드프레스 API는 같은 도메인·프로토콜로 사용해야 한다. HTTP에서는 비밀번호와 로그인 쿠키가 암호화되지 않은 채 전송된다.
 
 ### 추가 API
 
@@ -45,9 +45,7 @@ http://sj-di.com/wp-json/sejong/v1/messages
 
 ### 로컬 검증
 
-`scripts/test-message-admin.php`는 워드프레스 함수·DB를 테스트 대역으로 사용해 실제 PHP 인증·권한·삭제 로직을 확인한다. PHP 8 이상에서 `SEJONG_TEST_PASSWORD` 환경 변수에 관리자 비밀번호를 설정하고 실행한다.
-
-`scripts/test-message-admin.cjs`는 Playwright와 설치된 Chrome으로 PC/모바일 화면의 로그인, 실패, 세션 복원, 삭제 취소·실패·성공, 로그아웃 및 세션 만료를 확인한다. Playwright를 찾을 수 있는 `NODE_PATH`를 설정한 뒤 `node scripts/test-message-admin.cjs`로 실행한다. 운영 데이터에는 접근하지 않는다.
+`scripts/test-message-admin.php`는 워드프레스 함수·DB를 테스트 대역으로 사용해 실제 PHP 인증·권한·삭제 로직을 확인한다. PHP 7.0 이상에서 `SEJONG_TEST_PASSWORD` 환경 변수에 관리자 비밀번호를 설정하고 실행한다. PHP 7.0–7.2에서도 HttpOnly·SameSite=Strict 속성을 유지하도록 쿠키 헤더를 호환 처리한다.
 
 
 ### 테이블 형태
