@@ -78,10 +78,17 @@ loadDesigners().then(async (data) => {
       const tags = document.createElement('div'); tags.className = 'detail-tags';
       tags.append(...project.tags.map(text => { const span = document.createElement('span'); span.textContent = text; return span; }));
       const copy = document.createElement('div'); copy.className = 'detail-work-copy';
-      if (project.title) { const heading = document.createElement('h2'); heading.textContent = project.title; copy.append(heading); }
+      const createTextLink = text => {
+        const textLink = document.createElement('a');
+        textLink.className = 'detail-work-text-link';
+        textLink.href = link.href;
+        textLink.textContent = text;
+        return textLink;
+      };
+      if (project.title) { const heading = document.createElement('h2'); heading.append(createTextLink(project.title)); copy.append(heading); }
       copy.append(tags);
       card.append(link, copy);
-      if (project.summary) { const description = document.createElement('p'); description.textContent = project.summary; copy.append(description); }
+      if (project.summary) { const description = document.createElement('p'); description.append(createTextLink(project.summary)); copy.append(description); }
       return card;
     }));
   }

@@ -1,6 +1,6 @@
 (() => {
   const releaseAt = Date.parse('2026-10-30T18:00:00+09:00');
-  const artworkSelector = '.project-card, .detail-work-card > a, .project-detail-article';
+  const artworkSelector = '.project-card, .detail-work-card a, .project-detail-article';
   const lockedElements = new Set();
   let timer;
   let pending;
