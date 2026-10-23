@@ -1,9 +1,20 @@
-html.artwork-pending :is(.project-image img, .detail-work-card > a img, .project-detail-article img, .project-detail-article video) {
-  filter:blur(32px);
-  pointer-events:none;
-  user-select:none;
+/* Blur only the backdrop; keep the overlay itself fully opaque. */
+html.artwork-pending :is(.project-image, .detail-work-card > a, .project-detail-article) {
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
 }
-html.artwork-pending :is(.detail-work-card > a, .project-detail-article) { overflow:hidden; }
+html.artwork-pending .project-image { position:absolute; }
+html.artwork-pending :is(.project-image, .detail-work-card > a, .project-detail-article)::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:rgb(255 255 255 / 5%);
+  -webkit-backdrop-filter:blur(15px);
+  backdrop-filter:blur(15px);
+  pointer-events:none;
+}
 
 /* Keep project titles and names readable on touch screens as well as desktop. */
 html.artwork-pending .project-hover {
