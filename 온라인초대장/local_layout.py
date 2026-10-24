@@ -1,0 +1,79 @@
+"""Browser-only layout, using the supplied 1080px design coordinates."""
+import re
+import html
+
+
+def apply_local_layout(document):
+    css = """<style>
+@font-face{font-family:Pretendard;src:url('assets/PretendardVariable.woff2') format('woff2');font-style:normal;font-weight:100 900;font-display:swap;}
+.invitation-footer{position:relative;isolation:isolate;background:transparent!important;}
+.invitation-footer::before{content:'';position:absolute;z-index:-1;left:0;bottom:0;width:100%;aspect-ratio:1080 / 1077;transform:translateY(2.228412%);background:linear-gradient(180deg,#f0f3f7 15.74%,#e3eaf4 39.48%,#b5c9ea 62.29%,#7eacf2 96.85%);pointer-events:none;}
+/* Footer origin: (76,2014) on the 1080px design. */
+.invitation-links{position:relative;width:100%;aspect-ratio:952 / 173;container-type:inline-size;}
+.invitation-links::before{content:'';position:absolute;left:0;top:3.781512605cqw;width:97.478991597cqw;border-top:0.105042017cqw solid rgba(0,0,0,0.6);}
+.invitation-links a{position:absolute;top:9.768907563cqw;height:8.403361345cqw;color:#e4e4e4;text-decoration:none;}
+.invitation-links a::before{content:'';position:absolute;inset:0;background:#141414;border-radius:10.504201681cqw;}
+.invitation-links span{position:absolute;font-family:Arial,sans-serif;font-style:normal;font-weight:600;font-size:3.151260504cqw;line-height:3.781512605cqw;text-align:center;text-transform:uppercase;letter-spacing:0;}
+.invitation-links .link-website{left:-0.630252101cqw;width:24.013655462cqw;}
+.invitation-links .link-website span{left:0.864495798cqw;top:2.761554622cqw;width:22.381302521cqw;height:2.767857143cqw;}
+.invitation-links .link-instagram{left:34.453781513cqw;width:28.046218487cqw;}
+.invitation-links .link-instagram span{left:2.629201681cqw;top:2.731092437cqw;width:22.808823529cqw;height:2.767857143cqw;}
+.invitation-links .link-contact{left:73.657563025cqw;width:24.054621849cqw;}
+.invitation-links .link-contact span{left:0.000000000cqw;top:2.731092437cqw;width:24.054621849cqw;height:2.836134454cqw;}
+.invitation-links .link-contact::before{left:0.021008403cqw;width:24.013655462cqw;}
+.invitation-header{position:relative;z-index:1;width:100%;aspect-ratio:1080 / 155;container-type:inline-size;background:#141414;}
+.invitation-header h1{position:absolute;left:5.185185%;top:36.129032%;width:46.574074%;height:68.006452%;margin:0;padding:0;font-family:Pretendard,sans-serif;font-style:normal;font-weight:600;font-size:3.422222cqw;line-height:4.259259cqw;letter-spacing:0;text-align:left;color:#e4e4e4;}
+.invitation-header .header-logo{position:absolute;left:80.74%;right:5.4%;top:36.129032%;display:block;width:13.86%;height:23.225806%;border:0;}
+.intro-layout{position:relative;width:100%;aspect-ratio:952 / 410;container-type:inline-size;font-family:Pretendard,sans-serif;font-style:normal;letter-spacing:0;}
+.intro-layout h2,.intro-layout p{position:absolute;margin:0;padding:0;text-align:left;word-break:keep-all;}
+/* 952 x 410 group: global origin (76,1320) on a 1080px design. */
+.intro-layout h2{left:0;top:0;width:21.638655%;height:25.365854%;font-size:2.941176cqw;line-height:3.886555cqw;font-weight:700;color:#000;}
+.intro-layout p{left:33.403361%;width:66.596639%;font-size:2.731092cqw;line-height:3.991597cqw;font-weight:500;color:#141414;}
+.intro-layout .intro-first{top:0;height:52.195122%;}
+.intro-layout .intro-second{top:53.170732%;height:20.975610%;}
+.intro-layout .intro-third{top:79.024390%;height:20.975610%;}
+.event-details{position:relative;width:100%;aspect-ratio:952 / 284;container-type:inline-size;font-family:Pretendard,sans-serif;font-style:normal;letter-spacing:0;color:#000;}
+/* Starts at design y=1730; date y=1792, venue y=1889, both x=397. */
+.event-details p{position:absolute;left:33.718487%;width:66.596639%;height:44.014085%;margin:0;padding:0;font-size:2.731092cqw;line-height:3.991597cqw;word-break:keep-all;}
+.event-details .event-date{top:21.830986%;font-weight:700;}
+.event-details .event-venue{top:55.985915%;font-weight:500;}
+</style>"""
+    document = document.replace('</head>', css + '</head>')
+    header = '''<header class="invitation-header">
+<h1>2026 세종대학교<br>디자인이노베이션 졸업전시회</h1>
+<img class="header-logo" src="assets/header-logo.svg" width="149.688" height="36" alt="DESIGN INNOVATION">
+</header>'''
+    document, count = re.subn(r'<img[^>]+src="email-assets/header\.png"[^>]*>', lambda _: header, document, count=1)
+    assert count == 1
+    # Replace only the local PNG buttons; preserve the configured destinations.
+    links = re.findall(r'<a href="([^"]*)"[^>]*><img[^>]+alt="(WEBSITE|INSTAGRAM|CONTACT)"[^>]*></a>', document)
+    assert len(links) == 3
+    buttons = '<nav class="invitation-links" aria-label="전시 관련 링크">'
+    for url, label in links:
+        buttons += f'<a class="link-{label.lower()}" href="{html.escape(html.unescape(url), quote=True)}"><span>{label}</span></a>'
+    buttons += '</nav>'
+    document, count = re.subn(
+        r'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-top:60px;border-top:1px solid #8b949e">.*?</table></td></tr></table>',
+        lambda _: buttons, document, count=1, flags=re.S)
+    assert count == 1
+    block = '''<section class="intro-layout" aria-label="전시 소개">
+<h2>디자인이노베이션<br>45회 졸업전시회</h2>
+<p class="intro-first">첫 단추를 잘 끼워야 한다는 말처럼, 단추는 시작을 여는 장치입니다. 서로 다른 색과 모양, 크기를 지닌 단추들이 각자의 자리에서 저마다의 시간을 지나 한곳에 모였습니다. 각기 다른 생각과 방식으로 만들어 온 결과들은 실로 꿰어진 단추처럼 연결되며 새로운 가능성의 시작이 됩니다.</p>
+<p class="intro-second">앞으로의 모습은 알 수 없지만, 지금 끼우는 첫 단추는 각자가 만들어 갈 수많은 미래로 이어질 것입니다.</p>
+<p class="intro-third">가지각색의 우리가 함께 끼우는 첫 단추를 통해, 이곳에서 시작된 가능성들이 각자의 다음 자리로 이어지길 바랍니다.</p>
+</section>'''
+    document, count = re.subn(r'<div style="margin:0 0 38px"><img[^>]+></div>', lambda _: block, document, count=1)
+    assert count == 1
+    details = '''<section class="event-details" aria-label="전시 일정 및 장소">
+<p class="event-date">10.30(FRI) - 11.10(THU)<br>11AM - 7PM</p>
+<p class="event-venue">세종대학교 광개토관 B1 세종뮤지엄갤러리 3관</p>
+</section>'''
+    document, count = re.subn(
+        r'<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td width="32%".*?</td></tr></table>',
+        lambda _: details, document, count=1, flags=re.S)
+    assert count == 1
+    # At the existing 600px card width: x=76/1.8, y=1320/1.8.
+    # The approved hero ends at y=654, leaving 79.333px above the group.
+    document = document.replace('padding:54px 32px 38px', 'padding:13.259259% 4.814815% 6.759259% 7.037037%')
+    document = document.replace('<td bgcolor="#dce5f2"', '<td class="invitation-footer"')
+    return document
