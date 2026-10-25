@@ -91,11 +91,12 @@ if '--html-only' not in sys.argv:
     lines(draw,'세종대학교 광개토관 B1 세종뮤지엄갤러리 3관',(397,1889-1207),body_font,'#000',38)
     draw.line((76,2050-1207,1004,2050-1207),fill=(107,137,181),width=1)
     button_font=ImageFont.truetype('C:/Windows/Fonts/arialbd.ttf',30)
-    for label,x,width,tx,tw in [('WEBSITE',70,228.61,78.23,213.07),('INSTAGRAM',404,267,429.03,217.14),('CONTACT',777.42,228.61,777.22,229)]:
+    for label,x,width in [('WEBSITE',70,228.61),('INSTAGRAM',404,267),('CONTACT',777.42,228.61)]:
         draw.rounded_rectangle((x,900,x+width,980),radius=100,fill='#141414')
-        box=draw.textbbox((0,0),label,font=button_font)
-        text_x=tx+(tw-button_font.getlength(label))/2
-        draw.text((text_x,926),label,font=button_font,fill='#e4e4e4',anchor='lt')
+        left,top,right,bottom=draw.textbbox((0,0),label,font=button_font)
+        text_x=x+(width-(right-left))/2-left
+        text_y=940-(bottom-top)/2-top
+        draw.text((text_x,text_y),label,font=button_font,fill='#e4e4e4')
     footer.save(A/'footer-preview.png')
     footer.crop((0,0,1080,900)).save(A/'information.png')
     for key,x in [('website',0),('instagram',360),('contact',720)]: footer.crop((x,900,x+360,980)).save(A/(key+'.png'))
