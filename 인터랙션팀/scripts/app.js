@@ -54,7 +54,7 @@ const esc = (s) =>
   );
 const CAROUSEL_START_CYCLE = 2;
 const CAROUSEL_INITIAL_CYCLES = 5;
-const PATTERN_API = "http://sj-di.com/wp-json/sejong/v1/patterns";
+const PATTERN_API = "/wp-json/sejong/v1/patterns";
 const asset = (s) => catalog.assets.find((a) => a.id === s.assetId);
 const student = (id) => catalog.students.find((s) => s.id === id);
 const chosen = () => selected.map(student);
